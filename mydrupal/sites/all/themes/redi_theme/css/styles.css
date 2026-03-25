@@ -1,0 +1,135 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+#header{
+    background-image:url("http://www.jamellawson.com/mydrupal/sites/all/themes/redi_theme/images/banner_background2.png");
+    height: 150px;
+}
+
+#name-and-slogan{
+    display:none;
+}
+
+#navigation{
+    background: url('http://www.jamellawson.com/mydrupal/sites/all/themes/redi_theme/images/nav_bkgd3.jpg') center repeat-x;
+    background-size: auto 100%;
+}
+
+#main-menu ul{
+    padding: 0 5px;
+    display: block;
+    float: none;
+    zoom: 1;
+    padding-top: 7px;
+}
+
+#navigation .links{
+    padding-top: 15px;
+}
+
+#main-menu ul{
+    position: relative;
+    z-index: 597;
+    float: left;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    padding-top: 7px;
+    display: block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#main-menu ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    min-height: 1px;
+    line-height: 1.3em;
+    vertical-align: middle;
+    padding: 0;
+    margin-left: 10%;
+    text-wrap: none;
+}
+
+#main-menu ul li a{
+    text-decoration:none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    color: White;
+}
+
+
+#page-title{
+    color: #ff8c00;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 3px 0px 25px 0px;
+}
+
+.title{
+    color: #ff8c00;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 3px 0px 25px 0px;
+    padding-left:40px;
+    padding-top:25px;
+}
+
+.breadcrumb{
+    display:none;
+}
+
+.field-label{
+    display:none;
+}
+
+.field-type-text-with-summary{
+    width: 295px;
+    padding-left: 40px;
+    padding-right: 40px;
+    float: left;
+    border-right-style: solid;
+    border-right-width: 1px;
+    font-size: 18px;
+}
+
+.field-item.even img{
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+#page{
+    color: #777777;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0eff0;
+}
+
+.region-footer{
+    background: url('http://www.jamellawson.com/mydrupal/sites/all/themes/redi_theme/images/nav_bkgd3.jpg') center repeat-x;
+}
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */

@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Orgin Bank</title>
+<link rel="stylesheet" type="text/css" href="mystyles.css">
+</head>
+
+<body>
+<div id="form-wrapper">
+<div id="CreditSignUpBackground"><!--Beginning of Origin Background-->
+<div class="container"><!--Container-->
+<div id="bankingType"><!--Banking Type-->
+  <ul>
+    <li><a id="personalLink" href="#">Personal</a></li>
+    <li>|</li>
+    <li><a id="businessLink" href="#">Business</a></li>
+    <li>|</li>
+    <li><a id="commercialLink" href="#">Commercial</a></li>
+  </ul>
+</div>
+<!--End of Banking Type-->
+
+<a href="index.html"><div id="orginLogo"></div></a>
+<!--<div id="productServiceBackground"><img src="images/productServiceBackground.jpg" /></div>-->
+<div id="productAndServices" ><!--Products and Services-->
+  <ul>
+    <li><a href="#">Products &amp; Services</a></li>
+    <li><a href="#">Why Origin</a></li>
+    <li><a href="#">Log In or Email</a></li>
+  </ul>
+</div>
+<!--End of Products and Service-->
+
+<div style="float: left">
+<img src="images/credit-signup-header.png" />
+</div>
+
+<div class="preliminaryFormInfo" id="creditSubtitle">
+    <h1 id="bonusMiles">Enjoy 40,000 bonus miles when you spend $3,000 on purchases in the first 90 days</h1>
+     <ul id="mainContentUnorderedListTravel">
+    	<li>Earn 2x Miles on all purchases</li>
+       <li>Travel and Fly any Airline, Any Time or choose hotels, cruises and more</li>
+       <li>Get 10% Miles Back when you redeem for travel statement credits</li>
+   </ul>
+   
+   <div id="orangeArrows"> <img src="images/credit-signup-arrows.png" /> </div>
+    <br /><Br />
+   
+   <div id="termsAndConditions"><p> Please see <a class="termsLink" href="#">Terms and Conditions</a> for rate, fee and other cost information. All terms, including fees and APRs for new transactions, may be subject to change.</p></div>
+    
+   <div><p>Complete this secured application and receive a response in as little as 60 seconds</p></div>
+   
+   <hr/>
+   
+   <div class="asterisk" ><p>* An asterisk indicates that the field is required.</p></div>
+   
+   <hr/>
+   
+   <div class="prefill"><p>Are you an Online Banking Customer? <a href="#">Save time. Sign in now and we'll prefill parts of your application for you. &gt;&gt;</a></p></div>
+ 
+</div><!--End of Preliminary Form Info-->
+
+<div id="creditSignupForm">
+<div class="formTitle" id="creditTitle" ></div>
+
+<form id="creditSignUpForm">
+
+<div class="form-block">
+    	<div class="form-block-header"><h2>About you</h2></div>
+        
+        <h3>Full Legal Name</h3>
+        
+        <ul>
+        	<li><h3>First name *</h3><input type="text" name="firstName" class="firstname" required/></li>
+        	<li><h3>Middle Name</h3><input type="text" maxlength="1" name="middleName" class="middleName"></li>
+        	<li><h3>Last name *</h3><input type="text" name="lastName"class="lastname" required/></li>
+        	<li><h3>Suffix</h3><select class="suffix">
+        					<option value="">(Select)</option>
+                      </select></li>
+        </ul>
+        
+        <ul>
+        	<li><h3>Phone number *</h3><input type="number" maxlength="3"name="areaCode" class="areaCode" required/> - <input type="number" maxlength="3"name="middle3" class="middle3" required/> - <input type="number" maxlength="4"name="last4" class="last4" required/></li>
+        	<li><h3>Email address *</h3><input type="email" name="email" class="emailAddress" required/><img src="images/questionMark.png" alt="Question" class="questionMark" /></li>
+        </ul>
+        
+        
+        <ul>
+        	<li><h3>Physical residence address line 1 *</h3><input type="text" name="residentAddress1" class="residentAddress1" required/><p class="subText">(No PO box)</li>
+           <li><h3>Physical residence address line 2</h3><input type="text" name="residentAddress2" class="residentAddress2"/><p class="subText">(Number of apartment, unit or other)</li>
+        </ul>
+        
+        
+        <ul>
+        	<li><h3>City *</h3><input type="text" name="city" class="city" required/></li>
+           <li><h3>State *</h3><select class="state">
+           						<option value="">(Select)</option>
+                               </select></li>
+           <li><h3>ZIP code *</h3><input type="number" name="zipcodeCredit" class="zipcodeCredit" required/>-<input type="number" name="zipcodeEnd" class="zipcodeEnd"</li>
+       </ul>
+       
+       <ul>
+       		<li><h3>Country of primary residence *</h3><select class="primaryResidence">
+           						<option value="">(Select country)</option>
+                               </select><img src="images/questionMark.png" alt="Question" class="questionMark" />
+       </ul>
+       
+       <ul>
+       		<li><h3>Would you like your statements sent to a different address? *</h3><input type="radio" name="otherAddress" class="otherAddress" value="currentAddress"/>Yes<input type="radio" name="otherAddress" class="otherAddress" value="differentAddress"/>No</li>
+       </ul>
+       
+        <ul>
+       		<li><h3>Housing status *</h3>
+            <input type="radio" name="housingStatus" class="housingStatus" value="own"/>Own
+            <input type="radio" name="housingStatus" class="housingStatus" value="rent"/>Rent
+            <input type="radio" name="housingStatus" class="housingStatus" value="other"/>Other</li>
+            
+           <li><h3>Monthly housing payment *</h3>
+           $<input type="number" name="monthlyPayment" class="monthlyPayment"/>.00</li>
+       </ul>
+
+		<hr/>
+    
+    	<ul>
+        	<li><h3>Social security number *</h3>
+            <input type="number" maxlength="3"name="first3Social" class="first3Social" required/> - <input type="number" maxlength="2"name="middle2Social" class="middle2Social" required/> - <input type="number" maxlength="4"name="last4Social" class="last4Social" required/><img src="images/questionMark.png" alt="Question" class="questionMark" /></li>
+        	<li><h3>Date of birth *</h3>
+            <select class="monthOfBirth">
+           	<option value="">(Month)</option>
+             </select>
+             
+             <select class="dayOfBirth">
+           	<option value="">(Day)</option>
+             </select>
+             
+             19<input type="number" maxlength="2" name="yearOfBirth" class="yearOfBirth" required/></li>
+        </ul>
+        
+        <ul>
+        	<li><h3>Mother's maiden name*</h3><input type="text" name="maidenName" class="maidenName" required/><img src="images/questionMark.png" alt="Question" class="questionMark" /><p class="subText">
+            </li>
+            <li><h3>Country of citizenship *</h3><select class="citizenship">
+           	<option value="">(Select country)</option>
+             </select>
+        </ul>
+        
+        <ul>
+        	<li><h3>What is your citizenship status? *<img src="images/questionMark.png" alt="Question" class="questionMark" /></h3>
+            <input type="radio" class="citizenshipStatus" name="citizenshipStatus" value="usCitizen"/>U.S. Citizen
+            <div><input type="radio" class="citizenshipStatus" name="citizenshipStatus" value="resAlien"/>Resident Alien</div>
+           </li>
+        </ul>
+ 		<p class="nonResident">Non Resident Alien: Please visit a banking center near you and we will gladly assist you in completing your application. <a href="#">Find a Banking Center</a></p>
+       </div>
+        <br /><br /><br /> 
+<div class="form-block">
+        <div class="form-block-header"><h2>About Your Job</h2></div>
+        
+        <ul>
+        	<li><h3 style="float:left; margin-right: 10px;">Employment Status *</h3>
+            <select class="employmentStatus" style="margin-top:5px;">
+            	<option value="">(Select)</option>
+            </select>
+        </ul>
+ </div>       
+        
+ <br /><br /><br /> 
+
+<div class="form-block">
+        <div class="form-block-header"><h2>About Your Income</h2></div>
+        
+        
+        <div class="allimony"><img src="images/info.png" alt="info" class="infoImage"/>Allimony, child support, or separate maintenance income need not be revealed if you do not wish to have it considered as a basis for repayment.</div>
+        
+        <ul>
+        	<li><h3>Total annual income *</h3>
+            $<input type="number" class="annualIncome" name="annualIncome"/>.00</li>
+       </ul>
+       
+       <ul>
+       		<li><h3>Source of income *</h3>
+            <select class="sourceOfIncome" name="sourceOfIncome">
+            	<option value="">(Select)</option>
+            </select></li>
+       </ul>
+</div>
+ 
+<br /><br /><br /> 
+
+<div class="form-block">
+  <div class="form-block-header"><h2>Terms and Conditions</h2></div>
+  <div class="termsWindow" style="height:300px; width: 90%; overflow:scroll;">
+    <div id="terms">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac congue arcu, non adipiscing enim. Donec vel nisl sed erat luctus auctor quis et metus. Suspendisse potenti. Vivamus non massa velit. Maecenas ut porttitor tellus. Duis vitae imperdiet purus, eget fermentum erat. In vitae aliquet nisl. Cras dignissim posuere fermentum. Nam tincidunt lobortis aliquet. Vestibulum eu sem tincidunt, egestas elit et, gravida eros. In quis urna dignissim, elementum tortor ut, lobortis dolor. Phasellus et lectus lacinia, rhoncus purus quis, tincidunt enim. Curabitur est velit, imperdiet quis vestibulum quis, tincidunt ut justo.  </p>
+<br><br>
+<p>Fusce quam magna, congue quis nunc sed, ornare laoreet dui. Nam nunc metus, eleifend id pharetra sit amet, venenatis ut velit. Vestibulum interdum, turpis lobortis sodales bibendum, leo nisi suscipit nibh, et sollicitudin quam enim non lacus. Donec condimentum, lorem eget tincidunt faucibus, turpis lorem elementum nibh, id vehicula est quam quis ante. Donec ac dui tortor. Aenean aliquet nulla turpis, vitae hendrerit odio consectetur congue. Cras vel elit enim. Vestibulum nisl metus, consectetur et pulvinar in, faucibus sed eros. Cras tincidunt diam in risus placerat, ac consectetur nunc vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac blandit libero. Donec ac ligula at augue tempus molestie at et tortor.  </p>
+<br><br>
+<p>Vestibulum commodo nisl in neque fermentum, vitae ultricies justo molestie. Vivamus sit amet metus sed justo posuere ultrices. Quisque ac leo at felis pellentesque ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus non eros at nunc cursus pharetra ut id mauris. Vestibulum feugiat euismod libero. Etiam sit amet ligula eget metus luctus fermentum. Vestibulum congue velit a dui blandit egestas a sed massa. Ut accumsan massa vel arcu viverra rhoncus. Suspendisse scelerisque risus nec dui pretium molestie. Nam risus nisi, fringilla nec pellentesque id, adipiscing ut sapien.  </p>
+<br><br>
+<p>Nunc velit nisi, vehicula sodales magna nec, semper tincidunt eros. Maecenas dictum feugiat tempus. Nunc commodo neque eget elit viverra, rhoncus porta mauris pulvinar. Sed egestas sit amet magna nec vulputate. Proin tincidunt pharetra justo, a laoreet justo aliquet eget. Cras dui lorem, elementum id ante sed, iaculis imperdiet urna. Donec elit turpis, pulvinar in varius eget, blandit molestie velit. Nullam tincidunt libero venenatis nibh elementum fermentum.  </p>
+<br><br>
+<p>Quisque semper tincidunt lacus, et fermentum augue porta in. Donec eget lobortis lectus. Integer dictum, risus accumsan elementum iaculis, purus nisi ultrices neque, vel varius turpis mauris id velit. Nunc varius nibh purus, ut commodo augue commodo aliquet. Duis porta ornare consectetur. Nunc porttitor ullamcorper ullamcorper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eu lorem lacinia, interdum eros sed, dignissim tellus. Duis tincidunt tellus et nunc venenatis, eu pellentesque orci dapibus. Aenean consequat, tortor et sollicitudin laoreet, velit quam suscipit eros, in egestas elit lorem eu risus. Donec vel lacus a odio rutrum consequat sit amet a augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec feugiat iaculis turpis, id suscipit ante lobortis a. Sed vel ante eros. Vivamus at dui interdum, ornare sem ut, semper eros. Morbi eget justo porttitor, scelerisque </p>
+    </div>
+  </div>
+</div>
+        <div class="learnMoreButton" id="continueCredit"><a class="blueButton" href="#">Continue <span class="orangeSign">&gt;</span></a></div><!--End of Continue Button-->
+</form>
+
+</div><!--End of Mortgage Sign Up Form-->
+
+</div><!--End of Container-->
+</div><!--End of Origin Background-->
+
+<br clear="both" />
+
+<div id="footer_wrapper">
+<div id="footer_box">
+
+<div id="footer"><!--Footer Info-->
+  <div class="footer"><!--Footer 1-->
+    <h3>Products</h3>
+    <ul>
+      <li><a href="#">Origin Digital Marketing Hub</a></li>
+      <li><a href="#">Origin Site</a></li>
+      <li><a href="#">Origin Media DSP</a></li>
+      <li><a href="#">Origin Enterprise DMP</a></li>
+      <li><a href="#">Origin Analytics</a></li>
+    </ul>
+  </div>
+  <!--End of Footer 1-->
+  
+  <div class="footer"><!--Footer 2-->
+    <h3>Marketers</h3>
+  </div>
+  <!--End of Footer 2-->
+  
+  <div class="footer"><!--Footer 3-->
+    <h3>Agencies</h3>
+    <ul>
+      <li><a href="#">Solutions for Agencies</a></li>
+      <li><a href="#">Media Buying</a></li>
+      <li><a href="#">Analytics and Insights</a></li>
+      <li><a href="#">Agency Execs</a></li>
+      <li><a href="#">Experience Developer Partner Program</a></li>
+      <li><a href="#">Facebook Exchange</a></li>
+    </ul>
+    <!--End of Footer 3--> 
+    
+  </div>
+  <div class="footer"><!--Footer 4-->
+    <h3>Privacy</h3>
+    <ul>
+      <li><a href="#">Privacy &amp; Protection</a></li>
+    </ul>
+  </div>
+  <!--End of Footer 4-->
+  
+  <div class="footer"><!--Footer 5-->
+    <h3>About</h3>
+    <ul>
+      <li><a href="#">Company Overview</a></li>
+      <li><a href="#">Press</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Leadership</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Partners</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">SMS Terms &amp; Conditions</a></li>
+    </ul>
+  </div>
+  <!--End of Footer 5-->
+  
+  <div class="footer"><!--Footer 6-->
+  
+  	<div id="extraLinks">
+    <h3><a href="#">GLOSSARY</a></h3>
+    <h3><a href="#">CONTACT</a></h3>
+    <h3><a href="#">SITE MAP</a></h3>
+    </div><!--End of Extra Links-->
+  </div>
+  <!--End of Footer 6--> 
+</div>
+
+<div id="socialNetworks"><!--Footer Aside-->
+  	<h4>FIND US ON</h4>
+   	<div id="socialNetworksImages"><!--Social Media Pictures-->
+    	<a href="#"><div id="blog"></div></a>
+        <a href="#"><div id="facebook"></div></a>
+        <a href="#"><div id="twitter"></div></a>
+       <a href="#"> <div id="linkedIn"></div></a>
+    </div><!--End of Social Media Pictures-->
+    <h4>COMPLIANCE</h4>
+    	<img src="images/compliance.jpg" alt="Compliance"/>
+  </div><!--End of Footer Aside--> 
+</div><!-- End of Footer Box -->
+</div><!-- End of Footer Wrapper -->
+<!--End of Footer Info-->
+</div>
+</body>
+</html>

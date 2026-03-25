@@ -1,0 +1,64 @@
+<?php
+
+include_once('../includes/local-config.php');
+include_once('../includes/config.php');
+include_once($INCLUDES_DIR . 'functions.php');
+
+// if something was posted, start the process...
+if(isset($_POST['upload']))
+{
+
+// define the submitted form into variables
+$addcomments = $_POST['addcomments'];
+$ebcomments = $_POST['ebcomments'];
+$article_id = $_POST['tobereviewed'];
+$decision = $_POST['decision'];
+
+if(!$addcomments){
+	echo "You didn't enter any comments!";
+	die();
+	}
+}
+// connect to the database
+// get a handle to the database
+    @ $db = new mysqli($DB_HOST, $DB_USER_ID, $DB_USER_PWD, $DB_DB_NAME);
+    
+    // check if there was an error connecting to the database
+    if ($db->connect_errno) {
+        echo "Oops! We could not connect to the database.<p>\n This was the error we found: " . $db->connect_error . "\n <p>Please <a href='submit_article.php'>try again</a>";
+        exit;
+    }
+    
+    //write post data to a text file
+    $mynewfile = "reviewof_" . $article_id . "_by_" . $_SESSION['id'] . ".txt"; //trying to append to the title the logged in reviewer
+    $handle = fopen($mynewfile, 'w') or die ('Cannot create file : ' . $mynewfile);
+    
+    $data = "Decision: " . $decision . "\n Comments: " . $addcomments . "\n Comments to EBM: " . $ebcomments;
+    fwrite($handle, $data);
+    //trying to save this to the review_file blob in reviewer table - not sure if the fwrite() functions should go above or below the SQL query.
+    fclose($handle);
+    
+    // the query that will add this review to the database  
+    $query = 'UPDATE reviewer SET review_file = 
+    WHERE reviewer.article_id=article.' . $article_id . 
+    ' AND reviewer.people_id = people.people_id';
+    //Unsure of what my SQL query needs to be here after review_file.
+    
+    $result = $db->query($query);
+    
+    // check if it worked
+    if ($result) {
+        echo "Review was submitted.";
+        echo "<p>";
+        echo "<a href='" . $HOME_URL . "'>Go to your dashboard</a><br>";
+		echo "<a href='" . $ADMIN_URL . "'>Check Database (Testing Purposes)</a><br>";
+    } else {
+        echo "Something went horribly wrong when reviewing article " . $article_id . ".";
+        echo "<p>This was the error: " . $db->error;
+        echo "<p>This was the sql statement: " . $query;
+        echo "<p>Please <a href='" . $REVIEWER_URL . "'>try again<br></a>";
+    }
+       
+    $db->close();
+
+?>

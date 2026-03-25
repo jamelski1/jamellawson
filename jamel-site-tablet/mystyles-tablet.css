@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* CSS Document */
+
+	*{
+		margin:0;
+		padding:0;
+		font-family:arial;	
+		color: #011e8c;
+	}
+	
+	.wrapper{
+		max-width:768px;
+		margin-left:auto;
+		margin-right:auto;
+		overflow:auto;	
+	}
+	
+	.banner{
+		position:relative;
+	}
+	
+	.banner .banner-image{
+		width:100%;
+	}
+	
+	nav{
+		position:absolute;
+		top:15px;
+		right:25px;
+		width:auto;
+	}
+	
+	nav ul li{
+		float:left;
+		list-style:none;
+		margin-left:25px;
+	}
+	
+	nav ul li a{
+		color:#FFFFFF;
+		text-decoration:none;
+		font-size:20px;
+	}
+	
+	.main-content{
+		max-width:768px;	
+		margin-bottom:50px;
+		height:auto;
+		overflow:auto;
+	}
+	
+	h1{
+		font-size:34px;
+		text-align:center;
+		margin-top:60px;
+	}
+	
+	.main-photo{
+		width:100%;
+		margin-top:70px;	
+	}
+	
+	.main-text{
+		width:699px;
+		color: #011e8c;
+		font-size: 19.62px;
+		line-height: 48px;
+		text-indent:50px;
+		text-align:justify;
+	}
+	
+	/*Tablet Skills Page Styles*/
+	
+	.main-content-skill-left, .main-content-education-left, .main-content-skill-right, .main-content-education-right{
+		width:50%;
+		text-align:center;	
+		float:left;
+		line-height:48px;
+		font-size:21.46px;
+	}
+	
+	.main-content-skill-left li, .main-content-skill-right li, .main-content-education-left li, .main-content-education-right li{
+		list-style:none;	
+	}
+	
+	.main-text-skill, .main-text-education{
+		height:100%;	
+		overflow:auto;
+	}
+	
+	/*Tablet Experience Page Styles*/
+	
+	.main-content.experience h2{
+		color: #011e8c;
+		font-size: 26px;
+		text-align:center;
+		margin-top:60px;
+		display:block;
+		clear:both;
+		float:left;
+		width:100%;
+		
+	}
+	
+	.main-content.experience h3{
+		color: #011e8c;
+		font-size: 26px;
+		font-weight: 400;
+		line-height: 48px;
+		transform: scaleY(1);
+		width:50%;
+		float:left;
+		text-align:center;
+		margin-top:40px;
+	}
+	
+	.main-content.experience p{
+		color: #011e8c;
+		font-size: 22px;
+		font-weight: 400;
+		line-height: 48px;
+		transform: scaleY(1);
+		text-align:justify;
+		margin-top:40px;
+		float:left;
+	}
+	
+	/*Tablet Contact Page Styles*/
+	
+	.main-content.contact-tablet .main-content-info-tablet h1{
+		margin-top:30px;	
+		margin-bottom:15px;
+	}
+	.main-content.contact-tablet h2{
+		margin-top:10px;
+		text-align:center;
+		line-height: 48px;
+		color: #011e8e;
+		font-size: 29.99px;
+		font-weight: 400;
+		line-height: 48px;
+		transform: scaleY(1);
+	}
+	
+	.main-content-info-tablet{
+		margin-bottom:60px;	
+	}

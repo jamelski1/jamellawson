@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+
+header, footer{
+}
+header nav{
+	border: 1px, dashed black;
+	float: right;
+}
+header nav a{
+	margin: 10px;
+}
+/*Join articles and sidebar sections with a background image */
+
+section#sidebar {  
+width: 20%;  
+float: right;
+}
+section#articles { 
+	margin: 10px; 
+	float:right; 
+	width: 75%;
+}
+section#articles article {
+	margin: 10px; 
+}
+footer {
+	clear: both;
+}
+article hgroup{
+	margin: 0.67em 0px;
+}
+article hgroup * {
+	margin: 0px;
+}
+article h3 {
+	font-size: 1em;
+}
+article h4 {
+	font-size: 0.67em;
+}
+aside { 
+	border: 1px solid;
+	max width: 20%; 
+	float: right;
+}
+figure { border: 1px solid;
+margin: 10px;
+padding: 10px; float: left;
+padding-bottom: 50px;
+background-color: white;
+}
+figure img {
+	border: 1px solid;
+	padding: 5px;
+	background-color: white;
+}
+#article2{
+	clear: left  ;
+}

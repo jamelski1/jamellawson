@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article 1: From Scratch to Python, Naomi!</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 0 auto;
+            background: white;
+            box-sizing: border-box;
+            page-break-after: always;
+        }
+        .page:last-child {
+            page-break-after: auto;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .byline {
+            text-align: center;
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+        .series-note {
+            text-align: center;
+            background: #e3f2fd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #1976d2;
+        }
+        h2 {
+            color: #2980b9;
+            font-size: 22px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 15px;
+            color: #34495e;
+        }
+        .code-box {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+        .code-box code {
+            display: block;
+            white-space: pre;
+        }
+        .scratch-box {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+        }
+        .comparison-box {
+            background: #f3e5f5;
+            border: 2px solid #9c27b0;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 5px;
+            font-weight: bold;
+        }
+        .image-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .tip-box {
+            background: #e8f5e9;
+            border: 2px solid #4caf50;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .tip-box h3 {
+            color: #2e7d32;
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .arrow {
+            text-align: center;
+            font-size: 24px;
+            color: #9c27b0;
+            margin: 10px 0;
+        }
+        .next-article {
+            background: #fff9c4;
+            border: 2px solid #fbc02d;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1>🐍 Article 1: From Scratch to Python! 🐍</h1>
+        <div class="byline">Written especially for you by Uncle Mel</div>
+        <div class="series-note">Part 1 of 3: Understanding the Basics</div>
+        
+        <div class="image-container">
+            <img src="article_1_image.png" alt="Young girl coding">
+        </div>
+
+        <h2>Hey Naomi!</h2>
+        <p>
+            You've been doing an awesome job learning Scratch! Now you're ready for the next level: Python! Here's the cool part – everything you already know from Scratch works in Python too. Python is like Scratch without the colorful blocks. Instead of dragging blocks, you'll type commands, but the ideas are exactly the same!
+        </p>
+
+        <h2>You Already Know How to Code!</h2>
+        <p>
+            Remember all those Scratch projects you've been making? Every single thing you learned applies to Python. Let me show you how the Scratch blocks you know match up with Python code.
+        </p>
+
+        <h2>From Scratch Blocks to Python Code</h2>
+        <p><strong>Saying Things (The "say" block):</strong></p>
+        <div class="scratch-box">
+            <strong>In Scratch:</strong> You use the purple "say" block<br>
+            📦 say [Hello, Naomi!]
+        </div>
+        <div class="arrow">⬇️ This becomes ⬇️</div>
+        <div class="code-box">
+<code><strong>In Python:</strong>
+print("Hello, Naomi!")</code>
+        </div>
+
+        <p>
+            See? The <span class="highlight">print()</span> command in Python does exactly what the "say" block does in Scratch!
+        </p>
+
+        <div class="comparison-box">
+            <h3>🎯 Your First Python Program - Just Like Scratch!</h3>
+            <p>Remember making the Scratch cat say multiple things? Here's the same idea in Python:</p>
+            <div class="code-box">
+<code>print("Hello, Naomi!")
+print("Welcome to Python programming!")
+print("Trinity and Ezra think you're cool!")
+print("Mom and Dad are proud of you!")</code>
+            </div>
+            <p>Each <span class="highlight">print()</span> line is like adding another "say" block in Scratch!</p>
+        </div>
+
+        <h2>Variables Work the Same Way!</h2>
+        <p><strong>Storing Information:</strong></p>
+        <div class="scratch-box">
+            <strong>In Scratch:</strong> You make a variable and set it<br>
+            📦 set [my name] to [Naomi]<br>
+            📦 set [my age] to [11]
+        </div>
+        <div class="arrow">⬇️ This becomes ⬇️</div>
+        <div class="code-box">
+<code><strong>In Python:</strong>
+my_name = "Naomi"
+my_age = 11
+sister = "Trinity"
+brother = "Ezra"
+
+print(my_name)
+print("I am", my_age, "years old")</code>
+        </div>
+
+        <p>
+            In Python, we use the equals sign (=) instead of a "set" block, but it does the exact same thing – it stores information so we can use it later!
+        </p>
+    </div>
+
+    <div class="page">
+        <h2>Making Decisions (If-Then):</h2>
+        <div class="scratch-box">
+            <strong>In Scratch:</strong> You use yellow "if-then" blocks<br>
+            📦 if &lt;age > 10&gt; then<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;📦 say [You're old enough to code!]
+        </div>
+        <div class="arrow">⬇️ This becomes ⬇️</div>
+        <div class="code-box">
+<code><strong>In Python:</strong>
+age = 11
+if age > 10:
+    print("You're old enough to code!")</code>
+        </div>
+
+        <p>
+            Notice the colon (:) at the end and the indent (spaces) before print? That's how Python knows what happens inside the "if" – just like how Scratch blocks fit inside each other!
+        </p>
+
+        <h2>Repeating Things (Loops):</h2>
+        <div class="scratch-box">
+            <strong>In Scratch:</strong> You use orange "repeat" blocks<br>
+            📦 repeat [3]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;📦 say [Hello!]
+        </div>
+        <div class="arrow">⬇️ This becomes ⬇️</div>
+        <div class="code-box">
+<code><strong>In Python:</strong>
+for i in range(3):
+    print("Hello!")</code>
+        </div>
+
+        <p>
+            This will print "Hello!" three times, just like the Scratch repeat block!
+        </p>
+
+        <div class="tip-box">
+            <h3>💡 Remember Your Cat Art Project?</h3>
+            <p>In Scratch, you made the cat sprite follow the mouse pointer and change colors! Here's how you'd do something similar in Python:</p>
+            <div class="code-box">
+<code># In your Cat Art project, you used:
+# "go to mouse-pointer" block
+# "change color effect by 25" block
+# "forever" loop
+
+# In Python, we'd write it like this:
+colors = ["red", "orange", "yellow", "green", "blue", "purple"]
+
+for color in colors:
+    print("The cat is now", color, "!")
+    print("🐱")</code>
+            </div>
+            <p>The Scratch "forever" loop becomes Python's "for" loop. The "change color" block becomes our list of colors!</p>
+        </div>
+
+        <h2>Math Works the Same Too!</h2>
+        <div class="comparison-box">
+            <p><strong>Both Scratch and Python can do math:</strong></p>
+            <div class="code-box">
+<code>my_age = 11
+trinity_age = 8
+age_difference = my_age - trinity_age
+print("I am", age_difference, "years older than Trinity")</code>
+            </div>
+            <p>Just like Scratch's green operator blocks, Python can add (+), subtract (-), multiply (*), and divide (/).</p>
+        </div>
+
+        <h2>What Makes Python Different?</h2>
+        <p>
+            <strong>You Type Instead of Drag:</strong> In Scratch, you drag blocks. In Python, you type the commands. It's faster once you learn it!
+        </p>
+        <p>
+            <strong>More Power:</strong> Python can do everything Scratch does, plus way more! Professional programmers use Python to build real websites, apps, and games.
+        </p>
+        <p>
+            <strong>You're Growing Up as a Coder:</strong> Scratch taught you to think like a programmer. Python lets you code like a professional!
+        </p>
+
+        <div class="next-article">
+            <h3>📖 Coming Next: Article 2</h3>
+            <p><strong>"Advanced Python: Random Numbers, User Input & More!"</strong></p>
+            <p>In the next article, you'll learn about the cool stuff from your Animal Race and Ask Gobo projects in Python!</p>
+        </div>
+
+        <div class="footer">
+            You're already a coder, Naomi! Python is just your next adventure!<br>
+            Keep creating, keep learning, and remember – you've got this!<br>
+            <strong>Uncle Mel</strong> 💙
+        </div>
+    </div>
+</body>
+</html>

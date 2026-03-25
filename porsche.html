@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Open Relationship Starter Survey (Beginner‑Friendly)</title>
+  <style>
+    :root{
+      --bg:#0f1221; --card:#141832; --ink:#e8e9ff; --muted:#a9add6; --accent:#7c9cff; --accent-2:#61e9c3; --danger:#ff6b6b;
+      --radius:16px; --radius-sm:10px; --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    html,body{height:100%;}
+    body{margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; background:linear-gradient(180deg,#0a0d1b,#111536 50%,#0a0d1b); color:var(--ink);} 
+    .wrap{max-width:1000px; margin:24px auto 96px; padding:0 16px;}
+    .card{background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:28px;}
+    h1{font-size: clamp(1.6rem, 1.1rem + 2vw, 2.4rem); margin:0 0 10px;}
+    h2{font-size: clamp(1.2rem, 1rem + 1vw, 1.6rem); margin:28px 0 12px;}
+    h3{font-size:1.05rem; margin:20px 0 10px; color:var(--accent-2)}
+    p, li, label{line-height:1.55}
+    .muted{color:var(--muted)}
+    .grid{display:grid; gap:14px}
+    .two{grid-template-columns: repeat(2, minmax(0,1fr));}
+    .three{grid-template-columns: repeat(3, minmax(0,1fr));}
+    .four{grid-template-columns: repeat(4, minmax(0,1fr));}
+    .controls{position:sticky; top:0; z-index:10; padding:10px 0 16px; backdrop-filter: blur(6px);} 
+    .bar{height:8px; background:#23274d; border-radius:999px; overflow:hidden}
+    .bar>span{display:block; height:100%; width:0%; background: linear-gradient(90deg, var(--accent), var(--accent-2)); transition:width .25s ease}
+    .btn{appearance:none; border:0; background: linear-gradient(135deg, var(--accent), #5c79ff); color:white; padding:12px 16px; border-radius:12px; font-weight:700; box-shadow: 0 6px 18px rgba(92,121,255,.35); cursor:pointer}
+    .btn.secondary{background:#232860; box-shadow:none}
+    .btn.ghost{background:transparent; border:1px solid #2a2f66}
+    .btn.danger{background: linear-gradient(135deg, #ff7a7a, #ff5252)}
+    .row{display:flex; flex-wrap:wrap; gap:10px; align-items:center}
+    details{background:#111534; border:1px solid #2a2f66; border-radius: var(--radius-sm); padding:14px 16px;}
+    details summary{cursor:pointer; font-weight:700}
+    .glossary li{margin:.35rem 0}
+    fieldset{border:1px solid #2a2f66; border-radius: var(--radius-sm); padding:16px;}
+    legend{padding:0 6px; color:var(--muted)}
+    .q{margin:10px 0}
+    .stack{display:flex; flex-direction:column; gap:8px}
+    .pill{display:inline-flex; align-items:center; gap:8px; background:#1a1f47; padding:8px 10px; border-radius:999px}
+    input[type="text"], input[type="number"], textarea{width:100%; background:#0e1230; color:var(--ink); border:1px solid #2a2f66; border-radius:10px; padding:10px;}
+    textarea{min-height:100px;}
+    table{width:100%; border-collapse:collapse;}
+    th, td{border:1px solid #2a2f66; padding:10px; text-align:left}
+    th{background:#10143a; color:var(--muted)}
+    .likert th, .likert td{text-align:center}
+    .hint{font-size:.9rem; color:var(--muted)}
+    .footer{margin-top:28px; color:var(--muted); font-size:.9rem}
+    .badge{font-size:.8rem; background:#1a1f47; color:var(--muted); border-radius:999px; padding:6px 10px;}
+    .notice{border-left:4px solid var(--accent); padding:10px 14px; background:#10143a; border-radius:8px}
+    .success{border-left-color:#66e5c2}
+    .dangerous{border-left-color:#ff6b6b}
+    .spacer{height:10px}
+    @media (max-width:720px){ .two, .three, .four{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="controls">
+      <div class="row">
+        <button class="btn" id="saveJson">Export Responses (JSON)</button>
+        <button class="btn secondary" id="copyJson">Copy JSON</button>
+        <button class="btn ghost" id="importJson">Import JSON</button>
+        <button class="btn ghost" id="printBtn">Print / Save PDF</button>
+        <span class="badge" id="autosaveMsg">Autosaved</span>
+      </div>
+      <div class="spacer"></div>
+      <div class="bar" aria-label="completion"><span id="progress"></span></div>
+    </div>
+
+    <div class="card">
+      <h1>Open Relationship Starter Survey (Beginner‑Friendly)</h1>
+      <p class="muted">For couples exploring openness for the first time — designed to teach options while capturing preferences. Answer honestly for <em>today</em>; you can revise later.</p>
+      <details>
+        <summary>Mini‑Glossary (plain language)</summary>
+        <ul class="glossary">
+          <li><b>Open relationship</b>: Sex with others allowed; your relationship stays the primary emotional home.</li>
+          <li><b>Polyamory</b>: Ability to form romantic and/or sexual connections with multiple people consensually.</li>
+          <li><b>Metamour</b>: Your partner’s partner (someone you may or may not interact with).</li>
+          <li><b>Compersion</b>: Warm, happy feeling when your partner has joy with someone else (often seen as the opposite of jealousy).</li>
+          <li><b>NRE</b>: New Relationship Energy — early‑stage excitement that can distort time and priorities.</li>
+          <li><b>Parallel vs. Kitchen‑table</b>: Parallel = minimal overlap; Kitchen‑table = everyone can comfortably hang out.</li>
+          <li><b>DADT</b>: Don’t‑Ask‑Don’t‑Tell (minimal sharing). Not recommended for beginners.</li>
+        </ul>
+      </details>
+    </div>
+
+    <form id="survey" class="card" autocomplete="on">
+      <!-- 1) About You & Context -->
+      <h2>1) About You & Current Context</h2>
+      <div class="grid two">
+        <label class="pill"><input type="checkbox" name="context.newly_dating"/> We’re newly dating (&lt; 3 months)</label>
+        <label class="pill"><input type="checkbox" name="context.building_serious"/> We’re building toward something serious</label>
+        <label class="pill"><input type="checkbox" name="context.unsure_fit"/> We’re unsure of long‑term fit yet</label>
+        <label class="pill"><input type="checkbox" name="context.long_distance"/> We’re long‑distance or semi‑long‑distance</label>
+        <label class="pill"><input type="checkbox" name="context.colocated_weekly"/> We’re co‑located and see each other weekly</label>
+        <label class="pill"><input type="checkbox" name="context.exclusive_now"/> We currently consider ourselves exclusive</label>
+        <label class="pill"><input type="checkbox" name="context.open_light"/> Open to exploring (light)</label>
+        <label class="pill"><input type="checkbox" name="context.reassess_trial"/> Reassess after a 30–60 day trial</label>
+      </div>
+
+      <!-- 2) Familiarity & Comfort (Likert) -->
+      <h2>2) Familiarity & Comfort</h2>
+      <p class="hint">Rate each from Strongly Disagree → Strongly Agree</p>
+      <table class="likert">
+        <thead>
+          <tr><th style="text-align:left">Statement</th><th>SD</th><th>D</th><th>N</th><th>A</th><th>SA</th></tr>
+        </thead>
+        <tbody id="likert-body"></tbody>
+      </table>
+
+      <!-- 3) Intentions & Values -->
+      <h2>3) Intentions & Values</h2>
+      <h3>Primary reasons I’m curious (check all)</h3>
+      <div class="grid two">
+        <label class="pill"><input type="checkbox" name="intent.sexual_exploration"/> Sexual exploration / novelty</label>
+        <label class="pill"><input type="checkbox" name="intent.romantic_exploration"/> Romantic exploration / multiple loves</label>
+        <label class="pill"><input type="checkbox" name="intent.autonomy_growth"/> Autonomy and personal growth</label>
+        <label class="pill"><input type="checkbox" name="intent.community"/> Community / friendships in ENM spaces</label>
+        <label class="pill"><input type="checkbox" name="intent.kink"/> Kink exploration</label>
+        <label class="pill"><input type="checkbox" name="intent.travel_only"/> Travel‑only exploration</label>
+        <label class="pill"><input type="checkbox" name="intent.curiosity"/> I’m just curious / not sure yet</label>
+      </div>
+
+      <h3>Top values to protect (choose up to 5)</h3>
+      <div class="grid two" id="values-grid">
+        <label class="pill"><input type="checkbox" name="values.honesty"/> Honesty / transparency</label>
+        <label class="pill"><input type="checkbox" name="values.emotional_safety"/> Emotional safety</label>
+        <label class="pill"><input type="checkbox" name="values.time_reliability"/> Time reliability / consistency</label>
+        <label class="pill"><input type="checkbox" name="values.sexual_health"/> Sexual health</label>
+        <label class="pill"><input type="checkbox" name="values.kindness"/> Kindness / respect</label>
+        <label class="pill"><input type="checkbox" name="values.autonomy"/> Autonomy / independence</label>
+        <label class="pill"><input type="checkbox" name="values.stability"/> Stability / predictability</label>
+        <label class="pill"><input type="checkbox" name="values.adventure"/> Adventure / play</label>
+        <label class="pill"><input type="checkbox" name="values.discretion"/> Discretion / privacy</label>
+        <label class="pill"><input type="checkbox" name="values.equality"/> Equality / non‑hierarchy</label>
+      </div>
+      <p class="hint" id="values-hint"></p>
+
+      <!-- 4) Preferred Relationship Structure -->
+      <h2>4) Preferred Relationship Structure</h2>
+      <p class="hint">Pick one per row: Now / Maybe later / No</p>
+      <table>
+        <thead><tr><th style="text-align:left">Structure</th><th>Now</th><th>Maybe later</th><th>No</th></tr></thead>
+        <tbody id="structure-rows"></tbody>
+      </table>
+
+      <!-- 5) Sexual Health & Safer Sex -->
+      <h2>5) Sexual Health & Safer Sex</h2>
+      <h3>Testing cadence I’m comfortable with</h3>
+      <div class="stack">
+        <label><input type="checkbox" name="health.testing.before_first"/> Before first sexual contact with a new partner</label>
+        <label><input type="checkbox" name="health.testing.q3"/> Every 3 months while active with others</label>
+        <label><input type="checkbox" name="health.testing.q6"/> Every 6 months while active with others</label>
+        <label><input type="checkbox" name="health.testing.symptoms_only"/> Only if risk event/symptoms (not recommended)</label>
+      </div>
+      <h3>Barriers / practices I require with new partners</h3>
+      <div class="stack">
+        <label><input type="checkbox" name="health.barriers.intercourse"/> Condoms / barriers for intercourse</label>
+        <label><input type="checkbox" name="health.barriers.oral"/> Barriers for oral sex</label>
+        <label><input type="checkbox" name="health.barriers.until_results"/> Barriers until test results exchanged</label>
+        <label><input type="checkbox" name="health.barriers.unless_agreed"/> Barriers unless we agree otherwise after discussion</label>
+      </div>
+      <h3>Disclosure expectations</h3>
+      <div class="stack">
+        <label><input type="checkbox" name="health.disclosure.before_first"/> Tell me before first sexual contact with others</label>
+        <label><input type="checkbox" name="health.disclosure.within_24h"/> Tell me within 24 hours after sexual contact</label>
+        <label><input type="checkbox" name="health.disclosure.risk_change"/> Share risk changes (e.g., barrier break, new test result) ASAP</label>
+        <label><input type="checkbox" name="health.disclosure.share_tests"/> Share testing dates and results proactively</label>
+      </div>
+
+      <!-- 6) Information Sharing -->
+      <h2>6) Information Sharing Preferences</h2>
+      <h3>What I want to know about dates</h3>
+      <div class="stack">
+        <label><input type="radio" name="info.level" value="minimal"/> Minimal: a date is happening (no details)</label>
+        <label><input type="radio" name="info.level" value="basic"/> Basic: first name + general plan</label>
+        <label><input type="radio" name="info.level" value="moderate"/> Moderate: name + where/when + whether sexual activity occurred</label>
+        <label><input type="radio" name="info.level" value="full"/> Full: name + details + emotional temperature check</label>
+      </div>
+      <h3>When to share</h3>
+      <div class="grid two">
+        <label class="pill"><input type="checkbox" name="info.when.before_sched"/> Before scheduling</label>
+        <label class="pill"><input type="checkbox" name="info.when.when_sched"/> When scheduled (time/place)</label>
+        <label class="pill"><input type="checkbox" name="info.when.before_leaving"/> Before leaving for the date</label>
+        <label class="pill"><input type="checkbox" name="info.when.after_same_night"/> After the date (same night)</label>
+        <label class="pill"><input type="checkbox" name="info.when.next_day"/> Next‑day debrief</label>
+        <label class="pill"><input type="checkbox" name="info.when.only_if_recurring"/> Only if becoming recurring / sexual</label>
+      </div>
+
+      <!-- 7) Time Management & Scheduling -->
+      <h2>7) Time Management & Scheduling</h2>
+      <h3>‘Us‑time’ commitments</h3>
+      <div class="stack">
+        <label><input type="checkbox" name="time.us.weekly_date"/> Weekly date night (protected)</label>
+        <label><input type="checkbox" name="time.us.daily_checkins"/> Morning/evening check‑ins (10–15 min)</label>
+        <label><input type="checkbox" name="time.us.weekend_activity"/> Weekend activity twice per month</label>
+        <label><input type="checkbox" name="time.us.one_overnight"/> At least one overnight together per week</label>
+      </div>
+      <h3>Overnights with others</h3>
+      <div class="stack">
+        <label><input type="radio" name="time.overnights" value="no"/> Not okay now</label>
+        <label><input type="radio" name="time.overnights" value="notice"/> Okay with ≥48h notice</label>
+        <label><input type="radio" name="time.overnights" value="preagree"/> Okay without notice if pre‑agreed schedule</label>
+        <label><input type="radio" name="time.overnights" value="after_trial"/> Okay once trust is established (after trial)</label>
+      </div>
+      <h3>Frequency caps</h3>
+      <div class="grid two">
+        <label class="pill"><input type="checkbox" name="time.caps.max_new_partner"/> Max 1 new partner per month</label>
+        <label class="pill"><input type="checkbox" name="time.caps.max_dates_week"/> Max 1–2 dates per week</label>
+        <label class="pill"><input type="checkbox" name="time.caps.max_overnights"/> Max 2 overnights with others per month</label>
+        <label class="pill"><input type="checkbox" name="time.caps.no_caps"/> No caps (trust + transparency)</label>
+      </div>
+      <h3>Calendar transparency</h3>
+      <div class="stack">
+        <label><input type="radio" name="time.calendar" value="shared"/> Shared calendar for ENM plans</label>
+        <label><input type="radio" name="time.calendar" value="separate"/> Keep calendars separate</label>
+        <label><input type="radio" name="time.calendar" value="blocked"/> Share only blocked time (no labels)</label>
+      </div>
+
+      <!-- 8) Boundaries & Comfort Zones -->
+      <h2>8) Boundaries & Comfort Zones</h2>
+      <p class="hint">For each row: Not okay now / Maybe later / Okay now</p>
+      <table>
+        <thead><tr><th style="text-align:left">Boundary</th><th>Not ok</th><th>Maybe</th><th>Okay</th></tr></thead>
+        <tbody id="boundary-rows"></tbody>
+      </table>
+      <h3>Dating apps / online</h3>
+      <div class="stack">
+        <label><input type="checkbox" name="apps.okay"/> Okay to use dating apps</label>
+        <label><input type="checkbox" name="apps.list_enm"/> List “ENM / ethically non‑monogamous” on profile</label>
+        <label><input type="checkbox" name="apps.share_profile"/> Share profile for alignment before meets</label>
+        <label><input type="checkbox" name="apps.no_home_photos"/> No photos from our home shown publicly</label>
+      </div>
+
+      <!-- 9) Metamours & Social Boundaries -->
+      <h2>9) Metamours & Social Boundaries</h2>
+      <h3>Meeting metamours</h3>
+      <div class="stack">
+        <label><input type="radio" name="meta.meet" value="early"/> Prefer to meet early (safety/comfort)</label>
+        <label><input type="radio" name="meta.meet" value="later"/> Open to meeting later</label>
+        <label><input type="radio" name="meta.meet" value="parallel"/> Prefer parallel (no meetings)</label>
+      </div>
+      <h3>Social media & community</h3>
+      <div class="stack">
+        <label><input type="checkbox" name="meta.follow_ok"/> Okay to follow/DM metamours</label>
+        <label><input type="checkbox" name="meta.no_social"/> Prefer boundaries: no social media connections</label>
+        <label><input type="checkbox" name="meta.events_ok"/> Okay to attend community events together</label>
+      </div>
+
+      <!-- 10) Hierarchy & Decisions -->
+      <h2>10) Hierarchy & Decision‑Making</h2>
+      <h3>Relationship structure</h3>
+      <div class="stack">
+        <label><input type="radio" name="hier.structure" value="primary_soft"/> We are each other’s primary partners (soft hierarchy)</label>
+        <label><input type="radio" name="hier.structure" value="no_hierarchy"/> No hierarchy</label>
+        <label><input type="radio" name="hier.structure" value="undecided"/> Undecided — discuss after trial</label>
+      </div>
+      <h3>Influence rules</h3>
+      <div class="stack">
+        <label><input type="radio" name="hier.influence" value="no_veto"/> No vetoes — use pause + discuss</label>
+        <label><input type="radio" name="hier.influence" value="soft_veto"/> Soft veto (temporary pause for safety/emotional reasons)</label>
+        <label><input type="radio" name="hier.influence" value="hard_veto"/> Hard veto allowed (not recommended)</label>
+      </div>
+      <h3>Budgeting</h3>
+      <div class="stack">
+        <label>Per‑date spend cap: <input type="text" name="budget.per_date" placeholder="$…"/></label>
+        <label>Monthly ENM budget cap: <input type="text" name="budget.monthly" placeholder="$…"/></label>
+        <label>Notify if spend &gt; <input type="text" name="budget.notify_over" placeholder="$…"/> or for travel</label>
+      </div>
+
+      <!-- 11) Safety & Logistics -->
+      <h2>11) Safety & Logistics</h2>
+      <div class="grid two">
+        <label class="pill"><input type="checkbox" name="safety.live_location"/> Share live location during first dates</label>
+        <label class="pill"><input type="checkbox" name="safety.safe_buddy"/> Have a safe‑call/text buddy</label>
+        <label class="pill"><input type="checkbox" name="safety.no_intox"/> No intoxicated consent (substance boundaries)</label>
+        <label class="pill"><input type="checkbox" name="safety.transport"/> Transportation plan for late nights</label>
+      </div>
+
+      <!-- 12) Reassurance & Aftercare -->
+      <h2>12) Reassurance & Aftercare</h2>
+      <div class="grid two">
+        <label class="pill"><input type="checkbox" name="aftercare.ritual"/> Affection ritual before/after outside dates</label>
+        <label class="pill"><input type="checkbox" name="aftercare.home_text"/> Short “I’m safe home” text</label>
+        <label class="pill"><input type="checkbox" name="aftercare.debrief"/> 30‑minute debrief next day</label>
+        <label class="pill"><input type="checkbox" name="aftercare.words"/> Words of affirmation</label>
+        <label class="pill"><input type="checkbox" name="aftercare.buffer"/> Quality‑time buffer after experiences</label>
+      </div>
+
+      <!-- 13) Conflict & Repair -->
+      <h2>13) Conflict & Repair</h2>
+      <div class="stack">
+        <label><input type="checkbox" name="repair.codeword"/> Use a code‑word to pause when flooded</label>
+        <label><input type="checkbox" name="repair.pause_after_red"/> If either calls <span style="color:var(--danger)">Red</span>, pause outside dating for <input type="number" min="0" name="repair.pause_days" style="width:90px" placeholder="days"/> days</label>
+        <label><input type="checkbox" name="repair.schedule"/> Schedule a repair talk within 24–72 hours</label>
+        <label><input type="checkbox" name="repair.therapy"/> Consider a poly‑affirming therapist/coach if stuck</label>
+      </div>
+
+      <!-- 14) Check‑Ins & Revision -->
+      <h2>14) Check‑Ins & Revision</h2>
+      <div class="grid two">
+        <label class="pill"><input type="checkbox" name="checkins.weekly15"/> Weekly 15‑minute check‑in</label>
+        <label class="pill"><input type="checkbox" name="checkins.biweekly30"/> Bi‑weekly 30‑minute check‑in</label>
+        <label class="pill"><input type="checkbox" name="checkins.monthly60"/> Monthly 60‑minute deep review</label>
+        <label class="pill"><input type="checkbox" name="checkins.trial30"/> 30‑day trial — then revise what worked/what didn’t</label>
+      </div>
+
+      <!-- 15) Dealbreakers -->
+      <h2>15) Dealbreakers & Pause Conditions</h2>
+      <div class="grid two">
+        <label class="pill"><input type="checkbox" name="dealbreakers.lying"/> Lying / hiding dates or sexual activity</label>
+        <label class="pill"><input type="checkbox" name="dealbreakers.safersex"/> Breaking safer‑sex agreements</label>
+        <label class="pill"><input type="checkbox" name="dealbreakers.time_home"/> Disrespecting time or home boundaries</label>
+        <label class="pill"><input type="checkbox" name="dealbreakers.no_repair"/> Unwillingness to communicate or repair</label>
+        <label class="pill"><input type="checkbox" name="dealbreakers.depletion"/> Ongoing depletion (we feel worse, not better)</label>
+        <label class="pill"><input type="checkbox" name="dealbreakers.substance"/> Substance‑related safety concern</label>
+        <label class="pill"><input type="checkbox" name="dealbreakers.sti_disclosure"/> STI diagnosis not disclosed promptly</label>
+      </div>
+
+      <!-- 16) Open‑Ended -->
+      <h2>16) Open‑Ended Questions</h2>
+      <div class="stack">
+        <label>What excites you most about trying openness?
+          <textarea name="open.excites"></textarea>
+        </label>
+        <label>What scares or worries you the most?
+          <textarea name="open.worries"></textarea>
+        </label>
+        <label>What would make you feel deeply safe and cared for as we try this?
+          <textarea name="open.safe"></textarea>
+        </label>
+        <label>Name your top three boundaries we should protect.
+          <textarea name="open.top_boundaries"></textarea>
+        </label>
+        <label>If jealousy shows up, how would you like support in the moment and afterward?
+          <textarea name="open.jealousy_support"></textarea>
+        </label>
+        <label>Describe your ideal first 60 days of opening up.
+          <textarea name="open.first60"></textarea>
+        </label>
+        <label>What would make you want to pause or close the relationship for a while?
+          <textarea name="open.pause_conditions"></textarea>
+        </label>
+        <label>How can we celebrate ‘wins’ (connection, growth, honesty) together?
+          <textarea name="open.celebrate"></textarea>
+        </label>
+        <label>Anything else you want me to understand about you, your history, or your needs?
+          <textarea name="open.anything_else"></textarea>
+        </label>
+      </div>
+
+      <div class="footer">Tip: You can always move items from “Maybe later” → “Okay now” (or back) as you learn together.</div>
+    </form>
+
+    <div class="card notice success" id="status" aria-live="polite" style="display:none"></div>
+  </div>
+
+  <script>
+    // ===== Data definitions from the survey =====
+    const likertStatements = [
+      "I understand the difference between an open relationship and polyamory.",
+      "I’m comfortable discussing jealousy and insecurity openly.",
+      "I know basic STI prevention and testing practices.",
+      "I can say ‘no’ or ‘pause’ without fearing retaliation.",
+      "I’m comfortable scheduling and planning time transparently.",
+      "I’m open to meeting a metamour (partner’s partner) in the future.",
+      "I can maintain our connection even when NRE shows up.",
+      "I feel respected and emotionally safe with my partner.",
+      "I’m okay revising boundaries as we learn.",
+      "I have (or will find) outside support (friend/coach/therapist)."
+    ];
+
+    const structures = [
+      "Monogamish (mostly us; rare extras together)",
+      "Open (sexual non‑exclusivity; emotional exclusivity)",
+      "Polyamory (romantic +/− sexual with others)",
+      "Parallel poly (minimal intertwining between partners)",
+      "Kitchen‑table poly (comfortable social overlap)",
+      "Swinging (experiences together / parties)",
+      "Threesomes only (together)",
+      "Solo poly (high autonomy, independent households)",
+      "Casual dating only (no romantic entanglement)",
+      "Friends‑with‑benefits only",
+      "DADT (not recommended for beginners)"
+    ];
+
+    const boundaries = [
+      "Kissing with others",
+      "Dates at our home",
+      "Sleepovers at our home",
+      "Partner meeting my friends",
+      "I meet metamours",
+      "PDA with others in public",
+      "Travel with others (overnight trips)",
+      "Using pet names / ‘I love you’ with others",
+      "Posting about others on social media",
+      "Introducing others to family"
+    ];
+
+    // ===== Render dynamic tables =====
+    function renderLikert(){
+      const tbody = document.getElementById('likert-body');
+      tbody.innerHTML = '';
+      likertStatements.forEach((text, i) => {
+        const tr = document.createElement('tr');
+        const tdLabel = document.createElement('td'); tdLabel.style.textAlign = 'left'; tdLabel.textContent = text; tr.appendChild(tdLabel);
+        ['sd','d','n','a','sa'].forEach((val, idx) => {
+          const td = document.createElement('td');
+          const id = `likert_${i}_${val}`;
+          td.innerHTML = `<input type="radio" id="${id}" name="likert.${i}" value="${val}" aria-label="${val.toUpperCase()}">`;
+          tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+      });
+    }
+
+    function renderStructures(){
+      const tbody = document.getElementById('structure-rows');
+      tbody.innerHTML = '';
+      structures.forEach((label, i) => {
+        const tr = document.createElement('tr');
+        const l = document.createElement('td'); l.textContent = label; tr.appendChild(l);
+        ['now','maybe','no'].forEach(state => {
+          const td = document.createElement('td');
+          const id = `structure_${i}_${state}`;
+          td.innerHTML = `<input type="radio" id="${id}" name="structure.${i}" value="${state}">`;
+          tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+      });
+    }
+
+    function renderBoundaries(){
+      const tbody = document.getElementById('boundary-rows');
+      tbody.innerHTML = '';
+      boundaries.forEach((label, i) => {
+        const tr = document.createElement('tr');
+        const l = document.createElement('td'); l.textContent = label; tr.appendChild(l);
+        ['not_ok','maybe','ok'].forEach(state => {
+          const td = document.createElement('td');
+          const id = `boundary_${i}_${state}`;
+          td.innerHTML = `<input type="radio" id="${id}" name="boundary.${i}" value="${state}">`;
+          tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+      });
+    }
+
+    renderLikert(); renderStructures(); renderBoundaries();
+
+    // ===== Values selection limit (choose up to 5) =====
+    const valuesGrid = document.getElementById('values-grid');
+    const valuesHint = document.getElementById('values-hint');
+    valuesGrid.addEventListener('change', () => {
+      const boxes = valuesGrid.querySelectorAll('input[type="checkbox"]');
+      const checked = Array.from(boxes).filter(b => b.checked);
+      if(checked.length > 5){
+        // uncheck the last one toggled on
+        const target = document.activeElement && document.activeElement.type === 'checkbox' ? document.activeElement : checked[checked.length-1];
+        target.checked = false;
+        showStatus('You can choose up to 5 top values.');
+      }
+      valuesHint.textContent = `Selected ${Array.from(boxes).filter(b=>b.checked).length}/5`;
+    });
+
+    // ===== Serialization helpers =====
+    function formToObject(form){
+      const obj = {};
+      const fd = new FormData(form);
+
+      // include unchecked radios by iterating all controls
+      form.querySelectorAll('input, textarea').forEach(el => {
+        const name = el.name; if(!name) return;
+        const path = name.split('.');
+        let ref = obj; for(let i=0;i<path.length-1;i++){ ref[path[i]] = ref[path[i]] || {}; ref = ref[path[i]]; }
+        const key = path[path.length-1];
+        if(el.type === 'checkbox'){
+          // multiple checkboxes with same name: convert to boolean if unique, or array if repeated
+          if(ref[key] === undefined) ref[key] = false;
+          if(el.checked){
+            if(typeof ref[key] === 'boolean' && ref[key] === false){ ref[key] = true; }
+            else{ // promote to array
+              ref[key] = Array.isArray(ref[key]) ? ref[key] : (ref[key] === true ? [true] : []);
+              ref[key].push(true);
+            }
+          }
+        } else if(el.type === 'radio'){
+          if(el.checked) ref[key] = el.value;
+          else if(ref[key] === undefined) ref[key] = null;
+        } else {
+          ref[key] = fd.get(name) ?? '';
+        }
+      });
+      // Add human‑readable labels for likert, structures, and boundaries
+      obj._labels = { likertStatements, structures, boundaries };
+      obj._meta = { exportedAt: new Date().toISOString(), version: '1.0' };
+      return obj;
+    }
+
+    function objectToForm(obj){
+      const form = document.getElementById('survey');
+      if(!obj) return;
+      form.querySelectorAll('input, textarea').forEach(el => {
+        const name = el.name; if(!name) return;
+        const path = name.split('.');
+        let ref = obj; for(let i=0;i<path.length-1;i++){ if(ref) ref = ref[path[i]]; }
+        const key = path[path.length-1];
+        const val = ref ? ref[key] : undefined;
+        if(el.type === 'checkbox'){
+          // best effort: any truthy is checked
+          el.checked = Boolean(val);
+        } else if(el.type === 'radio'){
+          el.checked = (val === el.value);
+        } else {
+          if(val !== undefined && val !== null) el.value = val;
+        }
+      });
+    }
+
+    // ===== Export / Import / Print =====
+    function download(filename, data){
+      const blob = new Blob([data], {type:'application/json'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = filename; a.click();
+      setTimeout(()=>URL.revokeObjectURL(url), 5000);
+    }
+
+    document.getElementById('saveJson').addEventListener('click', () => {
+      const data = JSON.stringify(formToObject(document.getElementById('survey')), null, 2);
+      download('open-relationship-survey-responses.json', data);
+      showStatus('Responses exported as JSON. You can upload that file back to ChatGPT to combine both answers.');
+    });
+
+    document.getElementById('copyJson').addEventListener('click', async () => {
+      const data = JSON.stringify(formToObject(document.getElementById('survey')), null, 2);
+      try{ await navigator.clipboard.writeText(data); showStatus('Copied JSON to clipboard.'); } catch(e){ showStatus('Could not copy. You can still export as file.'); }
+    });
+
+    document.getElementById('importJson').addEventListener('click', () => {
+      const inp = document.createElement('input'); inp.type = 'file'; inp.accept = 'application/json';
+      inp.onchange = () => {
+        const file = inp.files[0]; if(!file) return;
+        const reader = new FileReader();
+        reader.onload = () => { try{ const obj = JSON.parse(reader.result); objectToForm(obj); showStatus('Imported responses from JSON file.'); saveLocal(); updateProgress(); } catch(e){ showStatus('Invalid JSON file.'); } };
+        reader.readAsText(file);
+      };
+      inp.click();
+    });
+
+    document.getElementById('printBtn').addEventListener('click', () => window.print());
+
+    // ===== Autosave & progress =====
+    const STORAGE_KEY = 'open_rel_survey_v1';
+    function saveLocal(){
+      try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(formToObject(document.getElementById('survey')))); }catch(e){}
+      const msg = document.getElementById('autosaveMsg');
+      msg.textContent = 'Autosaved ' + new Date().toLocaleTimeString();
+    }
+    function loadLocal(){
+      try{ const raw = localStorage.getItem(STORAGE_KEY); if(!raw) return; const obj = JSON.parse(raw); objectToForm(obj); }catch(e){}
+    }
+
+    function updateProgress(){
+      const form = document.getElementById('survey');
+      const fields = Array.from(form.querySelectorAll('input, textarea')).filter(el => el.type!=='hidden');
+      const filled = fields.filter(el => (el.type==='checkbox' ? el.checked : (el.type==='radio' ? el.checked : el.value.trim().length>0))).length;
+      const pct = Math.round((filled/Math.max(fields.length,1))*100);
+      document.getElementById('progress').style.width = pct + '%';
+      document.getElementById('progress').ariaLabel = `Progress ${pct}%`;
+    }
+
+    function showStatus(text){
+      const el = document.getElementById('status'); el.style.display = 'block'; el.textContent = text; clearTimeout(showStatus._t); showStatus._t = setTimeout(()=>{ el.style.display='none'; }, 4000);
+    }
+
+    document.getElementById('survey').addEventListener('change', ()=>{ saveLocal(); updateProgress(); });
+    document.getElementById('survey').addEventListener('input', ()=>{ saveLocal(); updateProgress(); });
+
+    // init
+    loadLocal(); updateProgress(); valuesGrid.dispatchEvent(new Event('change'));
+  </script>
+</body>
+</html>

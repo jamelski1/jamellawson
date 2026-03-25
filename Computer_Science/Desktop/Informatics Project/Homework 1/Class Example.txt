@@ -1,0 +1,98 @@
+<html>
+
+<header>
+	<title>My title</title>
+	<link type="text/css" href="style.css" rel="stylesheet"/>
+</header>
+
+
+<body>
+	<!-- layout table -->
+	<table>
+	
+		<!-- Header -->
+		<tr class="header">
+			<td>My header</td>
+		</tr>
+		
+		
+		
+		<!-- Body -->
+		<tr>
+		<td>
+		
+		<table> <!-- for the body -->
+			<tr>
+		<!-- Side menu -->
+		
+			<td width="250">
+				link 1<br/>
+				link 2<br/>
+				link 3
+			</td>
+		
+		<!-- content -->
+			<td>
+			<h1>My page</h1>
+			
+			<!-- An example of paragraphs -->
+			<p>
+			My text
+			</p>
+			
+			<p>
+			Some more text
+			<br/>
+			This is a way to <i><b>break</b></i> the text
+			</p>
+			
+			<!-- an example of horizontal rule -->
+			<hr/>
+			Another way of separating
+			
+			<!-- an example of line breaks -->
+			<br/>
+			
+			<!-- an example of lists -->
+			<ul>
+				<li>my <span class="important">first</span> bullet</li>
+				<li>my second bullet</li>
+			</ul>
+			
+			<p>
+			This is a link to 
+				<a href="http://www.cs.uiowa.edu/~hourcade/">
+					my external website
+				</a>. You can email me at 
+				<a href="mailto:juanpablo-hourcade@uiowa.edu">
+					juanpablo-hourcade@uiowa.edu
+				</a>
+			</p>
+			
+			<p>
+			<img src="jph-portugal.jpg" alt="smiling at a Portuguese bakery"/>
+			</p>
+			
+			<!-- end of content -->
+			</td>
+			</tr>
+			</table>
+			
+		<!-- end of body -->
+		</td>
+		</tr>
+		
+		
+		<!-- My footer -->
+		<tr class="footer">
+			<td>
+				My footer
+			</td>
+		
+		</tr>
+		
+	<!-- closing layout table -->
+	</table>
+</body>
+
+</html>

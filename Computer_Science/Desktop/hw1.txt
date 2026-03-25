@@ -1,0 +1,14 @@
+2.19
+
+if (x < 10 and x > -10):
+	if (y < 10 and y > -10):
+		return True
+	else:
+		return False
+
+else:
+	return False
+(a) (0,0)   True
+(b) (10,10) False
+(c) (6, -6) True
+(d) (-7, 8) True

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<title>Python Stepper</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="debugger.js"></script>
+<script type="text/javascript" src="jquery.textarea.js"></script>
+<script type="text/javascript" src="jquery.form.js"></script>
+<script type="text/javascript" src="jquery-ui-1.8.16.custom.min.js"></script>
+<link rel="stylesheet" href="debugger.css" type="text/css" />
+<link rel="stylesheet" href="jquery-ui-1.8.16.custom.css" type="text/css" />
+</head>
+<body id="mainbody">
+<div id="headerdiv">
+<center>
+<table id="headertable">
+<tr>
+<td align="left"><a href="restrictions.html" target="_blank">restrictions</a></td>
+<td align="center" width="600px"><h2>Simple Python Stepper</h2></td>
+<td align="right"><a href="?index.html" target="_blank">examples</a></td>
+</tr>
+</table>
+<i>type or paste Python program here</i>
+</center>
+</div>
+<p/>
+<div id="program">
+<center>
+<form id="codeform" action="" method="post">
+<input id="codeinform" type="hidden" name="codeinform" value="REPLACE ME"/>
+<input id="state" type="hidden" name="state" value="0"/>
+<input id="stepno" type="hidden" name="stepno" value="0"/>
+<input id="lineno" type="hidden" name="lineno" value="0"/>
+<input id="direct" type="hidden" name="direct" value="0"/>
+<input id="steplim" type="hidden" name="steplim" value="0"/>
+<input id="winwid" type="hidden" name="winwid" value="0"/>
+<input id="progress" type="hidden" name="progress" value="0"/>
+</form>
+<textarea id="code" cols="64" rows="22" wrap="off"></textarea>
+<p/><button id="compile" type="button" style="background-color:tan">Test</button>
+</center>
+</div>
+</body></html>

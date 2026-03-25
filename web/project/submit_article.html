@@ -1,0 +1,72 @@
+<html>
+<head>
+	<!--Page Title Goes Here -->
+	<title> The Notebook - Submit Article </title>
+	<link rel="stylesheet" href="mystyles.css"/>
+</head>
+
+<body>
+	<div id = "container"> <!--Page Start Here-->
+		<header>
+			<div id="logo">
+			<!--Logo Goes Here-->
+			The Notebook
+			</div>
+
+			<h1 id="page">
+				<!-- Page Title Goes here -->
+				Submit Article
+			</h1>
+		</header>
+		
+		
+		<div id="content">
+			<div id="nav">
+			<!-- Navigation Bar Goes Here -->
+				<ul>
+					<li>Submit Article</li>
+					<li>Submitted Articles</li>
+					<li>My Reviews</li>
+					<li>Resubmit Article</li>
+				</ul>
+			</div>
+			
+			<div id="main">
+				<form>
+				<!-- Registration Form Goes Here -->
+				*Article: <input type="text" name="article"><br>
+				*Title: <input type="text" name="title"><br>
+				*Abstract: <br><textarea rows="10" cols="50" name="abstract"></textarea><br>
+				Additional Authors:<br>
+				First Name: <input type="text" name="firstname"><br>
+				Last Name: <input type="text" name="lastname"><br>
+				Email: <input type="text" name="email"><br>
+				<input type="submit" value="+Add Author"><br>
+				Research Category of Paper:<br>
+				<select>
+					<option value="anthropology">Anthropology</option>
+					<option value="biology">Biology</option>
+					<option value="chemistry">Chemistry</option>
+					<option value="physics">Physics</option>
+				</select><br>
+				<input type="submit" value="+Add Category"><br>
+				Other: <input type="text" name="other"><br>
+				<input type="submit" value="+Add Other"><br>
+				<p>Do You have any reviewers to suggest?</p>
+				<p>If yes...</p>
+				Reviewer's First Name: <input type="text" name="reviewer_first"><br>
+				Reviewer's Last Name: <input type="text" name="reviewer_last"><br>
+				Email: <input type="text" name="reviewer_email"><br>
+				<input type="checkbox" name= "user" value="agreement">I agree to the Notebook Terms and Privacy.<br>
+				<input type="submit" value="Submit"> <input type="submit" value="Cancel">
+		  
+			
+				</form>
+			</div>
+		</div>
+		<footer>
+	<p> Informatics Project | Copyright(c) 2013 | Created by: Joshua Schulte, Jacob Carter, and Jamel Lawson </p>
+		</footer>
+	</div> <!--Page Ends Here -->
+</body>
+</html>

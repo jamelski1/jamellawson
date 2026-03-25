@@ -1,0 +1,1527 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+
+html {
+  height: 100%;
+}
+	
+
+body{
+	font-family:arial;
+	background-color:#efefef;
+}
+
+body.origin {
+  background-color: #dee5ef;
+	background: url("images/orginBackground-new.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#form-wrapper {
+  background-color: #dee5ef;
+	background: url("images/orginBackground-new.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#originBackground{
+	font-family:arial;
+	background: url("images/orginBackground-new.png");
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
+
+#LPBackground{
+	background: url("images/orginBackgroundPrivateLoans.jpg") no-repeat;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+  background-size: cover;
+  padding-bottom: 5px;
+  background-position: center 120px;
+  background-color: #FFF;
+}
+
+#CheckingBackground{
+	background:/*url("images/orginBackgroundBottom.jpg") bottom left repeat-x,*/
+	url("images/originBackgroundChecking.png") no-repeat;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+  background-size: cover;
+  padding-bottom: 5px;
+  background-position: center 120px;
+  background-color: #FFF;
+}
+
+
+
+
+.container{
+	width:790px;
+	margin-left:auto;
+	margin-right:auto;
+	/*overflow:auto;*/
+}
+
+#containerEmailNew{
+	width:540px;
+	margin-left:auto;
+	margin-right:auto;	
+}
+
+#sideSectionsEmailNew h2{
+	font-size:19px;
+	font-family:arial;
+	font-weight:bold;
+	color:#2180ae;
+	margin-left:10px;
+	margin-bottom:10px;
+	
+}
+
+#sideSectionsEmailNew{
+	width:580px;
+	
+}
+
+#requestQuoteEmailNew{
+	width:540px;
+	height:120px;
+	background-image:url("images/requestQuoteEmailNew.png");
+	margin-bottom:15px;
+
+}
+
+#requestQuoteButtonEmailNew{
+	float:left;
+	margin-left:350px;
+	margin-top:80px;
+	background-image:url("images/learnMoreButtonSlide3.png");
+	background-repeat:no-repeat;
+	width:141px;
+	height:30px;
+	padding-top:5px;
+}
+
+#requestQuoteButtonEmailNew a{
+	font-size:14px;
+}
+
+#sideSectionsMortgageEmail h2{
+	font-size:19px;
+	font-family:arial;
+	font-weight:bold;
+	color:#2180ae;
+	margin-left:10px;
+	margin-bottom:10px;
+	
+}
+#sideSectionsEmailNew ul{
+	font-family:arial;
+	font-size:10px;
+	color:#949292;
+}
+#sideSectionsEmailNew ul li{
+	margin-bottom:10px;
+}
+
+#sideSectionsEmailNew #leftSection{
+	width:250px;
+	float:left;
+	padding-left:25px;
+}
+
+#sideSectionsEmailNew #rightSection{
+	width:250px;
+	float:left;
+	padding-left:25px;
+}
+
+#bankingType{
+	float:left;
+	clear:both;
+	width:210px;
+	margin-top:10px;
+	margin-bottom:40px;
+	font-size:8px;
+	font-family:Arial;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+#bankingType ul li{
+	display:inline-block;
+	list-style:none;
+	padding-right:10px;
+}
+
+#bankingType ul li a{
+	text-decoration:none;
+	color:#7d7d7d;
+}
+
+#bankingType ul li #personalLink{
+	color:#f6b11d;	
+}
+
+
+#containerEmailNew h1{
+	float:left;
+	font-family:arial black;
+	font-size:29px;
+	color:#3b8ab4;
+}
+#orginLogo {
+	float:left;
+	clear:left;
+	margin-bottom:30px;
+	width:289px;
+	height:42px;
+	background-image:url(images/orginLogo.png);
+}
+
+#orginLogoEmail {
+	margin-top:10px;
+	margin-bottom:15px;
+	float:right;
+	margin-right:15px;
+	width:172px;
+	height:27px;
+	background-image:url(images/originBankLogoEmailNew.png);
+}
+
+#originLogoMortgageEmail {
+	margin-top:25px;
+	float:left;
+	margin-bottom:15px;
+	width:172px;
+	height:27px;
+	background-image:url(images/originBankLogoEmailNew.png);
+	
+}
+
+#mortgageSignupForm form{
+	float:left;
+}
+
+.prefill{
+	width:700px;
+	height:65px;
+	background-color:#ecf6fe;
+	margin-top:15px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:15px;
+	border:solid thin;
+	border-color:#2760cb;
+}
+
+.prefill a{
+	text-decoration:none;
+}
+
+.questionMark{
+	vertical-align:bottom;
+	margin-left:5px;	
+}
+#creditSignupForm form{
+	float:left;
+}
+
+.online{
+	margin-right:5px;
+	margin-left:5px;
+}
+
+#orangeArrows{
+	width:791px;
+	height:51px;
+	background-image:url(orangeArrowsCreditsignup.png);
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+.formTitle{
+	float:left;
+	clear:left;
+}
+
+#mortgageTitle{
+	width:360px;
+	height:43px;
+	background-image:url(formTitleMortgageSignup.png);
+}
+
+#creditTitle{
+	width:680px;
+	height:64px;
+	background-image:url(formTitleCreditSignup.png);
+}
+
+.preliminaryFormInfo{
+	float:left;
+  margin-top: 50px;
+}
+
+#mortgageSubtitle h1{
+	font-weight:bold;
+	font-family:verdana;
+	font-size:16px;
+	margin-bottom:20px;
+}
+
+#creditSubtitle #bonusMiles{
+	font-style:italic;
+	font-family:gill sans;
+	font-size:21px;
+	margin-bottom:20px;
+	font-weight:normal;
+}
+.preliminaryFormInfo p{
+	font-family:verdana;
+	font-size:16px;
+	margin-bottom:20px;
+}
+
+.basicInfo{
+	margin-top:15px;
+	width:777px;
+	height:450px;
+	background-image:url(formBackground1MortgageSignup.png);
+	background-repeat:no-repeat;
+	/*overflow:auto*/
+	padding-top:1px;
+	margin-bottom:15px;
+}
+
+.basicInfo h2{
+	font-size:13px;
+	font-weight:bold;
+	margin-bottom:15px;
+	margin-left:10px;
+	margin-top:10px;
+}
+#creditSignUpForm{
+	margin-left:5px;	
+}
+
+#creditSignUpForm h2{
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:15px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+#creditSignUpForm div.form-block {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+#creditSignUpForm div.form-block-header {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+#creditSignUpForm h3{
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:15px;
+	margin-top:10px;
+}
+
+#creditSignUpForm ul li{
+	display:inline-block;
+	/*list-style:none;*/
+	padding-right:10px;
+}
+
+.areaCode{
+	width:50px;
+}
+
+.middle3{
+	width:50px;
+}
+
+.last4{
+	width:50px;
+}
+
+.emailAddress{
+	width:250px;
+}
+
+.residentAddress1{
+	width:270px;
+}
+
+.residentAddress2{
+	width:270px;
+}
+
+.zipcodeCredit{
+	width:90px;
+}
+
+.zipcodeEnd{
+	width:50px;
+}
+
+.state{
+	width:290px;
+}
+
+.otherAddress{
+	margin-right:5px;
+	margin-left:5px;
+}
+
+.nonResident a{
+	text-decoration:none;
+}
+
+.nonResident{
+	margin-bottom:30px;
+}
+
+.employmentStatus{
+	width:150px;
+	margin-bottom:5px;
+}
+
+.allimony{
+	margin-top:15px;
+	width:700px;
+	height:55px;
+	background-color:#ecf6fe;
+	margin-top:15px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:15px;
+	border-color:#2760cb;
+	font-size:14px;
+	
+}
+
+.infoImage{
+	vertical-align:bottom;
+	float:left;
+	clear:left;
+	margin-right:10px;
+}
+
+.sourceOfIncome{
+	width:170px;	
+}
+
+.housingStatus{
+	margin-right:5px;
+}
+
+.primaryResidence{
+	width:290px;
+}
+
+.monthlyPayment{
+	width:125px;
+	margin-bottom:40px;
+	margin-right:5px;
+}
+
+#basicInfoForm{
+	margin-left:10px;
+	padding-top:5px;
+}
+
+.first3Social{
+	width:40px;
+}
+
+.middle2Social{
+	width:35px;
+}
+
+.last4Social{
+	width:50px;
+}
+
+.yearOfBirth{
+	width:35px;
+}
+
+.maidenName{
+	width:230px;
+}
+
+.citizenship{
+	width:260px;
+}
+
+.citizenshipStatus{
+	margin-bottom:15px;
+	margin-right:10px;
+}
+
+#creditSignupForm ul li{
+	display:inline-block
+}
+
+.firstname{
+	width:150px;
+}
+
+.middleInitial{
+	width:35px;
+}
+
+.lastname{
+	width:150px;
+}
+
+.address1{
+	width:500px;	
+}
+
+.address2{
+	width:500px;
+}
+
+.city{
+	width:150px;
+}
+
+.state{
+	width:140px;
+}
+
+.zipcode{
+	width:150px;
+}
+
+.dayphone{
+	width:150px;
+}
+
+.extension{
+	width:75px;
+	margin-right:20px;
+}
+
+nightphone{
+	width:150px;
+}
+
+.email{
+	width:500px;
+}
+
+.basicInfo ul li h3{
+	font-size:14px;
+	font-weight:bold;
+	font-family:arial;	
+	margin-bottom:5px;
+}
+
+.basicInfo ul li{
+	display:inline-block;
+	margin-right:20px;
+}
+
+.basicInfo ul{
+	margin-bottom:20px;
+}
+
+.identityInfo h2{
+	font-size:13px;
+	font-weight:bold;
+	margin-bottom:15px;
+	margin-left:10px;
+	margin-top:10px;
+}
+
+#identityInfoForm{
+	margin-left:10px;
+	padding-top:5px;
+}
+
+.identityInfo{
+	margin-top:15px;
+	width:778px;
+	height:291px;
+	background-image:url(formBackground2MortgageSignup.png);
+	overflow:auto;
+	margin-bottom:15px;
+}
+
+.identityInfo ul li h3{
+	font-size:14px;
+	font-weight:bold;
+	font-family:arial;	
+	margin-bottom:5px;
+}
+
+.identityInfo ul li{
+	display:inline-block;
+	margin-right:20px;
+}
+
+.identityInfo ul{
+	margin-bottom:20px;
+}
+
+.birthdate{
+	width:150px;	
+}
+
+.residency{
+	width:200px;
+}
+
+
+
+.subText{
+	font-size:13px;
+	color:#7d7d7d;
+}
+
+.loanRequest{
+	margin-top:15px;
+	width:778px;
+	height:520px;
+	background-image:url(formBackground3MortgageSignup.png);
+	overflow:auto;
+	margin-bottom:15px;
+}
+
+.loanRequest ul li h3{
+	font-size:14px;
+	font-weight:bold;
+	font-family:arial;	
+	margin-bottom:5px;
+}
+
+.loanRequest ul li{
+	display:inline-block;
+	margin-right:20px;
+}
+
+.loanRequest ul{
+	margin-bottom:20px;
+}
+
+.loanRequest h2{
+	font-size:13px;
+	font-weight:bold;
+	margin-bottom:15px;
+	margin-left:10px;
+	margin-top:10px;
+}
+
+#loanRequestForm{
+	margin-left:10px;
+	padding-top:5px;
+}
+
+.loanPurpose{
+	width:185px;
+}
+
+.timeframe{
+	width:130px;
+}
+
+.propertyValue{
+	width:150px;
+}
+
+.propertyZip{
+	width:150px;
+	margin-right:5px;
+}
+.zipFinder{
+	font-size:14px;
+}
+
+.propertyUse{
+	width:140px;
+}
+
+.propertyType{
+	width:170px;
+}
+
+.terms{
+	float:left;
+	font-family:arial;
+	font-size:10px;
+	margin-bottom:15px;
+	width:750px;
+}
+
+#terms p{
+  font-size: 12px;
+}
+
+.termsLink{
+	text-deocoration:none;
+}
+
+.termTitle{
+	background-color:#e9edf1;
+	width:600px;
+	height:40px;
+	padding-top:5px;
+	padding-left:20px;
+	margin-top:15px;
+	margin-bottom:15px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.termsWindow{
+	width:600px;
+	height:700px;
+	margin-right:auto;
+	margin-left:auto;
+	border:1px dashed #BBB;;
+}
+
+.termsCheckbox{
+	float:left;
+	overflow:auto;
+}
+
+#checkBox{
+	margin-right:5px;
+	overflow:auto; 
+	float:left;
+}
+#webpageLink{
+	float:right;
+
+}
+
+#webpageLink a{
+	font-size:10px;
+	color:#7b7b7b;	
+}
+
+
+#productAndServices {
+	background-image:url("images/productServiceBackground.jpg");
+	background-repeat:no-repeat;
+	padding-top:18px;
+	float:left;
+	font-size:12px;
+	font-family:arial;
+	color:#464646;
+	width:365px;
+	height:35px;
+	margin-left:115px;
+	text-transform:uppercase;
+}
+
+#productAndServices ul li{
+	list-style:none;
+	display:inline-block;
+	margin-right:10px;
+}
+
+#productAndServices ul li a{
+	text-decoration:none;
+	color:#464646;
+}
+.mainContent {
+	float:left;
+	clear:left;
+	width:775px;
+	margin-bottom:15px;
+}
+
+#ContentBackground{
+	background-image:url("images/contentBackground.png");
+	background-repeat:no-repeat;
+}
+.mainContent .mainContentImage {
+	width:464px;
+	height:264px;
+	float:left;
+}
+
+
+.mainContent #mainContentImageIndex{
+	background-image:url("images/mainContentImageIndex.png");
+	background-repeat:no-repeat;
+}
+
+.mainContent #mainContentImageSlide{
+	background-image:url("images/mainContentImageSlide3.png");
+	background-repeat:no-repeat;
+}
+
+.mainContent #mainContentImageSlide4{
+	background-image:url("images/mainContentImageSlide4.png");
+	background-repeat:no-repeat;	
+}
+
+
+
+.mainContent #mainContentTextSlide4{
+	float:left;
+	width:240px;
+	margin-left:205px;
+	margin-top:25px;
+}
+
+.mainContent #mainContentTextSlide4 h1{
+	font-size:30px;
+	margin-bottom:15px;	
+}
+.mainContent #mainContentTextSlide4 p{
+	font-size:15px;
+	color:#555555;
+	font-weight:normal;
+	font-family:arial;
+}
+
+.mainContent #slide4SideSection{
+	float:left;
+	width:265px;
+	margin-top:15px;
+	margin-left:25px;
+}
+
+.mainContent #slide4SideSection p{
+	font-size:14px;
+	font-weight:bold;
+	font-family:arial;
+	color:#555555;
+	margin-bottom:15px;
+}
+
+.mainContent #slide4SideSection ul{
+	font-size:12px;
+	font-weight:normal;
+	font-family:arial;
+	color:#2180ae;
+	padding-left:15px;
+}
+
+.mainContent #slide4SideSection ul li{
+	margin-bottom:5px;
+}
+
+.mainContent #travelSideSection{
+	background-image:url("images/mainContentSideSectionTravel.png");
+	float:left;
+	width:308px;
+	height:255px;
+}
+
+.mainContent #travelSideSection #learnMoreButtonTravel{
+	
+}
+.mainContent #mainContentImageUpdatedslide3{
+	background-image:url("images/mainContentImageUpdatedslide3.png");
+	background-repeat:no-repeat;
+}
+
+.mainContent #mainContentImageMortgage{
+	background-image:url("images/mainContentImageMortgage.png");
+	background-repeat:no-repeat;
+	width:775px;
+}
+
+.mainContent #mainContentImagePrivate{
+	background-image:url("images/mainContentImagePrivate.png");
+	background-repeat:no-repeat;
+}
+
+.mainContent #mainContentImageChecking{
+	background-image:url("images/mainContentImageChecking.png");
+	background-repeat:no-repeat;
+}
+
+#mainContentImageEmailNew{
+	background-image:url("images/mainContentImageEmailNew.png");
+	background-repeat:no-repeat;
+	width:540px;
+	height:110px;
+}
+
+#mainContentImageMortgageEmail{
+	background-image:url("images/mainContentImageMortgageEmail.png");
+	background-repeat:no-repeat;
+	width:540px;
+	height:204px;
+}
+
+#sideSectionsParagraphsMortgageEmail{
+	width:500px;
+	font-size:15px;
+	font-family:arial;
+	color:#949292;	
+}
+
+#sideSectionsParagraphsMortgageEmail p{
+	margin-bottom:20px;
+}
+
+#copyright{
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+	font-size:10px;
+	font-family:arial;
+	color:#7b7b7b;
+}
+
+#subscription{
+	margin-left:auto;
+	margin-right:auto;
+	width:65%;
+}
+#subscription ul li{
+	display:inline-block;
+	font-size:10px;
+}
+
+#subscription ul li a{
+	color:#7b7b7b;	
+}
+.mainContent #mainContentText{
+	width:475px;
+	margin-left:35px;
+	margin-top:25px;
+}
+.mainContent #mainContentHeaderChecking{
+	font-size:28px;
+	font-family:arial;
+	font-weight:bold;
+	color:#2180ae;	
+}
+
+.mainContent #mainContentParagraphChecking{
+	font-size:15px;
+	font-family:gill sans mt;
+	font-style:italic;
+	font-weight:bold;	
+}
+
+.mainContent #mainContentUnorderedListChecking{
+	padding-left:20px;
+}
+
+.mainContent #mainContentUnorderedListChecking li{
+	font-size:13px;
+	font-family:gill sans mt;
+	font-style:italic;
+	list-style:disc;	
+}
+
+.mainContent #mainContentTextTravel{
+	width:435px;
+	margin-left:20px;
+	margin-top:25px;
+}
+
+.mainContent #mainContentParagraphTravel{
+	margin-left:15px;
+	font-size:21px;
+	font-family:gill sans mt;
+	font-style:italic;
+	margin-bottom:10px;
+}
+
+.mainContent #mainContentUnorderedListTravel li{
+	font-size:21px;
+	font-family:gill sans;
+	font-style:italic;
+	list-style:disc;
+	color:#3fa2d2;
+}
+
+#mainContentUnorderedListTravel li{
+	font-size:21px;
+	font-family:gill sans;
+	font-style:italic;
+	list-style:disc;
+	color:#3fa2d2;
+}
+
+#mainContentUnorderedListTravel{
+	padding-left:40px;
+}
+
+.mainContent #mainContentUnorderedListTravel{
+	padding-left:40px;
+	margin-left:5px;
+}
+.learnMoreButton {
+	width:126px;
+	height:26px;
+	text-align:center;
+}
+
+.learnMoreButton a{
+	font-family:arial;
+	text-decoration:none;
+	color:#fff;
+}
+
+.mainContent .mainContentImage .learnMoreButtonIndex a{
+	font-size:14px;
+}
+
+.mainContent .mainContentImage #learnMoreButtonSlide a{
+	font-size:17px;
+}
+
+.mainContent .mainContentImage #learnMoreButtonIndex{
+	background-image:url("images/learnMoreButtonIndex.png");
+	background-repeat:no-repeat;
+	width:126px;
+	height:26px;
+	margin-left:315px;
+	margin-top:190px;
+	padding-top:3px;
+}
+
+.mainContent .mainContentImage #learnMoreButtonSlide{
+	background-image:url("images/learnMoreButtonSlide3.png");
+	background-repeat:no-repeat;
+	width:141px;
+	height:31px;
+	margin-left:30px;
+	margin-top:150px;
+	padding-top:4px;
+}
+
+.mainContent .mainContentImage #learnMoreButtonChecking{
+	background-image:url("images/learnMoreButtonSlide3.png");
+	background-repeat:no-repeat;
+	width:141px;
+	height:31px;
+	margin-left:175px;
+	margin-top:10px;
+	padding-top:4px;
+}
+
+.mainContent .mainContentImage #learnMoreButtonMortgage{
+	background-image:url("images/moreLoansButtons.png");
+	background-repeat:no-repeat;
+	width:314px;
+	height:39px;
+	margin-left:75px;
+	margin-top:200px;
+	padding-top:4px;
+	float:left;
+}
+
+.mainContent .mainContentImage #learnMoreButtonSlide4{
+	background-image:url("images/learnMoreButtonIndex.png");
+	background-repeat:no-repeat;
+	width:126px;
+	height:26px;
+	margin-left:75px;
+	margin-top:10px;
+	padding-top:3px;
+}
+
+#learnMoreButtonTravel{
+	background-image:url("images/learnMoreButtonIndex.png");
+	background-repeat:no-repeat;
+	width:126px;
+	height:26px;
+	margin-left:105px;
+	margin-top:205px;
+	padding-top:3px;
+}
+.mainContent .mainContentImage #callNow{
+	background-image:url("images/callNow.png");
+	background-repeat:no-repeat;
+	width:129px;
+	height:39px;
+	margin-top:200px;
+	margin-left:225px;
+	padding-top:4px;
+	float:left;
+}
+
+#continue{
+	/*background-image:url("images/callNow.png");
+	background-repeat:no-repeat;*/
+	margin-left:550px;
+	width:129px;
+	height:39px;
+	padding-top:4px;
+	float:left;
+}
+
+#continueCredit{
+	background-image:url("images/callNow.png");
+	background-repeat:no-repeat;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:325px;
+	width:129px;
+	height:39px;
+	padding-top:4px;
+	float:left;
+}
+.exit{
+	float:right;
+	margin-top:5px;
+}
+
+.exit a{
+		color:#00aeef;
+}
+
+.mainContent #login {
+	float:left;
+	width:240px;
+	padding-top:40px;
+	padding-left:70px;
+}
+
+.mainContent #login2 {
+	float:left;
+	width:240px;
+	padding-top:70px;
+	padding-left:40px;
+}
+
+
+input[placeholder]{
+	width:165px;
+	height:20px;
+}
+
+.mainContent #login h1{
+	font-family:Arial;
+	font-size:20px;
+	color:#2180ae;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+.mainContent #login a{
+	text-decoration:none;
+	color: #2180ae;
+	font-size:8px;
+	font-weight:bold;
+}
+
+.mainContent #login2 a{
+	text-decoration:none;
+	color: #2180ae;
+	font-size:8px;
+	font-weight:bold;
+}
+
+#mySubmit{
+	overflow:auto;
+	float:left;
+	clear:left;
+	width:169px;
+	height:26px;
+	margin-bottom:15px;
+}
+
+#loginOrangeSign{
+	position:absolute;
+	margin-top:7px;
+	margin-left:153px;
+}
+
+#myInput{
+	position:absolute;
+	font-size:14px;
+	color:#fff;
+	width:169px;
+	height:26px;
+	float:left;
+	clear:left;
+	overflow:auto;
+	background-image:url("images/largeBlueButton.png");
+	border:none;
+}
+
+#rememberMe{
+	font-size:8px;
+	color:#2180ae;
+	padding-left:3px;
+	padding-top:3px;
+	float:left;
+}
+
+#wholeRememberMe{
+	margin-top:10px;
+}
+
+.myForm {
+	float:left;
+	clear:left;
+	margin-bottom:10px;
+}
+
+.mainContent #login form input p{
+   margin-left:5px;
+}
+
+.sideSections {
+	clear:left;
+	overflow:auto;
+	width:775px;
+	margin-bottom:15px;
+}
+
+.sideSectionsTitleBackground h2{
+	font-size:16px;
+	font-weight:bold;
+	font-family:arial;
+	color:#2180ae;
+	margin-left:20px;
+	padding-top:15px;
+}
+
+.sideSections .photos {
+	float:left;
+	margin-left:15px;
+	margin-top:20px;
+}
+
+.sideSections .blueButton {
+	width:100px;
+	height:30px;
+	background-image:url("images/blueButton.png");
+	background-repeat:no-repeat;
+	margin-left:15px;
+	margin-top:10px;
+	float: left;
+	clear:both;
+	color:white;
+	text-decoration:none;
+	text-align:center;
+	padding-top:5px;
+	font-size:14px;
+	font-family:arial;
+}
+
+.sideSectionsTitleBackground{
+
+}
+.detailsButtonSlide3{
+	overflow:auto;
+
+}
+.detailsContainer{
+	overflow:auto;
+}
+
+.detailsButtonSlide3{
+	padding-left:120px;
+	padding-top:80px;
+	overflow:auto;
+}
+
+.detailsButtonIndex{
+	margin-top:100px;
+	
+}
+/*.details{
+	
+	font-family:arial;
+	position:absolute;
+	font-size:16px;
+	padding-top:123px;
+	padding-left:33px;
+	color:white;
+	
+}
+
+.details a{
+	font-size:34px;
+}*/
+
+.orangeSign{
+	color:orange;
+}
+
+.sideSections .sideText {
+	float:left;
+	width:90px;
+	margin-top:25px;
+	margin-left:15px;
+	font-size:10px;
+}
+
+
+
+.sideSections .sideSectionsGrayBackground{
+	float:left;
+	width:250px;
+	height:190px;
+	padding-top:3px;
+	padding-left:1px;
+	background:url("images/sideSectionBackground.png") top left no-repeat;
+}
+
+.sideSections #sideSectionsGrayBackground1{
+	margin-right:10px;
+}
+
+.sideSections #sideSectionsGrayBackground2{
+	margin-right:10px;
+}
+
+.sideSections #sideSectionsGrayBackground4{
+	margin-right:10px;
+}
+
+.sideSections #sideSectionsGrayBackground5{
+	margin-right:10px;
+}
+
+.sideSections #sideSectionsGrayBackground7{
+	margin-right:10px;
+}
+
+.sideSections #sideSectionsGrayBackground8{
+	margin-right:10px;
+}
+.sideSections .sideSectionsGrayBackground #sideSectionsOptionalBackground1{
+	float:left;
+	background:url("images/sideSectionImage1Slide3.png") no-repeat;
+	width:255px;
+	height:190px;
+}
+
+.sideSections .sideSectionsGrayBackground #sideSectionsOptionalBackground2{
+	float:left;
+	background:url("images/sideSectionImage2Slide3.png") no-repeat;
+	width:250px;
+	height:190px;
+}
+
+.sideSections .sideSectionsGrayBackground #sideSectionsOptionalBackground3{
+	float:left;
+	background:url("images/sideSectionImage3Slide3.png") no-repeat;
+	width:250px;
+	height:190px;	
+}
+
+.sideSections .sideSectionsGrayBackground #sideSectionsOptionalBackground4{
+	float:left;
+	background:url("images/sideSectionImage1Updatedslide3.png") no-repeat;
+	width:250px;
+	height:190px;
+}
+
+.sideSections .sideSectionsGrayBackground #sideSectionsOptionalBackground5{
+	float:left;
+	background:url("images/sideSectionImage2Updatedslide3.png") no-repeat;
+	width:250px;
+	height:190px;
+}
+
+.sideSections .sideSectionsGrayBackground #sideSectionsOptionalBackground7{
+	float:left;
+	background:url("images/sideSectionImage1Mortgage.png") no-repeat;
+	width:250px;
+	height:190px;
+}
+
+.sideSections .sideSectionsGrayBackground #sideSectionsOptionalBackground8{
+	float:left;
+	background:url("images/sideSectionImage2Mortgage.png") no-repeat;
+	width:250px;
+	height:190px;
+}
+
+.sideSections .sideSectionsGrayBackground #sideSectionsOptionalBackground9{
+	float:left;
+	background:url("images/sideSectionImage3Mortgage.png") no-repeat;
+	width:250px;
+	height:190px;
+}
+
+#withoutBackground{
+		
+}
+
+#withBackground{
+	background:url("images/sideSectionHeaderBackground.png") center no-repeat;	
+}
+.sideSectionsTitleBackground{
+	/*background:url(sideSectionHeaderBackground.png) no-repeat;*/
+	width:245px;
+	height:45px;
+}
+
+#sideSectionOne{
+	background-repeat:no-repeat;
+	float:left;
+
+}
+
+#sideSectionTwo{
+	float:left;
+	margin-left:10px;
+
+}
+#sideSectionThree{
+	float:left;
+	margin-left:10px;
+}
+
+#footer_wrapper {
+  width: 100%;
+  height: 200px;
+	background:url("images/orginBackgroundBottom.jpg") repeat-x;
+}
+
+#footer_box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 790px;
+}
+
+#footer_box {
+
+}
+
+#footer {
+	float:left;
+	clear:left;
+	height:200px;
+	width:575px;
+	font-family:arial;
+
+}
+
+#footer #extraLinks h3 a{
+	text-decoration:none;
+	color:#2180ae;
+}
+.footer{
+	float:left;
+	width:85px;
+	margin-top:20px;
+	margin-left:3px;
+}
+
+.footer h3{
+	text-transform:uppercase;
+	font-size:10px;
+	color:#2180ae;
+}
+
+.footer ul li{
+	list-style:none;
+	font-size:10px;
+	margin-top:3px;
+	color:#7d7d7d;
+}
+
+.footer ul li a{
+	text-decoration:none;
+	color:#7d7d7d;
+}
+
+#extraLinks h3{
+	margin-bottom:15px;	
+}
+#socialNetworks{
+	background-image:url("images/socialNetworkBackground.png");
+	background-repeat:no-repeat;
+	float:left;
+	text-transform:uppercase;
+	font-size:12px;
+	margin-top:15px;
+	padding-top:15px;
+	padding-left:15px;
+	width:195px;
+	height:160px;
+	font-family:arial;
+	font-size:10px;
+	color:white;
+}
+#socialNetworks h4{
+	padding-bottom:5px;	
+}
+
+#socialNetworks .tinyPic{
+	margin-left:3px;
+	margin-bottom:5px;
+}
+
+#socialNetworks #socialNetworksImages{
+	height:25px;
+	width:150px;
+	margin-bottom:10px;
+}
+
+#socialNetworks #socialNetworksImages #blog{
+	height:25px;
+	width:25px;
+	float:left;
+	margin-right:5px;
+	background-image:url("images/blog.jpg");
+}
+
+#socialNetworks #socialNetworksImages #facebook{
+	height:25px;
+	width:25px;
+	float:left;
+	margin-right:5px;
+	background-image:url("images/facebook.jpg");
+}
+
+#socialNetworks #socialNetworksImages #twitter{
+	height:25px;
+	width:25px;
+	float:left;
+	margin-right:5px;
+	background-image:url("images/twitter.jpg");
+}
+
+#socialNetworks #socialNetworksImages #linkedIn{
+	height:25px;
+	width:25px;
+	float:left;
+	background-image:url("images/linkedIn.jpg");
+}
+
+.asterisk{
+	margin-top:10px;
+}
+
+.form-block {
+  border-radius: 10px;
+  border: 1px solid #999;
+  background-color: #FFF; 
+}
+
+.form-block-header {
+  background-image:url("images/form-header-bg.jpg");
+  height: 28px;
+  border-bottom: 1px solid #999;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px;
+}
+
+.form-block-header h2 {
+  margin-top: 0px;
+  padding-top: 10px;
+}

@@ -1,0 +1,720 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+(function ($) {
+    $(document).ready(function() {
+      pos = (($(document).width()/2) - 2200);
+      setInterval(function() { pos -= 1; $('#wrapper').css('background-position', pos + 'px bottom'); }, 100);
+    });
+}) (jQuery);
+</script>
+
+<style>
+
+*{
+	margin:0;
+	padding:0;
+}
+
+html, body {
+    height: 100%;
+}
+.wrapper {
+    height: 100%;
+   /* the bottom margin is the negative value of the footer's height */
+	/*border:dotted;*/
+	/*background: 
+	url("images/skyline.png") no-repeat bottom right,
+	url("images/flash.png") no-repeat bottom center;
+	background-color:#D00;
+	*/
+}
+
+.skyline{
+	height: 100%;
+	background-image: url("images/skyline.png");
+	background-position: 0px bottom;
+	/*background-color:#D00;*/
+}
+
+.flash{
+	height:100%;
+	background-image:url(images/flash.png);
+	background-repeat:no-repeat;
+	background-position:bottom;
+}
+
+.cloud{
+	height:100%;
+	background-image:url(images/cloud1.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.bottomLogoBackground{
+	width:1060px;
+	height:395px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(images/bottom-logo-background-1200.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.footer{
+	/*border:dotted;*/
+	background-image:url(images/bottom-bg-1200.png);
+	background-repeat:repeat-x;
+	background-position:top;
+	height:395px;
+	width:100%;
+	position:absolute;
+	bottom:0;
+}
+
+.logo{
+	width:369px;
+	height:395px;
+	/*
+	margin-left:auto;
+	margin-right:auto;
+	*/
+	background-image:url(images/logo-1200.png);
+	background-repeat:no-repeat;
+	float:left;
+
+}
+
+.leftnav{
+	width:345px;
+	height:35px;
+	color:white;
+	float:left;
+	margin-top:145px;
+	font-family:verdana;
+	font-size:24px;
+}
+
+.leftnav ul{
+	float:right;
+}
+
+.leftnav ul li{
+	display:inline-block;
+	margin-right:10px;
+
+	
+}
+
+.rightnav{
+	width:345px;
+	height:35px;
+	float:left;
+	color:white;
+	margin-top:145px;
+	font-family:verdana;
+	font-size:24px;
+	
+}
+
+.rightnav ul li{
+	display:inline-block;
+	margin-left: 10px;
+}
+
+.footercontainer{
+	width:100%;
+	height:395px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.content{
+	width:960px;
+	margin-right:auto;
+	margin-left:auto;
+	/*border:dotted;*/
+	text-align:center;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+#slider {
+   /*background: #D00;*/
+   /*border: 5px solid #eaeaea;*/
+   /*box-shadow: 1px 1px 5px rgba(0,0,0,0.7);*/
+   height: 320px;
+   width: 680px;
+   /*margin: 40px auto 0;*/
+   overflow: visible;
+   position: relative;
+}
+
+.pictureReplace{
+	height: 320px;
+	width:680px;
+	color:#fff;
+	text-align:center;
+	font-family:verdana;
+	/*padding-top:110px;*/
+  	background: -webkit-linear-gradient(#eee, #A1A1A1);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.pictureReplace h1{
+	font-size:48px;
+}
+#mask {
+   overflow: hidden;
+   height: 320px; 
+}
+
+#mask ul li a{
+	text-decoration:none;
+}
+
+#slider ul {
+   margin: 0;
+   padding: 0;
+   position: relative;
+}
+
+#slider li { 
+   width: 680px;  /* Width Image */
+   height: 320px; /* Height Image */
+   position: absolute;
+   right: -685px;	/* Original Position - Outside of the Slider */
+   list-style: none;
+}
+
+#slider li.firstanimation {
+   animation: cycle 25s linear infinite;
+   -moz-animation: cycle 25s linear infinite;
+   -webkit-animation: cycle 25s linear infinite;
+}
+
+#slider li.secondanimation {
+   animation: cycletwo 25s linear infinite;	
+   -moz-animation: cycletwo 25s linear infinite;	
+   -webkit-animation: cycletwo 25s linear infinite;	
+}
+
+#slider li.thirdanimation {
+   animation: cyclethree 25s linear infinite;
+   -moz-animation: cyclethree 25s linear infinite;
+   -webkit-animation: cyclethree 25s linear infinite;		
+}
+
+#slider li.fourthanimation {
+   animation: cyclefour 25s linear infinite;
+   -moz-animation: cyclefour 25s linear infinite;
+   -webkit-animation: cyclefour 25s linear infinite;	
+}
+
+#slider li.fifthanimation {
+   animation: cyclefive 25s linear infinite;
+   -moz-animation: cyclefive 25s linear infinite;
+   -webkit-animation: cyclefive 25s linear infinite;		
+}
+
+/*
+
+#slider li.fifthanimation {
+   animation: cyclefive 25s linear infinite;
+   -moz-animation: cyclefive 25s linear infinite;
+   -webkit-animation: cyclefive 25s linear infinite;		
+}*/
+
+/* ANIMATION */
+
+@keyframes cycle {
+   0%  { right: 0px; } /* When you start the slide, the first image is already visible */
+   4%  { right: 0px; } /* Original Position */
+   16% { right: 0px; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
+   20% { right: 685px; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
+   21% { right: -685px; opacity: 0; z-index: -1; } /* Return to Original Position */
+   92% { right: -685px; opacity: 0; z-index: 0; }
+   96% { right: -685px; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
+   100%{ right: 0px; opacity: 1; }
+}
+
+@-moz-keyframes cycle {
+   0%  { right: 0px; } /* When you start the slide, the first image is already visible */
+   4%  { right: 0px; } /* Original Position */
+   16% { right: 0px; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
+   20% { right: 685px; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
+   21% { right: -685px; opacity: 0; z-index: -1; } /* Return to Original Position */
+   92% { right: -685px; opacity: 0; z-index: 0; }
+   96% { right: -685px; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
+   100%{ right: 0px; opacity: 1; }
+}
+
+@-webkit-keyframes cycle {
+   0%  { right: 0px; } /* When you start the slide, the first image is already visible */
+   4%  { right: 0px; } /* Original Position */
+   16% { right: 0px; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
+   20% { right: 685px; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
+   21% { right: -685px; opacity: 0; z-index: -1; } /* Return to Original Position */
+   92% { right: -685px; opacity: 0; z-index: 0; }
+   96% { right: -685px; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
+   100%{ right: 0px; opacity: 1; }
+}
+
+@keyframes cycletwo {
+   0%  { right: -685px; opacity: 0; } /* Original Position */
+   16% { right: -685px; opacity: 0; }/* Starts moving after 16% to this position */
+   20% { right: 0px; opacity: 1; }
+   24% { right: 0px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
+   36% { right: 0px; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
+   40% { right: 685px; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
+   41% { right: -685px; opacity: 0; z-index: -1; }   /* Return to Original Position */
+   100%{ right: -685px; opacity: 0; z-index: -1; }
+}
+
+@-moz-keyframes cycletwo {
+   0%  { right: -685px; opacity: 0; } /* Original Position */
+   16% { right: -685px; opacity: 0; }/* Starts moving after 16% to this position */
+   20% { right: 0px; opacity: 1; }
+   24% { right: 0px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
+   36% { right: 0px; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
+   40% { right: 685px; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
+   41% { right: -685px; opacity: 0; z-index: -1; }   /* Return to Original Position */
+   100%{ right: -685px; opacity: 0; z-index: -1; }
+}
+
+@-webkit-keyframes cycletwo {
+   0%  { right: -685px; opacity: 0; } /* Original Position */
+   16% { right: -685px; opacity: 0; }/* Starts moving after 16% to this position */
+   20% { right: 0px; opacity: 1; }
+   24% { right: 0px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
+   36% { right: 0px; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
+   40% { right: 685px; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
+   41% { right: -685px; opacity: 0; z-index: -1; }   /* Return to Original Position */
+   100%{ right: -685px; opacity: 0; z-index: -1; }
+}
+
+@keyframes cyclethree {
+   0%  { right: -685px; opacity: 0; }
+   36% { right: -685px; opacity: 0; }
+   40% { right: 0px; opacity: 1; }
+   44% { right: 0px; opacity: 1; } 
+   56% { right: 0px; opacity: 1; } 
+   60% { right: 685px; opacity: 0; z-index: 0; }
+   61% { right: -685px; opacity: 0; z-index: -1; } 
+   100%{ right: -685px; opacity: 0; z-index: -1; }
+}
+
+@-moz-keyframes cyclethree {
+   0%  { right: -685px; opacity: 0; }
+   36% { right: -685px; opacity: 0; }
+   40% { right: 0px; opacity: 1; }
+   44% { right: 0px; opacity: 1; } 
+   56% { right: 0px; opacity: 1; } 
+   60% { right: 685px; opacity: 0; z-index: 0; }
+   61% { right: -685px; opacity: 0; z-index: -1; } 
+   100%{ right: -685px; opacity: 0; z-index: -1; }
+}
+
+@-webkit-keyframes cyclethree {
+   0%  { right: -685px; opacity: 0; }
+   36% { right: -685px; opacity: 0; }
+   40% { right: 0px; opacity: 1; }
+   44% { right: 0px; opacity: 1; } 
+   56% { right: 0px; opacity: 1; } 
+   60% { right: 685px; opacity: 0; z-index: 0; }
+   61% { right: -685px; opacity: 0; z-index: -1; } 
+   100%{ right: -685px; opacity: 0; z-index: -1; }
+}
+
+@keyframes cyclefour {
+   0%  { right: -685px; opacity: 0; }
+   56% { right: -685px; opacity: 0; }
+   60% { right: 0px; opacity: 1; }
+   64% { right: 0px; opacity: 1; }
+   76% { right: 0px; opacity: 1; z-index: 0; }
+   80% { right: 685px; opacity: 0; z-index: 0; }
+   81% { right: -685px; opacity: 0; z-index: -1; }
+   100%{ right: -685px; opacity: 0; z-index: -1; }
+}
+
+@-moz-keyframes cyclefour {
+   0%  { right: -685px; opacity: 0; }
+   56% { right: -685px; opacity: 0; }
+   60% { right: 0px; opacity: 1; }
+   64% { right: 0px; opacity: 1; }
+   76% { right: 0px; opacity: 1; z-index: 0; }
+   80% { right: 685px; opacity: 0; z-index: 0; }
+   81% { right: -685px; opacity: 0; z-index: -1; }
+   100%{ right: -685px; opacity: 0; z-index: -1; }
+}
+
+@-webkit-keyframes cyclefour {
+   0%  { right: -685px; opacity: 0; }
+   56% { right: -685px; opacity: 0; }
+   60% { right: 0px; opacity: 1; }
+   64% { right: 0px; opacity: 1; }
+   76% { right: 0px; opacity: 1; z-index: 0; }
+   80% { right: 685px; opacity: 0; z-index: 0; }
+   81% { right: -685px; opacity: 0; z-index: -1; }
+   100%{ right: -685px; opacity: 0; z-index: -1; }
+}
+
+@keyframes cyclefive {
+   0%  { right: -685px; opacity: 0; }
+   76% { right: -685px; opacity: 0; }
+   80% { right: 0px; opacity: 1; }
+   84% { right: 0px; opacity: 1; }
+   96% { right: 0px; opacity: 1; z-index: 0; }
+   100%{ right: 685px; opacity: 0; z-index: 0; }
+}
+
+@-moz-keyframes cyclefive {
+   0%  { right: -685px; opacity: 0; }
+   76% { right: -685px; opacity: 0; }
+   80% { right: 0px; opacity: 1; }
+   84% { right: 0px; opacity: 1; }
+   96% { right: 0px; opacity: 1; z-index: 0; }
+   100%{ right: 685px; opacity: 0; z-index: 0; }
+}
+
+@-webkit-keyframes cyclefive {
+   0%  { right: -685px; opacity: 0; }
+   76% { right: -685px; opacity: 0; }
+   80% { right: 0px; opacity: 1; }
+   84% { right: 0px; opacity: 1; }
+   96% { right: 0px; opacity: 1; z-index: 0; }
+   100%{ right: 685px; opacity: 0; z-index: 0; }
+}
+
+@media screen and (max-width: 1050px){
+	.wrapper{
+		width:1050px;
+		background-color:pink;
+	}
+	
+	
+	.footercontainer{
+		height:346px;
+		width: 100%;
+	}
+	
+	.leftnav{
+		width:260px;
+		font-size:17px;
+		margin-top:130px;
+	}
+	
+	.leftnav ul{
+		float:right;
+	}
+	
+	.rightnav{
+		width:260px;
+		font-size:17px;
+		margin-top:130px;
+	}
+	
+	#slider li { 
+   width: 620px;  /* Width Image */
+   height: 316px; /* Height Image */
+   position: absolute;
+   right: -630px;	/* Original Position - Outside of the Slider */
+   list-style: none;
+ 
+	}
+	
+	#mask{
+		width:620px;
+	}
+	.pictureReplace {
+	width: 620px;
+	}
+	.bottomLogoBackground {
+	width: 850px;
+	height:346px;
+	background-image:url(images/bottom-logo-background-1050.png);
+	background-position:center;
+	}
+	
+	
+	.footer{
+	/*border:dotted;*/
+	background-image:url(images/bottom-bg-1050.png);
+	background-repeat: repeat-x;
+	height:346px;
+	}
+	
+	.logo{
+	height:346px;
+	width:323px;
+	background-image:url(images/logo-1050.png);
+}
+}
+
+@media screen and (max-width: 800px){
+	.wrapper{
+		width:800px;
+		background-color:blue;
+	}
+	
+	
+	.footercontainer{
+		height:263px;
+		width: 725px;
+		width:100%;
+	}
+	
+	.leftnav{
+		width:215px;
+		font-size:13px;
+		margin-top:103px;
+	}
+	
+	.rightnav{
+		width:215px;
+		font-size:13px;
+		margin-top:103px;
+	}
+	
+	#slider li { 
+   width: 620px;  /* Width Image */
+   height: 316px; /* Height Image */
+   position: absolute;
+   right: -630px;	/* Original Position - Outside of the Slider */
+   list-style: none;
+ 
+	}
+	
+	#mask{
+		width:620px;
+	}
+	.pictureReplace {
+		width: 620px;
+	}
+	.bottomLogoBackground {
+	width: 680px;
+	height:263px;
+	background-image:url(images/bottom-logo-background-800.png);
+	}
+	
+	.footer{
+	/*border:dotted;*/
+	background-image:url(images/bottom-bg-800.png);
+	background-repeat: repeat-x;
+	height:263px;
+	}
+	
+	.logo{
+	height:268px;
+	width:250px;
+	background-image:url(images/logo-800.png);
+}
+}
+
+
+@media screen and (max-width: 550px){
+	.wrapper{
+		background-color:yellow;
+		margin: 0 auto -316px; /* the bottom margin is the negative value of the footer's height */
+		width:850px;
+	}
+	
+	
+	.footercontainer{
+		height:316px;
+		width: 725px;
+	}
+	
+	.leftnav{
+		width:215px;
+		font-size:13px;
+	}
+	
+	.rightnav{
+		width:215px;
+		font-size:13px;
+	}
+	
+	.flash{
+		width:625px;
+	}
+	
+	#slider li { 
+   width: 620px;  /* Width Image */
+   height: 316px; /* Height Image */
+   position: absolute;
+   right: -630px;	/* Original Position - Outside of the Slider */
+   list-style: none;
+ 
+	}
+	
+	#mask{
+		width:620px;
+	}
+	.pictureReplace {
+	width: 620px;
+	}
+	.bottomLogoBackground {
+	width: 850px;
+	height:316px;
+	background-image:url(images/bottom-logo-background-960.png);
+	}
+	
+	.footer, .push {
+    height: 316px; /* .push must be the same height as .footer */
+	
+	}
+	
+	.footer{
+	/*border:dotted;*/
+	background-image:url(images/bottom-bg-960.png);
+	background-repeat: repeat-x;
+	height:316px;
+	}
+	
+	.logo{
+	height:295px;
+	width:290px;
+	background-image:url(images/logo-960.png);
+}
+}
+
+@media screen and (max-width: 320px){
+	.wrapper{
+		background-color:green;
+	}
+}
+</style>
+</head>
+
+<body>
+    <div class="wrapper">
+<div class="skyline">
+<div class="cloud">
+	<div class="flash">
+        
+        
+        <!--<div class="flash"> -->
+        	<div class="container">
+   <div id="content-slider">
+      <div id="slider">  <!-- Slider container -->
+         <div id="mask">  <!-- Mask -->
+
+         <ul>
+         <li id="first" class="firstanimation">  <!-- ID for tooltip and class for animation -->
+         <a href="#">
+         	<div class="pictureReplace">
+                 <h2>Contact NRH Works</h2>
+                   <h1>Hire Us</h1>
+                   <h3>Get a free quote</h3> 
+          </div></a>
+         <div class="tooltip"></div>
+         </li>
+ 
+         <li id="second" class="secondanimation">
+         <a href="#">
+         	<div class="pictureReplace">
+                 <h2>Our Clients</h2>
+                   <h1>For Whom?</h1>
+                   <h3>Awesome organizations we have worked with</h3> 
+          </div></a>
+         <div class="tooltip"></div>
+         </li>
+
+         <li id="third" class="thirdanimation">
+         <a href="#">
+         	<div class="pictureReplace">
+                 <h2>NRH Works' Works</h2>
+                   <h1>What We Have Done</h1>
+                   <h3>Signature projects and illustrative ease studies</h3> 
+          </div></a>
+         <div class="tooltip"></div>
+         </li>
+
+         <li id="fourth" class="fourthanimation">
+        <a href="#">
+         	<div class="pictureReplace">
+                 <h2>NRH Works Blog</h2>
+                   <h1>Day to Day</h1>
+                   <h3>What We Are Working On Right Now</h3> 
+          </div></a>
+         <div class="tooltip"></div>
+         </li>
+
+         <li id="fifth" class="fifthanimation">
+         <a href="#">
+         	<div class="pictureReplace">
+            
+            	<div class="text">
+                 <h2>About NRH Works</h2>
+                   <h1>What We Do</h1>
+                   <h3>Drupal, Wordpress, &amp; Magento based developments</h3>
+              </div>
+          </div></a>
+         <div class="tooltip"></div>
+         </li>
+         
+         <!--
+         <li id="fifth" class="sixthanimation">
+         <a href="#">
+         	<div class="pictureReplace">
+            
+            	<div class="text">
+                 <h2>NRH Works Jobs</h2>
+                   <h1>Work For Us</h1>
+                   <h3>If you have skills we are looking for you</h3>
+              </div>
+          </div></a>
+         <div class="tooltip"></div>
+         </li>
+         -->
+         </ul>
+
+         </div>  <!-- End Mask -->
+         <div class="progress-bar"></div>  <!-- Progress Bar -->
+      </div>  <!-- End Slider Container -->
+   </div>
+</div>
+       <!-- </div> End of Flash-->
+    <div class="footer">
+    	<div class="bottomLogoBackground">
+        
+        	<div class="footercontainer">
+        	<div class="leftnav">
+            	<ul>
+                	<li>ABOUT</li>
+                  <li>WORKS</li>
+                  <li>CLIENTS</li>
+              </ul>
+           </div>
+              
+        	<div class="logo"></div>
+      		<div class="rightnav">
+            	<ul>
+                	<li>BLOG</li>
+                  <li>CONTACT</li>
+                  <li>CAREERS</li>
+              </ul>
+           </div>
+           </div><!--End of Footer Container-->
+       </div>
+       </div>
+       
+       </div><!--End of Flash-->
+       </div><!--End of Cloud-->
+       </div><!--End of Skyline-->
+    </div>
+</body>
+</html>
+
+</body>
+</html>

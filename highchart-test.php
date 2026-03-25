@@ -1,0 +1,1 @@
+<div id='highcharts-aqugedu'><script src='//cloud.highcharts.com/inject/aqugedu' defer='defer'></script></div>

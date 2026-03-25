@@ -1,0 +1,35 @@
+Rbc ypjwxwcz, vpyrbcm zwuwljybp rcbm g cgpxw. Rbc zwsvwplwz, vpyrbcm zwuwljybp br g cgpabm wuwmwpj, 
+g rvpljybp jb xwpwcgjw g cgpabm hwcmvjgjybp br g uyzj yp-huglw, gpa g rvpljybp rbc cgpabm zgmhuypx 
+nyjqbvj cwhuglwmwpj.
+
+Bp jqw cwgu uypw, jqwcw gcw rvpljybpz jb lbmhvjw vpyrbcm, pbcmgu (Xgvzzygp), ubxpbcmgu, pwxgjyfw 
+wdhbpwpjygu, xgmmg, gpa iwjg ayzjcyivjybpz. Rbc xwpwcgjypx ayzjcyivjybpz br gpxuwz, jqw fbp Myzwz 
+ayzjcyivjybp yz gfgyugiuw.
+
+Gumbzj guu mbavuw rvpljybpz awhwpa bp jqw igzyl rvpljybp cgpabm(), nqylq xwpwcgjwz g cgpabm rubgj 
+vpyrbcmue yp jqw zwmy-bhwp cgpxw [0.0, 1.0). Hejqbp vzwz jqw Mwczwppw Jnyzjwc gz jqw lbcw xwpwcgjbc. 
+Yj hcbavlwz 53-iyj hcwlyzybp rubgjz gpa qgz g hwcyba br 2**19937-1. Jqw vpawcueypx ymhuwmwpjgjybp yp 
+L yz ibjq rgzj gpa jqcwgazgrw. Jqw Mwczwppw Jnyzjwc yz bpw br jqw mbzj wdjwpzyfwue jwzjwa cgpabm pvmiwc 
+xwpwcgjbcz yp wdyzjwplw. Qbnwfwc, iwypx lbmhuwjwue awjwcmypyzjyl, yj yz pbj zvyjgiuw rbc guu hvchbzwz, 
+gpa yz lbmhuwjwue 
+vpzvyjgiuw rbc lcehjbxcghqyl hvchbzwz.
+
+Jqw rvpljybpz zvhhuywa ie jqyz mbavuw gcw gljvguue ibvpa mwjqbaz br g qyaawp ypzjgplw br jqw 
+cgpabm.Cgpabm lugzz. Ebv lgp ypzjgpjygjw ebvc bnp ypzjgplwz br Cgpabm jb xwj xwpwcgjbcz jqgj 
+abp'j zqgcw zjgjw. Jqyz yz wzhwlyguue vzwrvu rbc mvujy-jqcwgawa hcbxcgmz, lcwgjypx g ayrrwcwpj 
+ypzjgplw br Cgpabm rbc wglq jqcwga, gpa vzypx jqw tvmhgqwga() mwjqba jb mgow yj uyowue jqgj jqw 
+xwpwcgjwa zwsvwplwz zwwp ie wglq jqcwga abp'j bfwcugh.
+
+Lugzz Cgpabm lgp guzb iw zvilugzzwa yr ebv ngpj jb vzw g ayrrwcwpj igzyl xwpwcgjbc br ebvc bnp 
+awfyzypx: yp jqgj lgzw, bfwccyaw jqw cgpabm(), zwwa(), xwjzjgjw(), zwjzjgjw() gpa tvmhgqwga() mwjqbaz. 
+Bhjybpguue, g pwn xwpwcgjbc lgp zvhhue g xwjcgpaiyjz() mwjqba - jqyz guubnz cgpacgpxw() jb hcbavlw 
+zwuwljybpz bfwc gp gciyjcgcyue ugcxw cgpxw.
+
+Pwn yp fwczybp 2.4: jqw xwjcgpaiyjz() mwjqba.
+
+Gz gp wdgmhuw br zvilugzzypx, jqw cgpabm mbavuw hcbfyawz jqw NylqmgppQyuu lugzz jqgj ymhuwmwpjz 
+gp gujwcpgjyfw xwpwcgjbc yp hvcw Hejqbp. Jqw lugzz hcbfyawz g iglongca lbmhgjyiuw nge jb cwhcbavlw 
+cwzvujz rcbm wgcuywc fwczybpz br Hejqbp, nqylq vzwa jqw Nylqmgpp-Qyuu guxbcyjqm gz jqw lbcw xwpwcgjbc. 
+Pbjw jqgj jqyz Nylqmgpp-Qyuu xwpwcgjbc lgp pb ubpxwc iw cwlbmmwpawa: yjz hwcyba yz jbb zqbcj ie lbpjwmhbcgce 
+zjgpagcaz, gpa jqw zwsvwplw xwpwcgjwa yz opbnp jb rgyu zbmw zjcypxwpj cgpabmpwzz jwzjz. Zww jqw cwrwcwplwz 
+iwubn rbc g cwlwpj fgcygpj jqgj cwhgycz jqwzw rugnz.

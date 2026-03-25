@@ -1,0 +1,407 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="jquery-scrollto.js"></script>
+<script src="js/jquery.mmenu.min.js" type="text/javascript"></script>
+<link href="css/jquery.mmenu.css" type="text/css" rel="stylesheet" />
+
+
+<script type="text/javascript">
+   $(document).ready(function() {
+      $("#my-menu").mmenu();
+   });
+</script>
+</script>
+<style>
+*{
+	margin:0;
+	padding:0;
+	font-family:verdana;
+}
+
+html, body, .wrapper {
+    height: 100%;
+}
+
+body{
+	background:#000;	
+}
+
+#wrapper {
+	background:url(images/stars-background.png) repeat 90% 110%;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 998;
+}
+.bottomLogoBackground{
+	width: 850px;
+	height:346px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(images/bottom-logo-background-1050.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.footer{
+	background-image:url(images/bottom-bg-1050.png);
+	background-repeat: repeat-x;
+	height:346px;
+	background-position:top;
+	height:346px;
+	width:100%;
+	position:fixed;
+	bottom:0;
+}
+
+.logo{
+	background-repeat:no-repeat;
+	float:left;
+	height:346px;
+	width:323px;
+	background-image:url(images/logo-1050.png);
+}
+
+.leftnav{
+	height:35px;
+	color:white;
+	float:left;
+	font-family:verdana;
+	width:260px;
+	font-size:17px;
+	margin-top:130px;
+}
+
+.leftnav a{
+	color:#fff;	
+}
+
+.rightnav a{
+	color:#fff;
+}
+
+.leftnav ul{
+	float:right;
+}
+
+.leftnav ul li{
+	display:inline-block;
+	margin-right:10px;
+
+	
+}
+
+.rightnav{
+	height:35px;
+	float:left;
+	color:white;
+	font-family:verdana;
+	width:260px;
+	font-size:17px;
+	margin-top:130px;
+}
+
+.rightnav ul li{
+	display:inline-block;
+	margin-left: 10px;
+}
+
+.footercontainer{
+	width:100%;
+	height:346px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.content{
+	width:960px;
+	margin-right:auto;
+	margin-left:auto;
+	/*border:dotted;*/
+	position: relative;
+	height:4500px;
+}
+
+.content .main-section{
+	clear:both;
+	float:left;
+	overflow:auto;
+	clear:both;
+	float:left;
+	margin:10px 25px;
+	background:none;
+}
+
+h1 {
+	font-family: 'Libre Baskerville', serif;
+	font-size:36px;
+	color:#ECECEC;
+	float:left;
+	margin-bottom:10px;
+}
+
+.mobile-menu-link{
+	display:block;
+	float:right;
+	margin-right:0px;
+}
+
+section article {
+	clear: left;
+	font-size:0.8em;
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+	color:#828282;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+p{
+	margin-bottom:15px;
+	line-height:1.5em;
+}
+@media screen and (max-width: 980px){
+	.wrapper{
+		width:800px;
+		background-color:blue;
+	}
+	
+	
+	.footercontainer{
+		height:263px;
+		width: 725px;
+		width:100%;
+	}
+	
+	.leftnav{
+		width:215px;
+		font-size:13px;
+		margin-top:103px;
+	}
+	
+	.rightnav{
+		width:215px;
+		font-size:13px;
+		margin-top:103px;
+	}
+	
+	#mask{
+		width:620px;
+	}
+	.pictureReplace {
+		width: 620px;
+	}
+	.bottomLogoBackground {
+	width: 680px;
+	height:263px;
+	background-image:url(images/bottom-logo-background-800.png);
+	}
+	
+	.footer{
+	/*border:dotted;*/
+	background-image:url(images/bottom-bg-800.png);
+	background-repeat: repeat-x;
+	height:263px;
+	}
+	
+	.logo{
+	height:268px;
+	width:250px;
+	background-image:url(images/logo-800.png);
+}
+
+.content {
+	width:90%;
+}
+
+@media screen and (max-width: 786px){
+	.footer{
+		display:none;	
+	}
+	
+	
+	/* line 958, ../src/sass/screen.scss */
+  .mobile-top-header {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  /* line 964, ../src/sass/screen.scss */
+  .mobile-menu {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('images/menu-icon-gray.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+  
+  .content {
+	height:0px;
+	overflow:visible;
+	width:80%%;
+  }
+  
+  
+  section article {
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;	
+}
+
+}
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<div class="content">
+     <nav id="my-menu">
+	<ul>
+    	<li>
+	<?php print render($page['mobile-menu']); ?>
+    </li>
+    
+    	<li><a href="#" onClick="$('#about-section').ScrollTo();">ABOUT</a></li><!--End of Header Menu-->
+    	<li><a href="#" onClick="$('#works-section').ScrollTo();">WORKS</a></li><!--End of Main Menu-->
+       <li><a href="#" onClick="$('#clients-section').ScrollTo();">CLIENTS</a></li><!--End of Footer Menu-->
+       <li><a href="#" onClick="$('#blog-section').ScrollTo();">BLOG</a></li><!--End of Footer Menu-->
+       <li><a href="#" onClick="$('#contact-section').ScrollTo();">CONTACT</a></li><!--End of Footer Menu-->
+       <li><a href="#" onClick="$('#careers-section').ScrollTo();">CAREERS</a></li><!--End of Footer Menu-->
+       </ul>
+</nav>
+	<section class="main-section" id="about-section">
+    	<h1>ABOUT</h1>
+       <a class="mobile-menu-link" href="#my-menu"><div class="mobile-menu"></div></a>
+    	<article>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur vitae est in tristique. Ut tristique accumsan consectetur. Ut libero libero, tincidunt ut lacus sit amet, lobortis bibendum turpis. Curabitur consequat lacus ullamcorper, ornare lectus eget, ultricies elit. Nulla facilisi. Ut iaculis lectus a feugiat pellentesque. Phasellus venenatis cursus risus, auctor malesuada libero malesuada vitae. Aliquam et erat id odio tempus mattis. Maecenas gravida scelerisque nisl non dignissim. Nulla facilisi. Vivamus volutpat lacus at est pretium porta.</p>
+
+<p>Nullam placerat condimentum libero, nec commodo lectus suscipit non. Fusce rhoncus fermentum nunc, mollis malesuada tortor auctor a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse interdum egestas egestas. Donec tempus aliquam dictum. Curabitur vel odio sit amet turpis elementum consequat. In nec nibh orci. Aliquam non iaculis lorem, eu malesuada ipsum. Maecenas non risus ipsum. Suspendisse potenti. Sed vitae augue sed tortor pharetra facilisis in a libero. Maecenas quis risus et neque mattis placerat. Cras interdum urna eu leo condimentum, eget posuere ligula ullamcorper.</p>
+
+<p>Vestibulum cursus dictum nibh, in condimentum ligula egestas ac. Suspendisse nec dolor bibendum, fringilla dolor et, interdum quam. Sed tincidunt nibh placerat nulla cursus, ut feugiat dolor blandit. Praesent ac dolor sit amet lacus pellentesque dignissim. Morbi nisl ante, accumsan vitae enim quis, tempus cursus metus. Mauris vestibulum nec purus vitae eleifend. Morbi nec malesuada dolor, in sagittis justo. Etiam tincidunt elit lectus, a ullamcorper lorem consequat eget. Suspendisse eget dapibus magna. Vestibulum placerat, mauris sed placerat sodales, mauris ligula laoreet justo, at sodales nibh purus vitae mi. Vestibulum nec risus pretium, lacinia sem quis, dignissim diam. Nunc eget sem vulputate est pretium tempus vitae sit amet ligula.</p>
+
+<p>Nam vitae iaculis magna. Donec laoreet urna elit, non ornare tortor adipiscing vel. Aenean porttitor ipsum quam, ac tincidunt lacus luctus quis. Mauris in neque sed ante consectetur sollicitudin commodo id diam. Donec sit amet orci elementum, sodales tortor at, consectetur urna. Vivamus venenatis, odio quis vehicula porta, ligula odio semper purus, laoreet sagittis purus augue in felis. Curabitur enim tortor, vehicula vitae dolor sed, placerat rhoncus nunc. Ut malesuada dui sed turpis pulvinar elementum. Curabitur non rhoncus felis. Etiam ligula purus, ultrices eget neque in, laoreet varius elit. Nunc sodales, sem id semper venenatis, sem sapien pharetra mi, sit amet porta dolor felis rutrum ante. Nam ac sagittis neque. Sed sapien nibh, placerat vel commodo vitae, dapibus a ligula. Pellentesque et nunc sit amet lectus consequat eleifend.</p>
+
+<p>Aenean id neque nulla. Integer scelerisque vulputate malesuada. Duis porttitor dui et elit tempor, sit amet dapibus risus iaculis. Aenean quis convallis turpis. Morbi ornare dolor eget libero pulvinar accumsan. Nunc tempor eget enim vitae blandit. Nunc quis aliquam augue. Curabitur mattis, lectus at fringilla pretium, eros nunc porttitor dui, sit amet dignissim felis orci ac sem. Nulla faucibus, sem nec tincidunt facilisis, quam nisi mollis risus, in fermentum nunc diam quis tortor. Vestibulum semper, nisl eu eleifend accumsan, leo tellus fermentum libero, vel vestibulum libero tortor ac orci. Quisque pulvinar quis massa id mattis. Nunc sed congue mi, nec pellentesque elit. Nulla facilisi. Vestibulum non tellus turpis. Nullam sit amet tempus felis.</p>
+	</article>
+    </section>
+    
+    <section class="main-section" id="works-section">
+    <h1>WORKS</h1>
+    <a class="mobile-menu-link" href="#my-menu"><div class="mobile-menu"></div></a>
+    	<article>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur vitae est in tristique. Ut tristique accumsan consectetur. Ut libero libero, tincidunt ut lacus sit amet, lobortis bibendum turpis. Curabitur consequat lacus ullamcorper, ornare lectus eget, ultricies elit. Nulla facilisi. Ut iaculis lectus a feugiat pellentesque. Phasellus venenatis cursus risus, auctor malesuada libero malesuada vitae. Aliquam et erat id odio tempus mattis. Maecenas gravida scelerisque nisl non dignissim. Nulla facilisi. Vivamus volutpat lacus at est pretium porta.</p>
+
+<p>Nullam placerat condimentum libero, nec commodo lectus suscipit non. Fusce rhoncus fermentum nunc, mollis malesuada tortor auctor a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse interdum egestas egestas. Donec tempus aliquam dictum. Curabitur vel odio sit amet turpis elementum consequat. In nec nibh orci. Aliquam non iaculis lorem, eu malesuada ipsum. Maecenas non risus ipsum. Suspendisse potenti. Sed vitae augue sed tortor pharetra facilisis in a libero. Maecenas quis risus et neque mattis placerat. Cras interdum urna eu leo condimentum, eget posuere ligula ullamcorper.</p>
+
+<p>Vestibulum cursus dictum nibh, in condimentum ligula egestas ac. Suspendisse nec dolor bibendum, fringilla dolor et, interdum quam. Sed tincidunt nibh placerat nulla cursus, ut feugiat dolor blandit. Praesent ac dolor sit amet lacus pellentesque dignissim. Morbi nisl ante, accumsan vitae enim quis, tempus cursus metus. Mauris vestibulum nec purus vitae eleifend. Morbi nec malesuada dolor, in sagittis justo. Etiam tincidunt elit lectus, a ullamcorper lorem consequat eget. Suspendisse eget dapibus magna. Vestibulum placerat, mauris sed placerat sodales, mauris ligula laoreet justo, at sodales nibh purus vitae mi. Vestibulum nec risus pretium, lacinia sem quis, dignissim diam. Nunc eget sem vulputate est pretium tempus vitae sit amet ligula.</p>
+
+<p>Nam vitae iaculis magna. Donec laoreet urna elit, non ornare tortor adipiscing vel. Aenean porttitor ipsum quam, ac tincidunt lacus luctus quis. Mauris in neque sed ante consectetur sollicitudin commodo id diam. Donec sit amet orci elementum, sodales tortor at, consectetur urna. Vivamus venenatis, odio quis vehicula porta, ligula odio semper purus, laoreet sagittis purus augue in felis. Curabitur enim tortor, vehicula vitae dolor sed, placerat rhoncus nunc. Ut malesuada dui sed turpis pulvinar elementum. Curabitur non rhoncus felis. Etiam ligula purus, ultrices eget neque in, laoreet varius elit. Nunc sodales, sem id semper venenatis, sem sapien pharetra mi, sit amet porta dolor felis rutrum ante. Nam ac sagittis neque. Sed sapien nibh, placerat vel commodo vitae, dapibus a ligula. Pellentesque et nunc sit amet lectus consequat eleifend.</p>
+
+<p>Aenean id neque nulla. Integer scelerisque vulputate malesuada. Duis porttitor dui et elit tempor, sit amet dapibus risus iaculis. Aenean quis convallis turpis. Morbi ornare dolor eget libero pulvinar accumsan. Nunc tempor eget enim vitae blandit. Nunc quis aliquam augue. Curabitur mattis, lectus at fringilla pretium, eros nunc porttitor dui, sit amet dignissim felis orci ac sem. Nulla faucibus, sem nec tincidunt facilisis, quam nisi mollis risus, in fermentum nunc diam quis tortor. Vestibulum semper, nisl eu eleifend accumsan, leo tellus fermentum libero, vel vestibulum libero tortor ac orci. Quisque pulvinar quis massa id mattis. Nunc sed congue mi, nec pellentesque elit. Nulla facilisi. Vestibulum non tellus turpis. Nullam sit amet tempus felis.</p>
+	</article>
+    </section>
+    
+    <section class="main-section" id="clients-section">
+    <h1>CLIENTS</h1>
+    <a class="mobile-menu-link" href="#my-menu"><div class="mobile-menu"></div></a>
+    	<article>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur vitae est in tristique. Ut tristique accumsan consectetur. Ut libero libero, tincidunt ut lacus sit amet, lobortis bibendum turpis. Curabitur consequat lacus ullamcorper, ornare lectus eget, ultricies elit. Nulla facilisi. Ut iaculis lectus a feugiat pellentesque. Phasellus venenatis cursus risus, auctor malesuada libero malesuada vitae. Aliquam et erat id odio tempus mattis. Maecenas gravida scelerisque nisl non dignissim. Nulla facilisi. Vivamus volutpat lacus at est pretium porta.</p>
+
+<p>Nullam placerat condimentum libero, nec commodo lectus suscipit non. Fusce rhoncus fermentum nunc, mollis malesuada tortor auctor a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse interdum egestas egestas. Donec tempus aliquam dictum. Curabitur vel odio sit amet turpis elementum consequat. In nec nibh orci. Aliquam non iaculis lorem, eu malesuada ipsum. Maecenas non risus ipsum. Suspendisse potenti. Sed vitae augue sed tortor pharetra facilisis in a libero. Maecenas quis risus et neque mattis placerat. Cras interdum urna eu leo condimentum, eget posuere ligula ullamcorper.</p>
+
+<p>Vestibulum cursus dictum nibh, in condimentum ligula egestas ac. Suspendisse nec dolor bibendum, fringilla dolor et, interdum quam. Sed tincidunt nibh placerat nulla cursus, ut feugiat dolor blandit. Praesent ac dolor sit amet lacus pellentesque dignissim. Morbi nisl ante, accumsan vitae enim quis, tempus cursus metus. Mauris vestibulum nec purus vitae eleifend. Morbi nec malesuada dolor, in sagittis justo. Etiam tincidunt elit lectus, a ullamcorper lorem consequat eget. Suspendisse eget dapibus magna. Vestibulum placerat, mauris sed placerat sodales, mauris ligula laoreet justo, at sodales nibh purus vitae mi. Vestibulum nec risus pretium, lacinia sem quis, dignissim diam. Nunc eget sem vulputate est pretium tempus vitae sit amet ligula.</p>
+
+<p>Nam vitae iaculis magna. Donec laoreet urna elit, non ornare tortor adipiscing vel. Aenean porttitor ipsum quam, ac tincidunt lacus luctus quis. Mauris in neque sed ante consectetur sollicitudin commodo id diam. Donec sit amet orci elementum, sodales tortor at, consectetur urna. Vivamus venenatis, odio quis vehicula porta, ligula odio semper purus, laoreet sagittis purus augue in felis. Curabitur enim tortor, vehicula vitae dolor sed, placerat rhoncus nunc. Ut malesuada dui sed turpis pulvinar elementum. Curabitur non rhoncus felis. Etiam ligula purus, ultrices eget neque in, laoreet varius elit. Nunc sodales, sem id semper venenatis, sem sapien pharetra mi, sit amet porta dolor felis rutrum ante. Nam ac sagittis neque. Sed sapien nibh, placerat vel commodo vitae, dapibus a ligula. Pellentesque et nunc sit amet lectus consequat eleifend.</p>
+
+<p>Aenean id neque nulla. Integer scelerisque vulputate malesuada. Duis porttitor dui et elit tempor, sit amet dapibus risus iaculis. Aenean quis convallis turpis. Morbi ornare dolor eget libero pulvinar accumsan. Nunc tempor eget enim vitae blandit. Nunc quis aliquam augue. Curabitur mattis, lectus at fringilla pretium, eros nunc porttitor dui, sit amet dignissim felis orci ac sem. Nulla faucibus, sem nec tincidunt facilisis, quam nisi mollis risus, in fermentum nunc diam quis tortor. Vestibulum semper, nisl eu eleifend accumsan, leo tellus fermentum libero, vel vestibulum libero tortor ac orci. Quisque pulvinar quis massa id mattis. Nunc sed congue mi, nec pellentesque elit. Nulla facilisi. Vestibulum non tellus turpis. Nullam sit amet tempus felis.</p>
+	</article>
+    </section>
+    
+    <section class="main-section" id="blog-section">
+    <h1>BLOG</h1>
+    <a class="mobile-menu-link" href="#my-menu"><div class="mobile-menu"></div></a>
+    	<article>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur vitae est in tristique. Ut tristique accumsan consectetur. Ut libero libero, tincidunt ut lacus sit amet, lobortis bibendum turpis. Curabitur consequat lacus ullamcorper, ornare lectus eget, ultricies elit. Nulla facilisi. Ut iaculis lectus a feugiat pellentesque. Phasellus venenatis cursus risus, auctor malesuada libero malesuada vitae. Aliquam et erat id odio tempus mattis. Maecenas gravida scelerisque nisl non dignissim. Nulla facilisi. Vivamus volutpat lacus at est pretium porta.</p>
+
+<p>Nullam placerat condimentum libero, nec commodo lectus suscipit non. Fusce rhoncus fermentum nunc, mollis malesuada tortor auctor a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse interdum egestas egestas. Donec tempus aliquam dictum. Curabitur vel odio sit amet turpis elementum consequat. In nec nibh orci. Aliquam non iaculis lorem, eu malesuada ipsum. Maecenas non risus ipsum. Suspendisse potenti. Sed vitae augue sed tortor pharetra facilisis in a libero. Maecenas quis risus et neque mattis placerat. Cras interdum urna eu leo condimentum, eget posuere ligula ullamcorper.</p>
+
+<p>Vestibulum cursus dictum nibh, in condimentum ligula egestas ac. Suspendisse nec dolor bibendum, fringilla dolor et, interdum quam. Sed tincidunt nibh placerat nulla cursus, ut feugiat dolor blandit. Praesent ac dolor sit amet lacus pellentesque dignissim. Morbi nisl ante, accumsan vitae enim quis, tempus cursus metus. Mauris vestibulum nec purus vitae eleifend. Morbi nec malesuada dolor, in sagittis justo. Etiam tincidunt elit lectus, a ullamcorper lorem consequat eget. Suspendisse eget dapibus magna. Vestibulum placerat, mauris sed placerat sodales, mauris ligula laoreet justo, at sodales nibh purus vitae mi. Vestibulum nec risus pretium, lacinia sem quis, dignissim diam. Nunc eget sem vulputate est pretium tempus vitae sit amet ligula.</p>
+
+<p>Nam vitae iaculis magna. Donec laoreet urna elit, non ornare tortor adipiscing vel. Aenean porttitor ipsum quam, ac tincidunt lacus luctus quis. Mauris in neque sed ante consectetur sollicitudin commodo id diam. Donec sit amet orci elementum, sodales tortor at, consectetur urna. Vivamus venenatis, odio quis vehicula porta, ligula odio semper purus, laoreet sagittis purus augue in felis. Curabitur enim tortor, vehicula vitae dolor sed, placerat rhoncus nunc. Ut malesuada dui sed turpis pulvinar elementum. Curabitur non rhoncus felis. Etiam ligula purus, ultrices eget neque in, laoreet varius elit. Nunc sodales, sem id semper venenatis, sem sapien pharetra mi, sit amet porta dolor felis rutrum ante. Nam ac sagittis neque. Sed sapien nibh, placerat vel commodo vitae, dapibus a ligula. Pellentesque et nunc sit amet lectus consequat eleifend.</p>
+
+<p>Aenean id neque nulla. Integer scelerisque vulputate malesuada. Duis porttitor dui et elit tempor, sit amet dapibus risus iaculis. Aenean quis convallis turpis. Morbi ornare dolor eget libero pulvinar accumsan. Nunc tempor eget enim vitae blandit. Nunc quis aliquam augue. Curabitur mattis, lectus at fringilla pretium, eros nunc porttitor dui, sit amet dignissim felis orci ac sem. Nulla faucibus, sem nec tincidunt facilisis, quam nisi mollis risus, in fermentum nunc diam quis tortor. Vestibulum semper, nisl eu eleifend accumsan, leo tellus fermentum libero, vel vestibulum libero tortor ac orci. Quisque pulvinar quis massa id mattis. Nunc sed congue mi, nec pellentesque elit. Nulla facilisi. Vestibulum non tellus turpis. Nullam sit amet tempus felis.</p>
+	</article>
+    </section>
+    
+    <section class="main-section" id="contact-section">
+    <h1>CONTACT</h1>
+    <a class="mobile-menu-link" href="#my-menu"><div class="mobile-menu"></div></a>
+    	<article>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur vitae est in tristique. Ut tristique accumsan consectetur. Ut libero libero, tincidunt ut lacus sit amet, lobortis bibendum turpis. Curabitur consequat lacus ullamcorper, ornare lectus eget, ultricies elit. Nulla facilisi. Ut iaculis lectus a feugiat pellentesque. Phasellus venenatis cursus risus, auctor malesuada libero malesuada vitae. Aliquam et erat id odio tempus mattis. Maecenas gravida scelerisque nisl non dignissim. Nulla facilisi. Vivamus volutpat lacus at est pretium porta.</p>
+
+<p>Nullam placerat condimentum libero, nec commodo lectus suscipit non. Fusce rhoncus fermentum nunc, mollis malesuada tortor auctor a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse interdum egestas egestas. Donec tempus aliquam dictum. Curabitur vel odio sit amet turpis elementum consequat. In nec nibh orci. Aliquam non iaculis lorem, eu malesuada ipsum. Maecenas non risus ipsum. Suspendisse potenti. Sed vitae augue sed tortor pharetra facilisis in a libero. Maecenas quis risus et neque mattis placerat. Cras interdum urna eu leo condimentum, eget posuere ligula ullamcorper.</p>
+
+<p>Vestibulum cursus dictum nibh, in condimentum ligula egestas ac. Suspendisse nec dolor bibendum, fringilla dolor et, interdum quam. Sed tincidunt nibh placerat nulla cursus, ut feugiat dolor blandit. Praesent ac dolor sit amet lacus pellentesque dignissim. Morbi nisl ante, accumsan vitae enim quis, tempus cursus metus. Mauris vestibulum nec purus vitae eleifend. Morbi nec malesuada dolor, in sagittis justo. Etiam tincidunt elit lectus, a ullamcorper lorem consequat eget. Suspendisse eget dapibus magna. Vestibulum placerat, mauris sed placerat sodales, mauris ligula laoreet justo, at sodales nibh purus vitae mi. Vestibulum nec risus pretium, lacinia sem quis, dignissim diam. Nunc eget sem vulputate est pretium tempus vitae sit amet ligula.</p>
+
+<p>Nam vitae iaculis magna. Donec laoreet urna elit, non ornare tortor adipiscing vel. Aenean porttitor ipsum quam, ac tincidunt lacus luctus quis. Mauris in neque sed ante consectetur sollicitudin commodo id diam. Donec sit amet orci elementum, sodales tortor at, consectetur urna. Vivamus venenatis, odio quis vehicula porta, ligula odio semper purus, laoreet sagittis purus augue in felis. Curabitur enim tortor, vehicula vitae dolor sed, placerat rhoncus nunc. Ut malesuada dui sed turpis pulvinar elementum. Curabitur non rhoncus felis. Etiam ligula purus, ultrices eget neque in, laoreet varius elit. Nunc sodales, sem id semper venenatis, sem sapien pharetra mi, sit amet porta dolor felis rutrum ante. Nam ac sagittis neque. Sed sapien nibh, placerat vel commodo vitae, dapibus a ligula. Pellentesque et nunc sit amet lectus consequat eleifend.</p>
+
+<p>Aenean id neque nulla. Integer scelerisque vulputate malesuada. Duis porttitor dui et elit tempor, sit amet dapibus risus iaculis. Aenean quis convallis turpis. Morbi ornare dolor eget libero pulvinar accumsan. Nunc tempor eget enim vitae blandit. Nunc quis aliquam augue. Curabitur mattis, lectus at fringilla pretium, eros nunc porttitor dui, sit amet dignissim felis orci ac sem. Nulla faucibus, sem nec tincidunt facilisis, quam nisi mollis risus, in fermentum nunc diam quis tortor. Vestibulum semper, nisl eu eleifend accumsan, leo tellus fermentum libero, vel vestibulum libero tortor ac orci. Quisque pulvinar quis massa id mattis. Nunc sed congue mi, nec pellentesque elit. Nulla facilisi. Vestibulum non tellus turpis. Nullam sit amet tempus felis.</p>
+	</article>
+    </section>
+    
+    <section class="main-section" id="careers-section">
+    <h1>CAREERS</h1>
+    <a class="mobile-menu-link" href="#my-menu"><div class="mobile-menu"></div></a>
+    	<article>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur vitae est in tristique. Ut tristique accumsan consectetur. Ut libero libero, tincidunt ut lacus sit amet, lobortis bibendum turpis. Curabitur consequat lacus ullamcorper, ornare lectus eget, ultricies elit. Nulla facilisi. Ut iaculis lectus a feugiat pellentesque. Phasellus venenatis cursus risus, auctor malesuada libero malesuada vitae. Aliquam et erat id odio tempus mattis. Maecenas gravida scelerisque nisl non dignissim. Nulla facilisi. Vivamus volutpat lacus at est pretium porta.</p>
+
+<p>Nullam placerat condimentum libero, nec commodo lectus suscipit non. Fusce rhoncus fermentum nunc, mollis malesuada tortor auctor a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse interdum egestas egestas. Donec tempus aliquam dictum. Curabitur vel odio sit amet turpis elementum consequat. In nec nibh orci. Aliquam non iaculis lorem, eu malesuada ipsum. Maecenas non risus ipsum. Suspendisse potenti. Sed vitae augue sed tortor pharetra facilisis in a libero. Maecenas quis risus et neque mattis placerat. Cras interdum urna eu leo condimentum, eget posuere ligula ullamcorper.</p>
+
+<p>Vestibulum cursus dictum nibh, in condimentum ligula egestas ac. Suspendisse nec dolor bibendum, fringilla dolor et, interdum quam. Sed tincidunt nibh placerat nulla cursus, ut feugiat dolor blandit. Praesent ac dolor sit amet lacus pellentesque dignissim. Morbi nisl ante, accumsan vitae enim quis, tempus cursus metus. Mauris vestibulum nec purus vitae eleifend. Morbi nec malesuada dolor, in sagittis justo. Etiam tincidunt elit lectus, a ullamcorper lorem consequat eget. Suspendisse eget dapibus magna. Vestibulum placerat, mauris sed placerat sodales, mauris ligula laoreet justo, at sodales nibh purus vitae mi. Vestibulum nec risus pretium, lacinia sem quis, dignissim diam. Nunc eget sem vulputate est pretium tempus vitae sit amet ligula.</p>
+
+<p>Nam vitae iaculis magna. Donec laoreet urna elit, non ornare tortor adipiscing vel. Aenean porttitor ipsum quam, ac tincidunt lacus luctus quis. Mauris in neque sed ante consectetur sollicitudin commodo id diam. Donec sit amet orci elementum, sodales tortor at, consectetur urna. Vivamus venenatis, odio quis vehicula porta, ligula odio semper purus, laoreet sagittis purus augue in felis. Curabitur enim tortor, vehicula vitae dolor sed, placerat rhoncus nunc. Ut malesuada dui sed turpis pulvinar elementum. Curabitur non rhoncus felis. Etiam ligula purus, ultrices eget neque in, laoreet varius elit. Nunc sodales, sem id semper venenatis, sem sapien pharetra mi, sit amet porta dolor felis rutrum ante. Nam ac sagittis neque. Sed sapien nibh, placerat vel commodo vitae, dapibus a ligula. Pellentesque et nunc sit amet lectus consequat eleifend.</p>
+
+<p>Aenean id neque nulla. Integer scelerisque vulputate malesuada. Duis porttitor dui et elit tempor, sit amet dapibus risus iaculis. Aenean quis convallis turpis. Morbi ornare dolor eget libero pulvinar accumsan. Nunc tempor eget enim vitae blandit. Nunc quis aliquam augue. Curabitur mattis, lectus at fringilla pretium, eros nunc porttitor dui, sit amet dignissim felis orci ac sem. Nulla faucibus, sem nec tincidunt facilisis, quam nisi mollis risus, in fermentum nunc diam quis tortor. Vestibulum semper, nisl eu eleifend accumsan, leo tellus fermentum libero, vel vestibulum libero tortor ac orci. Quisque pulvinar quis massa id mattis. Nunc sed congue mi, nec pellentesque elit. Nulla facilisi. Vestibulum non tellus turpis. Nullam sit amet tempus felis.</p>
+	</article>
+    </section>
+</div>
+<div class="footer">
+    <div class="bottomLogoBackground">
+    
+        <div class="footercontainer">
+        <div class="leftnav">
+            <ul>
+                <a href="#" onClick="$('#about-section').ScrollTo();"><li>ABOUT</li></a>
+              <a href="#" onClick="$('#works-section').ScrollTo();"><li>WORKS</li></a>
+              <a href="#" onClick="$('#clients-section').ScrollTo();"><li>CLIENTS</li></a>
+          </ul>
+       </div>
+          
+        <div class="logo"></div>
+        <div class="rightnav">
+            <ul>
+              <a href="#" onClick="$('#blog-section').ScrollTo();"><li>BLOG</li></a>
+              <a href="#" onClick="$('#contact-section').ScrollTo();"><li>CONTACT</li></a>
+              <a href="#" onClick="$('#careers-section').ScrollTo();"><li>CAREERS</li></a>
+          </ul>
+       </div>
+       </div><!--End of Footer Container-->
+   </div>
+</div>
+</div><!--End of Wrapper-->
+</body>
+</html>

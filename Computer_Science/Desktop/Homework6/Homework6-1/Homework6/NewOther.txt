@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8" />
+    <title>Project Management</title>
+    <meta name="description" content="">
+    <!-- Optional icons
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+</head>
+<body>
+    <script src="javascripts/main.js" type="text/javascript"></script>
+    
+    <div id="header">
+        <h1>They Meet</h1>
+	<img src="picture1.jpg">
+    </div>
+
+    <div id="navigation">
+    <ul>
+        <li>Overview<span> <a href=Marriage.html>Marriage</a></span><li>
+        <li>Requirements<span> <a href=BigDaddy.html>BigDaddy</a></span></li>
+        <li>Schedule<span> Home</span></li>
+    </ul>
+    </div>
+</body>
+</html>
+
+<html>
+
+
+<body>
+
+Always willing to give a hand
+I met a girl once, with long brown hair, and the deepest of deep green eyes. Through that which she lacked, she gained so much more. I was eleven.
+
+I went to Sunday-School so God could teach me the lessons of life. Maybe it worked. What I learned I will never forget. The girl sat down beside me 
+in a cold steel chair in the cold brick room, on a cold Sunday morning.
+
+I stared at the gas heater on the other side of the room. Others prayed for those less fortunate, but I prayed for warmth. I gave up and turned towards
+
+her - she smiled without hesitation or malcontent.
+
+Beneath the din of others conferring, we laughed, we joked, we shared stories. She had just been with her Dad on a canoeing adventure. My uncle had taught
+
+me how to fish for trout from his yellow ski-boat.
+
+The warm discussion made the cold room bearable, and the time passed quickly. We were placed in activity groups based on our age. She was ten. We sat together
+
+again. The move exposed us to the cold. Everyone sat rubbing their hands under the table.
+
+Cold, hard lumps of clay were placed before each of us as we were given a divine dut - to create from them God’s own creations. Moving her hands towards the 
+
+table, what I saw next shocked me at first. Each hand bore nothing more than a little finger, but one which I found could perform the task of five.
+
+With her clay, she fashioned a magnificent elephant, a remarkable giraffe, Both made my feeble mouse seem all the more insignificant.
+
+Over the years, our friendship grew stronger as we saw more of one another. I saw her conquer challenges; flying foxes to shoelaces, hammers to watch bands.
+
+Nothing stood in her way, she worked hard and was thankful for even the smallest of victories. She laughed when the Reverend gave her the well-meaning “always 
+
+willing to give a hand” award.
+
+I met a girl once, with long brown hair, and the deepest of deep green eyes. Through that which she lacked, she gained so much more. She let no feature become
+
+her shortcoming, no disability disable her; She defied the world to try and make her submit. Least of all in generosity, spirit or diligence.
+
+It was not enough to become ordinary with what she had been given; Nothing less than extraordinary would she settle upon. I met a girl once, with long brown hair, 
+
+and the deepest of deep green eyes, While others prayed for those less fortunate, I prayed for warmth. I don’t see her anymore, but I remember her lesson to me as
+
+clear as it were yesterday.
+
+Fortune doesn’t make people. You end up being only as warm as you make yourself.
+
+<p>
+
+</body>
+
+</html>

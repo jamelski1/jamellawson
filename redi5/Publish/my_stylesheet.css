@@ -1,0 +1,186 @@
+/*Dropdown menu styling
+-------------------------------------------*/
+/* Base Styles */
+#cssmenu > ul,
+#cssmenu > ul li,
+#cssmenu > ul ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family:'Roboto', sans-serif;
+  
+}
+#cssmenu > ul {
+  position: relative;
+  z-index: 597;
+  float: left;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Edit this to change features to the base of the menu.*/
+#cssmenu > ul li {
+  float: left;
+  min-height: 1px;
+  line-height: 1.3em;
+  vertical-align: middle;
+  padding: 0;
+  margin-left: 10%;
+  text-wrap: none;
+}
+#cssmenu > ul li.hover,
+#cssmenu > ul li:hover {
+  z-index: 599;
+  cursor: default;
+}
+#cssmenu > ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 598;
+}
+#cssmenu > ul ul li {
+  float: none;
+}
+#cssmenu > ul li:hover > ul {
+  visibility: visible;
+}
+/* Align last drop down RTL */
+/* Theme Styles */
+#cssmenu > ul a:link {
+  text-decoration: none;
+}
+/*Highlighted menu item color*/
+#cssmenu > ul a:active {
+  color: #ffa500;
+}
+#cssmenu li {
+  padding: 0;
+  color: #000;
+}
+/*Main Menu bar*/
+#cssmenu {
+  width: 100%;
+  /*-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  */
+  background: url('images/nav_bkgd3.jpg') center repeat-x;
+  background-size: auto 100%;
+  font-size: 18px;
+
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+  color: White;
+  /*
+  -moz-box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.3);*/
+}
+#cssmenu > ul {
+  padding: 0 5px;
+  /*-moz-box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;*/
+  display: block;
+  float: none;
+  zoom: 1;
+}
+#cssmenu > ul:before {
+  content: '';
+  display: block;
+}
+#cssmenu > ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#cssmenu > ul > li {
+  padding: 8px;
+}
+#cssmenu > ul > li > a,
+#cssmenu > ul > li > a:link,
+#cssmenu > ul > li > a:visited {
+  color: #fff;
+  padding: 7px;
+  display: block;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+/*Highlighted menu item background color*/
+#cssmenu > ul > li > a:hover,
+#cssmenu > ul > li:hover > a {
+  background-color: #F30000;
+  color: #F90;
+}
+#cssmenu li li a {
+ /* color: #000000;*/
+  font-size: 18px;
+
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+  color: White;
+}
+#cssmenu li li a:hover {
+  color: #5c5c5c;
+  border-color: #6699CC;
+}
+#cssmenu ul ul {
+  margin: 0 10px;
+  padding: 0 10px;
+  float: none;
+  background: #E9AF65;
+  background-size: auto 100%;
+  border-top: none;
+  right: 0;
+  left: 0;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  -ms-border-radius: 0 0 3px 3px;
+  -o-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+#cssmenu ul > li > ul > li {
+  margin: 0 10px 0 0;
+  position: relative;
+  padding: 0;
+  float: left;
+}
+#cssmenu ul > li > ul > li > a {
+  padding: 10px 20px 10px 10px;
+  display: block;
+  background: #E9AF65;
+}
+#cssmenu ul > li > ul > li.has-sub > a:before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  right: 6px;
+  border: 5px solid transparent;
+  border-top: 5px solid #8b8b8b;
+}
+#cssmenu ul > li > ul > li.has-sub > a:hover:before {
+  border-top: 5px solid #5c5c5c;
+}
+#cssmenu ul ul ul {
+  width: 480px;
+  top: 100%;
+  border: 2px solid #E9AF65;
+}
+#cssmenu ul ul ul li{
+  float: left;
+}
+

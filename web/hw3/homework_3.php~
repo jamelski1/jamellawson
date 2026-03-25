@@ -1,0 +1,21 @@
+<?php
+
+include_once("functions.php");
+
+// include the header, menu
+
+connect('dbdev.cs.uiowa.edu','jllawsn','MwomvmeTs67R','db_jllawsn');
+
+// write a query string that selects all records from the Wood table
+
+// execute the query string and handle errors
+
+// build HTML table:
+//      column headings
+//      all of the rows
+
+// close database
+// connect using a bad password
+
+
+?>

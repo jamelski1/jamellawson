@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* CSS Document */
+
+meter {
+	margin: 0px auto;
+	width: 75%;
+	height: 20px;
+}

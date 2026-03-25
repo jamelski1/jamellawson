@@ -1,0 +1,89 @@
+Objects
+	-Dice
+	-Score Sheet
+	-Board
+	-Driver
+	-Round?
+Score Sheet Class
+	-instance variables
+		-numOfTotalGames
+		-totalScore
+		-ones
+		-twos
+		-threes
+		-fours
+		-fives
+		-sixes
+		-threeOfAKind
+		-fourOfAKind
+		-fullHouse
+		-smallStraight
+		-LargeStraight
+		-Chance
+		-Yatzee
+	-methods
+		-calculateIndScore
+			-Takes the dice that the user has and calculates the score of the
+			 the round depending on the type of play the user wants...example
+			 1s, 2s, 3s, 4s, 3 of a kind, chance, etc.
+			-Returns an integer value of the score for that round
+			-Adds 1 to the numOfTotal Games
+		-getScore
+			-Takes the type of score the user wants (example 1s, 2s, 3s, etc.)...
+			-Returns an integer value of the specific score
+		-setScore
+			-Takes the integer from the calculateIndScore and the type of play
+			-Sets the type of play (1s, 2s, 3s, etc.) to the score calculated
+			 by calculateIndScore
+		-gameComplete
+			-Doesn't pass anything through the parameters
+			-returns True if all instance variables has a score or if
+			 numOfTotalGames is equal to 12.
+Dice Class
+	-instance variables
+		-numberOnDie
+	-methods
+		-getNumber
+		-rollDie
+Board Class
+	-instance variables
+		-numOfRolls
+			-keeps track of the rolls of one round (max 3)
+		-methods
+			-rollDice
+				-Takes a specified number of dice (<=5)
+				-If numOfRolls > 2 don't let this method be called
+				-Rolls dice randomly
+				-Returns array of dice rolled
+				-Adds 1 to the num Of rolls
+			-resetRolls
+				-Takes nothing in its parameters
+				-Resets the numOfRolls to 0
+				-Returns nothing
+Driver Class
+	-instance variables
+		-temporary numbers
+	-Rolls dice if numOfRolls < 3 or if user hasn't set a score this round
+	-Facilitates game play from start to finish
+Round Class
+	-Possibly keeps track of numOfRolls
+	-Possibly keeps track of held dice
+	-Possibly keeps track of number of rolls left in a round
+	
+Summary:
+
+The objects that makes up my Yatzee program are Score Sheet, Dice, Board,
+and possibly Round.  The objects work together to take the user from the
+of the game to the end. The Dice Class creates the different dice.  The
+Driver Class will then create 6 different dice and roll them to change
+the number on the die which will be methods of the Dice Class.  The Board
+Class will keep track of the number of rolls for a specific round and after
+the user decides to pick their dice or once three rolls comes the user must
+give the Score Sheet object it's final decision on what it would like the score
+to be and where where he'd like to apply it and  the Score Sheet will keep track
+of this information.  The game ends when the Score Sheet is completely filled
+and the Driver will know the game is over from the Score Sheet and the game will
+be over. I may possibly want to give the roll of keeping the information for an
+individual Round to the Round Class, but that was a thought I had at the end
+of creating all of the objects so after further thought the Round Class may
+be implemented.

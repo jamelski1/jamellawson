@@ -1,0 +1,275 @@
+Data extracted on: November 3, 2011 (12:11:10 PM)
+
+Labor Force Statistics from the Current Population Survey
+
+Series Id:           LNU00073395
+Not Seasonally Adjusted
+Series title:        (Unadj) Population Level - Foreign born
+Labor force status:  Civilian noninstitutional population
+Type of data:        Number in thousands
+Age:                 16 years and over
+
+Download: 
+Year	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Annual
+2005	 	 	 	 	 	 	 	 	 	 	 	 	32558
+2006	 	 	 	 	 	 	 	 	 	 	 	 	33733
+2007	34350	34868	34921	35042	35186	34953	35021	34832	35312	35478	35164	35078	35017
+2008	35093	35098	34998	35302	35014	35613	35640	35190	35660	35462	35427	35306	35317
+2009	35007	34714	34675	35039	34761	35258	35216	35312	35527	35552	35956	35575	35216
+2010	35440	35315	34991	34996	35647	36155	36207	36347	36097	36341	36350	36545	35869
+2011	36294	36026	35996	35737	36348	36323	36576	36531	36657	 	 	 	 
+
+Series Id:           LNU01073395
+Not Seasonally Adjusted
+Series title:        (Unadj) Civilian Labor Force Level - Foreign born
+Labor force status:  Civilian labor force
+Type of data:        Number in thousands
+Age:                 16 years and over
+
+Download: 
+Year	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Annual
+2005	 	 	 	 	 	 	 	 	 	 	 	 	22042
+2006	 	 	 	 	 	 	 	 	 	 	 	 	23148
+2007	23494	23720	23751	23772	23949	23982	24303	24272	24301	24265	24184	23936	23994
+2008	23881	23836	23725	23899	23763	24377	24615	24362	24399	24096	23844	23957	24063
+2009	23541	23390	23529	23782	23638	24135	24289	24142	24189	24200	24350	23920	23926
+2010	23924	23854	23855	23916	24210	24688	24586	24644	24488	24530	24788	24783	24356
+2011	24517	23958	24034	23915	24253	24294	24516	24377	24447	 	 	 	 
+
+Series Id:           LNU01373395
+Not Seasonally Adjusted
+Series title:        (Unadj) Labor Force Participation Rate - Foreign born
+Labor force status:  Civilian labor force participation rate
+Type of data:        Percent or rate
+Age:                 16 years and over
+
+Download: 
+Year	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Annual
+2005	 	 	 	 	 	 	 	 	 	 	 	 	67.7
+2006	 	 	 	 	 	 	 	 	 	 	 	 	68.6
+2007	68.4	68.0	68.0	67.8	68.1	68.6	69.4	69.7	68.8	68.4	68.8	68.2	68.5
+2008	68.1	67.9	67.8	67.7	67.9	68.5	69.1	69.2	68.4	67.9	67.3	67.9	68.1
+2009	67.2	67.4	67.9	67.9	68.0	68.5	69.0	68.4	68.1	68.1	67.7	67.2	67.9
+2010	67.5	67.5	68.2	68.3	67.9	68.3	67.9	67.8	67.8	67.5	68.2	67.8	67.9
+2011	67.6	66.5	66.8	66.9	66.7	66.9	67.0	66.7	66.7	 	 	 	 
+
+Series Id:           LNU02073395
+Not Seasonally Adjusted
+Series title:        (Unadj) Employment Level - Foreign born
+Labor force status:  Employed
+Type of data:        Number in thousands
+Age:                 16 years and over
+
+Download: 
+Year	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Annual
+2005	 	 	 	 	 	 	 	 	 	 	 	 	21022
+2006	 	 	 	 	 	 	 	 	 	 	 	 	22225
+2007	22356	22579	22785	22793	22973	23051	23312	23308	23280	23258	23104	22810	22967
+2008	22564	22502	22258	22762	22515	23020	23262	22890	23048	22675	22283	22138	22660
+2009	21375	20976	21274	21750	21488	21787	21856	21695	21864	21856	22091	21290	21608
+2010	21090	21102	21239	21816	22125	22541	22249	22415	22226	22281	22387	22153	21969
+2011	21928	21614	21728	21741	22216	22260	22264	22292	22224	 	 	 	 
+
+Series Id:           LNU02373395
+Not Seasonally Adjusted
+Series title:        (Unadj) Employment-Population Ratio - Foreign born
+Labor force status:  Employment-population ratio
+Type of data:        Percent or rate
+Age:                 16 years and over
+
+Download: 
+Year	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Annual
+2005	 	 	 	 	 	 	 	 	 	 	 	 	64.6
+2006	 	 	 	 	 	 	 	 	 	 	 	 	65.9
+2007	65.1	64.8	65.2	65.0	65.3	65.9	66.6	66.9	65.9	65.6	65.7	65.0	65.6
+2008	64.3	64.1	63.6	64.5	64.3	64.6	65.3	65.0	64.6	63.9	62.9	62.7	64.2
+2009	61.1	60.4	61.4	62.1	61.8	61.8	62.1	61.4	61.5	61.5	61.4	59.8	61.4
+2010	59.5	59.8	60.7	62.3	62.1	62.3	61.5	61.7	61.6	61.3	61.6	60.6	61.2
+2011	60.4	60.0	60.4	60.8	61.1	61.3	60.9	61.0	60.6	 	 	 	 
+
+Series Id:           LNU03073395
+Not Seasonally Adjusted
+Series title:        (Unadj) Unemployment Level - Foreign born
+Labor force status:  Unemployed
+Type of data:        Number in thousands
+Age:                 16 years and over
+
+Download: 
+Year	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Annual
+2005	 	 	 	 	 	 	 	 	 	 	 	 	1020
+2006	 	 	 	 	 	 	 	 	 	 	 	 	923
+2007	1138	1141	966	979	977	931	991	964	1022	1007	1080	1127	1027
+2008	1317	1334	1467	1137	1248	1358	1352	1472	1352	1421	1561	1818	1403
+2009	2166	2414	2256	2032	2149	2348	2433	2447	2325	2345	2259	2630	2317
+2010	2834	2752	2616	2100	2085	2148	2337	2229	2262	2249	2401	2630	2387
+2011	2589	2344	2306	2174	2037	2034	2252	2085	2222	 	 	 	 
+
+Series Id:           LNU04073395
+Not Seasonally Adjusted
+Series title:        (Unadj) Unemployment Rate - Foreign born
+Labor force status:  Unemployment rate
+Type of data:        Percent or rate
+Age:                 16 years and over
+
+Download: 
+Year	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Annual
+2005	 	 	 	 	 	 	 	 	 	 	 	 	4.6
+2006	 	 	 	 	 	 	 	 	 	 	 	 	4.0
+2007	4.8	4.8	4.1	4.1	4.1	3.9	4.1	4.0	4.2	4.1	4.5	4.7	4.3
+2008	5.5	5.6	6.2	4.8	5.3	5.6	5.5	6.0	5.5	5.9	6.5	7.6	5.8
+2009	9.2	10.3	9.6	8.5	9.1	9.7	10.0	10.1	9.6	9.7	9.3	11.0	9.7
+2010	11.8	11.5	11.0	8.8	8.6	8.7	9.5	9.0	9.2	9.2	9.7	10.6	9.8
+2011	10.6	9.8	9.6	9.1	8.4	8.4	9.2	8.6	9.1	 	 	 	 
+
+Series Id:           LNU05073395
+Not Seasonally Adjusted
+Series title:        (Unadj)  Not in Labor Force - Foreign born
+Labor force status:  Not in labor force
+Type of data:        Number in thousands
+Age:                 16 years and over
+
+Download: 
+Year	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Annual
+2005	 	 	 	 	 	 	 	 	 	 	 	 	10515
+2006	 	 	 	 	 	 	 	 	 	 	 	 	10585
+2007	10856	11147	11169	11270	11237	10971	10719	10560	11010	11213	10980	11142	11023
+2008	11212	11263	11273	11403	11251	11235	11025	10828	11261	11366	11583	11349	11254
+2009	11466	11324	11146	11257	11123	11123	10926	11170	11338	11351	11606	11655	11290
+2010	11515	11461	11136	11080	11437	11467	11621	11703	11609	11811	11562	11762	11514
+2011	11777	12068	11961	11822	12095	12029	12060	12154	12210	 	 	 	 
+
+Series Id:           LNU00073413
+Not Seasonally Adjusted
+Series title:        (Unadj) Population Level - Native born
+Labor force status:  Civilian noninstitutional population
+Type of data:        Number in thousands
+Age:                 16 years and over
+
+Download: 
+Year	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Annual
+2005	 	 	 	 	 	 	 	 	 	 	 	 	193525
+2006	 	 	 	 	 	 	 	 	 	 	 	 	195082
+2007	196299	195967	196113	196211	196294	196759	196937	197379	197149	197238	197775	198077	196850
+2008	197523	197711	197996	197896	198391	198014	198224	198917	198700	199151	199401	199729	198471
+2009	199731	200199	200411	200232	200691	200397	200654	200774	200796	200998	200787	201349	200585
+2010	201393	201683	202168	202333	201852	201535	201683	201752	202225	202189	202365	202344	201960
+2011	202410	202825	203004	203409	202965	203166	203095	203340	203415	 	 	 	 
+
+Series Id:           LNU01073413
+Not Seasonally Adjusted
+Series title:        (Unadj) Civilian Labor Force Level - Native born
+Labor force status:  Civilian labor force
+Type of data:        Number in thousands
+Age:                 16 years and over
+
+Download: 
+Year	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Annual
+2005	 	 	 	 	 	 	 	 	 	 	 	 	127278
+2006	 	 	 	 	 	 	 	 	 	 	 	 	128280
+2007	128430	128159	128484	128058	128400	130270	130568	129222	129099	129251	129851	129769	129130
+2008	128947	128667	129410	129309	130240	131205	131686	131026	130110	130916	130780	130392	130224
+2009	129904	130414	130198	130052	130699	131786	131966	130755	129428	129435	129189	128773	130216
+2010	129032	129341	129805	129995	129656	130079	130684	130034	129366	129122	128909	128373	129533
+2011	128019	128676	128988	128984	129196	130244	130296	129966	129575	 	 	 	 
+
+Series Id:           LNU01373413
+Not Seasonally Adjusted
+Series title:        (Unadj) Labor Force Participation Rate - Native born
+Labor force status:  Civilian labor force participation rate
+Type of data:        Percent or rate
+Age:                 16 years and over
+
+Download: 
+Year	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Annual
+2005	 	 	 	 	 	 	 	 	 	 	 	 	65.8
+2006	 	 	 	 	 	 	 	 	 	 	 	 	65.8
+2007	65.4	65.4	65.5	65.3	65.4	66.2	66.3	65.5	65.5	65.5	65.7	65.5	65.6
+2008	65.3	65.1	65.4	65.3	65.6	66.3	66.4	65.9	65.5	65.7	65.6	65.3	65.6
+2009	65.0	65.1	65.0	65.0	65.1	65.8	65.8	65.1	64.5	64.4	64.3	64.0	64.9
+2010	64.1	64.1	64.2	64.2	64.2	64.5	64.8	64.5	64.0	63.9	63.7	63.4	64.1
+2011	63.2	63.4	63.5	63.4	63.7	64.1	64.2	63.9	63.7	 	 	 	 
+
+Series Id:           LNU02073413
+Not Seasonally Adjusted
+Series title:        (Unadj) Employment Level - Native born
+Labor force status:  Employed
+Type of data:        Number in thousands
+Age:                 16 years and over
+
+Download: 
+Year	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Annual
+2005	 	 	 	 	 	 	 	 	 	 	 	 	120708
+2006	 	 	 	 	 	 	 	 	 	 	 	 	122202
+2007	121919	121900	122538	122504	122891	123906	124003	123098	123168	123485	124014	123524	123079
+2008	122042	122047	122850	123159	123412	123630	123605	123018	122263	122868	122326	121211	122703
+2009	119061	119129	118559	118835	118875	119039	119199	118379	117215	117233	117041	116663	118269
+2010	115719	116102	116743	117486	117372	117342	117884	117504	117488	117468	117029	117006	117095
+2011	115671	116478	117234	117920	117812	117869	118120	118043	118277	 	 	 	 
+
+Series Id:           LNU02373413
+Not Seasonally Adjusted
+Series title:        (Unadj) Employment-Population Ratio - Native born
+Labor force status:  Employment-population ratio
+Type of data:        Percent or rate
+Age:                 16 years and over
+
+Download: 
+Year	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Annual
+2005	 	 	 	 	 	 	 	 	 	 	 	 	62.4
+2006	 	 	 	 	 	 	 	 	 	 	 	 	62.6
+2007	62.1	62.2	62.5	62.4	62.6	63.0	63.0	62.4	62.5	62.6	62.7	62.4	62.5
+2008	61.8	61.7	62.0	62.2	62.2	62.4	62.4	61.8	61.5	61.7	61.3	60.7	61.8
+2009	59.6	59.5	59.2	59.3	59.2	59.4	59.4	59.0	58.4	58.3	58.3	57.9	59.0
+2010	57.5	57.6	57.7	58.1	58.1	58.2	58.5	58.2	58.1	58.1	57.8	57.8	58.0
+2011	57.1	57.4	57.7	58.0	58.0	58.0	58.2	58.1	58.1	 	 	 	 
+
+Series Id:           LNU03073413
+Not Seasonally Adjusted
+Series title:        (Unadj) Unemployment Level - Native born
+Labor force status:  Unemployed
+Type of data:        Number in thousands
+Age:                 16 years and over
+
+Download: 
+Year	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Annual
+2005	 	 	 	 	 	 	 	 	 	 	 	 	6570
+2006	 	 	 	 	 	 	 	 	 	 	 	 	6078
+2007	6511	6258	5946	5553	5509	6364	6565	6124	5930	5766	5837	6245	6051
+2008	6905	6620	6560	6150	6829	7575	8081	8007	7847	8048	8454	9181	7521
+2009	10843	11285	11639	11216	11824	12747	12767	12375	12213	12202	12148	12110	11947
+2010	13313	13239	13062	12509	12284	12737	12800	12530	11878	11654	11881	11367	12438
+2011	12348	12198	11754	11063	11384	12375	12176	11923	11298	 	 	 	 
+
+Series Id:           LNU04073413
+Not Seasonally Adjusted
+Series title:        (Unadj) Unemployment Rate - Native born
+Labor force status:  Unemployment rate
+Type of data:        Percent or rate
+Age:                 16 years and over
+
+Download: 
+Year	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Annual
+2005	 	 	 	 	 	 	 	 	 	 	 	 	5.2
+2006	 	 	 	 	 	 	 	 	 	 	 	 	4.7
+2007	5.1	4.9	4.6	4.3	4.3	4.9	5.0	4.7	4.6	4.5	4.5	4.8	4.7
+2008	5.4	5.1	5.1	4.8	5.2	5.8	6.1	6.1	6.0	6.1	6.5	7.0	5.8
+2009	8.3	8.7	8.9	8.6	9.0	9.7	9.7	9.5	9.4	9.4	9.4	9.4	9.2
+2010	10.3	10.2	10.1	9.6	9.5	9.8	9.8	9.6	9.2	9.0	9.2	8.9	9.6
+2011	9.6	9.5	9.1	8.6	8.8	9.5	9.3	9.2	8.7	 	 	 	 
+
+Series Id:           LNU05073413
+Not Seasonally Adjusted
+Series title:        (Unadj)  Not in Labor Force - Native born
+Labor force status:  Not in labor force
+Type of data:        Number in thousands
+Age:                 16 years and over
+
+Download: 
+Year	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Annual
+2005	 	 	 	 	 	 	 	 	 	 	 	 	66247
+2006	 	 	 	 	 	 	 	 	 	 	 	 	66803
+2007	67870	67808	67629	68153	67893	66490	66369	68157	68051	67987	67924	68309	67720
+2008	68576	69044	68587	68587	68151	66810	66538	67891	68590	68235	68621	69337	68247
+2009	69827	69785	70212	70180	69992	68611	68688	70020	71368	71563	71598	72576	70368
+2010	72360	72342	72363	72337	72196	71456	70999	71718	72859	73067	73455	73971	72427
+2011	74391	74148	74016	74425	73769	72922	72799	73374	73839	 	 	 	 

@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Advanced Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('a[href^="#"').bind('click.smoothscroll', function(e) {
+			e.preventDefault();
+			
+			var target = this.hash,
+						$target = $(target);
+			$('html, body').stop().animate({
+				'scrollTop': $target.offset().top - 0	
+			}, 800, 'swing', function(){
+				window.location.hash = target;
+			});
+		});
+	});
+</script>
+<script>
+	$(document).ready(function() {
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 100) {
+				$('.scrollup').fadeIn();	
+			}else{
+				$('.scrollup').fadeOut();	
+			}
+		});
+		$('.scrollup').click(function() {
+			$('html, body').animate({
+				scrollTop: 0
+			}, 800);
+		});
+	});
+</script>
+</head>
+
+<body>
+	<nav>
+    	<a href="#" id="menu-icon"></a>
+        <ul>
+        	<li>
+            	<a href="#parallax-1">Who I Am</a>
+            </li>
+            <li>
+            	<a href="#parallax-2">What I Like</a>
+            </li>
+            <li>
+            	<a href="#parallax-3">Talk to Me</a>
+            </li>
+            <li>
+            	<a href="http://www.eiu.edu/tech">Learn more at EIU</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div id="social">
+    	<a href="http://www.facebook.com">
+        	<img src="images/facebook.png" alt="facebook logo" />
+        </a>
+        <a href="http://www.twitter.com">
+        	<img src="images/twitter.png" alt="twitter logo" />
+        </a>
+        <a href="http://www.youtube.com">
+        	<img src="images/youtube.png" alt="youtube logo" />
+        </a>
+    </div>
+    
+    <section id="parallax-1" class="module parallax parallax-1">
+    	<div class="container">
+        	<h1>Who Am I?</h1>
+        </div>
+    </section>
+    <section class="module content">
+    	<div class="container">
+        	<h2>Who Am I?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        </div>
+    </section>
+    
+    <section id="parallax-2" class="module parallax parallax-2">
+    	<div class="container">
+        	<h1>What do I like?</h1>
+        </div>
+    </section>
+    <section class="module content">
+    	<div class="container">
+        	<h2>What do I like?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        </div>
+    </section>
+    
+    <section id="parallax-3" class="module parallax parallax-3">
+    	<div class="container">
+        	<h1>Talk to Me</h1>
+        </div>
+    </section>
+    <section class="module content">
+    	<div class="container">
+        	<h2>Talk to Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        </div>
+    </section>
+    
+    <footer>
+    	<p>Copyright Jamel Lawson 2016</p>
+        <a href="#menu-icon" class="scrollup"></a>
+    </footer>
+</body>
+</html>

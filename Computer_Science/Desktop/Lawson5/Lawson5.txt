@@ -1,0 +1,23 @@
+READ ME
+
+Homework Problem 1 : wrote a method, called generateString(number) that takes, as input, an integer, and returns a string consisting
+of the four characters ‘A’, ‘T’, ‘C’ and ‘G’ (without the quotes)…for example, generateString(5) could return the string ‘ATTCG’.
+The string needs to be generated randomly.
+I ran this program on a Windows machine, using Python 2.7.2 and Wing IDE 101 Version 4.1.
+
+Homework Problem 2: Implement the 4 methods provided in the homework5 text file.
+ I ran this program on a Windows machine, using Python 2.7.2 and Wing IDE 101 Version 4.1.
+
+Homework Problem 3: A method, called compareMethods() that assigns a string to the
+output from the method described in part (1) for a specific length (5000, 10,000, 15,000,
+20,000 characters? Pick appropriate values) and uses the system clock (you might want to
+look into the time feature in python) to time how long each of the 4 methods takes to perform
+the string replacement.Generates the string, get the system time,
+run method 1, get the system time, run method 2, get the system time, etc…
+I ran this program on a Windows machine, using Python 2.7.2 and Wing IDE 101 Version 4.1.
+
+Homework Problem 4: Summarizes the results in a paper (as a word document or a .pdf
+file). A bar chart comparing the four methods, and discusses which method stands out
+as being more efficient. Includes a brief discussion of a runtime analysis on each method
+(worst case, what is the order of each algorithm?)
+I ran this program on a Windows machine, using Python 2.7.2 and Wing IDE 101 Version 4.1.

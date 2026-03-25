@@ -1,0 +1,26 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#container{
+	width: 960px;
+	}
+	
+header{
+	width: 960px;
+	background-color: black;
+	color: white;
+}
+
+#content{
+	width: 960px;
+	background-color: gray;
+}
+
+
+
+#main{
+	width: 781px;
+	background-color: white;
+}

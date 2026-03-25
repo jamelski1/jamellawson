@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<!--the head is for seo and other tags. NOT TO BE CONFUSED WITH HEADER-->
+
+<head>
+    <title>Homepage for Gabe's Website</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Visit this page to find out more about Dr. Grant">
+    <meta name="keywords" content="Dr Grant, Web development, Charleston, IL">
+    <meta name="author" content="Dr. Grant">
+    <link rel="stylesheet" type="text/css" href="screen.css">
+
+</head>
+
+<body>
+    <!--all content goes in the body-->
+    <!--name of the webpage, logos, pretty pictures all go in the header. NAVIGATION DOES NOT!-->
+    <header>
+        <!--largest text, largest tag-->
+        <div id="title">
+            <h1>Will Wilson's Widgets</h1></div>
+        <!-- no search element. create div-->
+        <div id="search"></div>
+        <!--use unordered lists and list items for navigation. Refer to w3schools.org tutorials on how to do this. -->
+        <nav id="top">
+            <a href="#" id="menu-icon"></a>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="products.html" class="dropbtn">Products</a>
+                    <div class="dropdown-content">
+                        <a href="#">Product 1</a>
+                        <a href="#">Product 2</a>
+                        <a href="#">Product 3</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--no slideshow element use a div-->
+    <div id="slideshow"><img src="images/pexels-photo.jpg" alt="slideshowimage" />
+    </div>
+    <div id="tagline">
+        <h2 class="taglineheading">Everything you need, nothing you don't</h2>
+    </div>
+    <!--start with main content elements next time-->
+    <!--only use the main tag once per page-->
+    <main>
+        <!--section is made for stand alone content. you can have multiple sections on a multiple page. All text and images need to go inside of a section element.-->
+        <section>
+            <!--h1-h6 headings are only for headings and subheadings.-->
+            <h2>This is for a slightly smaller heading.</h2>
+            <h3>This is for an even smaller heading.</h3>
+            <p>Lorem ipsum text</p>
+        </section>
+        <section>
+            <!--h1-h6 headings are only for headings and subheadings.-->
+            <h2>This is for a slightly smaller heading.</h2>
+            <h3>This is for an even smaller heading.</h3>
+            <p>Lorem ipsum text</p>
+        </section>
+        <!--use figure tags to group images and text together. sometimes this is better-->
+        <div class="flexbox">
+            <article class="col">
+                <figure>
+                    <img src="images/map.jpg" alt="Image alt text" />
+                    <figcaption>
+                        <h2 class="articleheading">This is for a slightly smaller heading.</h2>
+                        <p>Lorem ipsum text</p>
+                    </figcaption>
+                </figure>
+
+            </article>
+            <article class="col">
+                <figure>
+                    <img src="images/bridge.jpg" alt="Image alt text" />
+                    <figcaption>
+                        <h2 class="articleheading">This is for a slightly smaller heading.</h2>
+                        <p>Lorem ipsum text</p>
+                    </figcaption>
+                </figure>
+
+            </article>
+            <article class="col">
+                <figure>
+                    <img src="images/working.jpg" alt="Image alt text" />
+                    <figcaption>
+                        <h2 class="articleheading">This is for a slightly smaller heading.</h2>
+                        <p>Lorem ipsum text</p>
+                    </figcaption>
+                </figure>
+
+            </article>
+        </div>
+    </main>
+    <!--no aside element. if there were web adds then you would include it-->
+
+    <!--footer can contain social media links, copyright information, website navigation, webmaster information, when the site was last updated-->
+    <footer>
+        <nav id="bottom">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="http://www.facebook.com"><img class="footerimg" src="images/facebook.png" alt="Image alt text" /></a>
+        <a href="http://www.twitter.com"><img class="footerimg" src="images/twitter.png" alt="Image alt text" /></a>
+        <a href="http://www.link.com"><img class="footerimg" src="images/youtube.png" alt="Image alt text" /></a>
+    </footer>
+</body>
+
+</html>

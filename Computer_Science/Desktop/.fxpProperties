@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fxpProperties abbreviated="false" authoringTool="Flex Builder" compiles="true" parentProject="53796cf0-8865-4a58-bafb-8fca7adbbf5c" projectUUID="53796cf0-8865-4a58-bafb-8fca7adbbf5c" pureCatalystProject="false" sdkVersion="4.5.0" uuid="b3d20844-2837-4487-b8cb-36fc02ad30a2" version="15">
+  <projects/>
+  <src/>
+  <swc>
+    <linked location="sdkPlaceHolder" path="sdkPlaceHolder" position="0" uuid="b3d20844-2837-4487-b8cb-36fc02ad30a2"/>
+    <linked location="//netapp2.divms.uiowa.edu/jllawsn/.winprofile/Desktop/libs" path="/libs" position="1" uuid="b3d20844-2837-4487-b8cb-36fc02ad30a2"/>
+  </swc>
+  <misc/>
+  <theme/>
+  <mxmlFormattingPrefs groupAttributesByState="true" maxLineWidth="100" mxmlAlignAttributes="true" mxmlAttributeOrder="id,userLabel,includeIn,excludeFrom,visible,x,y,z,left,right,top,bottom,width,height,minWidth,minHeight,maxWidth,maxHeight,label" mxmlKeepAttributeValuesOrganized="true"/>
+</fxpProperties>

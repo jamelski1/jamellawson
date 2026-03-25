@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.wrapper{
+    width:1024px;
+    margin-left:auto;
+    margin-right:auto;
+	background-color:#CCC;
+}
+.index-header{
+    background-color:darkgray;
+    height:115px;
+}
+
+.index-title{
+    color:#FFFFFF;
+    float:left;
+    margin-top:35px;
+    margin-left:35px;
+    margin-bottom:15px;
+}
+
+#search{
+	float: right;
+    margin-right: 35px;
+	margin-top:25px;
+}
+
+#search input{
+	border-radius:20px;
+	padding-left:5px;
+}
+
+.mobile-menu-image{
+    float:left;
+    display:none;
+}
+
+.mobile-menu-image{
+    display:hidden;
+}
+.main-nav{
+    float:right;
+	clear:right;
+    margin-right:35px;
+    margin-top:40px;
+    color:lightgray;
+}
+
+#drop-down{
+	display:none;	
+}
+
+.main-nav li:first-child{
+    border-left:none;
+}
+.main-nav li{
+    float:left;
+    margin-left:15px;
+    list-style:none;
+    border-style:solid;
+    border-top:none;
+    border-bottom:none;
+    border-right:none;
+    padding-left:15px;
+    border-width:2px;
+}
+
+.video-player-wrapper{
+    width:1024px;
+	height:700px;
+	background-color:darkgray;
+}
+.video-player{
+	display:block;
+    height:625px;
+    width:952px;
+	margin-left:auto;
+    margin-right:auto;
+}
+
+.video-player-hr{
+	margin-top:45px;
+	width:952px;
+	margin-left:auto;
+	margin-right:auto;	
+}
+
+.index-header-2{
+    float:left;
+    width:100%;
+    text-align:center;
+    margin-top:10px;
+    color:#FFFFFF;
+}
+
+.index-sections{
+	margin-top:5px;
+	float:left;
+}
+
+.main-section{
+	width:465px;
+	float:left;
+}
+
+#section-1{
+	margin-right:35px;	
+}
+
+.main-content-p{
+	color:#666;
+}
+
+.index-articles{
+	float:left;	
+}
+
+.main-article{
+	width:31%;
+	float:left;
+	margin-right:21px;
+}
+
+.main-article img{
+	height:auto;
+	width:100%;	
+}
+
+.main-article:last-child{
+	margin-right:0;	
+}
+
+.main-figcaption{
+	margin-top:10px;	
+}
+
+.main-figcaption-title{
+	margin-bottom:5px;
+}
+
+.index-bottom-hr{
+	float:left;
+	width: 962px;
+    margin-top: 35px;
+}
+
+main{
+	margin-left:35px;
+	height:725px;
+}
+
+footer{
+	position:relative;
+	height:45px;
+}
+
+.footer-nav{
+    height: 25px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-nav li:first-child{
+    border-left:none;
+}
+.footer-nav li{
+    float:left;
+    margin-left:15px;
+    list-style:none;
+    border-style:solid;
+    border-top:none;
+    border-bottom:none;
+    border-right:none;
+    padding-left:15px;
+    border-width:2px;
+}
+
+.social-media-wrapper{
+	float: left;
+    position: absolute;
+    right: 25px;
+	top:0;
+	width: 300px;
+}
+
+.social-media{
+	float:left;
+	margin-right:5px;	
+}

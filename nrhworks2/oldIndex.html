@@ -1,0 +1,1135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+
+<style type="text/css" media="all">@import url("http://dev.nrhworks.com/modules/system/system.base.css?n3gsam");
+@import url("http://dev.nrhworks.com/modules/system/system.menus.css?n3gsam");
+@import url("http://dev.nrhworks.com/modules/system/system.messages.css?n3gsam");
+@import url("http://dev.nrhworks.com/modules/system/system.theme.css?n3gsam");</style>
+<style type="text/css" media="all">@import url("http://dev.nrhworks.com/modules/comment/comment.css?n3gsam");
+@import url("http://dev.nrhworks.com/modules/field/theme/field.css?n3gsam");
+@import url("http://dev.nrhworks.com/modules/node/node.css?n3gsam");
+@import url("http://dev.nrhworks.com/modules/search/search.css?n3gsam");
+@import url("http://dev.nrhworks.com/modules/user/user.css?n3gsam");</style>
+<style type="text/css" media="all">@import url("http://dev.nrhworks.com/sites/all/modules/contributed/webform/css/webform.css?n3gsam");</style>
+<style type="text/css" media="screen">@import url("http://dev.nrhworks.com/sites/all/themes/nrhworks_new/css/global.css?n3gsam");</style>
+<style type="text/css" media="screen and (min-width: 1050px)">@import url("http://dev.nrhworks.com/sites/all/themes/nrhworks_new/css/default.css?n3gsam");</style>
+<style type="text/css" media="screen and (max-width: 1049px) and (min-width: 786px)">@import url("http://dev.nrhworks.com/sites/all/themes/nrhworks_new/css/tablet.css?n3gsam");</style>
+<style type="text/css" media="screen and (max-width: 785px) and (min-width: 0px)">@import url("http://dev.nrhworks.com/sites/all/themes/nrhworks_new/css/tablet-vert.css?n3gsam");</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>    
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"nrhworks_new","theme_token":"LTypPyhGdRx8ehh-FtXRBdQS-Azx58RU_36GnPI0hTg","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contributed\/webform\/js\/webform.js":1,"sites\/all\/themes\/nrhworks_new\/js\/scripts.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contributed\/webform\/css\/webform.css":1,"sites\/all\/themes\/nrhworks_new\/css\/global.css":1,"sites\/all\/themes\/nrhworks_new\/css\/default.css":1,"sites\/all\/themes\/nrhworks_new\/css\/tablet.css":1,"sites\/all\/themes\/nrhworks_new\/css\/tablet-vert.css":1}}});
+//--><!]]>
+</script>
+<script>
+(function ($) {
+    $(document).ready(function() {
+      pos = (($(document).width()/2) - 2200);
+      setInterval(function() { pos -= 1; $('#skyline').css('background-position', pos + 'px bottom'); }, 100);
+    });
+}) (jQuery);
+
+(function ($) {
+    $(document).ready(function() {
+      cloud_pos = -750;
+      cloud_top = ($(document).height() - 750);
+ 
+      setInterval(function() { cloud_pos += 1; if (cloud_pos > ($(document).width() + 800)) { cloud_pos = -800; } $('#cloud').css('background-position', cloud_pos + 'px ' + cloud_top + 'px'); }, 200);
+    });
+}) (jQuery);
+
+
+<!--Sets up some margins-->
+(function ($) {
+  $(document).ready(function() {
+    $("#nrhworks-content-wrapper").css('margin-top', ($(document).height() - 625) + 'px');
+  });
+}) (jQuery);
+
+(function ($) {
+  $(window).resize(function() {
+    $("#nrhworks-content-wrapper").css('margin-top', ($(document).height() - 625) + 'px');
+  });     
+}) (jQuery);
+
+(function ($) {
+  $(document).ready(function() {
+    next_slide(current);
+  });
+}) (jQuery);
+
+var section = 'home';
+
+var size;
+var current = 0;
+var slide_ref;
+
+jQuery(document).ready( function() {
+  size = jQuery('.intro-slide').size();
+});
+
+
+<!--Scrolls in the next slide-->
+function next_slide() {
+  if (section == 'home') {
+    jQuery('.intro-slide:nth-child(' + current+ ')').animate({'right':'1000px', 'opacity':'0'},1000);
+  
+    current += 1;
+
+    if (current > size) { current = 1; } 
+
+    jQuery('.intro-slide:nth-child(' + current+ ')').css('right','-1000px');
+    jQuery('.intro-slide:nth-child(' + current+ ')').animate({'right':'0px', 'opacity':'1'},1000);
+
+    slide_ref = jQuery('.intro-slide:nth-child(' + current+ ')');
+
+    setTimeout(function() { next_slide(current) }, 5000);
+  } 
+}
+
+<!--Pass in on of the name for one of the slides-->
+function click_slide(slide) {
+  section = slide;
+
+  slide_ref.animate({'right':'1000px', 'opacity':'0'},1000);
+
+  jQuery('#' + slide + '-slide').css('right','-1000px');
+  jQuery('#' + slide + '-slide').animate({'right':'0px', 'opacity':'1'},1000);
+
+  slide_ref = jQuery('#' + slide + '-slide');
+
+  return false;
+
+}
+
+function logo_slide() {
+  if (section != 'home') {
+    section = 'home';
+
+    slide_ref.animate({'right':'1000px', 'opacity':'0'},1000);
+
+    next_slide();
+  }
+
+  return false;
+}
+</script>
+
+<style>
+
+*{
+	margin:0;
+	padding:0;
+}
+
+html, body {
+    height: 100%;
+}
+.wrapper {
+    height: 100%;
+	width:100%;
+   /* the bottom margin is the negative value of the footer's height */
+	/*border:dotted;*/
+	/*background: 
+	url("images/skyline.png") no-repeat bottom right,
+	url("images/flash.png") no-repeat bottom center;
+	background-color:#D00;
+	*/
+}
+
+.skyline{
+	height: 100%;
+	background-image: url("images/skyline.png");
+	background-position: 0px bottom;
+	/*background-color:#D00;*/
+}
+
+.flash{
+	height:100%;
+	background-image:url(images/flash.png);
+	background-repeat:no-repeat;
+	background-position:bottom;
+}
+
+.cloud{
+	height:100%;
+	background-image:url(images/cloud1.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.bottomLogoBackground{
+	width:1060px;
+	height:395px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(images/bottom-logo-background-1200.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.footer{
+	/*border:dotted;*/
+	background-image:url(images/bottom-bg-1200.png);
+	background-repeat:repeat-x;
+	background-position:top;
+	height:395px;
+	width:100%;
+	position:absolute;
+	bottom:0;
+}
+
+.logo{
+	width:369px;
+	height:395px;
+	/*
+	margin-left:auto;
+	margin-right:auto;
+	*/
+	background-image:url(images/logo-1200.png);
+	background-repeat:no-repeat;
+	float:left;
+
+}
+
+.leftnav{
+	width:345px;
+	height:35px;
+	color:white;
+	float:left;
+	margin-top:145px;
+	font-family:verdana;
+	font-size:24px;
+}
+
+.leftnav ul{
+	float:right;
+}
+
+.leftnav ul li{
+	display:inline-block;
+	margin-right:10px;
+}
+
+.leftnav ul li a{
+	text-decoration:none;
+	color:white;
+}
+
+.rightnav{
+	width:345px;
+	height:35px;
+	float:left;
+	color:white;
+	margin-top:145px;
+	font-family:verdana;
+	font-size:24px;
+	
+}
+
+.rightnav ul li{
+	display:inline-block;
+	margin-left: 10px;
+}
+
+.rightnav ul li a{
+	text-decoration:none;
+	color:white;
+}
+
+.footercontainer{
+	width:100%;
+	height:395px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#content{
+	/*height:436px;*/
+}
+
+.content{
+	width:100%;
+	margin-right:auto;
+	margin-left:auto;
+	/*border:dotted;*/
+	text-align:center;
+}
+div.intro-slide {
+	width:100%
+}
+
+div#nrhworks-content-wrapper {
+	width: 100%;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+
+section#content {
+	border:none;
+}
+
+div#about-slide{
+	width:100%;
+	margin-right:auto;
+	margin-left:auto;	
+}
+
+.main-content{
+	position:relative;
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;	
+}
+div#works-slide{
+	width:100%;
+	margin-right:auto;
+	margin-left:auto;	
+}
+
+
+div#clients-slide{
+	width:100%;
+	margin-right:auto;
+	margin-left:auto;	
+}
+
+div#blog-slide{
+	width:100%;
+	margin-right:auto;
+	margin-left:auto;	
+}
+
+div#contact-slide{
+	width:100%;
+	margin-right:auto;
+	margin-left:auto;	
+}
+
+div#careers-slide{
+	width:100%;
+	margin-right:auto;
+	margin-left:auto;	
+}
+
+#content{
+	/*height:300px;*/
+}
+
+@media screen and (max-width: 1060px){
+	
+	html{
+		font-size:50%;
+	}
+	.wrapper{
+		width:100%;
+		background-color:pink;
+	}
+	
+	
+	.footercontainer{
+		height:346px;
+		width: 100%;
+	}
+	
+	.leftnav{
+		width:260px;
+		font-size:17px;
+		margin-top:130px;
+	}
+	
+	.leftnav ul{
+		float:right;
+	}
+	
+	.rightnav{
+		width:260px;
+		font-size:17px;
+		margin-top:130px;
+	}
+	
+	#slider li { 
+   width: 620px;  /* Width Image */
+   height: 316px; /* Height Image */
+   position: absolute;
+   right: -630px;	/* Original Position - Outside of the Slider */
+   list-style: none;
+ 
+	}
+	
+	#mask{
+		width:620px;
+	}
+	.pictureReplace {
+	width: 620px;
+	}
+	.bottomLogoBackground {
+	width: 850px;
+	height:346px;
+	background-image:url(images/bottom-logo-background-1050.png);
+	background-position:center;
+	}
+	
+	.footer{
+	/*border:dotted;*/
+	background-image:url(images/bottom-bg-1050.png);
+	background-repeat: repeat-x;
+	height:346px;
+	}
+	
+	.logo{
+	height:346px;
+	width:323px;
+	background-image:url(images/logo-1050.png);
+}
+
+.main-content{
+	width:850px;
+}
+
+#content {
+/*height: 355px;*/
+}
+
+}
+
+@media screen and (max-width: 850px){
+	.wrapper{
+		width:100%;
+		background-color:blue;
+	}
+	
+	
+	.footercontainer{
+		height:263px;
+		width: 725px;
+		width:100%;
+	}
+	
+	.leftnav{
+		width:215px;
+		font-size:13px;
+		margin-top:103px;
+	}
+	
+	.rightnav{
+		width:215px;
+		font-size:13px;
+		margin-top:103px;
+	}
+	
+	#slider li { 
+   width: 620px;  /* Width Image */
+   height: 316px; /* Height Image */
+   position: absolute;
+   right: -630px;	/* Original Position - Outside of the Slider */
+   list-style: none;
+ 
+	}
+	
+	#mask{
+		width:620px;
+	}
+	.pictureReplace {
+		width: 620px;
+	}
+	.bottomLogoBackground {
+	width: 680px;
+	height:263px;
+	background-image:url(images/bottom-logo-background-800.png);
+	}
+	
+	.footer{
+	/*border:dotted;*/
+	background-image:url(images/bottom-bg-800.png);
+	background-repeat: repeat-x;
+	height:263px;
+	}
+	
+	.logo{
+	height:268px;
+	width:250px;
+	background-image:url(images/logo-800.png);
+}
+
+.main-content{
+	width:675px;
+}
+
+#content {
+	/*height: 436px;*/
+}
+}
+
+
+@media screen and (max-width: 675px){
+	.wrapper{
+		width:100%;
+		background-color:yellow;
+	}
+	
+	.footer{
+		display:none;
+	}
+	
+		#slider li { 
+   width: 620px;  /* Width Image */
+   height: 316px; /* Height Image */
+   position: absolute;
+   right: -630px;	/* Original Position - Outside of the Slider */
+   list-style: none;
+ 
+	}
+	
+	#mask{
+		width:620px;
+	}
+	.pictureReplace {
+		width: 620px;
+	}
+	.bottomLogoBackground {
+	width: 680px;
+	height:263px;
+	background-image:url(images/bottom-logo-background-800.png);
+	}
+	
+	
+.main-content{
+	width:675px;
+}
+
+
+}
+
+@media screen and (max-width: 320px){
+	.wrapper{
+		background-color:green;
+	}
+}
+</style>
+</head>
+
+<body>
+    <div class="wrapper">
+<div class="skyline">
+<div class="cloud">
+	<div class="flash">
+       <div id="wrapper">
+ 
+  <section id="content">  <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="nrhworks-content-wrapper">
+  <div class="intro-slide">
+  <div class="intro-slide-title">About NRH Works</div>
+  <div class="intro-slide-body">What We Do</div>
+  <div class="intro-slide-tagline">Drupal, Wordpress, & Magento based development</div>
+</div>
+<div class="intro-slide">
+  <div class="intro-slide-title">NRH Works' Works</div>
+  <div class="intro-slide-body">What We Have Done</div>
+  <div class="intro-slide-tagline">Signature projects and illustrative case studies</div>
+</div>
+<div class="intro-slide">
+  <div class="intro-slide-title">Our Clients</div>
+  <div class="intro-slide-body">For Whom?</div>
+  <div class="intro-slide-tagline">Awesome organizations we have worked with</div>
+</div>
+<div class="intro-slide">
+  <div class="intro-slide-title">NRH Works Blog</div>
+  <div class="intro-slide-body">Day to Day</div>
+  <div class="intro-slide-tagline">What we are working on right now</div>
+</div>
+<div class="intro-slide">
+  <div class="intro-slide-title">Contact NRH Works</div>
+  <div class="intro-slide-body">Hire Us</div>
+  <div class="intro-slide-tagline">Get a free quote</div>
+</div>
+<div class="intro-slide">
+  <div class="intro-slide-title">NRH Works Jobs</div>
+  <div class="intro-slide-body">Work For Us</div>
+  <div class="intro-slide-tagline">If you have skills, we are looking for you</div>
+</div>
+  <div id="about-slide">
+  
+  	<div class="main-content">
+    We build websites using great tools like <strong>Drupal</strong>, <strong>Wordpress</strong>, & <strong>Magento</strong>.  Leveraging these tools, we deliver sites that are painless to manage and easy to build upon.  A site built by us will help you squeeze the most <strong>visibility</strong>, <strong>traffic</strong>, <strong>sales</strong>, and <strong>new members</strong> out of your web presence.</div><!--End of Main Content-->
+       </div><!--End of About Slide-->
+    
+  <div id="works-slide">
+  
+  <div class="main-content">
+    WORKS: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </div><!--End of Main Content-->
+  </div>
+  <div id="clients-slide">
+  	<div class="main-content">
+    <div class='client title'>Clients</div><div id="node-10" class="node node-client node-promoted clearfix" about="/node/10" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/10">Alley Interactive</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:13:56-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:13</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/10%23comment-form">Log in</a> or <a href="/user/register?destination=node/10%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-11" class="node node-client node-promoted clearfix" about="/node/11" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/11">Articulate Digital</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:14:26-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:14</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/11%23comment-form">Log in</a> or <a href="/user/register?destination=node/11%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-12" class="node node-client node-promoted clearfix" about="/node/12" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/12">Caipirinha Productions, Inc</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:14:41-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:14</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/12%23comment-form">Log in</a> or <a href="/user/register?destination=node/12%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-14" class="node node-client node-promoted clearfix" about="/node/14" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/14">Cosozo</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:14:58-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:14</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/14%23comment-form">Log in</a> or <a href="/user/register?destination=node/14%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-16" class="node node-client node-promoted clearfix" about="/node/16" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/16">Executive Decision </a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:15:38-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:15</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/16%23comment-form">Log in</a> or <a href="/user/register?destination=node/16%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-17" class="node node-client node-promoted clearfix" about="/node/17" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/17">Executive Leads</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:15:46-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:15</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/17%23comment-form">Log in</a> or <a href="/user/register?destination=node/17%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-18" class="node node-client node-promoted clearfix" about="/node/18" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/18">Gamer.com</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:15:54-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:15</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/18%23comment-form">Log in</a> or <a href="/user/register?destination=node/18%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-19" class="node node-client node-promoted clearfix" about="/node/19" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/19">Global Press Institute</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:16:05-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:16</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/19%23comment-form">Log in</a> or <a href="/user/register?destination=node/19%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-20" class="node node-client node-promoted clearfix" about="/node/20" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/20">InFocus Media</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:16:19-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:16</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/20%23comment-form">Log in</a> or <a href="/user/register?destination=node/20%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-21" class="node node-client node-promoted clearfix" about="/node/21" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/21">iPlanIT Global</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:16:34-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:16</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/21%23comment-form">Log in</a> or <a href="/user/register?destination=node/21%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-22" class="node node-client node-promoted clearfix" about="/node/22" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/22">iQuarius</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:16:44-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:16</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/22%23comment-form">Log in</a> or <a href="/user/register?destination=node/22%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-24" class="node node-client node-promoted clearfix" about="/node/24" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/24">JR Collaborations</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:17:18-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:17</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/24%23comment-form">Log in</a> or <a href="/user/register?destination=node/24%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-26" class="node node-client node-promoted clearfix" about="/node/26" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/26">Matrix Media</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:17:39-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:17</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/26%23comment-form">Log in</a> or <a href="/user/register?destination=node/26%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-27" class="node node-client node-promoted clearfix" about="/node/27" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/27">Mentora</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:17:51-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:17</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/27%23comment-form">Log in</a> or <a href="/user/register?destination=node/27%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-28" class="node node-client node-promoted clearfix" about="/node/28" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/28">Mosiac Learning</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:18:07-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:18</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/28%23comment-form">Log in</a> or <a href="/user/register?destination=node/28%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-23" class="node node-client node-promoted clearfix" about="/node/23" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/23">One Dot Over</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:17:02-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:17</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/23%23comment-form">Log in</a> or <a href="/user/register?destination=node/23%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-29" class="node node-client node-promoted clearfix" about="/node/29" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/29">Oregon Mental Health Association</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:18:21-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:18</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/29%23comment-form">Log in</a> or <a href="/user/register?destination=node/29%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-30" class="node node-client node-promoted clearfix" about="/node/30" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/30">Pixels</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:18:30-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:18</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/30%23comment-form">Log in</a> or <a href="/user/register?destination=node/30%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-31" class="node node-client node-promoted clearfix" about="/node/31" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/31">Playon TV</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:18:39-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:18</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/31%23comment-form">Log in</a> or <a href="/user/register?destination=node/31%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-32" class="node node-client node-promoted clearfix" about="/node/32" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/32">Plus Factory</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:18:47-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:18</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/32%23comment-form">Log in</a> or <a href="/user/register?destination=node/32%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-33" class="node node-client node-promoted clearfix" about="/node/33" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/33">Seaweed Industry</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:18:58-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:18</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/33%23comment-form">Log in</a> or <a href="/user/register?destination=node/33%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-34" class="node node-client node-promoted clearfix" about="/node/34" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/34">Swecker Creative</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:19:08-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:19</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/34%23comment-form">Log in</a> or <a href="/user/register?destination=node/34%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-13" class="node node-client node-promoted clearfix" about="/node/13" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/13">The Chicago Reporter</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:14:50-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:14</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/13%23comment-form">Log in</a> or <a href="/user/register?destination=node/13%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-15" class="node node-client node-promoted clearfix" about="/node/15" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/15">The Environmental Working Group</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:15:22-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:15</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/15%23comment-form">Log in</a> or <a href="/user/register?destination=node/15%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-35" class="node node-client node-promoted clearfix" about="/node/35" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/35">Topspin Computers</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:19:22-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:19</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/35%23comment-form">Log in</a> or <a href="/user/register?destination=node/35%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-36" class="node node-client node-promoted clearfix" about="/node/36" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/36">Tri Media Works</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:19:31-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:19</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/36%23comment-form">Log in</a> or <a href="/user/register?destination=node/36%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-25" class="node node-client node-promoted clearfix" about="/node/25" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/25">United Airlines</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:17:29-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:17</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/25%23comment-form">Log in</a> or <a href="/user/register?destination=node/25%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-37" class="node node-client node-promoted clearfix" about="/node/37" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/37">Vibrant Village Foundation</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:19:42-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:19</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/37%23comment-form">Log in</a> or <a href="/user/register?destination=node/37%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div id="node-38" class="node node-client node-promoted clearfix" about="/node/38" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/38">VMT LLC</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T03:19:51-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 03:19</span>    </div>
+  
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/38%23comment-form">Log in</a> or <a href="/user/register?destination=node/38%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+<div class='client'>More to come...</div> 
+	</div><!--End of Main Content-->
+       </div><!--End of Clients Slide-->
+  <div id="contact-slide">
+  
+  	<div class="main-content">
+    <div class="title">Contact Us</div>
+    <div id="node-40" class="node node-webform node-promoted clearfix" about="/node/40" typeof="sioc:Item foaf:Document">
+
+  
+        <h2 property="dc:title" datatype=""><a href="/node/40">Get a Quote</a></h2>
+    
+      <div class="submitted">
+      <span property="dc:date dc:created" content="2013-09-01T18:08:10-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> on Sun, 09/01/2013 - 18:08</span>    </div>
+  
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Tell us about your project, and we will contact you with a quote right away.</p>
+</div></div></div><form class="webform-client-form" enctype="multipart/form-data" action="/" method="post" id="webform-client-form-40" accept-charset="UTF-8"><div><div class="form-item webform-component webform-component-textarea" id="webform-component-describe-your-project">
+  <label for="edit-submitted-describe-your-project">Describe your project <span class="form-required" title="This field is required.">*</span></label>
+ <div class="form-textarea-wrapper"><textarea id="edit-submitted-describe-your-project" name="submitted[describe_your_project]" cols="20" rows="40" class="form-textarea required"></textarea></div>
+</div>
+<div class="form-item webform-component webform-component-textfield" id="webform-component-existing-website">
+  <label for="edit-submitted-existing-website">URL of existing site </label>
+ <input type="text" id="edit-submitted-existing-website" name="submitted[existing_website]" value="" size="60" maxlength="128" class="form-text" />
+</div>
+<div class="form-item webform-component webform-component-radios" id="webform-component-target-budget">
+  <label for="edit-submitted-target-budget">Target Budget </label>
+ <div id="edit-submitted-target-budget" class="form-radios"><div class="form-item form-type-radio form-item-submitted-target-budget">
+ <input type="radio" id="edit-submitted-target-budget-1" name="submitted[target_budget]" value="u10" class="form-radio" />  <label class="option" for="edit-submitted-target-budget-1">Under $10,000 </label>
+
+</div>
+<div class="form-item form-type-radio form-item-submitted-target-budget">
+ <input type="radio" id="edit-submitted-target-budget-2" name="submitted[target_budget]" value="10-20" class="form-radio" />  <label class="option" for="edit-submitted-target-budget-2">$10,000 - $20,000 </label>
+
+</div>
+<div class="form-item form-type-radio form-item-submitted-target-budget">
+ <input type="radio" id="edit-submitted-target-budget-3" name="submitted[target_budget]" value="20-50" class="form-radio" />  <label class="option" for="edit-submitted-target-budget-3">$20,000 - $50,000 </label>
+
+</div>
+<div class="form-item form-type-radio form-item-submitted-target-budget">
+ <input type="radio" id="edit-submitted-target-budget-4" name="submitted[target_budget]" value="o50" class="form-radio" />  <label class="option" for="edit-submitted-target-budget-4">Over $50,000 </label>
+
+</div>
+</div>
+</div>
+<div class="form-item webform-component webform-component-radios" id="webform-component-target-schedule">
+  <label for="edit-submitted-target-schedule">Target Schedule </label>
+ <div id="edit-submitted-target-schedule" class="form-radios"><div class="form-item form-type-radio form-item-submitted-target-schedule">
+ <input type="radio" id="edit-submitted-target-schedule-1" name="submitted[target_schedule]" value="now" class="form-radio" />  <label class="option" for="edit-submitted-target-schedule-1">Start immediately </label>
+
+</div>
+<div class="form-item form-type-radio form-item-submitted-target-schedule">
+ <input type="radio" id="edit-submitted-target-schedule-2" name="submitted[target_schedule]" value="soon" class="form-radio" />  <label class="option" for="edit-submitted-target-schedule-2">Start within the month </label>
+
+</div>
+<div class="form-item form-type-radio form-item-submitted-target-schedule">
+ <input type="radio" id="edit-submitted-target-schedule-3" name="submitted[target_schedule]" value="later" class="form-radio" />  <label class="option" for="edit-submitted-target-schedule-3">Start within the next 3 months </label>
+
+</div>
+<div class="form-item form-type-radio form-item-submitted-target-schedule">
+ <input type="radio" id="edit-submitted-target-schedule-4" name="submitted[target_schedule]" value="even later" class="form-radio" />  <label class="option" for="edit-submitted-target-schedule-4">Start within the next 6 months </label>
+
+</div>
+</div>
+ <div class="description">
+
+</div>
+</div>
+<input type="hidden" name="details[sid]" value="" />
+<input type="hidden" name="details[page_num]" value="1" />
+<input type="hidden" name="details[page_count]" value="1" />
+<input type="hidden" name="details[finished]" value="0" />
+<input type="hidden" name="form_build_id" value="form-U1LMlWQrxirlMS3nZpZXfTJ3cSOZ0kNVdkFErsLxmPQ" />
+<input type="hidden" name="form_id" value="webform_client_form_40" />
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Submit" class="form-submit" /></div></div></form>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/40%23comment-form">Log in</a> or <a href="/user/register?destination=node/40%23comment-form">register</a> to post comments</span></li>
+</ul>
+  
+</div>
+  </div>
+  <div id="careers-slide">
+    CAREERS: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </div>
+  </div><!--End of Main Content-->
+</div>
+  </div>
+</div>
+  </div>
+</section>
+ 
+</div>
+       <!-- </div> End of Flash-->
+    <div class="footer">
+    	<div class="bottomLogoBackground">
+        
+        	<div class="footercontainer">
+        	<div class="leftnav">
+            	<ul>
+                	<li><a href="#" onclick="return click_slide('about');">ABOUT</a></li>
+                  <li><a href="#" onclick="return click_slide('works');">WORKS</a></li>
+                  <li><a href="#" onclick="return click_slide('clients');">CLIENTS</a></li>
+              </ul>
+           </div>
+              
+        	<a href="#" onclick="return logo_slide();"><div class="logo"></div></a>
+      		<div class="rightnav">
+            	<ul>
+                	<li><a href="#">BLOG</a></li>
+                  <li> <a href="#" onclick="return click_slide('contact');">CONTACT</a></li>
+                  <li><a href="#" onclick="return click_slide('careers');">CAREERS</a></li>
+              </ul>
+           </div>
+           </div><!--End of Footer Container-->
+       </div>
+       </div>
+       
+       </div><!--End of Flash-->
+       </div><!--End of Cloud-->
+       </div><!--End of Skyline-->
+    </div>
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+#wrapper {
+	margin-left: 20px;
+	width:320px;
+}
+#mainTitle {
+	font-size: 28px;
+	font-family: 'Codystar', cursive;
+	width:320px;
+	margin-top:15px;
+	margin-bottom: 15px;
+}
+#mainText {
+	clear:both;
+	width:320px;
+	font-size: 18px;
+	font-family: Times New Roman;
+}
+
+#createAccount{
+	width:320px;
+}
+.information{
+	width:75%;
+	margin:10px;
+	height:35px;
+}
+
+#submitButton{
+	margin-top:10px;
+	background-color:white;
+	height:35px;
+	width:35%;
+	font-size:21px;
+}
+#helperText{
+	margin-bottom:10px;
+}
+.user{
+	margin-bottom:15px;
+	margin-right:10px;
+}
+#terms{
+	margin-bottom:10px;
+}
+#auth{
+	float:right;
+	margin-right:15px;
+}
+a {
+	color:black;
+}

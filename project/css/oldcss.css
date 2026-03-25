@@ -1,0 +1,126 @@
+*{
+margin:0 auto;
+padding:0;
+}
+
+#container{
+	width:960px;
+	color:#3F362A;
+	font-family:georgia;
+	background-color:gray;
+	
+}
+
+#banner{
+	width:960px;
+	height:123px;
+	background-color:tan;
+}
+
+#banner h1{
+	margin-top:42px;
+	float:left;
+	padding-left:83px;
+	font-size:48px;
+	background-color:tan;
+}
+
+#banner #logon{
+	margin-left:418px;
+	padding-right:91px;
+	padding-top:42px;
+	padding-bottom:9px;
+	background-color:tan;
+	
+}
+
+#banner #logon #table #tr #td #normalLogin{
+	text-decoration:none;
+	}
+
+
+#banner #logon #table #tr #td{
+	background-color:white;
+	}
+
+#content{
+	width:960px;
+	height:408px;
+	//background-color:blue;
+	padding-top:83px;
+	background-color:white;
+	}
+	
+
+h2{
+	margin-left:560px;
+	background-color:white;
+	}
+	
+#content #leftbox{
+	//background-color:orange;
+	float:left;
+	width: 347px;
+	height:294px;
+	margin-left:133px;
+	border:2px solid;
+	background-color:white;
+	}
+	
+
+#content #leftbox{
+	font-size:24px;
+	background-color:white;
+	}
+	
+	
+#content #leftbox ul{
+	list-style-type:none;
+	background-color:white;
+	}
+	
+#content #leftbox p{
+	background-color:white;
+	}
+	
+#content #leftbox ul li{
+	background-color:white;
+	}
+	
+
+	
+
+#content #rightbox{
+	margin-left:560px;
+	padding-top:20px;
+	padding-bottom:20px;
+	width:290px;
+	height:322px;
+	//background-color:green;
+	border-color:#3F362A;
+	border:2px solid;
+	line-height:200%;
+}
+
+#content #rightbox #makeGreen{
+	color:white;
+	background-color: lightgreen;
+	width:145px;
+	height:36px;
+	font-size:24px;
+	}
+#content #rightbox *{
+	background-color:white;
+	}
+
+#content #rightbox p{
+	line-height:110%;
+	}
+
+
+#footer{
+	width:960px;
+	text-align:center;
+	clear:both;
+}
+	

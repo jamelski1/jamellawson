@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+<script>
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
+if( isMobile.iOS() ){
+    /*Pops up link to the App Store*/
+	 $(function() {
+    $( "#dialog" ).dialog();
+  });
+}else if( isMobile.Android() ){
+	alert('Android')
+}else{
+	alert('Not Android nor iOS')
+};
+</script>
+</head>
+
+<body>
+<div id="dialog" title="Download In App Store">
+    <a href="https://itunes.apple.com/us/app/global-medical-education/id851154936?mt=8"><img src="Download_on_the_App_Store_Badge_US-UK_135x40.png"/></a>
+    </div>
+</body>
+</html>

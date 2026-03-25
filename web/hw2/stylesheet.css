@@ -1,0 +1,49 @@
+body
+{
+    color:white;
+    background-color:black;
+    }
+    
+h1
+{
+    color:white;
+    text-align:center;
+    text-decoration: none;
+    }
+    
+h2
+{
+    color:white;
+    text-align: left;
+}
+
+.header{
+    display:inline;
+}
+
+a:link {color:white;}
+a:visited {color:purple;}
+a:hover {color:blue;}
+a:active {color:pink;}
+
+
+p
+{
+    color:white;
+    max-width: 512px;
+    float:left;
+    column-count:2;
+    -moz-column-count:2;
+    -webkit-column-count:2;
+    }
+    
+    
+    
+.footer
+{
+    color:white;
+    font-size: small;
+    text-align: center;
+
+}
+    

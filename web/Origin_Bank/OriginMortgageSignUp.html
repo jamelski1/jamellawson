@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Orgin Bank</title>
+<link rel="stylesheet" type="text/css" href="mystyles.css">
+</head>
+
+<body>
+<div id="form-wrapper">
+<div id="MortgageSignupBackground"><!--Beginning of Origin Background-->
+<div class="container"><!--Container-->
+<div id="bankingType"><!--Banking Type-->
+  <ul>
+    <li><a id="personalLink" href="#">Personal</a></li>
+    <li>|</li>
+    <li><a id="businessLink" href="#">Business</a></li>
+    <li>|</li>
+    <li><a id="commercialLink" href="#">Commercial</a></li>
+  </ul>
+</div>
+<!--End of Banking Type-->
+
+<a href="index.html"><div id="orginLogo"></div></a>
+<div id="productAndServices" ><!--Products and Services-->
+  <ul>
+    <li><a href="#">Products &amp; Services</a></li>
+    <li><a href="#">Why Origin</a></li>
+    <li><a href="#">Log In or Email</a></li>
+  </ul>
+</div>
+<!--End of Products and Service-->
+
+<div id="mortgageSignupForm">
+<div class="formTitle" id="mortgageTitle" ><img src="images/mortgage-form-header.jpg" /></div>
+
+<div class="preliminaryFormInfo" id="mortgageSubtitle">
+    <h1>Your Information</h1>
+    <p>Please enter some basic information.<br/>*=required</p>
+    
+    <h1>Sign In and Save Time</h1>
+    <p>If you're a X+1 customer with Online Banking, you can use your Online ID and passcode to auto-fill parts of your prequalification request.</p>
+</div><!--End of Preliminary Form Info-->
+
+<form style="margin-top:20px;">
+	Do you use Online Banking with X+1?<input type="radio" name="online" value="online" class="online"/>yes<input type="radio" name="online" value="offline" class="online"/>no
+<br /><br />    
+    <div class="basicInfo form-block" id="mortgageForm">
+      <div class="form-block-header"><h2>Your Name &amp; Address Information</h2></div>
+        
+        <div id="basicInfoForm">
+        <ul>
+        	<li><h3>First name *</h3><input type="text" name="firstName" class="firstname" required/></li>
+        	<li><h3>MI</h3><input type="text" maxlength="1" name="middleInitial" class="middleInitial"></li>
+        	<li><h3>Last name *</h3><input type="text" name="lastName"class="lastname" required/></li>
+        	<li><h3>Suffix</h3><select class="suffix">
+        					<option value="">(Select)</option>
+                      </select></li>
+        </ul>
+        
+        <ul>
+        	<li><h3>Street address line 1 *</h3><input type="text" name="address1" class="address1" required/></li>
+        </ul>
+        
+        <ul>
+        	<li><h3>Street address line 2</h3><input type="text" name="address2" class="address2"/></li>
+        </ul>
+        
+        <ul>
+        	<li><h3>City *</h3><input type="text" name="city" class="city" required/></li>
+           <li><h3>State *</h3><select class="state">
+           						<option value="">Select state</option>
+                               </select></li>
+           <li><h3>ZIP code *</h3><input type="number" name="zipcode" class="zipcode" required/></li>
+       </ul>
+       
+       <ul>
+       		<li><h3>Daytime phone number *</h3><input type="number" name="dayphone" class="dayphone" required/></li>
+           <li><h3>Ext.</h3><input type="number" name="extension" class="extension"/><p style="float:right;">(Optional)</p></li>
+       </ul>
+       
+       <ul>
+       		<li><h3>Evening phone number *</h3><input type="number" name="nightphone" class="nightphone"/></li>
+       </ul>
+       
+       <ul>
+       		<li><h3>Email address *</h3><input type="email" name="email" class="email" required/></li>
+       </ul>
+       </div><!--End of Basic Info Form-->
+    </div><!--End of Basic Info-->
+    <div class="identityInfo form-block">
+    
+      <div class="form-block-header"><h2>Your Identity &amp; Co-applicant Information</h2></div>
+        
+        <div id="identityInfoForm">
+        <ul>
+        	<li><h3>Date of birth *</h3><input type="text" name="birthdate" class="birthdate" required/><p class="subText">(mm/dd/yyyy)</p></li>
+        </ul>
+        <ul>
+        	<li><h3>Residency status *</h3><select class="residency">
+        					<option value="">Select residency status</option>
+                      </select></li>
+       </ul>
+       <ul>
+       		<li><h3>Will you have a co-applicant for this prequalification? *</h3>
+            <input type="radio" name="coapplicant" value="hasCoapplicant"/>Yes
+            <input type="radio" name="coapplicant" value="noApplicant"/>No
+           </li>
+       </ul>
+    </div><!--End of Idenity Form-->
+    </div><!--End of Identity Info-->
+    
+    
+    <div class="loanRequest form-block">
+    
+      <div class="form-block-header">
+    	<h2>Your Loan Request</h2>
+      </div>
+        
+        <div id="loanRequestForm">
+        <ul>
+        	<li><h3>What is the purpose of your loan? *</h3><select class="loanPurpose">
+        					<option value="">Purchase a property</option>
+                      </select></li>
+        </ul>
+        <ul>
+        	<li><h3>What is your purchase timeframe? *</h3><select class="timeframe">
+        					<option value="">(Please select one)</option>
+                      </select></li>
+       </ul>
+       <ul>
+       		<li><h3>What is the estimated sale price of the property? *</h3>
+            $ <input type="number" name="propertyValue" class="propertyValue"/>
+           </li>
+       </ul>
+       <ul>
+       		<li><h3>How much do you want to borrow? *</h3><p class="subText">(Must be 95% or less of the value of the property)</p>$<input type="number" name="borrowAmount" class="borrowAmount"/></li>
+       </ul>
+       <ul>
+       		<li><h3>Property ZIP code *</h3>
+            <input type="number" name="propertyZip" class="propertyZip"/><a class="zipFinder" href="#">ZIP finder</a></li>
+       </ul>
+       <ul>
+       		<li><h3>How do you plan to use the property? *</h3><select class="propertyUse">
+        					<option value="">(Please select one)</option>
+                      </select></li>
+       </ul>
+       <ul>
+       		<li><h3>What is the type of property? *</h3><select class="propertyType">
+        					<option value="">(Please a Property Type)</option>
+                      </select></li>
+      </ul>
+    </div><!--End of Idenity Form-->
+    </div><!--End of Identity Info-->
+    <div id="checkboxGroup"><div id="checkBox"><input type="checkbox" name="terms" class="termsCheckbox"; required/></div><p class="terms">       By checking this box and clicking “Continue”, you agree to authorize [X+1]. to contact you at the telephone, email or direct mail contact data you have provided above for purposes of fulfilling this inquiry about mortgage financing even if you have previously registered on a Do Not Call registry, or requested Bank of America to not send marketing information to you by email and/or direct mail. You agree we may use automatic telephone dialing systems and prerecorded voice messaging in connection with calls or texts made to any telephone number you provide even if the telephone number is assigned to a cellular/mobile telephone service or other service for which the called party is charged. You understand that you are not required to consent to receiving autodialed calls/texts as a condition of purchasing any [X+1] products or services. If you do not wish to authorize [X+1] to contact you in this manner, you will need to call the number provided on this form to complete your request. If you use a relay or other telephone service for the hearing impaired, please have your service call 1.800.000.0000 for help with your loan request.</p>
+    </div>
+
+    <div class="exit"><a href="#">exit</a></div>
+    
+    <div id="continue"><input id="myInput" class="bluebutton" type="submit" value="Continue"/><span class="orangeSign" id="loginOrangeSign">&gt;</span></div>
+</form>
+
+<!--<div class="learnMoreButton" id="continue"><a class="blueButton" href="#">Continue <span class="orangeSign">&gt;</span></a></div>--><!--End of Continue Button-->
+
+</div><!--End of Mortgage Sign Up Form-->
+
+</div><!--End of Container-->
+</div><!--End of Origin Background-->
+
+<br clear="both" />
+
+<div id="footer_wrapper">
+<div id="footer_box">
+
+<div id="footer"><!--Footer Info-->
+  <div class="footer"><!--Footer 1-->
+    <h3>Products</h3>
+    <ul>
+      <li><a href="#">Origin Digital Marketing Hub</a></li>
+      <li><a href="#">Origin Site</a></li>
+      <li><a href="#">Origin Media DSP</a></li>
+      <li><a href="#">Origin Enterprise DMP</a></li>
+      <li><a href="#">Origin Analytics</a></li>
+    </ul>
+  </div>
+  <!--End of Footer 1-->
+  
+  <div class="footer"><!--Footer 2-->
+    <h3>Marketers</h3>
+  </div>
+  <!--End of Footer 2-->
+  
+  <div class="footer"><!--Footer 3-->
+    <h3>Agencies</h3>
+    <ul>
+      <li><a href="#">Solutions for Agencies</a></li>
+      <li><a href="#">Media Buying</a></li>
+      <li><a href="#">Analytics and Insights</a></li>
+      <li><a href="#">Agency Execs</a></li>
+      <li><a href="#">Experience Developer Partner Program</a></li>
+      <li><a href="#">Facebook Exchange</a></li>
+    </ul>
+    <!--End of Footer 3--> 
+    
+  </div>
+  <div class="footer"><!--Footer 4-->
+    <h3>Privacy</h3>
+    <ul>
+      <li><a href="#">Privacy &amp; Protection</a></li>
+    </ul>
+  </div>
+  <!--End of Footer 4-->
+  
+  <div class="footer"><!--Footer 5-->
+    <h3>About</h3>
+    <ul>
+      <li><a href="#">Company Overview</a></li>
+      <li><a href="#">Press</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Leadership</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Partners</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">SMS Terms &amp; Conditions</a></li>
+    </ul>
+  </div>
+  <!--End of Footer 5-->
+  
+  <div class="footer"><!--Footer 6-->
+  
+  	<div id="extraLinks">
+    <h3><a href="#">GLOSSARY</a></h3>
+    <h3><a href="#">CONTACT</a></h3>
+    <h3><a href="#">SITE MAP</a></h3>
+    </div><!--End of Extra Links-->
+  </div>
+  <!--End of Footer 6--> 
+</div>
+
+<div id="socialNetworks"><!--Footer Aside-->
+  	<h4>FIND US ON</h4>
+   	<div id="socialNetworksImages"><!--Social Media Pictures-->
+    	<a href="#"><div id="blog"></div></a>
+        <a href="#"><div id="facebook"></div></a>
+        <a href="#"><div id="twitter"></div></a>
+       <a href="#"> <div id="linkedIn"></div></a>
+    </div><!--End of Social Media Pictures-->
+    <h4>COMPLIANCE</h4>
+    	<img src="images/compliance.jpg" alt="Compliance"/>
+  </div><!--End of Footer Aside--> 
+</div><!-- End of Footer Box -->
+</div><!-- End of Footer Wrapper -->
+<!--End of Footer Info-->
+
+</div>
+</body>
+</html>

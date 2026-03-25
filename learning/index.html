@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NRH Works, Inc.</title>
+<link rel="stylesheet" href="css/main.css" />
+
+
+<style>
+
+html {
+	font-family:Verdana;
+}
+
+/*
+#wrapper {
+	position:fixed;
+	left:50%;
+	height:100%;
+}
+
+#wrapper #container{
+	border:dotted;
+	position:relative;
+	height:100%;
+	left:-50%;
+	overflow:hidden;
+}
+*/
+
+#wrapper {
+	width:100%;
+}
+#container{
+	/*border:dotted;*/
+	position:absolute;
+	bottom: 0;
+	width: 50%;
+	margin-left:25%; /* 10/960 */
+	margin-right:25%; /* 10/960 */
+	height: 45.3125em; /* 725/16 */
+}
+
+#slideshow{
+	/*margin-bottom:25%;*/
+	/*border:dashed;*/
+	font-size:2.625em; /* 42/16 */
+	color:white;
+	text-align:center;
+}
+
+nav{
+	margin-top: 260px;
+	/*border:dashed;*/
+}
+#left ul li {
+	display: inline-block;
+	margin-right: 2.6595745%; /* 25/940 */
+	float: left;
+	list-style: none;
+}
+nav#left{
+	width:30%;
+	overflow:auto;
+	border:dotted;
+	float:left;
+	/*margin-bottom:18%;*/
+}
+nav#right{
+	width:35%;
+	overflow:auto;
+	border:dotted;
+	float:right;
+}
+#right ul li {
+	display: inline-block;
+	margin-left: 2.6595745%; /* 25/940 */
+	float: right;
+	list-style: none;
+}
+
+#left ul li a {
+	font-size: 1.3125em; /* 21/16 */
+	height: 2em; /* 42/21 */
+	line-height: 2em; /* 42/21 */
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Helvetica, "Lucida Grande", Verdana, sans-serif;
+	color: white;
+}
+#right ul li a {
+	font-size: 1.3125em; /* 21/16 */
+	height: 2em; /*42/21 */
+	line-height: 2em; /* 42/21 */
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Helvetica, "Lucida Grande", Verdana, sans-serif;
+	color: white;
+}
+#logo{
+	margin-left:30%;
+	margin-right:30%;
+	position:absolute;
+	bottom:0;
+}
+
+#logo img{
+	vertical-align:bottom;
+	max-width:100%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+    <div id="container">
+         <div id="content">  
+            <div id="slideshow">
+                <div><p>About NRH Works</p></div>
+                <div><h1>What We Do</h1></div>
+               <div><p>Drupal, Wordpress, &amp; Magneto based development</p></div>
+           </div><!--End of Slide Show-->
+           
+           
+           <nav id="left">
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Clients</a></li>
+              </ul>
+            </nav>
+            
+            <div id="logo"><img src="images/logo.png"/></div>
+            
+            <nav id="right">
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </nav>
+          </div><!--End of Content-->
+        </div><!--End of Container-->
+</div><!--End of Wrapper-->
+</body>
+</html>

@@ -1,0 +1,54 @@
+<?php
+
+include_once('../includes/local-config.php');
+include_once('../includes/config.php');
+include_once($INCLUDES_DIR . 'functions.php');
+
+// if something was posted, start the process...
+if(isset($_POST['upload']))
+{
+
+// define the submitted form into variables
+$addcomments = $_POST['addcomments'];
+$ebcomments = $_POST['ebcomments'];
+$article_id = $_POST['tobereviewed'];
+$decision = $_POST['decision'];
+
+if(!$addcomments){
+	echo "You didn't enter any comments!";
+	die();
+	}
+}
+// connect to the database
+// get a handle to the database
+    @ $db = new mysqli($DB_HOST, $DB_USER_ID, $DB_USER_PWD, $DB_DB_NAME);
+    
+    // check if there was an error connecting to the database
+    if ($db->connect_errno) {
+        echo "Oops! We could not connect to the database.<p>\n This was the error we found: " . $db->connect_error . "\n <p>Please <a href='submit_article.php'>try again</a>";
+        exit;
+    }
+
+
+    // the query that will add this review to the database  
+    $query = 'UPDATE reviewer, articles, people SET decision="' . $decision . '", comments="' . $addcomments .
+    '", ebcomments="' . $ebcomments . '" WHERE articles.article_id=reviewer.article_id AND reviewer.people_id=people.people_id;';
+    
+    $result = $db->query($query);
+    
+    // check if it worked
+    if ($result) {
+        echo "Review was submitted.";
+        echo "<p>";
+        echo "<a href='" . $HOME_URL . "'>Go to your dashboard</a><br>";
+		echo "<a href='" . $ADMIN_URL . "'>Check Database (Testing Purposes)</a><br>";
+    } else {
+        echo "Something went horribly wrong when reviewing article " . $article_id . ".";
+        echo "<p>This was the error: " . $db->error;
+        echo "<p>This was the sql statement: " . $query;
+        echo "<p>Please <a href='" . $REVIEWER_URL . "'>try again<br></a>";
+    }
+       
+    $db->close();
+
+?>

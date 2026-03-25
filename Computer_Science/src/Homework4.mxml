@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+					   xmlns:s="library://ns.adobe.com/flex/spark" 
+					   xmlns:mx="library://ns.adobe.com/flex/mx">
+	<s:states>
+		<s:State name="State1"/>
+		<s:State name="State2"/>
+	</s:states>
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<s:TextArea x="140" y="10"
+				text="Study Time&#xd;Width:190&#xd;Height: 194&#xd;This picture is of books and a&#xd;chalkboard that says, &quot;Study Time."/>
+	<s:Button x="140" y="169" label="Show Picture"
+			  click.State1="currentState = 'State2'"
+			  label.State2="Hide Picture" click.State2="currentState = 'State1'"/>
+	<s:Image x="265" y="169" width="63" height="55" source="assets/homework.jpg"
+			 width.State2="179" height.State2="190"/>
+</s:WindowedApplication>

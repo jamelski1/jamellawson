@@ -1,0 +1,781 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+            <title>America's 10 Richest Zip Codes, 2011 - Yahoo! Real Estate</title>
+        
+        <meta name="keywords" lang="en" content="real estate, homes for sale, homes, home, houses for sale, new homes for sale, real estate for sale, real estate listings, find a home, schools, neighborhoods, mortgage rates">
+        <meta name="description" lang="en" content="Yahoo! Real Estate - America's 10 Richest Zip Codes, 2011. Find Real Estate including homes for sale, new houses, rentals, foreclosure properties as well as mortgage calculators and rates on Yahoo! Real Estate.">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+        
+    
+<link rel="stylesheet" type="text/css" href="http://yre.zenfs.com/static/css/4.3.25/yui-container-201105112120.css" />
+<link rel="stylesheet" type="text/css" href="http://yre.zenfs.com/static/css/4.3.25/overlay-201105112120.css" />
+
+<link rel="stylesheet" type="text/css" href="http://l.yimg.com/zz/combo?d/lib/yui/2.5.2/build/reset/reset-min.css&d/lib/yui/2.7.0/build/fonts/fonts-min.css&qf/static/css/4.3.21/maple-global-201105050422.css&d/lib/uh/15/css/uh_rsa-1.0.5.css&qf/static/css/4.3.21/search-bar-srp-201105050422.css&qf/static/css/4.3.21/promo-title-201105050422.css&d/lib/media/m/social_buttons/social-buttons-min-4256.css&qf/static/css/4.3.21/media-share-201105050422.css&d/lib/yui/2.8.1/build/container/assets/skins/sam/container.css&d/lib/ush/ygsh_1.0.8.css&d/lib/ush/ygsh_add_1.0.0.css&qf/static/css/4.3.21/universal-sharing-201105050422.css&qf/static/css/4.3.21/promo-content-201105050422.css&qf/static/css/4.3.21/more-articles-201105050422.css&qf/static/css/4.3.21/ad-201105050422.css&qf/static/css/4.5.4/social-201109270847.css&qf/static/css/4.3.21/mortgage-rates-201105050422.css&qf/static/css/4.3.21/expert-articles-201105050422.css&qf/static/css/4.3.21/search-bar-201105050422.css&qf/static/css/4.3.21/footer-static-201105050422.css&qf/static/css/4.3.21/footer-city-state-services-201105050422.css&qf/static/css/4.3.21/footer-disclaimer-201105050422.css" />
+  </head>
+  <body>
+    <style type="text/css">
+      #yre-page-left {
+        float: left;
+        width: 630px;
+        padding: 0 0 0 10px;
+      }
+      #yre-page-right {
+        float: left;
+        padding: 0 10px 0 0;
+        *padding: 0px;
+        width: 300px;
+        *width: 290px;
+	overflow: hidden;
+      }
+      .module-wrapper {
+        padding: 10px 0 0 0;
+        float: right;
+      }
+      #yre-social-top {
+        float: right;
+        margin: 20px 0 0 0;
+      }
+    </style>
+    <div id="yre-page">
+
+      <div id="yre-hd">
+        <div class="yre-header-ad">
+    <link type="text/css" rel="stylesheet" href="http://l.yimg.com/a/lib/uh/15/css/uh_rsa-1.0.5.css" /><style type="text/css">#ygma{position:relative;z-index:1000;zoom:1;}#ygma .sp{background-image:url(http://l.yimg.com/a/lib/uh/15/sprites/realestate-1.0.1.png);}#ygmauseroptions{_width:11.5em;}#ygmabot{width:auto;}#ygma #ygma-search form{border:none;}</style><script type="text/javascript">(function(){var h={};var setUp=function(){h = YAHOO.one.uh.hotlistInfo = {rd:"http://global.ard.yahoo.com",space:"/SIG=15m3ufduc/M=650008.13861356.13853440.4171426/D=re/S=97620465:HEADR/_ylt=AnPoCcj6DSuepf5Ba_JnPuXxkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pfR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=5877329/R=0",adid:"5877329",prop:"re",protocol:"http",host:"realestate.yahoo.com",url:"%2fpromo%2famericas-10-richest-zip-codes-2011.html",spaceid:"97620465",aliasid:"lawson.jamel",shortaliasid:"lawson.jamel"};YAHOO.one.uh.translate=function(str){var set={yahoo_homepage:"http://www.yahoo.com/", hp_detect_script:"http://www.yahoo.com/includes/hdhpdetect.php", set_hp_script:"http://global.ard.yahoo.com/SIG=15m3ufduc/M=650008.13861356.13853440.4171426/D=re/S=97620465:HEADR/_ylt=AnPoCcj6DSuepf5Ba_JnPuXxkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pfR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=5877329/R=1/SIG=10uacnjgh/*http://www.yahoo.com/bin/set", set_hp_firefox_instructions:["Drag the \"Y!\" and drop it onto the \"Home\" icon.", "Select \"Yes\" from the pop up window.", "Nothing, you're done."], close_this_window:"Close this window", set_hp_alternative_instructions1:"If this didn't work for you see ", detailed_set_hp_instructions:"detailed instructions", set_hp_alternative_instructions2:""};return set[str];};YAHOO.one.uh.accountOptions=[{text:"Profile",url:"http://global.ard.yahoo.com/SIG=15m3ufduc/M=650008.13861356.13853440.4171426/D=re/S=97620465:HEADR/_ylt=AnPoCcj6DSuepf5Ba_JnPuXxkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pfR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=5877329/R=2/SIG=000000000/*http://pulse.yahoo.com/y",className:"first-child"},{text:"Updates",url:"http://global.ard.yahoo.com/SIG=15m3ufduc/M=650008.13861356.13853440.4171426/D=re/S=97620465:HEADR/_ylt=AnPoCcj6DSuepf5Ba_JnPuXxkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pfR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=5877329/R=3/*http://pulse.yahoo.com/"},{text:"Account Info",url:"http://global.ard.yahoo.com/SIG=15m3ufduc/M=650008.13861356.13853440.4171426/D=re/S=97620465:HEADR/_ylt=AnPoCcj6DSuepf5Ba_JnPuXxkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pfR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=5877329/R=4/SIG=14pdj0ioj/*https://edit.yahoo.com/mc2.0/eval_profile?.done=http://realestate.yahoo.com%2fpromo%2famericas-10-richest-zip-codes-2011.html&amp;.src=yre&amp;.intl=us"},{text:"You are signed in as:<span class='yid' title='" + h.aliasid + "'>" + h.shortaliasid + "</span>",title:h.aliasid,className:"last-child"}];YAHOO.one.uh.Search=['ygmasearchInput', 'sat'];};if("undefined" !==typeof YAHOO && "undefined" !==typeof YAHOO.one && "undefined" !==typeof YAHOO.one.uh){setUp();}else{setTimeout(arguments.callee, 500);}})();</script><div id="ygma"><div id="ygmaheader"><div class="bd sp"><div id="ymenu" class="ygmaclr"><div id="mepanel"><ul id="mepanel-nav"><li class="me1"><em>Hi, <a id="ygmausername" href="http://global.ard.yahoo.com/SIG=15m3ufduc/M=650008.13861356.13853440.4171426/D=re/S=97620465:HEADR/_ylt=AnPoCcj6DSuepf5Ba_JnPuXxkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pfR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=5877329/R=5/SIG=10q12a39b/*http://pulse.yahoo.com/y" target="_top" class="sp lst">Jamel</a></em></li><li class="me2"><a href="http://global.ard.yahoo.com/SIG=15m3ufduc/M=650008.13861356.13853440.4171426/D=re/S=97620465:HEADR/_ylt=AnPoCcj6DSuepf5Ba_JnPuXxkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pfR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=5877329/R=6/SIG=13e5udb0g/*https://login.yahoo.com/config/login?logout=1&.direct=2&.done=http://www.yahoo.com&amp;.src=yre&amp;.intl=us" target="_top">Sign Out</a></li><li class="me3"><a href="http://global.ard.yahoo.com/SIG=15m3ufduc/M=650008.13861356.13853440.4171426/D=re/S=97620465:HEADR/_ylt=AnPoCcj6DSuepf5Ba_JnPuXxkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pfR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=5877329/R=7/SIG=11emv3ptj/*http://help.yahoo.com/l/us/yahoo/realestate/" target="_top">Help</a></li></ul></div><div id="ygmapromo"><a style="font-weight:bold;" id="ygmamyyhp" href="http://global.ard.yahoo.com/SIG=15ndkukps/M=650008.14187112.14091359.12832737/D=re/S=97620465:HPRM2/_ylt=AnPoCcj6DSuepf5Ba_JnPuXxkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=tPR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=5706925/R=0/*http://us.lrd.yahoo.com/_ylc=X3oDMTFnNGk2OXRuBHRtX2RtZWNoA1RleHQgTGluawR0bV9sbmsDVTExMTYzMDkEdG1fbmV0A1lhaG9vIQ--/SIG=1113i7cuo/**http%3A//www.yahoo.com/bin/set" target="_top" class="stop_nav">Make Y! Your Homepage<abbr title="Yahoo!"></abbr></a><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['tPR7O0PDhCk-']='&U=13hfk1tv4%2fN%3dtPR7O0PDhCk-%2fC%3d650008.14187112.14091359.12832737%2fD%3dHPRM2%2fB%3d5706925%2fV%3d1';
+
+</script><noscript><img width=1 height=1 alt="" src="http://us.bc.yahoo.com/b?P=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn&T=18a9lr1bj%2fX%3d1323324911%2fE%3d97620465%2fR%3dre%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d2934485415%2fG%3dCnVzCgo4MDc-%2fH%3dc2VydmVJZD0iZElrbDRXS0poeFcuVFRtSlRnVnFid05sZ2ZfcENVN2dWZThBQVZ6biIgc2l0ZUlkPSI0NDU2NTUxIiB0U3RtcD0iMTMyMzMyNDkxMTE5NTAwMCIg%2fQ%3d-1%2fS%3d1%2fJ%3d65868962&U=13hfk1tv4%2fN%3dtPR7O0PDhCk-%2fC%3d650008.14187112.14091359.12832737%2fD%3dHPRM2%2fB%3d5706925%2fV%3d1"></noscript></div><div id="pa"><div id="pa-wrapper"><ul id="pa2-nav" class="sp"><li class="pa1 sp"><a class="sp" href="http://global.ard.yahoo.com/SIG=15m3ufduc/M=650008.13861356.13853440.4171426/D=re/S=97620465:HEADR/_ylt=AnPoCcj6DSuepf5Ba_JnPuXxkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pfR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=5877329/R=8/SIG=10np9vmbm/*http://www.yahoo.com/" target="_top">Yahoo!</a></li><li class="pa2 sp"><a class="sp" href="http://global.ard.yahoo.com/SIG=15m3ufduc/M=650008.13861356.13853440.4171426/D=re/S=97620465:HEADR/_ylt=AnPoCcj6DSuepf5Ba_JnPuXxkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pfR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=5877329/R=9/SIG=1107gluf6/*http://mail.yahoo.com?.intl=us" target="_top">Mail</a></li></ul><div id="pa-left" class="sp"></div><ul id="pa-nav" class="sp"><li class="pa3 sp"><a class="sp" href="http://global.ard.yahoo.com/SIG=15m3ufduc/M=650008.13861356.13853440.4171426/D=re/S=97620465:HEADR/_ylt=AnPoCcj6DSuepf5Ba_JnPuXxkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pfR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=5877329/R=10/SIG=10l2nj3k8/*http://my.yahoo.com" title="My Yahoo!" target="_top">My Yahoo!</a></li><li class="pa4 sp"><a class="sp" href="http://global.ard.yahoo.com/SIG=15m3ufduc/M=650008.13861356.13853440.4171426/D=re/S=97620465:HEADR/_ylt=AnPoCcj6DSuepf5Ba_JnPuXxkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pfR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=5877329/R=11/SIG=10niob72s/*http://news.yahoo.com" title="Yahoo! News" target="_top">News</a></li><li class="pa5 sp"><a class="sp" href="http://global.ard.yahoo.com/SIG=15m3ufduc/M=650008.13861356.13853440.4171426/D=re/S=97620465:HEADR/_ylt=AnPoCcj6DSuepf5Ba_JnPuXxkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pfR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=5877329/R=12/SIG=10q40gpus/*http://finance.yahoo.com" title="Yahoo! Finance" target="_top">Finance</a></li><li class="pa6 sp"><a class="sp" href="http://global.ard.yahoo.com/SIG=15m3ufduc/M=650008.13861356.13853440.4171426/D=re/S=97620465:HEADR/_ylt=AnPoCcj6DSuepf5Ba_JnPuXxkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pfR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=5877329/R=13/SIG=10pcalhda/*http://sports.yahoo.com" title="Yahoo! Sports" target="_top">Sports</a></li></ul><div id="pa-right" class="sp"></div></div></div></div><div id="yahoo" class="ygmaclr"><div id="ygmabot"> <a id="ygmalogo" href="http://global.ard.yahoo.com/SIG=15m3ufduc/M=650008.13861356.13853440.4171426/D=re/S=97620465:HEADR/_ylt=AnPoCcj6DSuepf5Ba_JnPuXxkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pfR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=5877329/R=14/SIG=10tmhot8e/*http://realestate.yahoo.com" target="_top"><img id="ygmalogoimg" width="294" height="26" src="http://l.yimg.com/a/i/brand/purplelogo/uh/us/realestate_final.gif" alt="Yahoo! Real Estate"></a></div><div id="ygma-search"><form class="ygmaclr" id="sf" action="http://search.yahoo.com/search" method="GET"><div class="fieldset"> <span class="ygma-search-wrapper" role="search"> <label id="ygma-lbl" for="ygmasearchInput" class="offscrn">Search</label> <input class="sp" type="text" id="ygmasearchInput" name="p" value="Search" onblur="if(this.value==''){this.value='Search';this.style.color='#999';this.style.fontWeight='normal';}" onfocus="if(this.value=='Search'){this.value='';this.style.color='#000';this.style.fontWeight='bold';}" maxlength="100" autocomplete="off" /> <input type="hidden" id="fr" name="fr" value="ush-re" /> </span> <span class="ygma-search-wrapper"> <span class="btn sp"> <span class="first-child"> <button name="ygmasrchbtn" id="ygmasrchbtn" value="Web Search" type="submit">Web Search </button> </span> </span> </span></div></form></div></div></div></div></div><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['pfR7O0PDhCk-']='&U=13gkj0u6l%2fN%3dpfR7O0PDhCk-%2fC%3d650008.13861356.13853440.4171426%2fD%3dHEADR%2fB%3d5877329%2fV%3d1';
+
+</script><noscript><img width=1 height=1 alt="" src="http://us.bc.yahoo.com/b?P=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn&T=189e212ck%2fX%3d1323324911%2fE%3d97620465%2fR%3dre%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d462486649%2fG%3dCnVzCgo4MDc-%2fH%3dc2VydmVJZD0iZElrbDRXS0poeFcuVFRtSlRnVnFid05sZ2ZfcENVN2dWZThBQVZ6biIgc2l0ZUlkPSI0NDU2NTUxIiB0U3RtcD0iMTMyMzMyNDkxMTE5NTAwMCIg%2fQ%3d-1%2fS%3d1%2fJ%3d65868962&U=13gkj0u6l%2fN%3dpfR7O0PDhCk-%2fC%3d650008.13861356.13853440.4171426%2fD%3dHEADR%2fB%3d5877329%2fV%3d1"></noscript><!--QYZ ,;;HEADR;97620465;2;-->
+</div>
+<div id="yre-hd-wrapper">
+    <div class="yre-local-header yre-nav">
+                <div id="yre-nav">
+                        <div id="yreNavigationX">
+            <ul id="yreL1">
+            <li><em><a href="/;_ylt=AgvXz5stIp_MbJhYKYYld8bxkdEF" >Find a Home</a></em></li><li><em><a href="/loans;_ylt=Ah5nXllQXu8pzVoqVGIDoNfxkdEF" >Finance and Mortgage</a></em></li><li><em><a href="/neighborhoods;_ylt=AgGa.iSaw6iRodfuqJG1x_DxkdEF" >Neighborhood Info</a></em></li><li class="active"><em id= ""><a href="/info;_ylt=AlUm0ZJwrBtA_MpVn1Pqtq_xkdEF" >Guides and Advice</a></em></li><li><em id="menu_myre"><a  href="#">My Real Estate</a><span class="dropdownimg"></span></em></li><li class="professionals"><em><a href="/professionals;_ylt=AuVRVisAV55JrLv3AmQ34UnxkdEF" >For Professionals</a></em></li>                        <div id="myre-sub-tab" class="myre-sub-menu">
+
+                            <a href="/my/my-searches;_ylt=AvurA1CYb2LqKkOET3zyMenxkdEF" >Saved Searches </a>
+                            <a href="/my/my-homes;_ylt=AmV.wFrbjGeMK0fkZeh5iwnxkdEF" >Saved Homes</a>
+                            <a href="/my/my-alerts;_ylt=Apgitb3apWKQXUQZiih.ewbxkdEF" >Manage Alerts</a>
+                            </div>
+            </ul>
+            <div class="yreClear"></div>
+                            <div id="yreL2">
+
+                <span class="rnw"></span><span class="rne"></span>
+                <div class="rm">
+                <em ><a href="/info/experts;_ylt=Ak2IQvQLkv97yR6lJaeuEh_xkdEF" >Expert Advice</a></em><em ><a href="/info/guides;_ylt=AjrzkUJRDzklvS60uGKhDwfxkdEF" >How-to Guides</a></em><em ><a href="/info/news;_ylt=AmF3iYE4xfh518Sjtq15EprxkdEF" >News</a></em><em  class="end"><a href="/info/glossary;_ylt=AgC9vKKNzHY9z4RISMqCbarxkdEF" >Glossary</a></em>
+                <div class="yreClear"></div>
+                </div>
+                <span class="rsw"></span><span class="rse"></span>
+                </div>
+
+                <div class="yreClear"></div>
+            </div>
+        </div>
+    </div> 
+</div>
+      </div>
+
+      <div id="yre-bd">
+        <div id="yre-bd-wrapper">
+          <div class="yre-srp-searchbar">
+
+                <div id="search-bar" class="search-bar">
+  <form method="get" id="search-bar-form" action="/search/homes-for-sale;_ylt=ArkSVVJsXy7b8rtraU.Xdl_xkdEF">
+      <div class="search-form">
+        <div class="ltype">
+        <span class="text"> Search: </span>
+        <select name="type" id="search-type">
+        <option value="classified" selected> Homes for Sale </option>
+
+        <option value="new" > New Homes </option>
+        <option value="foreclosure" > Foreclosures </option>
+        <option value="rental" > Apartments for Rent </option>
+        </select>
+        <span class="text"> in </span>
+
+        </div>
+
+        <div class="param">
+                            <input type="text" name="p" value="San Francisco, CA" id="search-location" />
+                                      <div id="search-location-autocomplete"></div>
+                                                <div class="desc">  </div>
+                                                        </div>
+
+        <input class="yrebtn" type="submit" value="Search" name="search" />
+
+   
+        </div>
+   </form>
+</div>
+            </div>
+
+	  <div id="yre-promo" class="yre-promo">
+            <div id="yre-page-left">
+              <div id="promo-title" class="promo-title">
+  <h3> America's 10 Richest Zip Codes, 2011 </h3>
+
+  <h4>  </h4>
+  <div class="info">
+    <div class="author"> By Venessa Wong and Joel Stonington, Bloomberg Businessweek </div>
+    <div class="date"> December 6, 2011 </div>
+  </div>
+  <div class="logo">
+
+  <div class="text"> Provided by: </div>
+  <a href="http://us.lrd.yahoo.com/_ylt=AgrsdOoSESvo3AXRWPtuVs7xkdEF/SIG=111bo4gie/**http%3A//www.businessweek.com/" > <img class='image' src='http://l.yimg.com/d/lib/yre/mycs/d/img/3.10.1/bloomberg_120x40_logo-201006152259.gif'/> </a>
+</div>
+</div>
+              <div id="yre-social-top">
+                <div class="media-share">
+  <div class="ymsb ymsb-facebook ymsb-retweet"></div>
+  <script type="text/javascript">
+    if (typeof YAHOO == "undefined") { YAHOO = {}; }
+    if (typeof YAHOO.Media == "undefined") { YAHOO.Media = {}; }
+    if (typeof YAHOO.Media.SocialButtons == "undefined") { YAHOO.Media.SocialButtons = {}; }
+    YAHOO.Media.SocialButtons.conf = {
+        lang: 'en-US',
+        tracking: {
+            _S: 97620465,
+            intl: "US",
+            pkg: "http://realestate.yahoo.com/promo/americas-10-richest-zip-codes-2011.html",
+            ct : "a",
+            lang: "en-US"
+        },
+        content: {
+            url : "http://realestate.yahoo.com/promo/americas-10-richest-zip-codes-2011.html", 
+            title : "America's 10 Richest Zip Codes, 2011",
+            retweet_via: "YahooRealEstate", 
+            retweet_related: "Yahoo"
+        },
+        config: {
+            widget_type: 'mit_share',
+            facebook: { } 
+        }
+    };
+    YAHOO.Media.Facebook = {
+        init: {
+            appId: 155383224494397,
+            channelUrl: "http://realestate.yahoo.com/fb/channel.html"
+        }
+    };
+  </script>
+
+</div>
+                 <div id="universal-sharing-w1" class="universal-sharing">
+  <script type='text/javascript' charset='utf-8'>if(typeof YAHOO == "undefined" || !YAHOO){var YAHOO = {};}if(typeof YAHOO.namespace == "undefined"){YAHOO.namespace=function(){var a=arguments, o=null, i, j, d;for (i=0; i<a.length; i=i+1){d=(""+a[i]).split(".");o=YAHOO;for (j=(d[0] == "YAHOO") ? 1 : 0; j<d.length; j=j+1) {o[d[j]]=o[d[j]] || {};o=o[d[j]];}}return o;};}if('undefined' == typeof YAHOO.one || 'undefined' == typeof YAHOO.one.ush){YAHOO.namespace("one.ush");}YAHOO.one.ush.global={};YAHOO.one.ush.global.deferredAssets = [];YAHOO.one.ush.global.deferredAssets.push(["http://yui.yahooapis.com/2.7.0/build/yahoo/yahoo-min.js", "YAHOO"]);YAHOO.one.ush.global.deferredAssets.push(["http://yui.yahooapis.com/2.7.0/build/dom/dom-min.js", "YAHOO.util.Dom"]);YAHOO.one.ush.global.deferredAssets.push(["http://yui.yahooapis.com/2.7.0/build/event/event-min.js", "YAHOO.util.Event"]);YAHOO.one.ush.global.deferredAssets.push(["http://yui.yahooapis.com/2.7.0/build/connection/connection-min.js", "YAHOO.util.Connect"]);YAHOO.one.ush.global.deferredAssets.push(["http://yui.yahooapis.com/2.7.0/build/container/container-min.js", "YAHOO.widget.Panel"]);YAHOO.one.ush.global.deferredAssets.push(["http://yui.yahooapis.com/2.7.0/build/datasource/datasource-min.js", "YAHOO.util.DataSourceBase"]);YAHOO.one.ush.global.deferredAssets.push(["http://yui.yahooapis.com/2.7.0/build/autocomplete/autocomplete-min.js", "YAHOO.widget.AutoComplete"]);YAHOO.one.ush.global.deferredAssets.push(["http://yui.yahooapis.com/2.7.0/build/json/json-min.js", "YAHOO.lang.JSON"]);YAHOO.one.ush.global.deferredAssets.push(["http://l.yimg.com/a/lib/ush/ac_1.0.0.js", "YAHOO.example.ACJSFunction"]);YAHOO.one.ush.global.deferredAssets.push(["http://l.yimg.com/a/lib/ush/utils_1.2.2.js", "YAHOO.one.ush.ShareWidget.prototype.init"]);(function(){var setUp = function(){YAHOO.one.ush.ShareWidget.getString = function(key){var yaladataset={"YGSH_BEBO":"Bebo","YGSH_BEBO_HREF":"http:\/\/www.bebo.com\/c\/share?Url=","YGSH_BEBO_TITLE":"Bebo","YGSH_BEBO_URL":"http:\/\/www.bebo.com\/c\/share?Url=","YGSH_BOOKMARKS":"Yahoo! Bookmarks","YGSH_BOOKMARKS_HREF":"http:\/\/bookmarks.yahoo.com\/toolbar\/savebm","YGSH_BOOKMARKS_TITLE":"Bookmark this story","YGSH_BOOKMARKS_URL":"http:\/\/bookmarks.yahoo.com\/toolbar\/savebm?u=","YGSH_CANCEL":"Cancel","YGSH_CAPTCHA":"Type the code shown:","YGSH_CAPTCHA_ERROR":"Code entered invalid. Enter the code shown.","YGSH_CAPTCHA_REQUIRED":"Enter the code shown.","YGSH_CHARS_LIMIT":"You have reached the character limit.","YGSH_CHARS_REMAIN":"Characters Remaining","YGSH_COPY_SELF":"copy yourself","YGSH_DELICIOUS":"Delicious","YGSH_DELICIOUS_HREF":"http:\/\/delicious.com\/post","YGSH_DELICIOUS_TITLE":"Bookmark this on Delicious","YGSH_DELICIOUS_URL":"http:\/\/delicious.com\/post?v=4&noui&jump=close&url=","YGSH_DIGG":"Digg","YGSH_DIGG_HREF":"http:\/\/digg.com\/submit","YGSH_DIGG_TITLE":"Digg this","YGSH_DIGG_URL":"http:\/\/digg.com\/submit?url=","YGSH_EMAIL":"Email","YGSH_EMAIL_COMMAS":"separate email addresses with commas","YGSH_EMAIL_ERROR":"Re-enter email address(es).","YGSH_EMAIL_FORMAT":"Please enter an email address as: xxx@xx.xxx","YGSH_EMAIL_REQUIRED":"Enter email address(es).","YGSH_ENTER_YIM_CONTACT":"enter your contact's Yahoo! Messenger ID","YGSH_FACEBOOK":"Facebook","YGSH_FACEBOOK_HREF":"http:\/\/www.facebook.com\/share.php?u=","YGSH_FACEBOOK_TITLE":"Share this on Facebook","YGSH_FACEBOOK_URL":"http:\/\/www.facebook.com\/share.php?u=","YGSH_FAILED_PREREQS":"failed loading prerequisites","YGSH_FROM":"From:","YGSH_FROM_ERROR":"Re-enter your email address (e.g. yourname@example.com).","YGSH_FROM_REQUIRED":"Enter your email address.","YGSH_GOOGLE":"Google Bookmarks","YGSH_GOOGLE_HREF":"http:\/\/www.google.com\/bookmarks\/mark?op=edit","YGSH_GOOGLE_TITLE":"Bookmark this story","YGSH_GOOGLE_URL":"http:\/\/www.google.com\/bookmarks\/mark?op=edit&bkmk=","YGSH_IM_REQUIRED":"Enter your contact's Yahoo! Messenger ID.","YGSH_LEGAL":"This information is not collected for marketing purposes.","YGSH_MENAME":"Men\u00e9ame","YGSH_MENAME_HREF":"http:\/\/meneame.net\/submit.php?url=","YGSH_MENAME_TITLE":"Men\u00e9ame","YGSH_MENAME_URL":"http:\/\/meneame.net\/submit.php?url=","YGSH_MESSAGE":"Optional Message:","YGSH_MYSPACE":"Myspace","YGSH_MYSPACE_HREF":"http:\/\/www.myspace.com\/Modules\/PostTo\/Pages\/","YGSH_MYSPACE_TITLE":"Myspace this","YGSH_MYSPACE_URL":"http:\/\/www.myspace.com\/Modules\/PostTo\/Pages\/?t=&c=&l=&u=","YGSH_ORKUT":"Orkut","YGSH_ORKUT_HREF":"http:\/\/promote.orkut.com\/preview?nt=orkut.com&du=","YGSH_ORKUT_TITLE":"Orkut","YGSH_ORKUT_URL":"http:\/\/promote.orkut.com\/preview?nt=orkut.com&du=","YGSH_PRINT":"Print","YGSH_REQUIRED_FIELD":"This field is required.","YGSH_REQUIRED_FIELDS":"These fields are required.","YGSH_REVIEW_FIELDS":"Please view the highlighted fields below.","YGSH_SEND":"Send","YGSH_SENDBY":"Send by:","YGSH_SEND_PAGE":"Send this page","YGSH_SHARE":"Share","YGSH_SHARE_PAGE":"Share this page","YGSH_SKYROCK":"Skyrock","YGSH_SKYROCK_HREF":"http:\/\/skyrock.com\/m\/blog\/share-widget.php?idp=10&text=","YGSH_SKYROCK_TITLE":"Skyrock","YGSH_SKYROCK_URL":"http:\/\/skyrock.com\/m\/blog\/share-widget.php?idp=10&text=","YGSH_SMS":"Text Messaging(SMS)","YGSH_SPLINDER":"Splinder","YGSH_SPLINDER_HREF":"http:\/\/www.splinder.com\/blogthis?url=","YGSH_SPLINDER_TITLE":"Splinder","YGSH_SPLINDER_URL":"http:\/\/www.splinder.com\/blogthis?url=","YGSH_STUDIVZ":"StudiVZ","YGSH_STUDIVZ_HREF":"http:\/\/www.studivz.net\/Suggest\/Selection\/?u=","YGSH_STUDIVZ_TITLE":"StudiVZ","YGSH_STUDIVZ_URL":"http:\/\/www.studivz.net\/Suggest\/Selection\/?u=","YGSH_STUMBLEUPON":"StumbleUpon","YGSH_STUMBLEUPON_HREF":"http:\/\/www.stumbleupon.com\/submit","YGSH_STUMBLEUPON_TITLE":"Stumble this","YGSH_STUMBLEUPON_URL":"http:\/\/www.stumbleupon.com\/submit?url=","YGSH_TO":"To:","YGSH_TWITTER":"Twitter","YGSH_TWITTER_HREF":"http:\/\/twitter.com\/home?status","YGSH_TWITTER_TITLE":"Tweet this","YGSH_TWITTER_URL":"http:\/\/twitter.com\/home?status=","YGSH_WAIT":"Please wait","YGSH_WIKIO":"Wikio","YGSH_WIKIO_HREF":"http:\/\/www.wikio.fr\/vote?domain=","YGSH_WIKIO_TITLE":"Wikio","YGSH_WIKIO_URL":"http:\/\/www.wikio.fr\/vote?domain=","YGSH_YIM":"Yahoo! Messenger"};return yaladataset[key];};YAHOO.one.ush.ShareWidget.ygshINTL="en-US";YAHOO.one.ush.ShareWidget.spaceid="1159850001";YAHOO.one.ush.ShareWidget.prop="yre";YAHOO.one.ush.ShareWidget.ygshPrintUrl="";YAHOO.one.ush.ShareWidget.prependUrl="";};if ("undefined" !== typeof YAHOO && "undefined" !== typeof YAHOO.one && "undefined" !== typeof YAHOO.one.ush.ShareWidget) {setUp();} else {setTimeout(arguments.callee, 10);}})();</script><div class="yui-skin-sam">
+    <div class="ygsh">
+        <div id="ygsh-showw1" class="ygsh-sharing-mod">
+            <div class="imgbtn" id="ygsh-us-btn-w1">                <div id="ygsh-send-w1" class="btn-sep ygsh-send">
+                    <div class="btn-left sprite"></div>
+                    <div class="btn-mid sprite"><a href="mailto:?subject=Yahoo! yre&body=http://realestate.yahoo.com/promo/americas-10-richest-zip-codes-2011.html" id="ygsh-send-btn-w1" class="btn-icon-send sprite" rel="nofollow"><span class="btntxt">Send</span></a></div>
+
+                    <div class="btn-right sprite"></div>
+                </div>                <div id="ygsh-print-w1" class="btn-sep ygsh-print">
+                    <div class="btn-left sprite"></div>
+                    <div class="btn-mid sprite"><a href="" id="ygsh-print-btn-w1" class="btn-icon-print sprite" rel="nofollow"><span class="btntxt">Print</span></a></div>
+                    <div class="btn-right sprite"></div>
+                </div>            </div>
+            <div id="ygsh-wrapper1" class="ygsh-panel-c">
+
+                <div id="ygsh-panel-share-w1" class="hide" >
+                        <div class="hd" id="ygsh-tabtitle">Share this page</div>
+                        <div class="bd">
+                            <div class="shr"><ul><li><div class="sprite" style="background-position:-0px -1622px;background-repeat:no-repeat;"><a href="http://www.facebook.com/share.php?u=" title="Share this on Facebook" onClick="YAHOO.one.ush.ShareWidget.shareULT('http://www.facebook.com/share.php?u='+YAHOO.one.ush.widgets.getWidget('w1').getUrl()+'&t='+YAHOO.one.ush.widgets.getWidget('w1').getTitle()+'','Facebook');event.returnValue = false;return false;" href="http://www.facebook.com/share.php?u=">Facebook</a></div></li><li><div class="sprite" style="background-position:-0px -1428px;background-repeat:no-repeat;"><a href="http://twitter.com/home?status" title="Tweet this" onClick="YAHOO.one.ush.ShareWidget.shareULT('http://twitter.com/home?status='+YAHOO.one.ush.widgets.getWidget('w1').getUrl()+'&title='+YAHOO.one.ush.widgets.getWidget('w1').getTitle()+'','Twitter');event.returnValue = false;return false;" href="http://twitter.com/home?status=">Twitter</a></div></li><li><div class="sprite" style="background-position:-0px -1686px;background-repeat:no-repeat;"><a href="http://www.myspace.com/Modules/PostTo/Pages/" title="Myspace this" onClick="YAHOO.one.ush.ShareWidget.shareULT('http://www.myspace.com/Modules/PostTo/Pages/?t=&c=&l=&u='+YAHOO.one.ush.widgets.getWidget('w1').getUrl()+'&title='+YAHOO.one.ush.widgets.getWidget('w1').getTitle()+'','Myspace');event.returnValue = false;return false;" href="http://www.myspace.com/Modules/PostTo/Pages/?t=&c=&l=&u=">Myspace</a></div></li><li><div class="sprite" style="background-position:-0px -1492px;background-repeat:no-repeat;"><a href="http://delicious.com/post" title="Bookmark this on Delicious" onClick="YAHOO.one.ush.ShareWidget.shareULT('http://delicious.com/post?v=4&noui&jump=close&url='+YAHOO.one.ush.widgets.getWidget('w1').getUrl()+'&title='+YAHOO.one.ush.widgets.getWidget('w1').getTitle()+'','Delicious');event.returnValue = false;return false;" href="http://delicious.com/post?v=4&noui&jump=close&url=">Delicious</a></div></li><li><div class="sprite" style="background-position:-0px -1558px;background-repeat:no-repeat;"><a href="http://digg.com/submit" title="Digg this" onClick="YAHOO.one.ush.ShareWidget.shareULT('http://digg.com/submit?url='+YAHOO.one.ush.widgets.getWidget('w1').getUrl()+'&title='+YAHOO.one.ush.widgets.getWidget('w1').getTitle()+'','Digg');event.returnValue = false;return false;" href="http://digg.com/submit?url=">Digg</a></div></li><li><div class="sprite" style="background-position:-0px -1752px;background-repeat:no-repeat;"><a href="http://www.stumbleupon.com/submit" title="Stumble this" onClick="YAHOO.one.ush.ShareWidget.shareULT('http://www.stumbleupon.com/submit?url='+YAHOO.one.ush.widgets.getWidget('w1').getUrl()+'&title='+YAHOO.one.ush.widgets.getWidget('w1').getTitle()+'','StumbleUpon');event.returnValue = false;return false;" href="http://www.stumbleupon.com/submit?url=">StumbleUpon</a></div></li></ul></div>
+                        </div>
+
+                </div>
+            </div>
+            <div class="yui-skin-sam">
+                <div id="ygsh-wrapper2-w1" class="ygsh-panel-c"></div>
+            </div>
+        </div>
+
+    </div>
+</div><script type="text/javascript">(function(){if (document.getElementById("ygsh-showw1") && "undefined" !== typeof YAHOO && "undefined" !== typeof YAHOO.one && "undefined" !== typeof YAHOO.one.ush.ShareWidget && "undefined" !== typeof YAHOO.one.ush.widgets) {YAHOO.one.ush.widgets.ush_w1 = new YAHOO.one.ush.ShareWidget("w1");YAHOO.one.ush.widgets.ush_w1.setUrl("http://realestate.yahoo.com/promo/americas-10-richest-zip-codes-2011.html");YAHOO.one.ush.widgets.ush_w1.setTitle("America's 10 Richest Zip Codes, 2011");}else{setTimeout(arguments.callee,500);}})();</script>
+
+</div>
+              </div>
+              <div id="promo-content" class="promo-content">
+  <span class="dotted-line"></span>
+  <p>Where will you likely find yourself the poorest person in town? There are places where even a well-to-do household, by normal standards, would have a hard time keeping up with the Joneses.</p> 
+
+<table align="right" style="margin:10px;border:1px solid #d7deee;" width="40%"><tbody><tr><td style="padding:10px;"><p><strong>More from BusinessWeek.com</strong> <br /><br /><em style="color:#db612d;">»</em> <a href="http://us.lrd.yahoo.com/_ylt=At6gD8Ujgfv1KC0OoWn6ajjxkdEF/SIG=135q65jrc/**http%3A//images.businessweek.com/slideshows/20110920/america-s-50-best-cities/%3Fcampaign_id=yahoo" >America's America's 50 Best Cities<br /></a><br /><em style="color:#db612d;">»</em> <a href="http://us.lrd.yahoo.com/_ylt=Aj6Ip.0kr7omJToE8KaDX5fxkdEF/SIG=13f1vii8r/**http%3A//images.businessweek.com/slideshows/20110608/world-s-most-expensive-cities-2011/%3Fcampaign_id=yahoo" >World's Most Expensive Cities 2011<br /></a><br /><em style="color:#db612d;">»</em> <a href="http://us.lrd.yahoo.com/_ylt=Auvb7i9LLtgF.l7uth.61j7xkdEF/SIG=13m173236/**http%3A//images.businessweek.com/slideshows/20111128/cities-with-the-best-quality-of-life-2011/%3Fcampaign_id=yahoo" >Cities With the Best Quality of Life 2011</a></p></td></tr></tbody></table>
+
+<p>To identify the 50 richest areas in the U.S. for Businessweek.com, <a href="http://realestate.yahoo.com/Arkansas/Little_Rock/homes-for-sale;_ylt=AuUNcDE4zYMWLloNJPByxGPxkdEF" target="_blank">Little Rock</a> data company Gadberry Group looked at all Zip Codes in the U.S. with more than 100 households and ranked them by the average income and net worth of their households. The area’s population change since 2000 was also taken into consideration, though only as a minor factor, and no areas with a decrease in number of households, where wealth might become less concentrated, were included. The results include many places around <a href="http://realestate.yahoo.com/New_York/Manhattan/homes-for-sale;_ylt=AtmyU_a.hCz2v2BbSO1csv7xkdEF" target="_blank">New York</a>, <a href="http://realestate.yahoo.com/District_of_Columbia/Washington/homes-for-sale;_ylt=AlZ7UBX39Czdinrcu0GMX7bxkdEF" target="_blank">Washington, D.C.</a>, and <a href="http://realestate.yahoo.com/California/Sunnyvale/homes-for-sale;_ylt=AqX6lGaQ.Yr4T8WR8ErHNF_xkdEF" target="_blank">Silicon Valley</a>.</p> 
+
+<p>As Gadberry’s survey mainly captured data on primary residences, many affluent second-home markets, such as the Hamptons on Long Island and <a href="http://realestate.yahoo.com/Colorado/Aspen/homes-for-sale;_ylt=AssGO5EO2S3oXd2TlzWeNv3xkdEF" target="_blank">Aspen, Colo</a>., did not make the top 50. Also, neighborhoods in such urban areas as <a href="http://realestate.yahoo.com/New_York/Manhattan/homes-for-sale;_ylt=Ar4WIQiKWhdZbOcmzt15uhXxkdEF" target="_blank">Manhattan</a> and <a href="http://realestate.yahoo.com/California/San_Francisco/homes-for-sale;_ylt=AgOGOL3AlD5OXVv.yfhkVkTxkdEF" target="_blank">San Francisco</a> that have pockets of extreme wealth did not make the list because they have a greater diversity of income earners.</p> 
+
+
+
+<h3>Here's America's 10 richest zip codes:</h3>
+
+<p><table style="margin:5px 1em 1em;float:right;"><tbody><tr><td><img height="214" src="http://l.yimg.com/cv/ip/i/us/re/gr2/10_santa_monica_ca2.jpg" width="350"/></td></tr><tr><td><small>No. 10 - Santa Monica, CA.<br />Photo: Richard Price/Getty Images  </small></td></tr></tbody></table></p>
+<p><strong>No. 10 Richest Zip Code: 90402<br />
+Location: <a href="http://realestate.yahoo.com/California/Santa_Monica/homes-for-sale;_ylt=Ar7iqrJVF9T6t_7j0zO4aHnxkdEF" target="_blank">Santa Monica, Calif.</a></strong><br />
+No. households: 5,452<br />
+Pct. change in no. households since 2000: 3.16<br />
+Average household income: $266,243<br />
+
+Average household net worth: $1,494,010</p>
+
+<p>This section of Santa Monica has some of the most expensive houses in <a href="http://realestate.yahoo.com/California/Los_Angeles/homes-for-sale;_ylt=AvfHGaCREEDLgcEEU.ki6t3xkdEF" target="_blank">Los Angeles</a> County. It includes the chic North of Montana neighborhood, known for palm and pine trees along its streets, attractive homes, and an excellent school system, according to real estate site northofmontana.com. The median home value in 90402 was $1,995,300 in September, Zillow.com estimates. The population is mostly elite couples and singles.</p><br />
+
+<p><table style="margin:5px 1em 1em;float:left;"><tbody><tr><td><img height="219" src="http://l.yimg.com/cv/ip/i/us/re/gr2/09_lostalto_ca2.jpg" width="350"/></td></tr><tr><td><small>No. 9 - Los Altos, CA.<br />Photo: Getty Images  </small></td></tr></tbody></table></p>
+<p><strong>No. 9 Richest Zip Code: 94022<br />
+Location: <a href="http://realestate.yahoo.com/California/Los_Altos/homes-for-sale;_ylt=Ao3G.6TAShhQ0CZaMYhJmBDxkdEF" target="_blank">Los Altos, Calif.</a></strong><br />
+
+No. households: 7,103<br />
+Pct. change in no. households since 2000: 3.23<br />
+Average household income: $256,476<br />
+Average household net worth: $1,563,480</p>
+
+<p>Adjacent to the No. 23 richest Zip Code, 94024, and roughly 40 miles south of San Francisco, this area includes Los Altos, <a href="http://realestate.yahoo.com/California/Los_Altos_Hills/homes-for-sale;_ylt=AqjT2_kE.uDJf4nVCA.ovEfxkdEF" target="_blank">Los Altos Hills</a>, and <a href="http://realestate.yahoo.com/California/Palo_Alto/homes-for-sale;_ylt=Akn1BoXrwWQkgdXyGkNPVyLxkdEF" target="_blank">Palo Alto</a> Hills. Downtown Los Altos, a six-block triangle, has more than 150 shops and also hosts farmers markets and movie nights, among other community activities, says the Los Altos Village Assn. Many luxury homes in the Los Altos Hills overlook rolling hills and the South and East Bay communities. Elite couples and singles are the predominant population. Los Altos has the highest household net worth of all the Zip codes in this ranking.</p><br />
+
+
+<p><table style="margin:5px 1em 1em;float:right;"><tbody><tr><td><img height="210" src="http://l.yimg.com/cv/ip/i/us/re/gr2/08_purchase_ny2.jpg" width="350"/></td></tr><tr><td><small>No. 8 - Purchase, NY.<br />Photo: Grant Faint/Getty Images  </small></td></tr></tbody></table></p>
+<p><strong>No. 8 Richest Zip Code: 10577<br />
+Location: <a href="http://realestate.yahoo.com/New_York/Purchase/homes-for-sale;_ylt=An6VLqpxCiKkgQ5bjRoq4_PxkdEF" target="_blank">Purchase, N.Y.</a></strong><br />
+No. households: 834<br />
+Pct. change in no. households since 2000: 14.09<br />
+Average household income: $268,696<br />
+Average household net worth: $1,503,911</p>
+
+<p>The headquarters of MasterCard (MA) and Pepsico (PEP), Purchase also is home to many commuters to New York City, about 25 miles away. Many residents work in health care, professional services, and finance and insurance, according to Census Bureau data. Elite couples and singles predominate.</p><br />
+
+
+<p><table style="margin:5px 1em 1em;float:left;"><tbody><tr><td><img height="221" src="http://l.yimg.com/cv/ip/i/us/re/gr2/07_gladwyne_pa.jpg" width="350"/></td></tr><tr><td><small>No. 7 - Gladwyne, PA.<br />Photo: Getty Images  </small></td></tr></tbody></table></p>
+<p><strong>No. 7 Richest Zip Code: 19035<br />
+Location: <a href="http://realestate.yahoo.com/Pennsylvania/Gladwyne/homes-for-sale;_ylt=AhG27N1APg7GAxZ5cGwBS0zxkdEF" target="_blank">Gladwyne, Pa</a>.</strong><br />
+No. households: 1,495<br />
+Pct. change in no. households since 2000: 2.47<br />
+
+Average household income: $331,840<br />
+Average household net worth: $1,483,586</p>
+
+<p>Once a summer destination for wealthy Philadelphians, Gladwyne, on the Schuylkill River. has become a wealthy year-round community. Its many attractive residences had a median value of $800,500 in September, according to Zillow.com estimates. At publication time, the area’s most expensive home listed for sale on Zillow.com was a $14.9 million mansion at 1211 Mirabeau Lane. The predominant group in this Zip Code is elite couples and singles.</p><br />
+
+
+
+<p><table style="margin:5px 1em 1em;float:right;"><tbody><tr><td><img height="223" src="http://l.yimg.com/cv/ip/i/us/re/gr2/06_belair_ca.jpg" width="350"/></td></tr><tr><td><small>No. 6 - Bel Air, CA.<br />Photo: Jonathan Alcorn/Bloomberg  </small></td></tr></tbody></table></p><p><strong>No. 6 Richest Zip Code: 90077<br />
+Location: <a href="http://realestate.yahoo.com/California/Los_Angeles/homes-for-sale;_ylt=As_NxqgDvI0q5Dv6Vz2Nn1bxkdEF" target="_blank">Los Angeles, Calif.</a></strong><br />
+
+No. households: 3,553<br />
+Pct. change in no. households since 2000: 0.11<br />
+Average household income: $290,802<br />
+Average household net worth: $1,531,147</p>
+
+<p>The 90077 Zip Code refers to the Bel Air section of Los Angeles, home to celebrities and executives. The district has many expensive residences by the Bel Air Country Club and houses with views of the surrounding valley, according to belair-realestate.com. In addition to mansions, Bel Air has ranch-style properties. It is next door to the fourth-richest Zip Code, 90210. The predominant population in this the Bel Air area is elite couples and singles.</p><br />
+
+
+<p><table style="margin:5px 1em 1em;float:left;"><tbody><tr><td><img height="216" src="http://l.yimg.com/cv/ip/i/us/re/gr2/05_portola_valley_ca.jpg" width="350"/></td></tr><tr><td><small>No. 5 - Portola Valley, CA.<br />Photo: Dave Anderson/Getty Images </small></td></tr></tbody></table></p>
+<p><strong>No. 5 Richest Zip Code: 94028<br />
+
+Location: <a href="http://realestate.yahoo.com/California/Portola_Valley/homes-for-sale;_ylt=Aotb7_N14H8ovBgIo.2TPwTxkdEF" target="_blank">Portola Valley, Calif.</a></strong><br />
+No. households: 2,579<br />
+Pct. change in no. households since 2000: 3.28<br />
+Average household income: $270,922<br />
+Average household net worth: $1,531,291</p>
+
+<p>This Portola Valley Zip code is adjacent to the No. 9 richest Zip Code, 94022, and the No. 32 richest, 94304. The town of Portola Valley is just west of Stanford University in a valley by the San Andreas Fault. It offers a trail system, scenic roads, open space, and natural views, according to the town. Elite couples and singles are the predominant inhabitants.</p><br />
+
+
+<p><table style="margin:5px 1em 1em;float:right;"><tbody><tr><td><img height="222" src="http://l.yimg.com/cv/ip/i/us/re/gr2/04_beverly_hills_ca.jpg" width="350"/></td></tr><tr><td><small>No. 4 - Beverly Hills, CA.<br />Photo: Geri Lavrov/Getty Images</small></td></tr></tbody></table></p>
+
+<p><strong>No. 4 Richest Zip Code: 90210<br />
+Location: <a href="http://realestate.yahoo.com/California/Beverly_Hills/homes-for-sale;_ylt=AtJmrrKc9nF6a_RqWzfPfbrxkdEF" target="_blank">Beverly Hills, Calif.</a></strong><br />
+No. households: 9,245<br />
+Pct. change in no. households since 2000: 3.71<br />
+Average household income: $278,757<br />
+Average household net worth: $1,504,166</p>
+
+<p>This neighborhood near the foothills of the Santa Monica Mountains, made famous by the television series Beverly Hills, 90210, is dominated by opulent homes. Rodeo Drive, between Wilshire Boulevard and Sunset Boulevard, has an area of large houses referred to as the Flats, as well as a posh shopping district, according to Sotheby’s International Realty. Zillow.com estimates that in September, 90210's median home value was $2,557,700. The area is adjacent to the sixth-richest Zip Code, 90077. The predominant residents of 90210 are executives and professionals in their 40s and 50s with no children.</p><br />
+
+<p><table style="margin:5px 1em 1em;float:left;"><tbody><tr><td><img height="208" src="http://l.yimg.com/cv/ip/i/us/re/gr2/03_kenilworth_il.jpg" width="350"/></td></tr><tr><td><small>No. 3 - Kenilworth, IL.<br />Photo: Hisham Ibrahim/Getty Images</small></td></tr></tbody></table></p>
+<p><strong>No. 3 Richest Zip Code: 60043<br />
+Location: <a href="http://realestate.yahoo.com/Illinois/Kenilworth/homes-for-sale;_ylt=AuTzWdBXiYy34Z0Nqhq6VwnxkdEF" target="_blank">Kenilworth, Ill.</a></strong><br />
+No. households: 810<br />
+Pct. change in no. households since 2000: 1.00<br />
+Average household income: $323,588<br />
+Average household net worth: $1,558,833</p> 
+
+
+<p>The village of Kenilworth, about 17 miles from downtown <a href="http://realestate.yahoo.com/Illinois/Chicago/homes-for-sale;_ylt=AkjmyW5gn_X_d7iNfhY2awfxkdEF" target="_blank">Chicago</a> and south of 60093, the No. 14 richest Zip Code, is the wealthiest area in the Midwest, according to Gadberry’s analysis. The average household income in this exclusive North Shore suburb is $323,588. Elite couples and singles are the predominant residents.</p><br />
+
+ 
+<p><table style="margin:5px 1em 1em;float:right;"><tbody><tr><td><img height="228" src="http://l.yimg.com/cv/ip/i/us/re/gr2/02_old_westbury_ny.jpg" width="350"/></td></tr><tr><td><small>No. 2 - Old Westbury, NY.<br />Photo: Getty Images</small></td></tr></tbody></table></p>
+<p><strong>No. 2 Richest Zip Code: 11568<br /> 
+Location: <a href="http://realestate.yahoo.com/New_York/Old_Westbury/homes-for-sale;_ylt=AhIcZBVWPp3YoBvFFiLXw17xkdEF" target="_blank">Old Westbury, N.Y.</a></strong><br />
+No. households: 1,047<br /> 
+
+Pct. change in no. households since 2000: 8.61<br /> 
+Average household income: $282,981<br /> 
+Average household net worth: $1,547,866</p>
+
+<p>On Long Island’s north shore, about 25 miles from Manhattan, Old Westbury is New York’s most affluent suburb, according to Gadberry Group. It is home to the Meadowbrook Polo Club, the country’s oldest polo field, and Old Westbury Gardens, built in 1906. The predominant group is elite couples and singles.</p><br />
+
+
+
+<p><table style="margin:5px 1em 1em;float:left;"><tbody><tr><td><img height="218" src="http://l.yimg.com/cv/ip/i/us/re/gr2/50_palmbeach_fl2.jpg" width="350"/></td></tr><tr><td><small>No. 1 - Palm Beach, FL.<br />Photo: Mark Lewis/Getty Images</small></td></tr></tbody></table></p>
+<p><strong>No. 1 Richest Zip Code: 33480<br />
+
+Location: <a href="http://realestate.yahoo.com/Florida/Palm_Beach/homes-for-sale;_ylt=ApC.MmT9HlM4LY50Ke_5a6LxkdEF" target="_blank">Palm Beach, Fla.</a></strong><br />
+No. households: 5,505*<br />
+Pct. change in no. households since 2000: 13.76*<br />
+Average household income: $370,136<br />
+Average household net worth: $1,486,123</p>
+
+<p>The town of Palm Beach—in America’s richest Zip Code, 33480—is a 16-mile barrier island with the Atlantic Ocean on its eastern boundary and Lake Worth on the west. High-end shopping and dining establishments can be found on Worth Avenue, and the island provides polo, golf, tennis, yachting, and deep-sea fishing, according to Sotheby’s International Realty. The predominant group is executives and professionals in their 40s and 50s with no children. The median age, according to 2010 census data, was 67.5.</p>
+
+<p>*As Gadberry Group’s estimates for Palm Beach include some part-year residents, figures differ from U.S. Census Bureau counts, which show a decrease in population from 2000 to 2010.</p>
+
+
+<p><a href="http://us.lrd.yahoo.com/_ylt=AiuQ5c1Q0nCC9dEGUcT89FrxkdEF/SIG=13dusdkjo/**http%3A//images.businessweek.com/slideshows/20111206/america-s-richest-zip-codes-2011/%3Fcampaign_id=yahoo" target="_blank"><strong>Click here to see all of America's Richest Zip Codes.</strong></a></p>
+
+
+<center><a href="http://us.lrd.yahoo.com/_ylt=Ar7HevrNx4YXFXZ6eZnPSM_xkdEF/SIG=11c212o4s/**http%3A//www.facebook.com/yahoorealestate" title="Yahoo! Real Estate on Facebook" target="_blank"><img alt="Facebook" height="62" src="http://l.yimg.com/a/i/us/ga/buzz/feature/vg31/facebookbutton_50.jpg" width="50"/></a> 
+<br /> 
+<br />
+<a href="http://us.lrd.yahoo.com/_ylt=Av1wZWDziWI.df_W4029nhLxkdEF/SIG=117dvprlm/**http%3A//twitter.com/yahoorealestate" title="Yahoo! Real Estate on Twitter" target="_blank"><img alt="Twitter" height="62" src="http://l.yimg.com/a/i/us/autos/follow-us-on-twitter-bird.jpg" width="50"/></a></center>
+  <span class="dotted-line"></span>
+</div>
+              <div id="yre-social-bot">
+                <div class="media-share">
+
+  <div class="ymsb ymsb-facebook ymsb-retweet"></div>
+  <script type="text/javascript">
+    if (typeof YAHOO == "undefined") { YAHOO = {}; }
+    if (typeof YAHOO.Media == "undefined") { YAHOO.Media = {}; }
+    if (typeof YAHOO.Media.SocialButtons == "undefined") { YAHOO.Media.SocialButtons = {}; }
+    YAHOO.Media.SocialButtons.conf = {
+        lang: 'en-US',
+        tracking: {
+            _S: 97620465,
+            intl: "US",
+            pkg: "http://realestate.yahoo.com/promo/americas-10-richest-zip-codes-2011.html",
+            ct : "a",
+            lang: "en-US"
+        },
+        content: {
+            url : "http://realestate.yahoo.com/promo/americas-10-richest-zip-codes-2011.html", 
+            title : "America's 10 Richest Zip Codes, 2011",
+            retweet_via: "YahooRealEstate", 
+            retweet_related: "Yahoo"
+        },
+        config: {
+            widget_type: 'mit_share',
+            facebook: { } 
+        }
+    };
+    YAHOO.Media.Facebook = {
+        init: {
+            appId: 155383224494397,
+            channelUrl: "http://realestate.yahoo.com/fb/channel.html"
+        }
+    };
+  </script>
+</div>
+                <div id="universal-sharing-w2" class="universal-sharing">
+  <div class="yui-skin-sam">
+    <div class="ygsh">
+        <div id="ygsh-showw2" class="ygsh-sharing-mod">
+            <div class="imgbtn" id="ygsh-us-btn-w2">                <div id="ygsh-send-w2" class="btn-sep ygsh-send">
+
+                    <div class="btn-left sprite"></div>
+                    <div class="btn-mid sprite"><a href="mailto:?subject=Yahoo! yre&body=http://realestate.yahoo.com/promo/americas-10-richest-zip-codes-2011.html" id="ygsh-send-btn-w2" class="btn-icon-send sprite" rel="nofollow"><span class="btntxt">Send</span></a></div>
+                    <div class="btn-right sprite"></div>
+                </div>                <div id="ygsh-print-w2" class="btn-sep ygsh-print">
+                    <div class="btn-left sprite"></div>
+                    <div class="btn-mid sprite"><a href="" id="ygsh-print-btn-w2" class="btn-icon-print sprite" rel="nofollow"><span class="btntxt">Print</span></a></div>
+                    <div class="btn-right sprite"></div>
+
+                </div>            </div>
+            <div id="ygsh-wrapper1" class="ygsh-panel-c">
+                <div id="ygsh-panel-share-w2" class="hide" >
+                        <div class="hd" id="ygsh-tabtitle">Share this page</div>
+                        <div class="bd">
+                            <div class="shr"><ul><li><div class="sprite" style="background-position:-0px -1622px;background-repeat:no-repeat;"><a href="http://www.facebook.com/share.php?u=" title="Share this on Facebook" onClick="YAHOO.one.ush.ShareWidget.shareULT('http://www.facebook.com/share.php?u='+YAHOO.one.ush.widgets.getWidget('w2').getUrl()+'&t='+YAHOO.one.ush.widgets.getWidget('w2').getTitle()+'','Facebook');event.returnValue = false;return false;" href="http://www.facebook.com/share.php?u=">Facebook</a></div></li><li><div class="sprite" style="background-position:-0px -1428px;background-repeat:no-repeat;"><a href="http://twitter.com/home?status" title="Tweet this" onClick="YAHOO.one.ush.ShareWidget.shareULT('http://twitter.com/home?status='+YAHOO.one.ush.widgets.getWidget('w2').getUrl()+'&title='+YAHOO.one.ush.widgets.getWidget('w2').getTitle()+'','Twitter');event.returnValue = false;return false;" href="http://twitter.com/home?status=">Twitter</a></div></li><li><div class="sprite" style="background-position:-0px -1686px;background-repeat:no-repeat;"><a href="http://www.myspace.com/Modules/PostTo/Pages/" title="Myspace this" onClick="YAHOO.one.ush.ShareWidget.shareULT('http://www.myspace.com/Modules/PostTo/Pages/?t=&c=&l=&u='+YAHOO.one.ush.widgets.getWidget('w2').getUrl()+'&title='+YAHOO.one.ush.widgets.getWidget('w2').getTitle()+'','Myspace');event.returnValue = false;return false;" href="http://www.myspace.com/Modules/PostTo/Pages/?t=&c=&l=&u=">Myspace</a></div></li><li><div class="sprite" style="background-position:-0px -1492px;background-repeat:no-repeat;"><a href="http://delicious.com/post" title="Bookmark this on Delicious" onClick="YAHOO.one.ush.ShareWidget.shareULT('http://delicious.com/post?v=4&noui&jump=close&url='+YAHOO.one.ush.widgets.getWidget('w2').getUrl()+'&title='+YAHOO.one.ush.widgets.getWidget('w2').getTitle()+'','Delicious');event.returnValue = false;return false;" href="http://delicious.com/post?v=4&noui&jump=close&url=">Delicious</a></div></li><li><div class="sprite" style="background-position:-0px -1558px;background-repeat:no-repeat;"><a href="http://digg.com/submit" title="Digg this" onClick="YAHOO.one.ush.ShareWidget.shareULT('http://digg.com/submit?url='+YAHOO.one.ush.widgets.getWidget('w2').getUrl()+'&title='+YAHOO.one.ush.widgets.getWidget('w2').getTitle()+'','Digg');event.returnValue = false;return false;" href="http://digg.com/submit?url=">Digg</a></div></li><li><div class="sprite" style="background-position:-0px -1752px;background-repeat:no-repeat;"><a href="http://www.stumbleupon.com/submit" title="Stumble this" onClick="YAHOO.one.ush.ShareWidget.shareULT('http://www.stumbleupon.com/submit?url='+YAHOO.one.ush.widgets.getWidget('w2').getUrl()+'&title='+YAHOO.one.ush.widgets.getWidget('w2').getTitle()+'','StumbleUpon');event.returnValue = false;return false;" href="http://www.stumbleupon.com/submit?url=">StumbleUpon</a></div></li></ul></div>
+
+                        </div>
+                </div>
+            </div>
+            <div class="yui-skin-sam">
+                <div id="ygsh-wrapper2-w2" class="ygsh-panel-c"></div>
+            </div>
+        </div>
+
+    </div>
+
+</div><script type="text/javascript">(function(){if (document.getElementById("ygsh-showw2") && "undefined" !== typeof YAHOO && "undefined" !== typeof YAHOO.one && "undefined" !== typeof YAHOO.one.ush.ShareWidget && "undefined" !== typeof YAHOO.one.ush.widgets) {YAHOO.one.ush.widgets.ush_w2 = new YAHOO.one.ush.ShareWidget("w2");YAHOO.one.ush.widgets.ush_w2.setUrl("http://realestate.yahoo.com/promo/americas-10-richest-zip-codes-2011.html");YAHOO.one.ush.widgets.ush_w2.setTitle("America's 10 Richest Zip Codes, 2011");}else{setTimeout(arguments.callee,500);}})();</script>
+</div>
+              </div>
+              <div id="more-articles" class="more-articles">
+  <div class="header"> More from Yahoo! Real Estate: </div>
+  <div class="body">
+    <div class='container'>  <div class='arrow'> <span> > </span> </div>  <div class='title'><a href="/promo/rent-oprah-winfreys-chicago-apartment.html;_ylt=AoHlmwRy2Q7_JEJqeS11JFHxkdEF" >Rent Oprah Winfrey's Chicago Apartment</a></div>  <div class='date-prov'>Nov 17, 2011 &#8212; CNBC.com</div></div><div class='container'>  <div class='arrow'> <span> > </span> </div>  <div class='title'><a href="/promo/americas-best-places-to-raise-kids-2011.html;_ylt=AvAUni3DN4gWitcTguNyu6jxkdEF" >America's Best Places to Raise Kids, 2011</a></div>  <div class='date-prov'>Nov 16, 2011 &#8212; Bloomberg Businessweek</div></div><div class='container'>  <div class='arrow'> <span> > </span> </div>  <div class='title'><a href="/promo/rich-neighborhoods-riddled-with-foreclosures.html;_ylt=Am0lq755G5Dx7U6XkVyC9MDxkdEF" >Rich Neighborhoods Riddled With Foreclosures</a></div>  <div class='date-prov'>Nov 16, 2011 &#8212; Forbes.com</div></div><div class='container'>  <div class='arrow'> <span> > </span> </div>  <div class='title'><a href="/promo/elegant-home-transcends-tiny-lot.html;_ylt=Av.uQjfwTTs8y6Mqx.iObynxkdEF" >Elegant Home Transcends Tiny Lot</a></div>  <div class='date-prov'>Nov 14, 2011 &#8212; WSJ.com</div></div>
+
+  </div>
+</div>
+            </div>
+            <div id="yre-page-right">
+              <div class="module-wrapper">
+                <div id="ad-lrec">
+  <!--START_SLUG-->
+<div class="CAN_ad">
+<style>
+.can_ad_slug {font-family:arial;font-size:11px;color:#999;text-decoration:none;background-image:url('http://l.yimg.com/d/lib/can_interstitial/icons/adchoice_1.4.png');background-repeat:no-repeat;background-position:right;padding:0px 15px 0px 1px;margin:1px 0px 1px 0;cursor:hand;height:12px;display:block;line-height:12px;text-align:right;}
+.ad_slug_table a {text-decoration:none;}
+.ad_slug_table div.CAN_marker { display:none }
+</style>
+<table border="0" cellpadding="0" cellspacing="0" class="ad_slug_table"><tr><td align="right"><a target="_blank" class="CAN_link" href="http://global.ard.yahoo.com/SIG=15lmv6thv/M=791401.14962971.14679493.1414694/D=re/S=97620465:LREC/_ylt=ArjNfvJAkIk8UaqFVgSlcQTxkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=qvR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=6551135/N=0/SIG=11475d5s1/*http://info.yahoo.com/relevantads/"><span class="can_ad_slug">AdChoices</span></a></td></tr>
+
+<!-- END_SLUG-->
+<tr><td>
+<!--Vendor: WSOD, Format: IFrame -->
+<!--Adtag with cache busting macro from Taginator -->
+<!-- SCBT -->
+<script>
+document.write("<iframe style=\"padding:0px;margin:0px;\" src=\"http://ad.wsod.com/embed/8bec9b10877d5d7fd7c0fb6e6a631357/2405.0.iframe.300x250/"+Math.random()+"?yhdata=ycg=m&yyob=1992&zip=,60155&ybt=7;74;128;225;264;283;296;310;324;432;506;687;2642;2801;6425;8630;8648;8813;10408&click=http://global.ard.yahoo.com/SIG=15lmv6thv/M=791401.14962971.14679493.1414694/D=re/S=97620465:LREC/_ylt=ArjNfvJAkIk8UaqFVgSlcQTxkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=qvR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=6551135/R=0/*\" title=\"\" border=\"0\" frameBorder=\"0\" scrolling=\"no\" width=\"300\" height=\"250\"></iframe>");
+</script>
+<!-- ECBT -->
+</td></tr></table></div><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['qvR7O0PDhCk-']='&U=13f1k98hm%2fN%3dqvR7O0PDhCk-%2fC%3d791401.14962971.14679493.1414694%2fD%3dLREC%2fB%3d6551135%2fV%3d1';
+</script><noscript><img width=1 height=1 alt="" src="http://us.bc.yahoo.com/b?P=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn&T=18avdgsf4%2fX%3d1323324911%2fE%3d97620465%2fR%3dre%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d3695423682%2fG%3dCnVzCgo4MDc-%2fH%3dc2VydmVJZD0iZElrbDRXS0poeFcuVFRtSlRnVnFid05sZ2ZfcENVN2dWZThBQVZ6biIgc2l0ZUlkPSI0NDU2NTUxIiB0U3RtcD0iMTMyMzMyNDkxMTE5NTAwMCIg%2fQ%3d-1%2fS%3d1%2fJ%3d65868962&U=13f1k98hm%2fN%3dqvR7O0PDhCk-%2fC%3d791401.14962971.14679493.1414694%2fD%3dLREC%2fB%3d6551135%2fV%3d1"></noscript><!--QYZ ,;;LREC;97620465;2;-->  
+</div>
+              </div>
+              <div class="module-wrapper">
+                
+
+<div id='yre-social'>
+    <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fyahoorealestate&amp;width=220&amp;colorscheme=light&amp;show_faces=false&amp;stream=false&amp;header=false&amp;height=62" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+    <div class='twitter'>Follow <a href="http://twitter.com/YahooRealEstate">@YahooRealEstate</a> on <a href="http://twitter.com/YahooRealEstate">Twitter</a></div>
+</div>
+              </div>
+              <div class="module-wrapper">
+                <div id="mortgage-rates" class="mortgage-rates">
+
+  <h3> Search San Francisco Mortgage Rates </h3>
+  <div class="rate-search">
+    <form id="rateSearch" name="rateSearch" action="/loans/mortgage.html;_ylt=AlmqQ5S0HYautTndicTHGKzxkdEF">
+      <div class="label">
+        <span> Location </span>
+        <input name="p" id="pLoc" type="text" value="San Francisco, CA" />
+      </div>
+
+      <div class="label">
+        <span> Loan Amount </span>
+        <input type="text" value="$10000" name="amount" id="amount" />
+      </div>
+      <div class="label">
+        <span> Loan Purpose </span>
+        <select id="loanPurpose" name="loan">
+
+          <option value="1" selected="selected"> Purchase </option>
+          <option value="2"> Refinance </option>
+          <option value="3"> Home Equity </option>
+        </select>
+      </div>
+      <div class="label">
+
+        <span> Loan Type </span>
+        <select id="loanType" name="type">
+          <option value="1" selected="selected"> Fixed </option>
+          <option value="2"> ARM </option>
+          <option value="3"> Interest Only </option>
+
+        </select>
+      </div>
+      <div class="submit">
+        <div class="button"">
+          <input name="getRates" value="Get Rates" type="submit">
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="rate-details">
+    <div class="state"> California Mortgage Rates </div>
+    <div class="date"> Updated Tuesday, December 6, 2011 </div>
+    <div class="container">
+      <div class="heading"> Mortgage Type </div>
+      <div class="static"> 15 Yr Fixed: </div>
+
+      <div class="static"> 30 Yr Fixed: </div>
+    </div>
+    <div class="container">
+      <div class="heading"> Today </div>
+      <div> 3.600% </div>
+      <div> 4.262% </div>
+
+    </div>
+    <div class="container">
+      <div class="heading"> Last Week </div>
+      <div> 3.631% </div>
+      <div> 4.301%</div>
+    </div>
+
+    <div class="container">
+      <div class="heading"> Change </div>
+      <div class="data"> <span class="neg"></span> <span> -0.031% </span> </div>
+      <div class="data"> <span class="neg"></span> <span> -0.039% </span> </div>
+
+    </div>
+    <div class="container" style="padding: 0px;">
+      <div class="heading"> Graph </div>
+      <div> <a href="/California/San_Francisco/loans/trends.html;_ylt=AuaYcPLnHo7G0JlE48UfC7nxkdEF?prod_id=000004" > graph </a> </div>
+      <div> <a href="/California/San_Francisco/loans/trends.html;_ylt=Ahc8shMB1pIdWaJUG2_ewXjxkdEF?prod_id=000006" > graph </a> </div>
+
+    </div>
+    <a href="/California/San_Francisco/loans/mortgage.html;_ylt=AomZA6msG9n8KTqtEqkVFnbxkdEF?p=San+Francisco%2C+CA&amount=100000&creditScore=1&loan=1&type=1&n=20&b=1&getRates=Get+Rates" class="more"> See more rates </a>
+</div>
+</div>
+<script type="text/javascript">
+  var loanPurposeNode = document.getElementById('loanPurpose');
+  var loanTypeNode = document.getElementById('loanType');
+  loanPurposeNode.onchange = function() {
+    var option = this.options[this.selectedIndex].value;
+    if(option == 3) {
+        loanTypeNode.disabled = true;
+    }
+    else {
+        loanTypeNode.disabled = false;
+    }
+  }
+</script>
+              </div>
+              <div class="module-wrapper">
+                <div id="expert-articles" class="expert-articles">
+  <h3> Most Recent Articles by the Experts </h3>
+
+  <div class="expert">
+    <div class="header">
+  <div class="pic"> <img src="http://l.yimg.com/d/lib/yre/guttentag_small_201006010442.jpg" alt="Jack M. Guttentag"/> </div>
+  <div class="text">
+    <div class="name"> Jack M. Guttentag: </div>
+    <div class="title"> The Mortgage Professor </div>
+
+  </div>
+</div>
+<div class="body">
+  
+</div>
+<div class="footer">
+  <a href="/info/experts/Jack-M.-Guttentag;_ylt=At9s2HB1lf.dtakb4.F8tofxkdEF" > See all articles from Jack M. Guttentag &#187; </a>
+</div>
+  </div>
+  <div class="expert">
+
+    <div class="header">
+  <div class="pic"> <img src="http://l.yimg.com/d/lib/yre/hymer_small_201006010442.jpg" alt="Dian Hymer"/> </div>
+  <div class="text">
+    <div class="name"> Dian Hymer: </div>
+    <div class="title"> Real Estate and Personal Finance </div>
+  </div>
+
+</div>
+<div class="body">
+  <div class='title'> <a href="/info/experts/4-ways-to-overcome-appraisal-roadblocks;_ylt=AjL_sT_ifpjkJzC9lDZMfa_xkdEF" > 4 ways to overcome appraisal roadblocks </a> </div><div class='date'> Mon, Dec 5, 2011 </div><div class='title'> <a href="/info/experts/5-keys-to-buying-a-home-in-todays-market;_ylt=AnJwoy7rekJTsk6o1l4UYDLxkdEF" > 5 keys to buying a home in today's market </a> </div><div class='date'> Wed, Nov 30, 2011 </div>
+</div>
+
+<div class="footer">
+  <a href="/info/experts/Dian-Hymer;_ylt=AhiQ3aNy9lwYdzML5b9wPkbxkdEF" > See all articles from Dian Hymer &#187; </a>
+</div>
+  </div>
+  <div class="more">
+    <a href="/info/experts;_ylt=AlmxInCIn9q167a1PtF8zPvxkdEF" > See all Expert Advice </a>
+  </div>
+
+</div>
+              </div>
+              <div class="module-wrapper">
+                
+<script language="javascript" id="mNSC" src="http://mycdn.media.net/cmedianet?cid=7CU51LO82&size=310x355&crid=134957544&fd=realestate.yahoo.com&hint=[[CONTEXT_KEYWORD]]"></script>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="yre-ft">
+        <div id="yre-ft-wrapper">
+          <div id="search-bar" class="search-bar">
+  <form method="get" id="search-bar-form" action="/search/homes-for-sale;_ylt=AiHtr4rmCd20L4rtfni6Q.3xkdEF">
+    <div class="left"></div>
+    <div class="center">
+      <div class="first-row">
+        <div class="param">
+
+          <div class="text"> Location </div>
+          <input type="text" name="p" value="San Francisco, CA" id="search-location" />
+          <div id="search-location-autocomplete"></div>
+          <div class="desc"> City & State or ZIP </div>
+        </div>
+        <div class="param ltype">
+
+          <div class="text"> Listings Type </div>
+          <select name="type" id="search-type">
+            <option value="classified" selected> Homes for Sale </option>
+            <option value="new"> New Homes </option>
+            <option value="foreclosure"> Foreclosures </option>
+
+            <option value="rental"> Apartments for Rent </option>
+          </select>
+        </div>
+      </div>
+      <div class="second-row">
+        <div class="param">
+          <div class="text"> Price <span> (optional) </span> </div>
+
+          <input type="text" name="priceLow" id="search-price-low" /> <span> to </span>
+          <input type="text" name="priceHigh" id="search-price-high" />
+        </div>
+        <div class="param beds">
+          <div class="text"> Beds <span> (optional) </span> </div>
+
+          <select name="bedroomLow" id="search-beds">
+            <option value="" selected> Any </option>
+            <option value="0"> Studio+ </option>
+            <option value="1"> 1+ </option>
+            <option value="2"> 2+ </option>
+
+            <option value="3"> 3+ </option>
+            <option value="4"> 4+ </option>
+            <option value="5"> 5+ </option>
+          </select>
+        </div>
+        <div class="param baths">
+
+          <div class="text"> Baths <span> (optional) </span> </div>
+          <select name="bathroomLow" id="search-baths">
+            <option value="" selected> Any </option>
+            <option value="1"> 1+ </option>
+
+            <option value="2"> 2+ </option>
+            <option value="3"> 3+ </option>
+            <option value="4"> 4+ </option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+    <div class="right">
+      <input class="submit" type="submit" value="Search" name="search" />
+    </div>
+  </form>
+</div>
+          <div id="footer-static" class="footer-static">
+  <div class="first">
+    <span> &#187; </span> <a href="http://us.lrd.yahoo.com/_ylt=AsGvWCbz31_jFtsp.mLVnhbxkdEF/SIG=144g8vbuc/**http%3A//us.edit.toolbar.yahoo.com/config/slv4_addbutton%3F.btn=rea%26.pos=2%26.done=http%253A%252F%252Frealestate.yahoo.com%252F" > Add Real Estate to Yahoo! Toolbar </a>
+
+    <span> &#187; </span> <a href="/US;_ylt=AvJVdcPE5if7N82CrblVo47xkdEF" > Browse by State or City </a>
+  </div>
+  <div class="second">
+    <a href="/search/homes-for-sale;_ylt=AopkmAqqBzrL7TW_YTFivxnxkdEF" > Homes for Sale </a> -
+    <a href="/search/apartments-for-rent;_ylt=AutsoCFA3gy4UUjQrHCmdsHxkdEF" > Apartments for Rent </a> -
+    <a href="/Homevalues;_ylt=Akz61fbI.sLOVdUfRayWswfxkdEF" > Home Values </a> -
+    <a href="/loans;_ylt=AvqUrTctQcpPerRB7.N.3Q3xkdEF" > Mortgages </a> -
+    <a href="/Realtors;_ylt=Aq7Zk0fZet7CXnE3mvwaTi7xkdEF" > Real Estate Agents </a> -
+    <a href="/Foreclosures;_ylt=AmoQ6dqBtlpE5zn_W6kVixjxkdEF" > Foreclosures </a> -
+    <a href="/loans/refinance-mortgage.html;_ylt=Ap9cDzpGm_DqzVK0L8Hq2g7xkdEF" > Refinance Mortgage </a> -
+    <a href="/loans/home-equity.html;_ylt=AtKCPkkHxk0aMeGPQjfR1KrxkdEF" > Home Equity Loans </a> -    <a href="http://us.lrd.yahoo.com/_ylt=AoNmIqmOtwzCKHafyTR1gXnxkdEF/SIG=12f36omi9/**http%3A//www.zillow.com/feedback/AdvertiserSignup.htm%3Fsource=YahooHomePage" rel="nofollow" target="_blank"> Real Estate Advertising </a></div></div>
+
+          <div id="footer-city-state-services" class="footer-city-state-services">
+  
+  <div class="heading"> Top Cities: </div>
+  <div class="body">
+    <a href="/Georgia/Atlanta;_ylt=Al8J6BXiywH6KPsMXolYh5bxkdEF" >Atlanta real estate</a> | <a href="/Texas/Austin;_ylt=Ar3J1ncm6tQKKvzHXawXBofxkdEF" >Austin real estate</a> | <a href="/Illinois/Chicago;_ylt=AuTkRPslaAKZLVkhuIWgfKDxkdEF" >Chicago real estate</a> | <a href="/Colorado/Denver;_ylt=AqxvKWKpJgp8SxeQ6l.dvVbxkdEF" >Denver real estate</a> | <a href="/Texas/Houston;_ylt=ApoGwIU0.kZg_5TV2i9wRAPxkdEF" >Houston real estate</a> | <a href="/Nevada/Las_Vegas;_ylt=Ag1GELMOXsSWBnTI8UNIIL3xkdEF" >Las Vegas real estate</a> | <a href="/South_Carolina/Myrtle_Beach;_ylt=AtdttdHEM.zvrdZ2Sna0N__xkdEF" >Myrtle Beach real estate</a><br/><a href="/Florida/Orlando;_ylt=AomQjF2UQbh5bJJzNbtVR8_xkdEF" >Orlando real estate</a> | <a href="/Arizona/Phoenix;_ylt=Auo.PMF55uXMPZMfJg4Jqt7xkdEF" >Phoenix real estate</a> | <a href="/Texas/San_Antonio;_ylt=An.504ZiCYe457pNoHiseuTxkdEF" >San Antonio real estate</a> | <a href="/California/San_Diego;_ylt=ApcZA43_dJjMZq6Cq70wkTrxkdEF" >San Diego real estate</a> | <a href="/California/San_Francisco;_ylt=AttGPredErpi7an3IYCginbxkdEF" >San Francisco real estate</a> | <a href="/Washington/Seattle;_ylt=AoWtNSnt2A6ROyrb0ah9QJnxkdEF" >Seattle real estate</a> | <a href="/Arizona/Tucson;_ylt=ApL2h7lt_JU5oHoNCMtl6FLxkdEF" >Tucson real estate</a>
+
+   </div>
+  <div class="heading"> Top States: </div>
+  <div class="body">
+    <a href="/Arizona;_ylt=AhL7iGJ_37_Au3QDPpeqNurxkdEF" >Arizona</a> | <a href="/California;_ylt=AgLBhDgq_nrbHFRK3gTJ_cPxkdEF" >California</a> | <a href="/Colorado;_ylt=AjapaGaqVH_qXZm7G385AB7xkdEF" >Colorado</a> | <a href="/Florida;_ylt=AiDDadBSgSTPOeCiZFkjt3XxkdEF" >Florida</a> | <a href="/Georgia;_ylt=AovM2m8A6oVY.A9g1RmoU9DxkdEF" >Georgia</a> | <a href="/Hawaii;_ylt=Ag_rbUeur7ej.0oPx8Yb7VzxkdEF" >Hawaii</a> | <a href="/Illinois;_ylt=AkAdm3KbISHBE42kpBcIEZLxkdEF" >Illinois</a> | <a href="/Indiana;_ylt=AhQiGY1A3K0oomH6oRU_Z3TxkdEF" >Indiana</a> | <a href="/Maryland;_ylt=AuF2EJ0PH379nOcOtjX4c9bxkdEF" >Maryland</a> | <a href="/Massachusetts;_ylt=AtJUjTFpoICpmEszrU64YAzxkdEF" >Massachusetts</a> | <a href="/Michigan;_ylt=AoZYmf2ieyx8aHBMoIl1kJzxkdEF" >Michigan</a> | <a href="/Minnesota;_ylt=AhoFCbq3mzX9LrxFujAg.nLxkdEF" >Minnesota</a> | <a href="/Missouri;_ylt=Anj8wmnDbYNhM3gdTZdKib7xkdEF" >Missouri</a> | <a href="/Nevada;_ylt=Ar7NhH8PE43Xn9Rj2IZHraTxkdEF" >Nevada</a><br/><a href="/New_Jersey;_ylt=AsXRXSndBMsq8El0_bsKunjxkdEF" >New Jersey</a> | <a href="/New_York;_ylt=Aul3KWyhyViiIc3KE1zslGzxkdEF" >New York</a> | <a href="/North_Carolina;_ylt=An7qx6Pkqe85GhR_roZ1vpjxkdEF" >North Carolina</a> | <a href="/Ohio;_ylt=AuPmjFAHjFVOuGAEOkIZ3JfxkdEF" >Ohio</a> | <a href="/Oklahoma;_ylt=Anvvh56V7GI.NsicRpqtBJTxkdEF" >Oklahoma</a> | <a href="/Oregon;_ylt=Al0gou15vCCbA7oll1X6_L7xkdEF" >Oregon</a> | <a href="/Pennsylvania;_ylt=AqrsHzMOYzqaIAHY91oC8jvxkdEF" >Pennsylvania</a> | <a href="/South_Carolina;_ylt=Aoa6aasX_oDLuOOfM2GuQaDxkdEF" >South Carolina</a> | <a href="/Texas;_ylt=Atebuao5TzhP7jSXdaGAYx3xkdEF" >Texas</a> | <a href="/Tennessee;_ylt=AslMGAUr0_vztJqBB6NLJy_xkdEF" >Tennessee</a> | <a href="/Utah;_ylt=AgHL.0008S8ccc0be3MEeIfxkdEF" >Utah</a> | <a href="/Virginia;_ylt=AnrM36vXvS86jLnLroSgBFHxkdEF" >Virginia</a> | <a href="/Washington;_ylt=AikH7x6f1jdiekrR3KDZz2LxkdEF" >Washington</a> | <a href="/Wisconsin;_ylt=Auf0vNxPkixD4RdyGk5d_eLxkdEF" >Wisconsin</a>
+
+  </div>
+  <div class="heading"> Related Yahoo! Services: </div>
+  <div class="body">
+    <a href="http://us.lrd.yahoo.com/_ylt=AmjRBB8mKqQT6VBZipNjjRrxkdEF/SIG=11e1j45da/**http%3A//finance.yahoo.com/personal-finance" >Personal Financial Advice</a> - <a href="http://us.lrd.yahoo.com/_ylt=AraBF5lrT6fqhIPmcNDyaQzxkdEF/SIG=110v39g9c/**http%3A//downloads.yahoo.com/" >Downloads</a>
+  </div>  <div class="footer">
+
+    <a href="http://realestate.yahoo.com/professionals;_ylt=AgOcAkVOMR3P2q8jD0D003PxkdEF" > Partner with Yahoo! Real Estate </a>
+  </div></div>
+          <div id="footer-disclaimer" class="footer-disclaimer">
+  <div class="line"> Some Yahoo! Real Estate information is provided by our trusted partners. </div>
+  <div class="line"> However, Yahoo! does not guarantee the accuracy or completeness of any third party content. </div>
+  <div class="logo"> </div>
+
+  <div class="ad">
+    <small><p>A REALTOR&reg; is a real estate professional who is a member of the National
+Association of REALTORS&reg; <p>Copyright &copy; 2011 Yahoo! Inc. All Rights Reserved.<br><a href="http://global.ard.yahoo.com/SIG=15jjbhq0c/M=236957.3419682.4701036.3352652/D=re/S=97620465:FOOT/_ylt=Ao44NtWqtduT45C.3u.xBm7xkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pPR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=1621679/R=0/SIG=119439dc6/*http://privacy.yahoo.com/privacy/us/re/">Privacy Policy</a> - <a href="http://global.ard.yahoo.com/SIG=15jjbhq0c/M=236957.3419682.4701036.3352652/D=re/S=97620465:FOOT/_ylt=Ao44NtWqtduT45C.3u.xBm7xkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pPR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=1621679/R=1/SIG=11475d5s1/*http://info.yahoo.com/relevantads/">About Our Ads</a> - <a href="http://global.ard.yahoo.com/SIG=15jjbhq0c/M=236957.3419682.4701036.3352652/D=re/S=97620465:FOOT/_ylt=Ao44NtWqtduT45C.3u.xBm7xkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pPR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=1621679/R=2/SIG=1136qnvkg/*http://docs.yahoo.com/info/terms/">Terms of Service</a> - <a href="http://global.ard.yahoo.com/SIG=15jjbhq0c/M=236957.3419682.4701036.3352652/D=re/S=97620465:FOOT/_ylt=Ao44NtWqtduT45C.3u.xBm7xkdEF/Y=YAHOO/EXP=1323332111/L=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn/B=pPR7O0PDhCk-/J=1323324911228948/K=niC_oOJJa2CNgmkmvqhVaQ/A=1621679/R=3/SIG=11lp7krrc/*http://docs.yahoo.com/info/copyright/copyright.html">Copyright/IP Policy</a></small><!-- SpaceID=97620465 loc=FR05 noad -->
+
+ <!-- SpaceID=97620465 loc=FSRVY noad -->
+<script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['s_R7O0PDhCk-']='&U=12d21nk3a%2fN%3ds_R7O0PDhCk-%2fC%3d-1%2fD%3dFSRVY%2fB%3d-1%2fV%3d0';
+</script><noscript><img width=1 height=1 alt="" src="http://us.bc.yahoo.com/b?P=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn&T=18aklu9os%2fX%3d1323324911%2fE%3d97620465%2fR%3dre%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d2913494019%2fG%3dCnVzCgo4MDc-%2fH%3dc2VydmVJZD0iZElrbDRXS0poeFcuVFRtSlRnVnFid05sZ2ZfcENVN2dWZThBQVZ6biIgc2l0ZUlkPSI0NDU2NTUxIiB0U3RtcD0iMTMyMzMyNDkxMTE5NTAwMCIg%2fQ%3d-1%2fS%3d1%2fJ%3d65868962&U=12d21nk3a%2fN%3ds_R7O0PDhCk-%2fC%3d-1%2fD%3dFSRVY%2fB%3d-1%2fV%3d0"></noscript><img src="http://ad.yieldmanager.com/pixel?id=175884&t=2 width=1" height="1" /><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['sfR7O0PDhCk-']='&U=13fkkqn8p%2fN%3dsfR7O0PDhCk-%2fC%3d783723.14552515.14373148.12549985%2fD%3dSIP%2fB%3d5513542%2fV%3d1';
+</script><noscript><img width=1 height=1 alt="" src="http://us.bc.yahoo.com/b?P=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn&T=18a8qfukr%2fX%3d1323324911%2fE%3d97620465%2fR%3dre%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d4171996190%2fG%3dCnVzCgo4MDc-%2fH%3dc2VydmVJZD0iZElrbDRXS0poeFcuVFRtSlRnVnFid05sZ2ZfcENVN2dWZThBQVZ6biIgc2l0ZUlkPSI0NDU2NTUxIiB0U3RtcD0iMTMyMzMyNDkxMTE5NTAwMCIg%2fQ%3d-1%2fS%3d1%2fJ%3d65868962&U=13fkkqn8p%2fN%3dsfR7O0PDhCk-%2fC%3d783723.14552515.14373148.12549985%2fD%3dSIP%2fB%3d5513542%2fV%3d1"></noscript><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['pPR7O0PDhCk-']='&U=13dihsjbi%2fN%3dpPR7O0PDhCk-%2fC%3d236957.3419682.4701036.3352652%2fD%3dFOOT%2fB%3d1621679%2fV%3d1';
+</script><noscript><img width=1 height=1 alt="" src="http://us.bc.yahoo.com/b?P=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn&T=18aehr6jg%2fX%3d1323324911%2fE%3d97620465%2fR%3dre%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d3919203228%2fG%3dCnVzCgo4MDc-%2fH%3dc2VydmVJZD0iZElrbDRXS0poeFcuVFRtSlRnVnFid05sZ2ZfcENVN2dWZThBQVZ6biIgc2l0ZUlkPSI0NDU2NTUxIiB0U3RtcD0iMTMyMzMyNDkxMTE5NTAwMCIg%2fQ%3d-1%2fS%3d1%2fJ%3d65868962&U=13dihsjbi%2fN%3dpPR7O0PDhCk-%2fC%3d236957.3419682.4701036.3352652%2fD%3dFOOT%2fB%3d1621679%2fV%3d1"></noscript><!--QYZ ,;;;97620465;11;--> <small style="font-size: 8pt"> | Yahoo!-Zillow Real Estate Network</small>
+  </div>
+</div>
+        </div>
+
+      </div>
+
+    </div>
+    
+<script type="text/javascript" src="http://l.yimg.com/zz/combo?d/lib/yui/2.8.1/build/yahoo-dom-event/yahoo-dom-event.js&d/lib/yui/2.5.2/build/container/container-min.js&qf/static/js/4.3.21/overlay-201105050424.js&qf/static/js/4.3.21/ult-strip-201105050424.js&d/lib/uh/15/js/uh_rsa-1.0.9.js&qf/static/js/4.3.21/header-201105050424.js&d/lib/yui/2.5.2/build/connection/connection-min.js&d/lib/yui/2.5.2/build/autocomplete/autocomplete-min.js&qf/static/js/4.3.21/autocomplete-201105050424.js&d/lib/yui/2.7.0/build/utilities/utilities.js&d/lib/yui/2.5.2/build/get/get-min.js&d/lib/ush/ygsh_1.0.3.js&d/lib/ult/ylc_1.9.js&d/lib/yui/3.2.0/build/yui/yui-min.js&d/lib/media/m/social_buttons/social-buttons-easy-min-4270.js"></script>
+
+
+                <script type="text/javascript" charset="UTF-8">YAHOO.util.Event.addListener( window, "load", function(){ setTimeout(function(){ YAHOO.ULT.clean(); },800); } );</script>
+
+                    
+                    <script type="text/javascript" charset="UTF-8">
+                        if(!(YAHOO.env.ua.ie > 5 && YAHOO.env.ua.ie < 7)) {
+                            YAHOO.YRE.autoComplete({
+                                url: "/autocomplete/cities.html",
+                                input: "search-location",
+                                container: "search-location-autocomplete"
+                                });
+                        }
+                    </script>
+
+                    
+                
+
+                    
+                    <script type="text/javascript" charset="UTF-8">
+                          YAHOO.YRE.autoComplete({
+                              url: "/autocomplete/cities.html",
+                              input: "search-location",
+                              container: "search-location-autocomplete"
+                          });
+                    </script>
+                    
+                
+  </body>
+</html>
+
+<!-- realestate:myservice-us:0:Success -->
+<script language=javascript>
+if(window.yzq_p==null)document.write("<scr"+"ipt language=javascript src=http://l.yimg.com/d/lib/bc/bc_2.0.5.js></scr"+"ipt>");
+</script><script language=javascript>
+if(window.yzq_p)yzq_p('P=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn&T=185ufnmuk%2fX%3d1323324911%2fE%3d97620465%2fR%3dre%2fK%3d5%2fV%3d1.1%2fW%3dJ%2fY%3dYAHOO%2fF%3d1803410681%2fG%3dCnVzCgo4MDc-%2fH%3dc2VydmVJZD0iZElrbDRXS0poeFcuVFRtSlRnVnFid05sZ2ZfcENVN2dWZThBQVZ6biIgc2l0ZUlkPSI0NDU2NTUxIiB0U3RtcD0iMTMyMzMyNDkxMTE5NTAwMCIg%2fS%3d1%2fJ%3d65868962');
+if(window.yzq_s)yzq_s();
+</script><noscript><img width=1 height=1 alt="" src="http://us.bc.yahoo.com/b?P=dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn&T=18a6hfg33%2fX%3d1323324911%2fE%3d97620465%2fR%3dre%2fK%3d5%2fV%3d3.1%2fW%3dJ%2fY%3dYAHOO%2fF%3d2790541168%2fG%3dCnVzCgo4MDc-%2fH%3dc2VydmVJZD0iZElrbDRXS0poeFcuVFRtSlRnVnFid05sZ2ZfcENVN2dWZThBQVZ6biIgc2l0ZUlkPSI0NDU2NTUxIiB0U3RtcD0iMTMyMzMyNDkxMTE5NTAwMCIg%2fQ%3d-1%2fS%3d1%2fJ%3d65868962"></noscript><script language=javascript>
+(function(){window.xzq_p=function(R){M=R};window.xzq_svr=function(R){J=R};function F(S){var T=document;if(T.xzq_i==null){T.xzq_i=new Array();T.xzq_i.c=0}var R=T.xzq_i;R[++R.c]=new Image();R[R.c].src=S}window.xzq_sr=function(){var S=window;var Y=S.xzq_d;if(Y==null){return }if(J==null){return }var T=J+M;if(T.length>P){C();return }var X="";var U=0;var W=Math.random();var V=(Y.hasOwnProperty!=null);var R;for(R in Y){if(typeof Y[R]=="string"){if(V&&!Y.hasOwnProperty(R)){continue}if(T.length+X.length+Y[R].length<=P){X+=Y[R]}else{if(T.length+Y[R].length>P){}else{U++;N(T,X,U,W);X=Y[R]}}}}if(U){U++}N(T,X,U,W);C()};function N(R,U,S,T){if(U.length>0){R+="&al="}F(R+U+"&s="+S+"&r="+T)}function C(){window.xzq_d=null;M=null;J=null}function K(R){xzq_sr()}function B(R){xzq_sr()}function L(U,V,W){if(W){var R=W.toString();var T=U;var Y=R.match(new RegExp("\\\\(([^\\\\)]*)\\\\)"));Y=(Y[1].length>0?Y[1]:"e");T=T.replace(new RegExp("\\\\([^\\\\)]*\\\\)","g"),"("+Y+")");if(R.indexOf(T)<0){var X=R.indexOf("{");if(X>0){R=R.substring(X,R.length)}else{return W}R=R.replace(new RegExp("([^a-zA-Z0-9$_])this([^a-zA-Z0-9$_])","g"),"$1xzq_this$2");var Z=T+";var rv = f( "+Y+",this);";var S="{var a0 = '"+Y+"';var ofb = '"+escape(R)+"' ;var f = new Function( a0, 'xzq_this', unescape(ofb));"+Z+"return rv;}";return new Function(Y,S)}else{return W}}return V}window.xzq_eh=function(){if(E||I){this.onload=L("xzq_onload(e)",K,this.onload,0);if(E&&typeof (this.onbeforeunload)!=O){this.onbeforeunload=L("xzq_dobeforeunload(e)",B,this.onbeforeunload,0)}}};window.xzq_s=function(){setTimeout("xzq_sr()",1)};var J=null;var M=null;var Q=navigator.appName;var H=navigator.appVersion;var G=navigator.userAgent;var A=parseInt(H);var D=Q.indexOf("Microsoft");var E=D!=-1&&A>=4;var I=(Q.indexOf("Netscape")!=-1||Q.indexOf("Opera")!=-1)&&A>=4;var O="undefined";var P=2000})();
+</script><script language=javascript>
+if(window.xzq_svr)xzq_svr('http://csc.beap.ad.yieldmanager.net/');
+if(window.xzq_p)xzq_p('i?bv=1.0.0&bs=(128sl7t5k(gid$dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn,st$1323324911195000,v$1.0))&t=J_3-D_3');
+if(window.xzq_s)xzq_s();
+</script><noscript><img width=1 height=1 alt="" src="http://csc.beap.ad.yieldmanager.net/i?bv=1.0.0&bs=(128sl7t5k(gid$dIkl4WKJhxW.TTmJTgVqbwNlgf_pCU7gVe8AAVzn,st$1323324911195000,v$1.0))&t=J_3-D_3"></noscript>
+<!-- fe6.rel.sp2.yahoo.com compressed/chunked Wed Dec  7 22:15:11 PST 2011 -->
