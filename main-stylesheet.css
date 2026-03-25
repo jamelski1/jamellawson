@@ -726,6 +726,305 @@ a:hover {
     margin-top: 4px;
 }
 
+/* --- Subsection Titles --- */
+.subsection-title {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+
+/* --- Certifications --- */
+.certs-section {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.certs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.cert-badge {
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 100px;
+    background: rgba(124, 58, 237, 0.15);
+    color: var(--purple-light);
+    border: 1px solid rgba(124, 58, 237, 0.3);
+    transition: all 0.3s ease;
+}
+
+.cert-badge:hover {
+    background: rgba(124, 58, 237, 0.25);
+    border-color: var(--purple-mid);
+    transform: translateY(-2px);
+}
+
+/* --- Technical Skills Detail --- */
+.tech-skills {
+    margin-top: 24px;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.tech-category {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.tech-category:hover {
+    border-color: var(--purple-mid);
+}
+
+.tech-category h4 {
+    font-family: var(--font-heading);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--purple-light);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tech-category p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* --- Education Timeline --- */
+.education-timeline {
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.edu-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 32px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.edu-card:hover {
+    border-color: var(--purple-mid);
+    box-shadow: 0 4px 20px rgba(139, 92, 246, 0.1);
+}
+
+.edu-status {
+    display: inline-block;
+    padding: 4px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 100px;
+    background: rgba(74, 222, 128, 0.15);
+    color: #4ade80;
+    border: 1px solid rgba(74, 222, 128, 0.3);
+    margin-bottom: 16px;
+}
+
+.edu-card h3 {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.edu-card h4 {
+    font-size: 16px;
+    color: var(--purple-light);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.edu-date {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+.edu-details {
+    list-style: none;
+    padding: 0;
+    margin-top: 12px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 16px;
+}
+
+.edu-details li {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    padding-left: 16px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.edu-details li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--purple-mid);
+}
+
+/* --- Research --- */
+.research-list {
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.research-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 32px;
+    transition: all 0.3s ease;
+}
+
+.research-card:hover {
+    border-color: var(--purple-mid);
+    box-shadow: 0 4px 20px rgba(139, 92, 246, 0.1);
+}
+
+.research-status {
+    display: inline-block;
+    padding: 4px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 100px;
+    background: rgba(168, 85, 247, 0.15);
+    color: var(--purple-light);
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    margin-bottom: 12px;
+}
+
+.research-card h3 {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.research-authors {
+    font-size: 15px;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+.research-venue {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+/* --- Consulting Services --- */
+.consulting-intro {
+    text-align: center;
+    font-size: 17px;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: -20px auto 40px;
+    line-height: 1.7;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.service-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 32px;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--purple-mid);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(139, 92, 246, 0.15);
+}
+
+.service-icon {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.service-card h3 {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+}
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-card ul li {
+    font-size: 15px;
+    color: var(--text-muted);
+    padding: 6px 0;
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.service-card ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--purple-mid);
+}
+
+/* --- Timeline Detail --- */
+.timeline-detail {
+    margin-top: 8px;
+    font-style: italic;
+    color: var(--text-muted) !important;
+    font-size: 14px !important;
+}
+
 /* --- Contact --- */
 .contact-content {
     max-width: 600px;
@@ -811,16 +1110,28 @@ a:hover {
 
 /* Stagger animation for grid items */
 .skill-card.animate-in:nth-child(2),
-.project-card.animate-in:nth-child(2),
-.education-card.animate-in:nth-child(2) { transition-delay: 0.1s; }
+.service-card.animate-in:nth-child(2),
+.edu-card.animate-in:nth-child(2) { transition-delay: 0.1s; }
 .skill-card.animate-in:nth-child(3),
-.project-card.animate-in:nth-child(3) { transition-delay: 0.2s; }
-.skill-card.animate-in:nth-child(4) { transition-delay: 0.3s; }
-.skill-card.animate-in:nth-child(5) { transition-delay: 0.4s; }
+.service-card.animate-in:nth-child(3),
+.edu-card.animate-in:nth-child(3) { transition-delay: 0.2s; }
+.skill-card.animate-in:nth-child(4),
+.service-card.animate-in:nth-child(4),
+.edu-card.animate-in:nth-child(4) { transition-delay: 0.3s; }
+.skill-card.animate-in:nth-child(5),
+.service-card.animate-in:nth-child(5),
+.edu-card.animate-in:nth-child(5) { transition-delay: 0.4s; }
 .skill-card.animate-in:nth-child(6) { transition-delay: 0.5s; }
 
 .timeline-item.animate-in:nth-child(2) { transition-delay: 0.15s; }
 .timeline-item.animate-in:nth-child(3) { transition-delay: 0.3s; }
+.timeline-item.animate-in:nth-child(4) { transition-delay: 0.45s; }
+.timeline-item.animate-in:nth-child(5) { transition-delay: 0.6s; }
+.timeline-item.animate-in:nth-child(6) { transition-delay: 0.75s; }
+.timeline-item.animate-in:nth-child(7) { transition-delay: 0.9s; }
+
+.research-card.animate-in:nth-child(2) { transition-delay: 0.1s; }
+.research-card.animate-in:nth-child(3) { transition-delay: 0.2s; }
 
 /* --- Responsive --- */
 @media screen and (max-width: 768px) {
@@ -877,6 +1188,14 @@ a:hover {
 
     .timeline-header {
         flex-direction: column;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
     }
 }
 
