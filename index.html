@@ -1,80 +1,320 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-   <script type="text/javascript" src="jQuery.mmenu-master/dist/js/jquery.mmenu.min.all.js"></script>
-   <link href="jQuery.mmenu-master/dist/css/jquery.mmenu.all.css" type="text/css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamel Lawson | Web Developer & Software Engineer</title>
+    <meta name="description" content="Jamel Lawson - Web Developer & Software Engineer specializing in responsive web design, full-stack development, and modern web applications.">
     <link href="main-stylesheet.css" type="text/css" rel="stylesheet" />
-   <script type="text/javascript">
-			$(function() {
-				$('nav#my-menu').mmenu();
-			});
-		</script>
-<title>Jamel Lawson</title>
-<style>
-    .main-content{
-        margin-bottom:100px;
-    }
-</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-<div>
-<div class="wrapper mobile">
-	<div class="placeholder">
-        <div class="header"></div>
-        <div class="banner">
-        	<div class="image-box"><img class="banner-background" src="images/banner-640_02.png"></div>
-            <a class="banner-menu-button" href="#my-menu"></a>
-            	<nav id="my-menu">
-            	<ul>
-                	<li><a href="index.html">Home</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="contact-me.php">Contact Me</a></li>
-               </ul>
-               </nav>
-        </div><!--End of Banner-->
-        <div class="main-content"> 
-        <h1 id="main-title-top" class="main-title">Talented Web Developer</h1>
-        <h1 class="main-title">and Engineer</h1>
-        <img class="main-content-image" src="images/computer-screen.png">
-        <p>Thank you for taking the time to check out my site. I am a web developer who has worked for several years designing and perfecting websites to better serve businesses, companies, and entrepreneurs. I believe that having a convenient and responsive website is a crucial part of today’s businesses, separating those who succeed from the rest.</p>
-        <p>Since graduating from the University of Iowa, I have worked for an amazing company in Champaign, Illinois. Thanks to all the amazing things I learned there, I’ve been able to hone a multitude of web development skills that I now use to help my clients. I can create websites with HTML, CSS, JavaScript/Query, and PHP. I use Drupal as the main CMS.</p>
-        <p>One of the projects I’m most proud of is the optimizing of Johns Hopkins website. I had the honor of perfecting their layout and creating the design that can be used across platforms, for mobile convenience.</p>
-        </div><!--End of Main Content-->
-        <div class="header"></div>
-    </div><!--End of Placeholder-->
-</div><!--End of Wrapper-->
 
-<div class="wrapper tablet">
-        <div class="banner">
-        	<img class="banner-image" src="../images/images/banner-tablet-view.png"/>
-            <nav>
-            	<ul>
-                	<li><a href="index.html">Intro</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="contact-me.php">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        
-        <div class="main-content">
-        	<h1>Talented Web Developer and Engineer</h1>
-            <img class="main-photo" src="../images/images/computer-tablet-view.png"/>
-            <p class="main-text">Thank you for taking the time to check out my site. I am a web developer who has worked for several years designing and perfecting websites to better serve businesses, companies, and entrepreneurs. I believe that having a convenient and responsive website is a crucial part of today’s businesses, separating those who succeed from the rest.</p>
-            <p class="main-text">Since graduating from the University of Iowa, I have worked for an amazing company in Champaign, Illinois. Thanks to all the amazing things I learned there, I’ve been able to hone a multitude of web development skills that I now use to help my clients. I can create websites with HTML, CSS, JavaScript/Query, and PHP. I use Drupal as the main CMS.</p>
-            <p class="main-text">One of the projects I’m most proud of is the optimizing of Johns Hopkins website. I had the honor of perfecting their layout and creating the design that can be used across platforms, for mobile convenience. </p>
-        </div><!--End of Main Content-->
-        
-    </div><!--End of Tablet Wrapper-->
-
+<!-- Animated Clouds Background -->
+<div class="clouds-container" aria-hidden="true">
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div class="cloud cloud-4"></div>
+    <div class="cloud cloud-5"></div>
+    <div class="cloud cloud-6"></div>
+    <div class="cloud cloud-7"></div>
+    <div class="cloud cloud-8"></div>
 </div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#hero" class="nav-logo">JL</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+    <div class="hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Jamel Lawson</h1>
+        <h2 class="hero-title">Web Developer & Software Engineer</h2>
+        <p class="hero-tagline">Building responsive, modern web experiences that help businesses thrive in the digital world.</p>
+        <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Hire Me</a>
+        </div>
+        <div class="hero-availability">
+            <span class="availability-dot"></span>
+            Available for freelance projects
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="section" id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>I'm a web developer with years of experience designing and perfecting websites for businesses, companies, and entrepreneurs. I believe that having a convenient, responsive website is a crucial part of today's business landscape — separating those who succeed from the rest.</p>
+            <p>Since graduating from the University of Iowa with a B.S. in Informatics, I've honed a wide range of web development skills. I build websites with HTML5, CSS3, JavaScript, PHP, and modern frameworks. I specialize in creating responsive designs that work flawlessly across all devices and platforms.</p>
+            <p>I'm passionate about clean code, intuitive design, and delivering projects that exceed client expectations — on time and on budget.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="section section-alt" id="skills">
+    <div class="container">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">&#60;/&#62;</div>
+                <h3>Frontend Development</h3>
+                <p>HTML5, CSS3, JavaScript, jQuery, responsive design, cross-browser compatibility</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">&#123;&#125;</div>
+                <h3>Backend Development</h3>
+                <p>PHP, Python, Java, server-side architecture, RESTful APIs</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">&#9783;</div>
+                <h3>Database & Architecture</h3>
+                <p>Database programming, client/server architecture, N-tier architecture</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">&#9881;</div>
+                <h3>CMS & Frameworks</h3>
+                <p>Drupal, WordPress, modern JavaScript frameworks, template development</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">&#9997;</div>
+                <h3>Responsive Design</h3>
+                <p>Mobile-first design, cross-platform compatibility, UI/UX best practices</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">&#9733;</div>
+                <h3>Project Management</h3>
+                <p>SDLC management, requirements gathering, QA, cross-functional collaboration</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="section" id="projects">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-placeholder">Johns Hopkins University</div>
+                </div>
+                <div class="project-info">
+                    <h3>Johns Hopkins Website Optimization</h3>
+                    <p>Optimized the layout and created a responsive design that works seamlessly across all platforms for mobile convenience.</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Responsive</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-placeholder">Client Web Applications</div>
+                </div>
+                <div class="project-info">
+                    <h3>Responsive Client Websites</h3>
+                    <p>Designed and developed responsive websites from Photoshop mockups for various businesses, ensuring cross-browser compatibility.</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-placeholder">Email Templates</div>
+                </div>
+                <div class="project-info">
+                    <h3>Responsive Email Templates</h3>
+                    <p>Created responsive email templates that maintain consistent user experience across email clients and devices.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Email Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="projects-note">Have a project in mind? <a href="#contact">Let's talk</a> about how I can help bring your vision to life.</p>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section class="section section-alt" id="experience">
+    <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Web Developer</h3>
+                        <span class="timeline-date">2014 - Present</span>
+                    </div>
+                    <h4 class="timeline-company">NRH Works LLC, Champaign, IL</h4>
+                    <p>Collaborate with project teams to create responsive websites and email templates using HTML5 and CSS that maintain a consistent user experience across browsers, platforms, and viewports. Build sites from Photoshop mockups, test code, troubleshoot errors, and monitor/maintain client websites.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Computer Lab Tutor</h3>
+                        <span class="timeline-date">2013</span>
+                    </div>
+                    <h4 class="timeline-company">University of Iowa, Iowa City, IA</h4>
+                    <p>Leveraged knowledge of Java, Python, and HTML to support fellow students. Assisted with identifying errors, suggesting improved logic, and developing effective coding habits.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Software Developer</h3>
+                        <span class="timeline-date">2012</span>
+                    </div>
+                    <h4 class="timeline-company">Iowa City Middle School, Iowa City, IA</h4>
+                    <p>Collaborated with project teams to create responsive websites using HTML5, HTML, and CSS. Created sites from provided designs, tested code, and troubleshot errors.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section class="section" id="education">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+            <div class="education-card">
+                <div class="education-icon">&#127891;</div>
+                <h3>B.S. in Informatics</h3>
+                <h4>with Art Cognate</h4>
+                <p class="education-school">University of Iowa</p>
+                <p class="education-date">2009 - 2013</p>
+            </div>
+            <div class="education-card">
+                <div class="education-icon">&#128241;</div>
+                <h3>Android Mobile Development</h3>
+                <h4>Certification Program</h4>
+                <p class="education-school">University of Maryland</p>
+                <p class="education-date">Completed</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section section-alt" id="contact">
+    <div class="container">
+        <h2 class="section-title">Let's Work Together</h2>
+        <div class="contact-content">
+            <p class="contact-intro">I'm available for freelance projects and open to new opportunities. Whether you need a website built from scratch, an existing site redesigned, or ongoing web development support — I'd love to hear from you.</p>
+            <div class="contact-methods">
+                <a href="mailto:lawson.jamel@yahoo.com" class="contact-card">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">lawson.jamel@yahoo.com</span>
+                </a>
+                <a href="tel:7088339788" class="contact-card">
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">(708) 833-9788</span>
+                </a>
+            </div>
+            <div class="contact-cta">
+                <a href="mailto:lawson.jamel@yahoo.com?subject=Project%20Inquiry" class="btn btn-primary btn-lg">Start a Conversation</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Jamel Lawson. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+// Mobile nav toggle
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+
+navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    navToggle.classList.toggle('active');
+});
+
+// Close mobile nav on link click
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        navToggle.classList.remove('active');
+    });
+});
+
+// Navbar background on scroll
+window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+});
+
+// Animate elements on scroll
+const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.skill-card, .project-card, .timeline-item, .education-card, .contact-card').forEach(el => {
+    el.classList.add('animate-in');
+    observer.observe(el);
+});
+</script>
+
 </body>
 </html>
