@@ -12,6 +12,9 @@
 </head>
 <body>
 
+<!-- Scroll progress bar -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
 <!-- Animated Clouds Background -->
 <div class="clouds-container" aria-hidden="true">
     <div class="cloud cloud-1"></div>
@@ -416,59 +419,188 @@
     </div>
 </footer>
 
+<!-- GSAP + ScrollTrigger (CDN) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
 <script>
-// Mobile nav toggle
-const navToggle = document.getElementById('navToggle');
-const navLinks = document.getElementById('navLinks');
+(function () {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    navToggle.classList.toggle('active');
-});
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
 
-// Close mobile nav on link click
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        navToggle.classList.remove('active');
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        navToggle.classList.toggle('active');
     });
-});
 
-// Navbar background on scroll
-window.addEventListener('scroll', () => {
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            navToggle.classList.remove('active');
+        });
+    });
+
+    // Navbar background on scroll
     const navbar = document.getElementById('navbar');
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) navbar.classList.add('scrolled');
+        else navbar.classList.remove('scrolled');
+    }, { passive: true });
+
+    if (typeof gsap === 'undefined') return;
+    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+    // GSAP-powered smooth anchor scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (!href || href === '#') return;
+            const target = document.querySelector(href);
+            if (!target) return;
+            e.preventDefault();
+            gsap.to(window, {
+                duration: prefersReducedMotion ? 0 : 1,
+                scrollTo: { y: target, offsetY: 60 },
+                ease: 'power3.inOut'
+            });
+        });
+    });
+
+    // Scroll progress bar
+    const progress = document.getElementById('scrollProgress');
+    if (progress) {
+        gsap.to(progress, {
+            scaleX: 1,
+            ease: 'none',
+            scrollTrigger: { trigger: document.body, start: 'top top', end: 'bottom bottom', scrub: 0.2 }
+        });
     }
-});
 
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+    if (prefersReducedMotion) return;
+
+    // --- Hero entrance timeline ---
+    const heroTL = gsap.timeline({ defaults: { ease: 'power3.out' } });
+    heroTL
+        .from('.nav-logo', { y: -20, opacity: 0, duration: 0.6 })
+        .from('.nav-links li', { y: -12, opacity: 0, duration: 0.4, stagger: 0.05 }, '-=0.3')
+        .from('.hero-greeting', { y: 20, opacity: 0, duration: 0.6 }, '-=0.2')
+        .from('.hero-name', { y: 40, opacity: 0, duration: 0.9, ease: 'expo.out' }, '-=0.3')
+        .from('.hero-title', { y: 20, opacity: 0, duration: 0.7 }, '-=0.5')
+        .from('.hero-tagline', { y: 20, opacity: 0, duration: 0.7 }, '-=0.5')
+        .from('.hero-cta .btn', { y: 20, opacity: 0, duration: 0.5, stagger: 0.1 }, '-=0.4')
+        .from('.hero-availability', { opacity: 0, duration: 0.6 }, '-=0.2');
+
+    // --- Parallax clouds ---
+    gsap.utils.toArray('.cloud').forEach((cloud, i) => {
+        gsap.to(cloud, {
+            yPercent: (i % 2 === 0 ? -40 : -20) - i * 3,
+            ease: 'none',
+            scrollTrigger: { trigger: document.body, start: 'top top', end: 'bottom top', scrub: true }
+        });
     });
-});
 
-// Animate elements on scroll
-const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
+    // --- Section titles reveal ---
+    gsap.utils.toArray('.section-title').forEach(title => {
+        gsap.from(title, {
+            y: 40,
+            opacity: 0,
+            duration: 0.8,
+            ease: 'power3.out',
+            scrollTrigger: { trigger: title, start: 'top 85%', toggleActions: 'play none none reverse' }
+        });
     });
-}, observerOptions);
 
-document.querySelectorAll('.skill-card, .timeline-item, .edu-card, .research-card, .service-card, .contact-card, .tech-category').forEach(el => {
-    el.classList.add('animate-in');
-    observer.observe(el);
-});
+    // Helper: staggered reveal for a group
+    const revealGroup = (selector, options = {}) => {
+        const items = gsap.utils.toArray(selector);
+        if (!items.length) return;
+        gsap.from(items, {
+            y: options.y ?? 40,
+            opacity: 0,
+            scale: options.scale ?? 1,
+            duration: options.duration ?? 0.7,
+            ease: options.ease ?? 'power3.out',
+            stagger: options.stagger ?? 0.12,
+            scrollTrigger: {
+                trigger: options.trigger || items[0].parentElement,
+                start: options.start || 'top 80%',
+                toggleActions: 'play none none reverse'
+            }
+        });
+    };
+
+    // About paragraphs
+    revealGroup('.about-content p', { stagger: 0.15, trigger: '#about' });
+    revealGroup('.cert-badge', { y: 16, scale: 0.9, stagger: 0.04, trigger: '.certs-grid' });
+
+    // Skills & tech
+    revealGroup('.skill-card', { trigger: '.skills-grid' });
+    revealGroup('.tech-category', { stagger: 0.08, trigger: '.tech-grid' });
+
+    // Timeline items with alternating direction
+    gsap.utils.toArray('.timeline-item').forEach((item, i) => {
+        gsap.from(item, {
+            x: i % 2 === 0 ? -60 : 60,
+            opacity: 0,
+            duration: 0.8,
+            ease: 'power3.out',
+            scrollTrigger: { trigger: item, start: 'top 85%', toggleActions: 'play none none reverse' }
+        });
+    });
+
+    // Timeline markers pop
+    gsap.utils.toArray('.timeline-marker').forEach(marker => {
+        gsap.from(marker, {
+            scale: 0,
+            opacity: 0,
+            duration: 0.5,
+            ease: 'back.out(2)',
+            scrollTrigger: { trigger: marker, start: 'top 85%', toggleActions: 'play none none reverse' }
+        });
+    });
+
+    // Education, research, services
+    revealGroup('.edu-card', { trigger: '.education-timeline' });
+    revealGroup('.research-card', { trigger: '.research-list' });
+    revealGroup('.service-card', { trigger: '.services-grid' });
+
+    // Contact
+    revealGroup('.contact-card', { trigger: '.contact-methods', stagger: 0.1 });
+    gsap.from('.contact-intro', {
+        y: 20, opacity: 0, duration: 0.7, ease: 'power3.out',
+        scrollTrigger: { trigger: '#contact', start: 'top 80%', toggleActions: 'play none none reverse' }
+    });
+    gsap.from('.contact-cta', {
+        y: 20, opacity: 0, duration: 0.7, ease: 'power3.out',
+        scrollTrigger: { trigger: '.contact-cta', start: 'top 90%', toggleActions: 'play none none reverse' }
+    });
+
+    // --- Card hover tilt (pointer devices only) ---
+    if (window.matchMedia('(hover: hover)').matches) {
+        const tiltables = document.querySelectorAll('.skill-card, .service-card, .edu-card, .research-card, .contact-card');
+        tiltables.forEach(card => {
+            const setX = gsap.quickTo(card, 'rotationY', { duration: 0.4, ease: 'power3.out' });
+            const setY = gsap.quickTo(card, 'rotationX', { duration: 0.4, ease: 'power3.out' });
+            const setLift = gsap.quickTo(card, 'y', { duration: 0.4, ease: 'power3.out' });
+            gsap.set(card, { transformPerspective: 800, transformOrigin: 'center' });
+            card.addEventListener('pointermove', (e) => {
+                const r = card.getBoundingClientRect();
+                const px = (e.clientX - r.left) / r.width - 0.5;
+                const py = (e.clientY - r.top) / r.height - 0.5;
+                setX(px * 8);
+                setY(-py * 8);
+                setLift(-4);
+            });
+            card.addEventListener('pointerleave', () => {
+                setX(0); setY(0); setLift(0);
+            });
+        });
+    }
+})();
 </script>
 
 </body>
