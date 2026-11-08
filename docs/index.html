@@ -508,6 +508,7 @@
         gsap.from(title, {
             y: 40,
             opacity: 0,
+            immediateRender: false,
             duration: 0.8,
             ease: 'power3.out',
             scrollTrigger: { trigger: title, start: 'top 85%', toggleActions: 'play none none reverse' }
@@ -521,6 +522,7 @@
         gsap.from(items, {
             y: options.y ?? 40,
             opacity: 0,
+            immediateRender: false,
             scale: options.scale ?? 1,
             duration: options.duration ?? 0.7,
             ease: options.ease ?? 'power3.out',
@@ -546,6 +548,7 @@
         gsap.from(item, {
             x: i % 2 === 0 ? -60 : 60,
             opacity: 0,
+            immediateRender: false,
             duration: 0.8,
             ease: 'power3.out',
             scrollTrigger: { trigger: item, start: 'top 85%', toggleActions: 'play none none reverse' }
@@ -557,6 +560,7 @@
         gsap.from(marker, {
             scale: 0,
             opacity: 0,
+            immediateRender: false,
             duration: 0.5,
             ease: 'back.out(2)',
             scrollTrigger: { trigger: marker, start: 'top 85%', toggleActions: 'play none none reverse' }
@@ -571,11 +575,11 @@
     // Contact
     revealGroup('.contact-card', { trigger: '.contact-methods', stagger: 0.1 });
     gsap.from('.contact-intro', {
-        y: 20, opacity: 0, duration: 0.7, ease: 'power3.out',
+        y: 20, opacity: 0, duration: 0.7, ease: 'power3.out', immediateRender: false,
         scrollTrigger: { trigger: '#contact', start: 'top 80%', toggleActions: 'play none none reverse' }
     });
     gsap.from('.contact-cta', {
-        y: 20, opacity: 0, duration: 0.7, ease: 'power3.out',
+        y: 20, opacity: 0, duration: 0.7, ease: 'power3.out', immediateRender: false,
         scrollTrigger: { trigger: '.contact-cta', start: 'top 90%', toggleActions: 'play none none reverse' }
     });
 
@@ -600,6 +604,11 @@
             });
         });
     }
+
+    // Re-measure scroll positions once everything (including fonts) has loaded
+    window.addEventListener('load', () => {
+        if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh();
+    });
 })();
 </script>
 
