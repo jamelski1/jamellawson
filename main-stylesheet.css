@@ -1234,3 +1234,54 @@ a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+/* Hero photo and demo video */
+.hero-photo {
+    margin: 48px auto 0;
+    max-width: 700px;
+}
+
+.hero-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.hero-photo figcaption {
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.demo-intro {
+    text-align: center;
+    color: var(--text-muted);
+    max-width: 720px;
+    margin: 0 auto 32px;
+    line-height: 1.7;
+}
+
+.video-embed {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+}
+
+.video-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 16px;
+}
+
+.demo-links {
+    text-align: center;
+    margin-top: 24px;
+}
