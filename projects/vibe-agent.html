@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Agent | Jamel L. Lawson</title>
+    <meta name="description" content="Vibe Agent: a metadata layer that gives AI coding agents a shared architecture map of a repository. Dissertation research on vibe coding and software quality assurance.">
+    <link href="../main-stylesheet.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .navbar { background: rgba(13, 10, 26, 0.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border-color); }
+        .showcase-main { position: relative; z-index: 1; padding: 150px 0 90px; }
+        .showcase-wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+        .back-link { display: inline-block; margin-bottom: 28px; font-size: 15px; font-weight: 500; }
+        .showcase-head { text-align: center; margin-bottom: 48px; }
+        .showcase-title { font-family: var(--font-heading); font-size: clamp(32px, 6vw, 48px); font-weight: 700; line-height: 1.15; margin: 18px 0 16px; background: linear-gradient(135deg, #e9d5ff 0%, var(--purple-light) 50%, var(--purple-mid) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .showcase-lede { font-size: 18px; color: var(--text-secondary); line-height: 1.7; max-width: 680px; margin: 0 auto; }
+        .showcase-block { margin-bottom: 44px; }
+        .showcase-block h2 { font-family: var(--font-heading); font-size: 24px; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
+        .showcase-block p { font-size: 16px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 14px; }
+        .showcase-block ul { list-style: none; padding: 0; }
+        .showcase-block ul li { font-size: 16px; color: var(--text-secondary); line-height: 1.7; padding-left: 16px; position: relative; margin-bottom: 8px; }
+        .showcase-block ul li::before { content: ''; position: absolute; left: 0; top: 11px; width: 6px; height: 6px; border-radius: 50%; background: var(--purple-mid); }
+        .showcase-links { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px; }
+    </style>
+</head>
+<body>
+
+<!-- Animated Clouds Background -->
+<div class="clouds-container" aria-hidden="true">
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div class="cloud cloud-4"></div>
+    <div class="cloud cloud-5"></div>
+    <div class="cloud cloud-6"></div>
+    <div class="cloud cloud-7"></div>
+    <div class="cloud cloud-8"></div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="../index.html" class="nav-logo">JL</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#research">Research</a></li>
+            <li><a href="../index.html#consulting">Services</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="showcase-main">
+    <div class="showcase-wrap">
+        <a class="back-link" href="../index.html#projects">&larr; Back to Projects</a>
+
+        <div class="showcase-head">
+            <span class="research-status">Ph.D. Research</span>
+            <h1 class="showcase-title">Vibe Agent</h1>
+            <p class="showcase-lede">A metadata layer built into a repository&rsquo;s file system that gives AI coding agents a shared architecture map of the codebase, so work done by separate agents over time stays consistent, reviewable, and testable.</p>
+        </div>
+
+        <div class="showcase-block">
+            <h2>The problem</h2>
+            <p>AI coding agents are increasingly used the way contractors are used: one session makes a change, another session weeks later makes the next one, and no single agent holds the whole history. Each agent arrives with a long context window but no durable memory of the repository. It has to reconstruct the architecture from the code in front of it, every time, and as the codebase grows that reconstruction gets slower, more expensive, and less reliable. The practical failure mode is drift. Changes made by separate agents, each locally reasonable, pull the system&rsquo;s structure in different directions, and the inconsistency only surfaces later, in review, in testing, or in production behavior nobody can trace back to a decision.</p>
+            <p>Longer context windows do not solve this on their own. A window is temporary and private to one session. What a multi-agent workflow lacks is a shared, persistent description of the system that lives with the code and that every agent can read before it writes.</p>
+        </div>
+
+        <div class="showcase-block">
+            <h2>The approach</h2>
+            <p>Vibe Agent builds that description into the repository itself. It is a metadata layer in the repo&rsquo;s file system that records the architecture as a map: the structure of the system, the dependencies between its parts, and the provenance of what is there. An external coding agent starting work in the repository reads the map first, so it begins from the same understanding of the codebase as every agent before it, instead of inferring the architecture from scratch.</p>
+            <p>Because the map lives in the file system alongside the code, it travels with the repository, is visible to human reviewers as well as agents, and gives changes a reference point: work can be checked against the recorded structure, which makes agent output easier to review and test. The research questions behind the project concern whether that kind of persistent, shared context measurably improves the consistency and quality of agent-produced software over time.</p>
+        </div>
+
+        <div class="showcase-block">
+            <h2>Status</h2>
+            <p>Vibe Agent is the foundation of my dissertation research on vibe coding and software quality assurance at UMBC, and it is also my project for IS 809. The system is under active development in both a work setting and the research setting. The code repository is private while the research is in progress, so this page is an overview rather than a demo; publications and public artifacts will be linked here as the work reaches them.</p>
+        </div>
+
+        <div class="showcase-block">
+            <h2>Research areas</h2>
+            <div class="project-tags">
+                <span>AI coding agents</span>
+                <span>Software architecture</span>
+                <span>Repository metadata</span>
+                <span>Software quality assurance</span>
+                <span>Vibe coding</span>
+            </div>
+        </div>
+
+        <div class="showcase-block">
+            <h2>Links</h2>
+            <div class="showcase-links">
+                <a class="btn btn-primary" href="../index.html#research">Research Overview</a>
+                <a class="btn btn-outline" href="../index.html#contact">Get in Touch</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Jamel L. Lawson. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    var navToggle = document.getElementById('navToggle');
+    var navLinks = document.getElementById('navLinks');
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', function () {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Text Only Estimation | Jamel L. Lawson</title>
+    <meta name="description" content="Beyond Text Only Estimation: machine learning research on predicting software maintenance effort with CodeBERT, XGBoost, and repository mining. Paper under review at SANER 2027.">
+    <link href="../main-stylesheet.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .navbar { background: rgba(13, 10, 26, 0.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border-color); }
+        .showcase-main { position: relative; z-index: 1; padding: 150px 0 90px; }
+        .showcase-wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+        .back-link { display: inline-block; margin-bottom: 28px; font-size: 15px; font-weight: 500; }
+        .showcase-head { text-align: center; margin-bottom: 48px; }
+        .showcase-title { font-family: var(--font-heading); font-size: clamp(32px, 6vw, 48px); font-weight: 700; line-height: 1.15; margin: 18px 0 16px; background: linear-gradient(135deg, #e9d5ff 0%, var(--purple-light) 50%, var(--purple-mid) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .showcase-lede { font-size: 18px; color: var(--text-secondary); line-height: 1.7; max-width: 680px; margin: 0 auto; }
+        .showcase-block { margin-bottom: 44px; }
+        .showcase-block h2 { font-family: var(--font-heading); font-size: 24px; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
+        .showcase-block p { font-size: 16px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 14px; }
+        .showcase-block ul { list-style: none; padding: 0; }
+        .showcase-block ul li { font-size: 16px; color: var(--text-secondary); line-height: 1.7; padding-left: 16px; position: relative; margin-bottom: 8px; }
+        .showcase-block ul li::before { content: ''; position: absolute; left: 0; top: 11px; width: 6px; height: 6px; border-radius: 50%; background: var(--purple-mid); }
+        .data-table { width: 100%; border-collapse: collapse; margin: 18px 0 10px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; font-size: 15px; }
+        .data-table th, .data-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border-color); color: var(--text-secondary); }
+        .data-table th { font-family: var(--font-heading); color: var(--text-primary); font-weight: 600; background: rgba(168, 85, 247, 0.08); }
+        .data-table tr:last-child td { border-bottom: none; }
+        .table-note { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+        .showcase-links { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px; }
+    </style>
+</head>
+<body>
+
+<!-- Animated Clouds Background -->
+<div class="clouds-container" aria-hidden="true">
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div class="cloud cloud-4"></div>
+    <div class="cloud cloud-5"></div>
+    <div class="cloud cloud-6"></div>
+    <div class="cloud cloud-7"></div>
+    <div class="cloud cloud-8"></div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="../index.html" class="nav-logo">JL</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#research">Research</a></li>
+            <li><a href="../index.html#consulting">Services</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="showcase-main">
+    <div class="showcase-wrap">
+        <a class="back-link" href="../index.html#projects">&larr; Back to Projects</a>
+
+        <div class="showcase-head">
+            <span class="research-status">Under Review at SANER 2027</span>
+            <h1 class="showcase-title">Beyond Text Only Estimation</h1>
+            <p class="showcase-lede">How long will a software issue take to fix? This project tests whether a model can predict implementation effort from the words of an issue report alone, and whether adding the repository&rsquo;s own history makes the prediction any better. The paper, &ldquo;Predicting Software Maintenance Effort: An Empirical Study of Five Open-Source Repositories,&rdquo; is under review at SANER 2027 in the RENE Track.</p>
+        </div>
+
+        <div class="showcase-block">
+            <h2>What it is</h2>
+            <p>Software teams plan around effort estimates, and most estimation research reads only the text of a task: its title, its description, maybe its discussion. That ignores everything the repository itself knows, such as which files churn, how old they are, and how often they change. Beyond Text Only Estimation, or BTOE, replicates and extends the SE3M study of Ribeiro and colleagues, which estimated effort from pre-trained text embeddings, and asks a second question the original did not: does repository history add anything the text does not already carry?</p>
+        </div>
+
+        <div class="showcase-block">
+            <h2>How it works</h2>
+            <p>The pipeline mines issue and pull request pairs from large open source projects, where the time between an issue opening and its linked pull request merging gives a measured duration to predict. The final dataset is drawn from five large open source repositories, with durations between one hour and ninety days. A held-out test set of 896 pairs is used for every comparison.</p>
+            <p>Three XGBoost estimators are trained on different views of the same issues:</p>
+            <ul>
+                <li><strong>Model A, text only.</strong> CodeBERT embeddings of the issue text plus text features such as word count. This is the SE3M replication baseline.</li>
+                <li><strong>Model B, repository only.</strong> Structural features mined from the repository with PyDriller, including change frequency, churn per file, and average file age.</li>
+                <li><strong>Model C, combined.</strong> Both feature sets together, the direct test of whether repository history improves on text alone.</li>
+            </ul>
+            <p>Models are compared with Standardized Accuracy, mean and median absolute error, and paired Wilcoxon signed-rank tests with effect sizes, because effort data is heavily skewed and squared-error metrics mislead on it. The repository also includes a small Flask web app, the Issue Duration Estimator, that returns predictions from all three models for a new issue title and description.</p>
+        </div>
+
+        <div class="showcase-block">
+            <h2>What it found</h2>
+            <table class="data-table">
+                <thead>
+                    <tr><th>Metric (test set, n = 896)</th><th>Model A (Text)</th><th>Model B (Repo)</th><th>Model C (Combined)</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Standardized Accuracy</td><td>16.0%</td><td>12.0%</td><td>16.4%</td></tr>
+                    <tr><td>Mean absolute error</td><td>317.0 h</td><td>332.3 h</td><td>315.7 h</td></tr>
+                    <tr><td>Median absolute error</td><td>130.4 h</td><td>121.9 h</td><td>129.0 h</td></tr>
+                    <tr><td>PRED(25)</td><td>10.4%</td><td>9.8%</td><td>10.6%</td></tr>
+                </tbody>
+            </table>
+            <p class="table-note">Primary model comparison from the project results. Standardized Accuracy measures improvement over random guessing on absolute error and is the primary metric throughout.</p>
+            <p>The honest headline is a negative result. Text alone carries a modest but real signal. The combined model scores slightly higher than text only, but the difference is not statistically significant (p = 0.225) and the effect size is negligible, and that pattern holds across sensitivity checks at five duration thresholds. Repository features alone are weaker still: Model B largely collapsed, predicting the three to seven day bucket for 97 percent of test cases regardless of the actual duration.</p>
+            <p>Two further results explain why. The single most predictive feature in the text model is word count, a rough proxy for task complexity, and an encoder ablation swapping CodeBERT for UnixCoder and for the general purpose BGE embedding model lands every encoder within a 15.8 to 16.1 percent Standardized Accuracy band. The signal the models find is mostly general properties of the writing, not code semantics and not repository structure. For practitioners, that is a useful caution: fusing more data sources into an effort estimator does not help if the added sources carry no signal of their own.</p>
+        </div>
+
+        <div class="showcase-block">
+            <h2>Tech stack</h2>
+            <div class="project-tags">
+                <span>Python</span>
+                <span>CodeBERT</span>
+                <span>XGBoost</span>
+                <span>PyDriller</span>
+                <span>SHAP</span>
+                <span>Flask</span>
+                <span>Repository mining</span>
+            </div>
+        </div>
+
+        <div class="showcase-block">
+            <h2>Links</h2>
+            <p>The full pipeline, the trained model results, and the demo app are public on GitHub.</p>
+            <div class="showcase-links">
+                <a class="btn btn-primary" href="https://github.com/jamelski1/btoe" target="_blank" rel="noopener">GitHub Repository</a>
+                <a class="btn btn-outline" href="../index.html#research">More Research</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Jamel L. Lawson. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    var navToggle = document.getElementById('navToggle');
+    var navLinks = document.getElementById('navLinks');
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', function () {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    }
+</script>
+
+</body>
+</html>

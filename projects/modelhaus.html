@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModelHaus | Jamel L. Lawson</title>
+    <meta name="description" content="ModelHaus: HausGPT, a question answering model fine tuned on JP 3-12 Cyberspace Operations, with the dataset builder and web interface that surround it.">
+    <link href="../main-stylesheet.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .navbar { background: rgba(13, 10, 26, 0.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border-color); }
+        .showcase-main { position: relative; z-index: 1; padding: 150px 0 90px; }
+        .showcase-wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+        .back-link { display: inline-block; margin-bottom: 28px; font-size: 15px; font-weight: 500; }
+        .showcase-head { text-align: center; margin-bottom: 48px; }
+        .showcase-title { font-family: var(--font-heading); font-size: clamp(32px, 6vw, 48px); font-weight: 700; line-height: 1.15; margin: 18px 0 16px; background: linear-gradient(135deg, #e9d5ff 0%, var(--purple-light) 50%, var(--purple-mid) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .showcase-lede { font-size: 18px; color: var(--text-secondary); line-height: 1.7; max-width: 680px; margin: 0 auto; }
+        .showcase-block { margin-bottom: 44px; }
+        .showcase-block h2 { font-family: var(--font-heading); font-size: 24px; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
+        .showcase-block p { font-size: 16px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 14px; }
+        .showcase-block ul { list-style: none; padding: 0; }
+        .showcase-block ul li { font-size: 16px; color: var(--text-secondary); line-height: 1.7; padding-left: 16px; position: relative; margin-bottom: 8px; }
+        .showcase-block ul li::before { content: ''; position: absolute; left: 0; top: 11px; width: 6px; height: 6px; border-radius: 50%; background: var(--purple-mid); }
+        .qa-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 22px 24px; margin-bottom: 16px; }
+        .qa-card .qa-q { font-weight: 600; color: var(--text-primary); margin-bottom: 8px; font-size: 16px; line-height: 1.6; }
+        .qa-card .qa-a { color: var(--text-secondary); font-size: 16px; line-height: 1.7; margin: 0; }
+        .showcase-links { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px; }
+    </style>
+</head>
+<body>
+
+<!-- Animated Clouds Background -->
+<div class="clouds-container" aria-hidden="true">
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div class="cloud cloud-4"></div>
+    <div class="cloud cloud-5"></div>
+    <div class="cloud cloud-6"></div>
+    <div class="cloud cloud-7"></div>
+    <div class="cloud cloud-8"></div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="../index.html" class="nav-logo">JL</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#research">Research</a></li>
+            <li><a href="../index.html#consulting">Services</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="showcase-main">
+    <div class="showcase-wrap">
+        <a class="back-link" href="../index.html#projects">&larr; Back to Projects</a>
+
+        <div class="showcase-head">
+            <span class="research-status">Fine-Tuned Model</span>
+            <h1 class="showcase-title">ModelHaus</h1>
+            <p class="showcase-lede">A question answering model fine tuned on a single authoritative source: JP 3-12, the joint publication for cyberspace operations. ModelHaus covers the whole path from raw doctrine PDF to a working question answering service, including the dataset builder, the fine tuning pipeline, and the web interface.</p>
+        </div>
+
+        <div class="showcase-block">
+            <h2>What it is</h2>
+            <p>General purpose language models answer doctrine questions from whatever they absorbed in training, which is a problem when the answer has to match a specific publication. ModelHaus takes the opposite approach: fine tune a model on question and answer pairs drawn directly from the text of JP 3-12, so its answers stay grounded in that document. The resulting model, called HausGPT, is published on Hugging Face, and the repository contains everything needed to rebuild it.</p>
+        </div>
+
+        <div class="showcase-block">
+            <h2>How it works</h2>
+            <ul>
+                <li><strong>Dataset construction.</strong> A builder script extracts the text of the JP 3-12 PDF, splits it into context chunks, and generates question and answer pairs for each chunk with Claude, writing them in an instruction, input, and output format ready for fine tuning. The committed dataset holds 186 pairs.</li>
+                <li><strong>Fine tuning.</strong> A training notebook fine tunes a GPT style model implemented in PyTorch on those pairs, teaching it the publication&rsquo;s terminology and the short, direct answer style the dataset uses.</li>
+                <li><strong>Web interface.</strong> A Flask app loads the fine tuned checkpoint from Hugging Face and answers questions in the browser, with adjustable temperature, top-p, and maximum answer length. If generation is unavailable or a question closely matches the dataset, the app falls back to keyword retrieval over the same question and answer pairs, so an answer always comes from the publication&rsquo;s content.</li>
+            </ul>
+        </div>
+
+        <div class="showcase-block">
+            <h2>Example questions and answers</h2>
+            <p>These pairs are taken directly from the project&rsquo;s committed JP 3-12 dataset, the same data the model was fine tuned on and the same data the web app retrieves from.</p>
+            <div class="qa-card">
+                <p class="qa-q">Q: What is the primary purpose of cyberspace operations?</p>
+                <p class="qa-a">A: The primary purpose of cyberspace operations is to achieve objectives in or through cyberspace.</p>
+            </div>
+            <div class="qa-card">
+                <p class="qa-q">Q: What are the three interrelated layers of the cyberspace layer model used to assist in planning and execution of cyberspace operations?</p>
+                <p class="qa-a">A: The three interrelated layers are physical network, logical network, and cyber-persona.</p>
+            </div>
+            <div class="qa-card">
+                <p class="qa-q">Q: Why might a cyberspace operation option be preferable for engaging certain targets?</p>
+                <p class="qa-a">A: A cyberspace operation may be preferable because it may offer low probability of detection and/or no associated physical damage.</p>
+            </div>
+        </div>
+
+        <div class="showcase-block">
+            <h2>Tech stack</h2>
+            <div class="project-tags">
+                <span>Python</span>
+                <span>PyTorch</span>
+                <span>Fine tuning</span>
+                <span>Flask</span>
+                <span>Hugging Face</span>
+                <span>pypdf</span>
+                <span>Claude (dataset generation)</span>
+            </div>
+        </div>
+
+        <div class="showcase-block">
+            <h2>Links</h2>
+            <p>The dataset builder, training notebook, dataset, and web app are public on GitHub, and the fine tuned model itself is on Hugging Face.</p>
+            <div class="showcase-links">
+                <a class="btn btn-primary" href="https://github.com/jamelski1/modelhaus" target="_blank" rel="noopener">GitHub Repository</a>
+                <a class="btn btn-outline" href="https://huggingface.co/jamelski/HausGPT" target="_blank" rel="noopener">HausGPT on Hugging Face</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Jamel L. Lawson. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    var navToggle = document.getElementById('navToggle');
+    var navLinks = document.getElementById('navLinks');
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', function () {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    }
+</script>
+
+</body>
+</html>

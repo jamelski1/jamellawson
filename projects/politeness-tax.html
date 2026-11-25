@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Politeness Tax | Jamel L. Lawson</title>
+    <meta name="description" content="The Politeness Tax: an empirical study showing that an apparent prompt politeness effect on code generation is a measurement artifact of code extraction. Paper under review at FORGE 2027.">
+    <link href="../main-stylesheet.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .navbar { background: rgba(13, 10, 26, 0.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border-color); }
+        .showcase-main { position: relative; z-index: 1; padding: 150px 0 90px; }
+        .showcase-wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+        .back-link { display: inline-block; margin-bottom: 28px; font-size: 15px; font-weight: 500; }
+        .showcase-head { text-align: center; margin-bottom: 48px; }
+        .showcase-title { font-family: var(--font-heading); font-size: clamp(32px, 6vw, 48px); font-weight: 700; line-height: 1.15; margin: 18px 0 16px; background: linear-gradient(135deg, #e9d5ff 0%, var(--purple-light) 50%, var(--purple-mid) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .showcase-lede { font-size: 18px; color: var(--text-secondary); line-height: 1.7; max-width: 680px; margin: 0 auto; }
+        .showcase-block { margin-bottom: 44px; }
+        .showcase-block h2 { font-family: var(--font-heading); font-size: 24px; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
+        .showcase-block p { font-size: 16px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 14px; }
+        .showcase-block ul { list-style: none; padding: 0; }
+        .showcase-block ul li { font-size: 16px; color: var(--text-secondary); line-height: 1.7; padding-left: 16px; position: relative; margin-bottom: 8px; }
+        .showcase-block ul li::before { content: ''; position: absolute; left: 0; top: 11px; width: 6px; height: 6px; border-radius: 50%; background: var(--purple-mid); }
+        .data-table { width: 100%; border-collapse: collapse; margin: 18px 0 10px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; font-size: 15px; }
+        .data-table th, .data-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border-color); color: var(--text-secondary); }
+        .data-table th { font-family: var(--font-heading); color: var(--text-primary); font-weight: 600; background: rgba(168, 85, 247, 0.08); }
+        .data-table tr:last-child td { border-bottom: none; }
+        .table-note { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+        .showcase-links { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px; }
+    </style>
+</head>
+<body>
+
+<!-- Animated Clouds Background -->
+<div class="clouds-container" aria-hidden="true">
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div class="cloud cloud-4"></div>
+    <div class="cloud cloud-5"></div>
+    <div class="cloud cloud-6"></div>
+    <div class="cloud cloud-7"></div>
+    <div class="cloud cloud-8"></div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="../index.html" class="nav-logo">JL</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#research">Research</a></li>
+            <li><a href="../index.html#consulting">Services</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="showcase-main">
+    <div class="showcase-wrap">
+        <a class="back-link" href="../index.html#projects">&larr; Back to Projects</a>
+
+        <div class="showcase-head">
+            <span class="research-status">Under Review at FORGE 2027</span>
+            <h1 class="showcase-title">The Politeness Tax</h1>
+            <p class="showcase-lede">Does polite phrasing make a language model write worse code? This study shows that a widely used style of evaluation pipeline can manufacture that effect without any change in model behavior. The full paper, titled &ldquo;The Politeness Tax Is a Measurement Artifact: Prompt Register Effects as Code Extraction Confounds,&rdquo; is under review at FORGE 2027 in the Data and Benchmarking Track.</p>
+        </div>
+
+        <div class="showcase-block">
+            <h2>What it is</h2>
+            <p>The project began as a benchmark of how the politeness of a prompt changes large language model output quality, consistency, and cost, built on HumanEval coding tasks with a Python evaluation pipeline. While chasing an anomaly in that pipeline, where a solution that passed in a chat interface failed consistently through the API harness, the study turned into an audit of the scoring apparatus itself: the code extractor that pulls a program out of a model reply before the tests run.</p>
+            <p>The finding is that the extractor is part of the benchmark. Scored one way, polite prompts appear to cost a capable model roughly one problem in six. Scored with extractors that handle real model output carefully, the same replies show no politeness effect at all.</p>
+        </div>
+
+        <div class="showcase-block">
+            <h2>How the study works</h2>
+            <p>The experiment uses 167 LiveCodeBench problems with contest dates on or after August 1, 2024. Each problem statement appears word for word inside one of four fixed wrappers that differ only in register: a terse agent style note, a casual message to a teammate, a polite and detailed chat request, and a Chinese language wrapper reported as a robustness aside. Two frontier chat models, GPT-5.4 and Claude Opus 4.6, answered every problem once per condition, giving 334 paired observations per condition and 1,336 completions in total.</p>
+            <p>Every completion was scored against the full official test suite for its problem, with 33 to 44 tests per problem and no test sampling. Conditions were compared problem by problem with exact McNemar tests, so each problem serves as its own control. The same stored completions were then scored four ways: with a standard but naive extractor, with a robust multi-candidate extractor built for the study, with EvalPlus sanitize, an independent extraction routine from the EvalPlus project, and with LiveCodeBench&rsquo;s own fence-only extractor. No model was ever re-queried, so every difference between scorers reflects scoring alone.</p>
+        </div>
+
+        <div class="showcase-block">
+            <h2>What it found</h2>
+            <p>Under the naive extractor, terse prompts passed 73.4 percent of problems and polite, detailed prompts passed 57.5 percent, a paired difference of 15.9 points that is highly statistically significant. Both robust extractors erase the effect on the identical replies, and LiveCodeBench&rsquo;s own extractor reverses it, reporting a politeness bonus of about 12 points, because it only accepts code inside markdown fences and the polite replies fence their code more often.</p>
+            <table class="data-table">
+                <thead>
+                    <tr><th>Condition</th><th>Naive extractor</th><th>Robust extractor (ours)</th><th>EvalPlus sanitize</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Terse</td><td>73.4%</td><td>81.4%</td><td>66.8%</td></tr>
+                    <tr><td>Casual</td><td>66.5%</td><td>81.4%</td><td>68.0%</td></tr>
+                    <tr><td>Multilingual</td><td>66.2%</td><td>84.1%</td><td>70.1%</td></tr>
+                    <tr><td>Detailed (polite)</td><td>57.5%</td><td>81.4%</td><td>69.2%</td></tr>
+                    <tr><td>Terse minus detailed</td><td>+15.9 pts (p = 1.6&times;10<sup>-7</sup>)</td><td>0.0 pts (p = 1.00)</td><td>-2.4 pts (p = 0.27)</td></tr>
+                </tbody>
+            </table>
+            <p class="table-note">Pass rates on the full official test suites for the same 1,336 completions, scored three ways. Absolute levels differ by extractor design; the comparison that matters is the gap between conditions.</p>
+            <p>The mechanism is mechanical. Polite prompts make models explain themselves after the code. The share of replies carrying more than 20 characters of non-code text rises from 29.6 percent for terse prompts to 58.1 percent for detailed ones, and the naive extractor feeds that trailing prose to the interpreter along with the code. All 268 of its compile failures were syntax errors on otherwise recoverable answers. The gap is visible before a single test runs: the naive compile rate falls from 88.0 percent on terse prompts to 73.4 percent on detailed ones, while the robust extractor compiles 100 percent of replies in every condition.</p>
+            <p>The paper also catalogs fifteen pipeline pitfalls encountered in this one study, each mapped to the wrong conclusion it produces, and proposes a cheap diagnostic for benchmark papers: report the extraction rate by condition alongside pass rates, so a scoring artifact is not mistaken for a model behavior.</p>
+        </div>
+
+        <div class="showcase-block">
+            <h2>Tech stack</h2>
+            <div class="project-tags">
+                <span>Python</span>
+                <span>LiveCodeBench</span>
+                <span>EvalPlus</span>
+                <span>Claude API</span>
+                <span>Paired statistical testing</span>
+                <span>Benchmark methodology</span>
+            </div>
+        </div>
+
+        <div class="showcase-block">
+            <h2>Links</h2>
+            <p>The study code and the original politeness benchmark are public on GitHub. An anonymous reproduction package, with the stored completions and all four scorers, accompanies the FORGE 2027 submission.</p>
+            <div class="showcase-links">
+                <a class="btn btn-primary" href="https://github.com/jamelski1/the-vibe-tax" target="_blank" rel="noopener">GitHub Repository</a>
+                <a class="btn btn-outline" href="../index.html#research">More Research</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Jamel L. Lawson. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    var navToggle = document.getElementById('navToggle');
+    var navLinks = document.getElementById('navLinks');
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', function () {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    }
+</script>
+
+</body>
+</html>
