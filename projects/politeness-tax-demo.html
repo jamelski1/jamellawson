@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Politeness Tax: Interactive Demo | Jamel L. Lawson</title>
+    <meta name="description" content="Run the Politeness Tax study's actual extractor code in your browser on its recorded model replies, and watch a politeness effect appear and disappear with the choice of scorer.">
+    <link href="../main-stylesheet.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .navbar { background: rgba(13, 10, 26, 0.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border-color); }
+        .showcase-main { position: relative; z-index: 1; padding: 150px 0 90px; }
+        .showcase-wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+        .back-link { display: inline-block; margin-bottom: 28px; font-size: 15px; font-weight: 500; }
+        .showcase-head { text-align: center; margin-bottom: 48px; }
+        .showcase-title { font-family: var(--font-heading); font-size: clamp(32px, 6vw, 48px); font-weight: 700; line-height: 1.15; margin: 18px 0 16px; background: linear-gradient(135deg, #e9d5ff 0%, var(--purple-light) 50%, var(--purple-mid) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .showcase-lede { font-size: 18px; color: var(--text-secondary); line-height: 1.7; max-width: 700px; margin: 0 auto; }
+        .showcase-block { margin-bottom: 44px; }
+        .showcase-block h2 { font-family: var(--font-heading); font-size: 24px; font-weight: 600; color: var(--text-primary); margin-bottom: 14px; }
+        .showcase-block p { font-size: 16px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 14px; }
+        .data-table { width: 100%; border-collapse: collapse; margin: 18px 0 10px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; font-size: 15px; }
+        .data-table th, .data-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border-color); color: var(--text-secondary); }
+        .data-table th { font-family: var(--font-heading); color: var(--text-primary); font-weight: 600; background: rgba(168, 85, 247, 0.08); }
+        .data-table tr:last-child td { border-bottom: none; }
+        .table-note { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+        .showcase-links { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px; }
+        .demo-controls { display: flex; gap: 14px; flex-wrap: wrap; margin: 18px 0 6px; }
+        .demo-controls label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600; color: var(--text-primary); flex: 1 1 180px; }
+        .demo-controls select, .demo-controls input, .own-input { background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-color); border-radius: 8px; padding: 10px 12px; font-size: 15px; font-family: inherit; }
+        .status-line { font-size: 14px; color: var(--text-muted); min-height: 20px; margin: 10px 0; }
+        .record-meta { font-size: 14px; color: var(--text-muted); margin: 14px 0 8px; }
+        .view-label { font-family: var(--font-heading); font-size: 14px; font-weight: 600; color: var(--text-primary); margin: 18px 0 8px; }
+        .code-view { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 16px; font-size: 13px; line-height: 1.55; color: var(--text-secondary); overflow: auto; max-height: 430px; white-space: pre-wrap; word-break: break-word; }
+        .results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px; }
+        @media (max-width: 720px) { .results-grid { grid-template-columns: 1fr; } }
+        .result-card { background: rgba(168, 85, 247, 0.04); border: 1px solid var(--border-color); border-radius: 12px; padding: 18px; }
+        .result-card h3 { font-family: var(--font-heading); font-size: 17px; color: var(--text-primary); margin-bottom: 10px; }
+        .result-card .code-view { max-height: 340px; }
+        .badge { display: inline-block; font-size: 13px; font-weight: 600; padding: 5px 10px; border-radius: 999px; }
+        .badge-ok { background: rgba(34, 197, 94, 0.15); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.4); }
+        .badge-bad { background: rgba(239, 68, 68, 0.12); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.4); }
+        .error-line { font-size: 14px; color: #f87171; line-height: 1.6; }
+        .outcome { font-size: 14.5px; line-height: 1.65; padding: 12px 14px; border-radius: 10px; margin-top: 12px; }
+        .outcome-ok { background: rgba(34, 197, 94, 0.08); color: var(--text-secondary); }
+        .outcome-bad { background: rgba(239, 68, 68, 0.07); color: var(--text-secondary); }
+        .muted { color: var(--text-muted); font-size: 14.5px; }
+        .run-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: 20px; }
+        .run-note { font-size: 14px; color: var(--text-muted); }
+        .own-text { width: 100%; min-height: 170px; background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-color); border-radius: 12px; padding: 14px; font-size: 13.5px; line-height: 1.55; font-family: ui-monospace, Menlo, Consolas, monospace; }
+        button.btn { cursor: pointer; font-family: inherit; }
+        button.btn[disabled] { opacity: 0.55; cursor: wait; }
+    </style>
+</head>
+<body>
+
+<!-- Animated Clouds Background -->
+<div class="clouds-container" aria-hidden="true">
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div class="cloud cloud-4"></div>
+    <div class="cloud cloud-5"></div>
+    <div class="cloud cloud-6"></div>
+    <div class="cloud cloud-7"></div>
+    <div class="cloud cloud-8"></div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="../index.html" class="nav-logo">JL</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#research">Research</a></li>
+            <li><a href="../index.html#consulting">Services</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="showcase-main">
+    <div class="showcase-wrap">
+        <a class="back-link" href="politeness-tax.html">&larr; Back to The Politeness Tax</a>
+
+        <div class="showcase-head">
+            <span class="research-status">Interactive Demo</span>
+            <h1 class="showcase-title">Break the Benchmark Yourself</h1>
+            <p class="showcase-lede">This page runs the Politeness Tax study's actual extractor code, unmodified, in your own browser. Pick a recorded model reply, run both extractors on it, and watch one ruler call a correct answer wrong while the other passes it. Nothing is sent to a server, and no model is called.</p>
+        </div>
+
+        <div class="showcase-block">
+            <h2>The full study result</h2>
+            <p>The study recorded 1,336 replies: 167 LiveCodeBench problems, each answered by GPT-5.4 and Claude Opus 4.6 under four prompt registers that differ only in how the question is framed. The tables below are the full study's numbers, recomputed in the study's demonstration notebook. The interactive section further down works on a smaller bundled subset, labeled there.</p>
+            <table class="data-table">
+                <thead>
+                    <tr><th>Register</th><th>Naive extractor pass rate</th><th>Robust extractor (Sieve) pass rate</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Terse</td><td>73.4%</td><td>81.7%</td></tr>
+                    <tr><td>Casual</td><td>65.9%</td><td>81.1%</td></tr>
+                    <tr><td>Detailed (polite)</td><td>57.2%</td><td>81.1%</td></tr>
+                    <tr><td>Multilingual</td><td>65.6%</td><td>84.1%</td></tr>
+                </tbody>
+            </table>
+            <p class="table-note">Same 1,336 replies, scored two ways. Under the naive extractor, terse beats detailed by 16.2 points (paired McNemar test, p about 1.1&times;10<sup>-7</sup>). Under the robust extractor the gap is 0.6 points (p = 0.85), which is no effect. The paper reports 15.9 points (p = 1.6&times;10<sup>-7</sup>) and 0.0 points (p = 1.00) for the same comparison from its three extractor run; the small differences come from which extractor run is tabulated, and both tell the same story.</p>
+            <table class="data-table">
+                <thead>
+                    <tr><th>Register</th><th>Naive extraction compiles</th><th>Sieve extraction compiles</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Terse</td><td>88.0%</td><td>100.0%</td></tr>
+                    <tr><td>Casual</td><td>81.1%</td><td>100.0%</td></tr>
+                    <tr><td>Detailed (polite)</td><td>73.4%</td><td>100.0%</td></tr>
+                    <tr><td>Multilingual</td><td>77.2%</td><td>100.0%</td></tr>
+                </tbody>
+            </table>
+            <p class="table-note">The gap exists before a single test runs. Polite prompts make models explain themselves after the code, and the naive extractor hands that trailing explanation to the interpreter along with the code. Its failures are syntax errors on answers that were often correct.</p>
+        </div>
+
+        <div class="showcase-block">
+            <h2>Run the extractors on a real reply</h2>
+            <p>The default view is the study's worked example: a detailed, polite prompt, answered correctly by GPT-5.4, that the naive pipeline scored as a wrong answer. Change the model, register, or problem to explore the other bundled replies.</p>
+            <p class="status-line" id="py-status">Loading the demo data.</p>
+            <div class="demo-controls">
+                <label>Model
+                    <select id="sel-model">
+                        <option value="chatgpt">GPT-5.4</option>
+                        <option value="claude">Claude Opus 4.6</option>
+                    </select>
+                </label>
+                <label>Prompt register
+                    <select id="sel-register">
+                        <option value="agentic_terse">Terse</option>
+                        <option value="agentic_casual">Casual</option>
+                        <option value="webchat_detailed">Detailed (polite)</option>
+                        <option value="webchat_multilingual">Multilingual</option>
+                    </select>
+                </label>
+                <label>Problem
+                    <select id="sel-problem"></select>
+                </label>
+            </div>
+            <p class="record-meta" id="record-meta"></p>
+            <p class="view-label">The prompt the model received</p>
+            <pre class="code-view" id="prompt-view"></pre>
+            <p class="view-label">The model's raw reply, unedited</p>
+            <pre class="code-view" id="reply-view"></pre>
+            <div class="run-row">
+                <button class="btn btn-primary" id="btn-run" disabled>Run both extractors</button>
+                <span class="run-note" id="run-note"></span>
+            </div>
+            <div class="results-grid">
+                <div class="result-card" id="result-naive"><h3>Naive extractor</h3><p class="muted">Waiting for the Python runtime.</p></div>
+                <div class="result-card" id="result-sieve"><h3>Robust extractor (Sieve)</h3><p class="muted">Waiting for the Python runtime.</p></div>
+            </div>
+        </div>
+
+        <div class="showcase-block">
+            <h2>The exact code you are running</h2>
+            <p>There is no reimplementation hiding behind this page. The Python below is loaded from the same file the demo executes, copied unmodified from the study's demonstration notebook. The naive extractor takes the first fenced block that names the target, and otherwise hands the grader the whole reply with the fence lines removed, trailing prose and all. Sieve builds several candidate slices of the reply and keeps the first one that compiles and still defines the target.</p>
+            <pre class="code-view" id="extractor-code">Loading the extractor source.</pre>
+        </div>
+
+        <div class="showcase-block">
+            <h2>Try your own reply</h2>
+            <p>Paste any model reply, for example from a chat session where the model explained itself after the code, and run both extractors on it. Tell the extractors the name of the method the reply is supposed to define.</p>
+            <div class="demo-controls">
+                <label>Method name the reply should define
+                    <input class="own-input" id="own-entry" type="text" value="solve">
+                </label>
+            </div>
+            <textarea class="own-text" id="own-text" spellcheck="false">Here is one way to do it:
+
+class Solution:
+    def solve(self, x):
+        return x * 2
+
+This simply doubles the number you pass in, which works because the problem only asks for twice the input value.</textarea>
+            <div class="run-row">
+                <button class="btn btn-primary" id="btn-own" disabled>Run both extractors on my reply</button>
+                <span class="run-note" id="own-note"></span>
+            </div>
+            <div class="results-grid">
+                <div class="result-card" id="own-result-naive"><h3>Naive extractor</h3><p class="muted">No run yet.</p></div>
+                <div class="result-card" id="own-result-sieve"><h3>Robust extractor (Sieve)</h3><p class="muted">No run yet.</p></div>
+            </div>
+        </div>
+
+        <div class="showcase-block">
+            <h2>What this page is, and what it is not</h2>
+            <p id="subset-note">This page bundles a subset of the study's 1,336 recorded replies: eight problems, each with all eight of its replies (two models times four registers). The worked example from the study is always included. The next four problems are the ones with the most naive extractor failures across their eight replies, so the failure mode is easy to find. One problem is included where several replies genuinely failed even under the robust extractor, so real model failures are represented too. The last two are problems where the naive extractor compiled every reply and most replies passed, so visitors can also see the two extractors agree. Ties are broken by problem id.</p>
+            <p>The pass and fail outcomes shown for each reply are the study's recorded outcomes. During the study, each Sieve extraction was graded against its problem's full LiveCodeBench test suite. The naive outcome is derived, the same way the study's notebook derives it: an extraction that does not compile was certainly scored wrong, and an extraction that compiles is byte for byte the same code Sieve produced in 1,067 of 1,068 cases across the full study, so it inherits Sieve's verdict.</p>
+            <p>This page does not regrade replies against the full test suites, because the complete LiveCodeBench tests are access gated and cannot be redistributed. That is also why the try your own box stops at extraction and a compile check: grading needs the benchmark's tests for the problem, and those are not ours to ship.</p>
+            <p>The extraction and compile checks, by contrast, really do run here. The Python runtime (Pyodide, Python compiled to WebAssembly) executes the study code inside your browser, on your machine. If the runtime cannot load, the page falls back to compile results precomputed with the identical code, and says so.</p>
+            <div class="showcase-links">
+                <a class="btn btn-primary" href="politeness-tax.html">Back to the study overview</a>
+                <a class="btn btn-outline" href="https://github.com/jamelski1/the-vibe-tax" target="_blank" rel="noopener">GitHub Repository</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Jamel L. Lawson. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    var navToggle = document.getElementById('navToggle');
+    var navLinks = document.getElementById('navLinks');
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', function () {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+<script src="politeness-tax-demo/demo.js"></script>
+
+</body>
+</html>
