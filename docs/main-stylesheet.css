@@ -1478,10 +1478,59 @@ a:hover {
 }
 
 /* Hero background and demo video */
+/* Three real city skylines blended left to right: Washington DC, Baltimore, Reston VA.
+   Photos via Wikimedia Commons. */
 .hero {
-    background-image: linear-gradient(rgba(8, 5, 18, 0.80), rgba(8, 5, 18, 0.90)), url("https://images.pexels.com/photos/2921137/pexels-photo-2921137.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    overflow: hidden;
+    background-color: #080512;
+}
+
+.hero-cities {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-city {
+    position: absolute;
+    inset: 0;
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-city-dc {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Capitol_at_Dusk_View_from_Library_of_Congress_Jefferson_Building_%2814144445175%29.jpg/1280px-Capitol_at_Dusk_View_from_Library_of_Congress_Jefferson_Building_%2814144445175%29.jpg");
+    background-size: 155% auto;
+    background-position: 95% center;
+    -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 34%, transparent 58%);
+    mask-image: linear-gradient(90deg, #000 0%, #000 34%, transparent 58%);
+}
+
+.hero-city-balt {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/A_panoramic_view_of_the_Baltimore_Inner_Harbor.jpg/1280px-A_panoramic_view_of_the_Baltimore_Inner_Harbor.jpg");
+    background-position: center center;
+    -webkit-mask-image: linear-gradient(90deg, transparent 24%, #000 46%, #000 58%, transparent 80%);
+    mask-image: linear-gradient(90deg, transparent 24%, #000 46%, #000 58%, transparent 80%);
+}
+
+.hero-city-reston {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/2020_september_reston_town_center_skyline_e.jpg/1280px-2020_september_reston_town_center_skyline_e.jpg");
+    background-position: right center;
+    -webkit-mask-image: linear-gradient(90deg, transparent 50%, #000 76%, #000 100%);
+    mask-image: linear-gradient(90deg, transparent 50%, #000 76%, #000 100%);
+}
+
+.hero-tint {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(115deg, rgba(88, 28, 135, 0.38), rgba(88, 28, 135, 0) 55%, rgba(88, 28, 135, 0.32)),
+        linear-gradient(rgba(8, 5, 18, 0.78), rgba(8, 5, 18, 0.90));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
 }
 
 .demo-intro {
