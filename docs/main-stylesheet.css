@@ -963,6 +963,32 @@ a:hover {
     color: var(--text-muted);
 }
 
+/* --- Projects --- */
+.project-card h3 {
+    font-style: normal;
+}
+
+.project-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+.project-links {
+    font-size: 14px;
+}
+
+.project-links a {
+    color: var(--purple-light);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
 /* --- Consulting Services --- */
 .consulting-intro {
     text-align: center;

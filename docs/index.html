@@ -43,6 +43,7 @@
             <li><a href="#experience">Experience</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#research">Research</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#consulting">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -355,8 +356,53 @@
     </div>
 </section>
 
+<!-- Projects Section -->
+<section class="section section-alt" id="projects">
+    <div class="container">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="research-list project-list">
+            <div class="research-card project-card">
+                <span class="research-status">Live Service</span>
+                <h3>Automatic Photo Albums</h3>
+                <p class="project-desc">A deployed web service that turns uploaded photos into finished slideshow videos. A neural network groups photos by what is actually in them, an inspectable rule chooses music for each collection, and the editor cuts fades that land on the beat.</p>
+                <p class="project-links"><a href="https://photo-albums-y7ir.onrender.com" target="_blank" rel="noopener">Live service</a> &bull; <a href="https://github.com/jamelski1/photo-albums-app" target="_blank" rel="noopener">GitHub</a> &bull; <a href="https://github.com/jamelski1/seng691-hw5" target="_blank" rel="noopener">Research pipeline</a></p>
+            </div>
+            <div class="research-card project-card">
+                <span class="research-status">Ph.D. Research</span>
+                <h3>Vibe Agent</h3>
+                <p class="project-desc">A metadata layer built into a repository file system that gives external AI coding agents a shared architecture map, with structure, dependencies, and provenance, so changes made over time by separate agents stay consistent and easier to review and test. The code repository is private while the research is in progress.</p>
+                <p class="project-links"><a href="#research">Part of my dissertation research</a></p>
+            </div>
+            <div class="research-card project-card">
+                <span class="research-status">Submitted to FORGE 2027</span>
+                <h3>The Politeness Tax</h3>
+                <p class="project-desc">An empirical benchmark of how the politeness of a prompt changes large language model output quality, consistency, and cost, with a Python evaluation pipeline and an anonymous public reproduction package.</p>
+                <p class="project-links"><a href="https://github.com/jamelski1/the-vibe-tax" target="_blank" rel="noopener">GitHub</a></p>
+            </div>
+            <div class="research-card project-card">
+                <span class="research-status">Multi-Agent System</span>
+                <h3>Project WARGATE</h3>
+                <p class="project-desc">A LangChain based multi-agent system that supports joint staff strategic planning, with specialist agents collaborating on structured planning tasks. Presented as a live demonstration as a guest lecturer at National Defense University.</p>
+                <p class="project-links"><a href="https://github.com/jamelski1/ProjectWARGATE" target="_blank" rel="noopener">GitHub</a></p>
+            </div>
+            <div class="research-card project-card">
+                <span class="research-status">Submitted to SANER 2027</span>
+                <h3>Beyond Text Only Estimation</h3>
+                <p class="project-desc">Machine learning research predicting software maintenance effort across five open source repositories, pairing CodeBERT representations with XGBoost and repository mining to test whether repository history improves on text only estimation.</p>
+                <p class="project-links"><a href="https://github.com/jamelski1/btoe" target="_blank" rel="noopener">GitHub</a></p>
+            </div>
+            <div class="research-card project-card">
+                <span class="research-status">Fine-Tuned Model</span>
+                <h3>ModelHaus</h3>
+                <p class="project-desc">A question answering model fine tuned on cybersecurity content, covering dataset preparation, fine tuning, and evaluation of the base model against its fine tuned version on held out cyber questions.</p>
+                <p class="project-links"><a href="https://github.com/jamelski1/modelhaus" target="_blank" rel="noopener">GitHub</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Consulting Services Section -->
-<section class="section section-alt" id="consulting">
+<section class="section" id="consulting">
     <div class="container">
         <h2 class="section-title">Remote Consulting Services</h2>
         <p class="consulting-intro">Available on Upwork for remote engagements across the following domains:</p>
@@ -598,7 +644,8 @@
 
     // Education, research, services
     revealGroup('.edu-card', { trigger: '.education-timeline' });
-    revealGroup('.research-card', { trigger: '.research-list' });
+    revealGroup('#research .research-card', { trigger: '#research .research-list' });
+    revealGroup('.project-card', { trigger: '.project-list' });
     revealGroup('.service-card', { trigger: '.services-grid' });
 
     // Contact
