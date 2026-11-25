@@ -989,6 +989,222 @@ a:hover {
     text-decoration: underline;
 }
 
+/* --- Project Jukebox --- */
+.jukebox-intro {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 16px;
+    margin: -8px auto 32px;
+}
+
+.jukebox {
+    max-width: 850px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.jukebox-selectors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.jukebox-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    background: rgba(168, 85, 247, 0.06);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    color: var(--text-secondary);
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.jukebox-btn:hover {
+    border-color: var(--purple-mid);
+    color: var(--text-primary);
+}
+
+.jukebox-btn.is-active {
+    background: rgba(168, 85, 247, 0.18);
+    border-color: var(--purple-mid);
+    color: var(--text-primary);
+    box-shadow: 0 0 0 1px var(--purple-mid), 0 4px 16px rgba(139, 92, 246, 0.25);
+}
+
+.jukebox-code {
+    flex: 0 0 auto;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background: rgba(168, 85, 247, 0.2);
+    color: var(--purple-light);
+}
+
+.jukebox-btn-title {
+    line-height: 1.3;
+}
+
+.jukebox-stage {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.jukebox-record-wrap {
+    position: relative;
+    flex: 0 0 auto;
+    width: 190px;
+    height: 190px;
+}
+
+.jukebox-record {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle at center, transparent 58px, rgba(255, 255, 255, 0.05) 59px, transparent 60px),
+        radial-gradient(circle at center, transparent 78px, rgba(255, 255, 255, 0.05) 79px, transparent 80px),
+        radial-gradient(circle at center, #1a1a22 0%, #0c0c12 70%);
+    border: 2px solid rgba(168, 85, 247, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.jukebox-record.is-spinning {
+    animation: jukebox-spin 5s linear infinite;
+}
+
+@keyframes jukebox-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.jukebox-label {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #a855f7 0%, #7c3aed 75%);
+    color: #ffffff;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.jukebox-arm {
+    position: absolute;
+    top: 6px;
+    right: 2px;
+    width: 74px;
+    height: 8px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #9ca3af, #4b5563);
+    transform: rotate(32deg);
+    transform-origin: right center;
+}
+
+.jukebox-display {
+    flex: 1 1 auto;
+    min-height: 190px;
+}
+
+.jukebox-card {
+    display: none;
+}
+
+.jukebox-card.is-active {
+    display: block;
+    animation: jukebox-fade 0.35s ease;
+}
+
+@keyframes jukebox-fade {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.jukebox-card h3 {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.jukebox-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.jukebox-nav {
+    padding: 10px 20px;
+    background: rgba(168, 85, 247, 0.1);
+    border: 1px solid var(--border-color);
+    border-radius: 100px;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.jukebox-nav:hover {
+    border-color: var(--purple-mid);
+    background: rgba(168, 85, 247, 0.22);
+}
+
+.jukebox-now {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+@media screen and (max-width: 768px) {
+    .jukebox-selectors {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .jukebox-stage {
+        flex-direction: column;
+    }
+
+    .jukebox-display {
+        min-height: 0;
+        text-align: center;
+    }
+
+    .jukebox-now {
+        display: none;
+    }
+}
+
 /* --- Consulting Services --- */
 .consulting-intro {
     text-align: center;

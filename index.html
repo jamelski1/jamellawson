@@ -359,43 +359,67 @@
 <!-- Projects Section -->
 <section class="section section-alt" id="projects">
     <div class="container">
-        <h2 class="section-title">Selected Projects</h2>
-        <div class="research-list project-list">
-            <div class="research-card project-card">
-                <span class="research-status">Live Service</span>
-                <h3>Automatic Photo Albums</h3>
-                <p class="project-desc">A deployed web service that turns uploaded photos into finished slideshow videos. A neural network groups photos by what is actually in them, an inspectable rule chooses music for each collection, and the editor cuts fades that land on the beat.</p>
-                <p class="project-links"><a href="https://photo-albums-y7ir.onrender.com" target="_blank" rel="noopener">Live service</a> &bull; <a href="https://github.com/jamelski1/photo-albums-app" target="_blank" rel="noopener">GitHub</a> &bull; <a href="https://github.com/jamelski1/seng691-hw5" target="_blank" rel="noopener">Research pipeline</a></p>
+        <h2 class="section-title">Project Jukebox</h2>
+        <p class="jukebox-intro">Six projects, one jukebox. Pick a selection and it drops onto the turntable.</p>
+        <div class="jukebox">
+            <div class="jukebox-selectors" role="group" aria-label="Project selections">
+                    <button class="jukebox-btn is-active" data-index="0" aria-label="Play selection A1: Automatic Photo Albums"><span class="jukebox-code">A1</span><span class="jukebox-btn-title">Automatic Photo Albums</span></button>
+                    <button class="jukebox-btn" data-index="1" aria-label="Play selection A2: Vibe Agent"><span class="jukebox-code">A2</span><span class="jukebox-btn-title">Vibe Agent</span></button>
+                    <button class="jukebox-btn" data-index="2" aria-label="Play selection A3: The Politeness Tax"><span class="jukebox-code">A3</span><span class="jukebox-btn-title">The Politeness Tax</span></button>
+                    <button class="jukebox-btn" data-index="3" aria-label="Play selection B1: Project WARGATE"><span class="jukebox-code">B1</span><span class="jukebox-btn-title">Project WARGATE</span></button>
+                    <button class="jukebox-btn" data-index="4" aria-label="Play selection B2: Beyond Text Only Estimation"><span class="jukebox-code">B2</span><span class="jukebox-btn-title">Beyond Text Only Estimation</span></button>
+                    <button class="jukebox-btn" data-index="5" aria-label="Play selection B3: ModelHaus"><span class="jukebox-code">B3</span><span class="jukebox-btn-title">ModelHaus</span></button>
             </div>
-            <div class="research-card project-card">
-                <span class="research-status">Ph.D. Research</span>
-                <h3>Vibe Agent</h3>
-                <p class="project-desc">A metadata layer built into a repository file system that gives external AI coding agents a shared architecture map, with structure, dependencies, and provenance, so changes made over time by separate agents stay consistent and easier to review and test. The code repository is private while the research is in progress.</p>
-                <p class="project-links"><a href="#research">Part of my dissertation research</a></p>
+            <div class="jukebox-stage">
+                <div class="jukebox-record-wrap" aria-hidden="true">
+                    <div class="jukebox-record is-spinning" id="jukeboxRecord">
+                        <div class="jukebox-label" id="jukeboxLabel">A1</div>
+                    </div>
+                    <div class="jukebox-arm"></div>
+                </div>
+                <div class="jukebox-display">
+                    <article class="jukebox-card is-active" data-index="0">
+                        <span class="research-status">Live Service</span>
+                        <h3>Automatic Photo Albums</h3>
+                        <p class="project-desc">A deployed web service that turns uploaded photos into finished slideshow videos. A neural network groups photos by what is actually in them, an inspectable rule chooses music for each collection, and the editor cuts fades that land on the beat.</p>
+                        <p class="project-links"><a href="https://photo-albums-y7ir.onrender.com" target="_blank" rel="noopener">Live service</a> &bull; <a href="https://github.com/jamelski1/photo-albums-app" target="_blank" rel="noopener">GitHub</a> &bull; <a href="https://github.com/jamelski1/seng691-hw5" target="_blank" rel="noopener">Research pipeline</a></p>
+                    </article>
+                    <article class="jukebox-card" data-index="1">
+                        <span class="research-status">Ph.D. Research</span>
+                        <h3>Vibe Agent</h3>
+                        <p class="project-desc">A metadata layer built into a repository file system that gives external AI coding agents a shared architecture map, with structure, dependencies, and provenance, so changes made over time by separate agents stay consistent and easier to review and test. The code repository is private while the research is in progress.</p>
+                        <p class="project-links"><a href="#research">Part of my dissertation research</a></p>
+                    </article>
+                    <article class="jukebox-card" data-index="2">
+                        <span class="research-status">Submitted to FORGE 2027</span>
+                        <h3>The Politeness Tax</h3>
+                        <p class="project-desc">An empirical benchmark of how the politeness of a prompt changes large language model output quality, consistency, and cost, with a Python evaluation pipeline and an anonymous public reproduction package.</p>
+                        <p class="project-links"><a href="https://github.com/jamelski1/the-vibe-tax" target="_blank" rel="noopener">GitHub</a></p>
+                    </article>
+                    <article class="jukebox-card" data-index="3">
+                        <span class="research-status">Multi-Agent System</span>
+                        <h3>Project WARGATE</h3>
+                        <p class="project-desc">A LangChain based multi-agent system that supports joint staff strategic planning, with specialist agents collaborating on structured planning tasks. Presented as a live demonstration as a guest lecturer at National Defense University.</p>
+                        <p class="project-links"><a href="https://github.com/jamelski1/ProjectWARGATE" target="_blank" rel="noopener">GitHub</a></p>
+                    </article>
+                    <article class="jukebox-card" data-index="4">
+                        <span class="research-status">Submitted to SANER 2027</span>
+                        <h3>Beyond Text Only Estimation</h3>
+                        <p class="project-desc">Machine learning research predicting software maintenance effort across five open source repositories, pairing CodeBERT representations with XGBoost and repository mining to test whether repository history improves on text only estimation.</p>
+                        <p class="project-links"><a href="https://github.com/jamelski1/btoe" target="_blank" rel="noopener">GitHub</a></p>
+                    </article>
+                    <article class="jukebox-card" data-index="5">
+                        <span class="research-status">Fine-Tuned Model</span>
+                        <h3>ModelHaus</h3>
+                        <p class="project-desc">A question answering model fine tuned on cybersecurity content, covering dataset preparation, fine tuning, and evaluation of the base model against its fine tuned version on held out cyber questions.</p>
+                        <p class="project-links"><a href="https://github.com/jamelski1/modelhaus" target="_blank" rel="noopener">GitHub</a></p>
+                    </article>
+                </div>
             </div>
-            <div class="research-card project-card">
-                <span class="research-status">Submitted to FORGE 2027</span>
-                <h3>The Politeness Tax</h3>
-                <p class="project-desc">An empirical benchmark of how the politeness of a prompt changes large language model output quality, consistency, and cost, with a Python evaluation pipeline and an anonymous public reproduction package.</p>
-                <p class="project-links"><a href="https://github.com/jamelski1/the-vibe-tax" target="_blank" rel="noopener">GitHub</a></p>
-            </div>
-            <div class="research-card project-card">
-                <span class="research-status">Multi-Agent System</span>
-                <h3>Project WARGATE</h3>
-                <p class="project-desc">A LangChain based multi-agent system that supports joint staff strategic planning, with specialist agents collaborating on structured planning tasks. Presented as a live demonstration as a guest lecturer at National Defense University.</p>
-                <p class="project-links"><a href="https://github.com/jamelski1/ProjectWARGATE" target="_blank" rel="noopener">GitHub</a></p>
-            </div>
-            <div class="research-card project-card">
-                <span class="research-status">Submitted to SANER 2027</span>
-                <h3>Beyond Text Only Estimation</h3>
-                <p class="project-desc">Machine learning research predicting software maintenance effort across five open source repositories, pairing CodeBERT representations with XGBoost and repository mining to test whether repository history improves on text only estimation.</p>
-                <p class="project-links"><a href="https://github.com/jamelski1/btoe" target="_blank" rel="noopener">GitHub</a></p>
-            </div>
-            <div class="research-card project-card">
-                <span class="research-status">Fine-Tuned Model</span>
-                <h3>ModelHaus</h3>
-                <p class="project-desc">A question answering model fine tuned on cybersecurity content, covering dataset preparation, fine tuning, and evaluation of the base model against its fine tuned version on held out cyber questions.</p>
-                <p class="project-links"><a href="https://github.com/jamelski1/modelhaus" target="_blank" rel="noopener">GitHub</a></p>
+            <div class="jukebox-controls">
+                <button class="jukebox-nav" id="jukeboxPrev" aria-label="Previous project">&#9664; Prev</button>
+                <span class="jukebox-now" id="jukeboxNow">Now playing: A1 of 6</span>
+                <button class="jukebox-nav" id="jukeboxNext" aria-label="Next project">Next &#9654;</button>
             </div>
         </div>
     </div>
@@ -645,7 +669,7 @@
     // Education, research, services
     revealGroup('.edu-card', { trigger: '.education-timeline' });
     revealGroup('#research .research-card', { trigger: '#research .research-list' });
-    revealGroup('.project-card', { trigger: '.project-list' });
+    revealGroup('.jukebox', { trigger: '#projects' });
     revealGroup('.service-card', { trigger: '.services-grid' });
 
     // Contact
@@ -688,5 +712,38 @@
 })();
 </script>
 
+
+<script>
+// Project Jukebox controller
+(function () {
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.jukebox-card'));
+    var btns = Array.prototype.slice.call(document.querySelectorAll('.jukebox-btn'));
+    var record = document.getElementById('jukeboxRecord');
+    var label = document.getElementById('jukeboxLabel');
+    var now = document.getElementById('jukeboxNow');
+    if (!cards.length) return;
+    var codes = ['A1', 'A2', 'A3', 'B1', 'B2', 'B3'];
+    var current = 0;
+    function show(i) {
+        current = (i + cards.length) % cards.length;
+        cards.forEach(function (c, k) { c.classList.toggle('is-active', k === current); });
+        btns.forEach(function (b, k) { b.classList.toggle('is-active', k === current); });
+        if (label) label.textContent = codes[current];
+        if (now) now.textContent = 'Now playing: ' + codes[current] + ' of ' + cards.length;
+        if (record) {
+            record.classList.remove('is-spinning');
+            void record.offsetWidth;
+            record.classList.add('is-spinning');
+        }
+    }
+    btns.forEach(function (b) {
+        b.addEventListener('click', function () { show(parseInt(b.getAttribute('data-index'), 10)); });
+    });
+    var prev = document.getElementById('jukeboxPrev');
+    var next = document.getElementById('jukeboxNext');
+    if (prev) prev.addEventListener('click', function () { show(current - 1); });
+    if (next) next.addEventListener('click', function () { show(current + 1); });
+})();
+</script>
 </body>
 </html>
